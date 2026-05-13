@@ -56,17 +56,47 @@
     background:#fff; border-bottom:1px solid rgba(27,27,46,.08);
     padding:14px 24px; display:flex; align-items:center; gap:14px;
     position:sticky; top:0; z-index:10;
+    box-shadow:0 2px 16px -10px rgba(27,27,46,.15);
   }
-  .topnav img{width:48px; height:48px; object-fit:contain; border-radius:50%}
-  .topnav-text{display:flex; flex-direction:column; gap:2px; flex:1}
-  .topnav-text strong{font-family:"Cormorant Garamond",serif; font-size:18px; color:#1B2A4E; line-height:1}
+  .topnav-logo{
+    display:flex; align-items:center; gap:12px;
+    text-decoration:none; color:var(--ink);
+    flex:1; transition:opacity .25s;
+  }
+  .topnav-logo:hover{opacity:.85}
+  .topnav-logo img{width:48px; height:48px; object-fit:contain; border-radius:50%; transition:transform .4s}
+  .topnav-logo:hover img{transform:rotate(-4deg) scale(1.05)}
+  .topnav-text{display:flex; flex-direction:column; gap:2px}
+  .topnav-text strong{font-family:"Cormorant Garamond",serif; font-size:18px; color:#1B2A4E; line-height:1; font-weight:600}
   .topnav-text small{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute); margin-top:4px}
-  .topnav a.back{
-    font-size:14px; color:var(--tiffany-deep); font-weight:600;
-    padding:8px 16px; border:1px solid var(--tiffany-soft); border-radius:999px;
-    text-decoration:none; transition:.25s;
+  .topnav-actions{display:flex; gap:10px; align-items:center}
+  .nav-pill{
+    font-size:13.5px; font-weight:600;
+    padding:9px 16px; border-radius:999px;
+    text-decoration:none; transition:all .25s;
+    display:inline-flex; align-items:center; gap:6px;
+    white-space:nowrap;
   }
-  .topnav a.back:hover{background:var(--tiffany-soft)}
+  .nav-pill.back-articles{
+    color:var(--gold-deep);
+    background:#FAF1DC;
+    border:1px solid rgba(201,169,97,.3);
+  }
+  .nav-pill.back-articles:hover{background:#F5E8C4; border-color:var(--gold)}
+  .nav-pill.back-home{
+    color:#fff;
+    background:linear-gradient(135deg, var(--tiffany) 0%, var(--pink) 110%);
+    box-shadow:0 8px 18px -8px rgba(10,186,181,.5);
+  }
+  .nav-pill.back-home:hover{transform:translateY(-2px)}
+  @media (max-width:600px){
+    .topnav{padding:10px 16px; gap:8px}
+    .topnav-logo img{width:42px; height:42px}
+    .topnav-text strong{font-size:15px}
+    .topnav-text small{display:none}
+    .nav-pill{font-size:12px; padding:8px 12px}
+    .nav-pill svg{display:none}
+  }
 
   article{
     max-width:760px; margin:0 auto; padding:48px 24px 80px;
@@ -148,17 +178,27 @@
 <body>
 
 <header class="topnav">
-  <img src="../logo.jpg" alt="Татьянин День" />
-  <div class="topnav-text">
-    <strong>Татьянин День</strong>
-    <small>Детский театр танца · Суханово&nbsp;Парк</small>
+  <a href="../index.html" class="topnav-logo" aria-label="На главную">
+    <img src="../logo.jpg" alt="Татьянин День — на главную" />
+    <div class="topnav-text">
+      <strong>Татьянин День</strong>
+      <small>Детский театр танца</small>
+    </div>
+  </a>
+  <div class="topnav-actions">
+    <a href="index.html" class="nav-pill back-articles" aria-label="Вернуться к статьям">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Вернуться к&nbsp;статьям
+    </a>
+    <a href="../index.html" class="nav-pill back-home" aria-label="На главную">
+      На&nbsp;главную
+    </a>
   </div>
-  <a href="../index.html" class="back">← На главную</a>
 </header>
 
 <article>
   <nav class="breadcrumb">
-    <a href="../index.html">Главная</a> → <a href="./">Блог</a> → Во сколько лет отдавать ребёнка на танцы
+    <a href="../index.html">Главная</a> → <a href="index.html">Блог</a> → Во сколько лет отдавать ребёнка на танцы
   </nav>
 
   <h1>Во сколько лет отдавать ребёнка на танцы? Подробный гид для родителей</h1>
@@ -186,7 +226,7 @@
   <div class="age-card">
     <span class="age-tag">5–6 лет</span>
     <h3>Основы стиля и&nbsp;первая сцена</h3>
-    <p>К&nbsp;пяти годам ребёнок уже способен запоминать связки из&nbsp;4–8&nbsp;движений, понимает понятия «лево-право», начинает чувствовать музыкальный счёт. Можно вводить <strong>основы классики</strong> (правильная стойка, позиции рук и&nbsp;ног), элементы партерной гимнастики и&nbsp;первые сценические номера.</p>
+    <p>К&nbsp;пяти годам ребёнок уже способен запоминать связки из&nbsp;4–8&nbsp;движений, понимает понятия «лево-право», начинает чувствовать музыкальный счёт. Можно вводить <strong>основы классики</strong> (постановка корпуса, позиции рук и&nbsp;ног), элементы партерной гимнастики и&nbsp;первые сценические номера.</p>
     <p>Это возраст <strong>первых выступлений</strong> — открытые уроки, отчётные концерты. Сценический опыт в&nbsp;5–6&nbsp;лет — мощный буст для уверенности в&nbsp;себе на&nbsp;всю жизнь.</p>
   </div>
 
