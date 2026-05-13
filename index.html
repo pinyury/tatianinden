@@ -403,6 +403,17 @@
     transition:transform .3s;
   }
   nav.menu a:hover::after{transform:scaleX(1)}
+  nav.menu a.nav-blog{
+    color:var(--gold-deep);
+    font-weight:700;
+    position:relative;
+  }
+  nav.menu a.nav-blog::before{
+    content:"✦";
+    color:var(--gold);
+    margin-right:5px;
+    font-size:.85em;
+  }
 
   .nav-actions{display:flex; align-items:center; gap:18px; white-space:nowrap}
   .nav-phone{font-weight:700; font-size:16px; color:var(--ink); letter-spacing:.01em; white-space:nowrap}
@@ -2653,7 +2664,7 @@
       <a href="#disciplines">Дисциплины</a>
       <a href="#summer">Интенсив</a>
       <a href="#fitness">Умный фитнес</a>
-      <a href="blog/vo-skolko-let-otdavat-rebenka-na-tancy.html">Блог</a>
+      <a href="blog/" class="nav-blog">Блог</a>
       <a href="#contacts">Контакты</a>
     </nav>
     <div class="nav-actions">
@@ -3456,6 +3467,9 @@
           <span class="blog-card-meta">8&nbsp;минут чтения · Татьяна&nbsp;Ивановна Гурьянова</span>
         </div>
       </a>
+    </div>
+    <div style="text-align:center; margin-top:32px" class="reveal">
+      <a class="btn btn-ghost" href="blog/">Все статьи блога&nbsp;→</a>
     </div>
   </div>
 </section>
