@@ -9,12 +9,34 @@
 <meta name="keywords" content="танцы для детей видное, танцы суханово, детский театр танца, танцевальная школа ленинский округ, эстрадные танцы для детей, хореография для детей 3 лет, хореография для детей 4 лет, хореография для детей 5 лет, танцы для девочек видное, танцы для дошкольников, детская акробатика, балет для детей, татьянин день, умный фитнес, летний интенсив танцы, танцы суханово парк, куда отдать ребенка на танцы видное" />
 <meta property="og:title" content="Танцы для детей 3–14 лет · Татьянин День · Суханово Парк" />
 <meta property="og:description" content="Топ-100 лучших хореографических коллективов России. Эстрадный танец, классика, акробатика для детей. Первый урок — бесплатно." />
-<meta property="og:image" content="hero-bg.jpg" />
+<meta property="og:image" content="https://tatianinden.ru/hero-bg.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:url" content="https://tatianinden.ru/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="Татьянин День" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://tatianinden.ru/hero-bg.jpg" />
 <link rel="canonical" href="https://tatianinden.ru/" />
+
+<!-- ============================================================ -->
+<!-- ПОДКЛЮЧЕНИЕ АНАЛИТИКИ — заглушки. Пошагово см. файл           -->
+<!-- «Аналитика и SEO — чеклист подключения.md» в этой же папке.    -->
+<!-- ============================================================ -->
+<!-- Яндекс.Вебмастер: получить код в webmaster.yandex.ru -->
+<meta name="yandex-verification" content="ВСТАВЬТЕ_КОД_ЯНДЕКС_ВЕБМАСТЕРА" />
+<!-- Google Search Console: получить код в search.google.com/search-console -->
+<meta name="google-site-verification" content="ВСТАВЬТЕ_КОД_GOOGLE_SEARCH_CONSOLE" />
+<!-- Mail.ru / VK Аналитика: код подтверждения, если будете подключать -->
+<!-- <meta name="mailru-verification" content="ВАШ_КОД" /> -->
+
+<!-- Favicon (положите файлы в корень) -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<!-- Sitemap для краулеров -->
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1847,6 +1869,94 @@
   .privacy-modal .privacy-body p{font-size:14px; line-height:1.55; margin:0 0 6px; color:var(--ink-soft)}
   .privacy-modal .privacy-body a{color:var(--tiffany-deep); text-decoration:underline}
 
+  /* Cookie consent banner — 152-ФЗ compliance */
+  .cookie-banner{
+    position:fixed; left:16px; right:16px; bottom:16px;
+    z-index:80;
+    background:rgba(255,255,255,.98);
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    backdrop-filter:saturate(180%) blur(20px);
+    border:1px solid rgba(201,169,97,.25);
+    border-radius:18px;
+    box-shadow:0 20px 50px -12px rgba(27,27,46,.25), 0 8px 22px -10px rgba(10,186,181,.18);
+    padding:18px 22px;
+    max-width:680px;
+    margin-inline:auto;
+    transform:translateY(calc(100% + 32px));
+    opacity:0;
+    transition:transform .6s cubic-bezier(.2,.7,.3,1), opacity .5s ease;
+    pointer-events:none;
+  }
+  .cookie-banner.show{transform:translateY(0); opacity:1; pointer-events:auto}
+  .cookie-content{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    gap:18px;
+    align-items:center;
+  }
+  .cookie-icon{
+    font-size:30px;
+    line-height:1;
+    flex-shrink:0;
+  }
+  .cookie-text{
+    font-family:var(--body);
+    font-size:13.5px;
+    line-height:1.5;
+    color:var(--ink-soft);
+  }
+  .cookie-text strong{
+    display:block;
+    font-family:var(--display);
+    font-size:18px;
+    color:#1B2A4E;
+    margin-bottom:4px;
+    font-weight:600;
+  }
+  .cookie-text p{margin:0}
+  .cookie-text a{
+    color:var(--tiffany-deep);
+    font-weight:600;
+    text-decoration:underline;
+  }
+  .cookie-actions{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    flex-shrink:0;
+  }
+  .cookie-btn{
+    padding:10px 18px;
+    border-radius:999px;
+    font-family:var(--body);
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+    border:none;
+    transition:transform .25s ease, box-shadow .25s ease;
+    white-space:nowrap;
+  }
+  .cookie-btn:hover{transform:translateY(-2px)}
+  .cookie-btn-primary{
+    background:linear-gradient(135deg, var(--tiffany), var(--pink));
+    color:#fff;
+    box-shadow:0 6px 18px -6px rgba(10,186,181,.55);
+  }
+  .cookie-btn-primary:hover{box-shadow:0 10px 24px -6px rgba(10,186,181,.65)}
+  .cookie-btn-ghost{
+    background:transparent;
+    color:var(--ink-soft);
+    border:1px solid rgba(27,27,46,.15);
+  }
+  .cookie-btn-ghost:hover{background:rgba(27,27,46,.04)}
+  @media (max-width:640px){
+    .cookie-banner{left:10px; right:10px; bottom:10px; padding:14px 16px}
+    .cookie-content{grid-template-columns:1fr; gap:12px}
+    .cookie-icon{display:none}
+    .cookie-actions{flex-direction:row; justify-content:flex-end}
+    .cookie-btn{flex:1; max-width:160px; text-align:center}
+  }
+
   /* Reveal animations */
   .reveal{opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1)}
   .reveal.in{opacity:1; transform:translateY(0)}
@@ -2668,8 +2778,8 @@
       <a href="#contacts">Контакты</a>
     </nav>
     <div class="nav-actions">
-      <a href="tel:+79636719983" class="nav-phone">+7 (963) 671-99-83</a>
-      <a class="btn btn-primary" href="#" onclick="openModal();return false;">Записаться</a>
+      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671-99-83</a>
+      <a class="btn btn-primary" href="#" onclick="openModal();return false;" data-goal="cta_open_form_header">Записаться</a>
       <button class="burger" id="burger" aria-label="Меню">
         <span></span><span></span><span></span>
       </button>
@@ -2707,7 +2817,7 @@
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" href="#" onclick="openModal();return false;">
+          <a class="btn btn-primary btn-lg" href="#" onclick="openModal();return false;" data-goal="cta_open_form_hero">
             Записаться на первый урок
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
@@ -2952,7 +3062,7 @@
         </div>
       </article>
     </div>
-    <p class="prog-schedule-note">⏱ Уточнить актуальное расписание и&nbsp;записаться в&nbsp;группу можно по&nbsp;<a href="tel:+79636719983">телефону +7&nbsp;(963)&nbsp;671-99-83</a> или&nbsp;<a href="https://t.me/+79636719983" target="_blank" rel="noopener">в&nbsp;Telegram</a></p>
+    <p class="prog-schedule-note">⏱ Уточнить актуальное расписание и&nbsp;записаться в&nbsp;группу можно по&nbsp;<a href="tel:+79636719983" data-goal="cta_call_programs">телефону +7&nbsp;(963)&nbsp;671-99-83</a> или&nbsp;<a href="https://t.me/+79636719983" target="_blank" rel="noopener" data-goal="cta_telegram_programs">в&nbsp;Telegram</a></p>
   </div>
 </section>
 
@@ -3585,16 +3695,16 @@
 <footer>
   <div class="container foot-row">
     <div>© 2014–2026 Детский театр танца «Татьянин День», ЖК «Суханово&nbsp;Парк». Все права защищены.</div>
-    <div><a href="#about">О коллективе</a> · <a href="#programs">Группы</a> · <a href="#contacts">Контакты</a> · <a href="#" onclick="openPrivacy();return false;">Политика обработки персональных данных</a></div>
+    <div><a href="#about">О коллективе</a> · <a href="#programs">Группы</a> · <a href="#contacts">Контакты</a> · <a href="akciya/">Акции</a> · <a href="#" onclick="openPrivacy();return false;">Политика обработки персональных данных</a></div>
   </div>
 </footer>
 
 <!-- Floating contact cluster -->
-<a class="float-cta float-call" href="tel:+79636719983" aria-label="Позвонить в Татьянин День">
+<a class="float-cta float-call" href="tel:+79636719983" aria-label="Позвонить в Татьянин День" data-goal="cta_call_float">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
 </a>
 <!-- Floating Telegram -->
-<a class="float-cta" href="https://t.me/+79636719983" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+<a class="float-cta" href="https://t.me/+79636719983" target="_blank" rel="noopener" aria-label="Написать в Telegram" data-goal="cta_telegram_float">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
 </a>
 
@@ -3621,7 +3731,7 @@
 
       <h4>4. Состав обрабатываемых персональных данных</h4>
       <p>При заполнении формы записи на&nbsp;пробное занятие Оператор собирает: имя родителя (законного представителя), номер телефона, возраст ребёнка. Передача данных осуществляется через мессенджер, который пользователь открывает добровольно.</p>
-      <p>При посещении сайта автоматически собираются технические данные с&nbsp;использованием систем веб-аналитики (Яндекс.Метрика): IP-адрес, тип браузера и&nbsp;операционной системы, источник перехода, страницы сайта, время посещения, идентификатор сессии (cookies). Сбор cookies используется для&nbsp;статистики и&nbsp;улучшения работы сайта. Пользователь может отключить cookies в&nbsp;настройках своего браузера.</p>
+      <p>При посещении сайта могут собираться технические данные через сторонние сервисы, размещённые на&nbsp;сайте (виджеты Яндекс.Карт и&nbsp;Яндекс.Профиля), а&nbsp;также через системы веб-аналитики (Яндекс.Метрика — при подключении): IP-адрес, тип браузера и&nbsp;операционной системы, источник перехода, страницы сайта, время посещения, идентификатор сессии (cookies). Сбор cookies используется для&nbsp;корректной работы виджетов, статистики и&nbsp;улучшения сайта. Загрузка скриптов аналитики, не&nbsp;являющихся необходимыми для&nbsp;работы сайта, осуществляется только после получения согласия пользователя через cookie-уведомление. Пользователь может отключить cookies в&nbsp;настройках своего браузера или&nbsp;нажав «Только необходимые» в&nbsp;cookie-уведомлении.</p>
 
       <h4>5. Цели и&nbsp;правовые основания обработки</h4>
       <p>Цели обработки: связь с&nbsp;пользователем по&nbsp;заявке на&nbsp;пробное занятие; согласование времени и&nbsp;условий участия в&nbsp;занятиях; информирование о&nbsp;расписании, наборе групп, отчётных концертах и&nbsp;мероприятиях коллектива; ведение учёта обучающихся; улучшение работы сайта.</p>
@@ -3652,6 +3762,21 @@
     </div>
 
     <button class="btn btn-primary btn-lg" style="width:100%; margin-top:18px" onclick="closePrivacy()">Понятно, закрыть</button>
+  </div>
+</div>
+
+<!-- Cookie consent banner (152-ФЗ) -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Cookie-уведомление">
+  <div class="cookie-content">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div class="cookie-text">
+      <strong>Мы используем cookies</strong>
+      <p>Для работы виджетов Яндекс.Карт и&nbsp;Яндекс.Профиля, а&nbsp;также для&nbsp;аналитики посещений. Подробнее — в&nbsp;<a href="#" onclick="openPrivacy();return false;">Политике обработки персональных данных</a>.</p>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" onclick="acceptCookies()" class="cookie-btn cookie-btn-primary">Принять</button>
+      <button type="button" onclick="rejectCookies()" class="cookie-btn cookie-btn-ghost">Только необходимые</button>
+    </div>
   </div>
 </div>
 
@@ -3769,6 +3894,104 @@
     document.getElementById('privacyModal').classList.remove('open');
     document.body.style.overflow = '';
   }
+
+  // ============ Cookie consent (152-ФЗ) ============
+  function showCookieBanner(){
+    try{ if(localStorage.getItem('cookieChoice')) return; }catch(e){}
+    setTimeout(()=>{
+      const el = document.getElementById('cookieBanner');
+      if(el) el.classList.add('show');
+    }, 900);
+  }
+  function setCookieChoice(choice){
+    try{ localStorage.setItem('cookieChoice', choice); localStorage.setItem('cookieChoiceDate', new Date().toISOString()); }catch(e){}
+    const el = document.getElementById('cookieBanner');
+    if(el){
+      el.classList.remove('show');
+      setTimeout(()=>{ el.style.display='none'; }, 700);
+    }
+    if(choice === 'accepted') loadAnalytics();
+  }
+  function acceptCookies(){ setCookieChoice('accepted'); }
+  function rejectCookies(){ setCookieChoice('rejected'); }
+  // ============================================================
+  // Аналитика грузится ТОЛЬКО после согласия (152-ФЗ + GDPR-like).
+  // Чтобы активировать: замените YM_COUNTER_ID и CLARITY_ID на реальные.
+  // Инструкция: см. «Аналитика и SEO — чеклист подключения.md»
+  // ============================================================
+  var YM_COUNTER_ID  = 89391976;  // Татьянин День — metrika.yandex.ru/dashboard?id=89391976
+  var CLARITY_ID     = null;  // например: "abcd1234ef"  (получить на clarity.microsoft.com)
+  // var GA4_ID      = null;  // например: "G-XXXXXXXXXX"  (раскомментируйте, если нужен GA4)
+  // var VK_PIXEL_ID = null;  // например: "VK-RTRG-000000-XXXXX"  (для рекламы ВКонтакте)
+
+  function loadYandexMetrika(){
+    if(!YM_COUNTER_ID) return;
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(YM_COUNTER_ID, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      ecommerce: "dataLayer"
+    });
+    // <noscript> fallback
+    var ns = document.createElement('noscript');
+    ns.innerHTML = '<div><img src="https://mc.yandex.ru/watch/' + YM_COUNTER_ID + '" style="position:absolute; left:-9999px;" alt="" /></div>';
+    document.body.appendChild(ns);
+  }
+
+  function loadMicrosoftClarity(){
+    if(!CLARITY_ID) return;
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", CLARITY_ID);
+  }
+
+  // function loadGA4(){
+  //   if(!GA4_ID) return;
+  //   var s=document.createElement('script'); s.async=true;
+  //   s.src='https://www.googletagmanager.com/gtag/js?id='+GA4_ID;
+  //   document.head.appendChild(s);
+  //   window.dataLayer = window.dataLayer || [];
+  //   function gtag(){dataLayer.push(arguments);}
+  //   window.gtag = gtag;
+  //   gtag('js', new Date());
+  //   gtag('config', GA4_ID, { anonymize_ip: true });
+  // }
+
+  function loadAnalytics(){
+    try { loadYandexMetrika(); } catch(e) { console.warn('YM load failed', e); }
+    try { loadMicrosoftClarity(); } catch(e) { console.warn('Clarity load failed', e); }
+    // try { loadGA4(); } catch(e) { console.warn('GA4 load failed', e); }
+  }
+
+  // ============================================================
+  // Цели для Метрики — вызываются с кнопок/ссылок через data-goal.
+  // В Метрике заведите цели типа "JavaScript-событие" с теми же id.
+  // ============================================================
+  function reachGoal(goalId, params){
+    try {
+      if (window.ym && YM_COUNTER_ID) ym(YM_COUNTER_ID, 'reachGoal', goalId, params || {});
+      if (window.clarity) clarity('set', 'goal', goalId);
+      // if (window.gtag) gtag('event', goalId, params || {});
+    } catch(e) { /* analytics not loaded yet */ }
+  }
+  // Делегированный обработчик: любой элемент с data-goal="..." считается целью.
+  document.addEventListener('click', function(e){
+    var el = e.target.closest('[data-goal]');
+    if (!el) return;
+    reachGoal(el.getAttribute('data-goal'));
+  }, { passive: true });
+  document.addEventListener('DOMContentLoaded', function(){
+    showCookieBanner();
+    try{ if(localStorage.getItem('cookieChoice') === 'accepted') loadAnalytics(); }catch(e){}
+  });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { closeModal(); closePrivacy(); }
   });
@@ -3810,6 +4033,8 @@
     // ready-made message to the clipboard and open the chat for one-tap paste.
     try { navigator.clipboard && navigator.clipboard.writeText(message); } catch (_) {}
     showFormToast('Сообщение скопировано — вставьте его в Telegram');
+    // Цель Метрики: успешная отправка формы — самая важная конверсия
+    reachGoal('form_submit', { age: age });
     window.open('https://t.me/+79636719983', '_blank', 'noopener');
     return false;
   }
