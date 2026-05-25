@@ -38,6 +38,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- ============================================================ -->
 <!-- ПОДКЛЮЧЕНИЕ АНАЛИТИКИ — заглушки. Пошагово см. файл           -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-31FPXBHXEV"></script>
+<script>
+  /* ---------- GA4 ---------- */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-31FPXBHXEV', { 'anonymize_ip': true });
+
+  /* ---------- Yandex.Metrica (after consent) ---------- */
+  function loadYandexMetrika() {
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    k=e.createElement(t), a=e.getElementsByTagName(t)[0], k.async=1,
+    k.src=r, a.parentNode.insertBefore(k,a)})
+    (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+    ym(XXXXX, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+  }
+
+  /* ---------- Cookie consent (152‑ФЗ) ---------- */
+  function showCookieBanner() {
+    const banner = document.createElement('div');
+    banner.id = 'cookie-banner';
+    banner.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #ccc;padding:12px;display:flex;align-items:center;justify-content:space-between;z-index:999';
+    banner.innerHTML = `
+      <div>
+        <strong>Мы используем куки.</strong> Для аналитики и работы сайта.
+        <a href="#" id="cookie-more" style="color:#0053ba;">Подробнее</a>
+      </div>
+      <div>
+        <button id="cookie-accept" style="margin-right:6px;">Принять</button>
+        <button id="cookie-decline">Только необходимые</button>
+      </div>`;
+    document.body.appendChild(banner);
+
+    document.getElementById('cookie-accept').onclick = function(){
+      banner.remove();
+      loadYandexMetrika();          // <‑‑ load after consent
+    };
+    document.getElementById('cookie-decline').onclick = function(){ banner.remove(); };
+  }
+  document.addEventListener('DOMContentLoaded', showCookieBanner);
+
+  /* ---------- GA event helper ---------- */
+  function trackGoal(name, params) {
+    gtag('event', name, params || {});           // GA4
+    ym(XXXXX, 'reachGoal', name, params || {});  // Yandex
+  }
+
+  /* ---------- Event listeners for CTAs ---------- */
+  document.addEventListener('click', function(e){
+    const el = e.target.closest('[data-goal]');
+    if (el) {
+      const goal = el.getAttribute('data-goal');
+      // optionally send custom params
+      trackGoal(goal);
+    }
+  });
+</script>
+
 <!-- «Аналитика и SEO — чеклист подключения.md» в этой же папке.    -->
 <!-- ============================================================ -->
 <!-- Яндекс.Вебмастер: получить код в webmaster.yandex.ru -->
