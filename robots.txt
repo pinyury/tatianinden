@@ -1,3 +1,6 @@
+# robots.txt для tatianinden.ru
+# Разрешаем полную индексацию, указываем карту сайта
 User-agent: *
 Allow: /
+
 Sitemap: https://tatianinden.ru/sitemap.xml
