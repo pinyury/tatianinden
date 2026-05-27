@@ -1,0 +1,15 @@
+# ==========================
+# 301‑редиректы, которые ДОЛЖНЫ быть
+# ==========================
+
+# 1. http → https (всегда)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. non‑www → www  (оставьте только если ваш канонический URL начинается с www)
+RewriteCond %{HTTP_HOST} ^tatianinden\.ru$ [NC]
+RewriteRule ^(.*)$ https://www.tatianinden.ru/$1 [L,R=301]
+
+# -------------------------------------------------
+# Ниже НЕ ДОЛЖНО быть 301‑redirect на корневой URL!
+# -------------------------------------------------
