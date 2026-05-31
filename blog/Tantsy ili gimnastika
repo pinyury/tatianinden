@@ -4,8 +4,9 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="theme-color" content="#0ABAB5"/>
-<title>Танцы или гимнастика: что выбрать ребёнку · Татьянин День</title>
-<meta name="description" content="Разбираем плюсы и минусы танцев и гимнастики. Кому подойдёт спорт, а кому — сцена. Честный взгляд педагога."/>
+<title>Танцы или гимнастика: что выбрать ребёнку — честный разбор · Татьянин День · Видное</title>
+<meta name="description" content="Чем отличаются танцы от гимнастики, что развивают лучше и для каких детей подходит каждое направление. Сравнительная таблица, тест для родителей и честный взгляд педагога с 30-летним опытом. Детский театр танца, Видное, Суханово."/>
+<meta name="keywords" content="танцы или гимнастика для ребёнка, что лучше танцы или гимнастика, чем отличаются танцы от гимнастики, гимнастика или хореография для девочки, художественная гимнастика или танцы, спортивная гимнастика или танцы, детская гимнастика Видное, детские танцы Видное, хореография или гимнастика 4 года, куда отдать девочку на танцы или гимнастику, польза гимнастики и танцев для детей, детский театр танца Татьянин День Суханово"/>
 <meta property="og:title" content="Танцы или гимнастика: что выбрать ребёнку"/>
 <meta property="og:type" content="article"/>
 <meta property="og:image" content="../hero-bg.jpg"/>
@@ -115,6 +116,18 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
   .reveal.in{opacity:1;transform:translateY(0)}
   @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+
+  /* Related Articles */
+  .related-articles{margin:48px 0 0}
+  .related-articles h3{font-family:var(--display);font-size:28px;font-weight:600;color:#1B2A4E;margin:0 0 20px}
+  .related-articles h3 em{font-style:italic;color:var(--tiffany-deep)}
+  .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+  .related-card{background:#fff;border:1px solid rgba(27,27,46,.07);border-radius:var(--radius);padding:20px 22px;display:flex;flex-direction:column;gap:8px;transition:transform .25s,box-shadow .25s;text-decoration:none;}
+  .related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft)}
+  .related-card .rc-tag{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tiffany-deep);background:var(--tiffany-soft);padding:3px 10px;border-radius:999px;align-self:flex-start;}
+  .related-card h4{font-family:var(--display);font-size:18px;font-weight:600;color:#1B2A4E;margin:0;line-height:1.3}
+  .related-card p{font-size:13.5px;color:var(--ink-mute);margin:0;line-height:1.55}
+  .related-card .rc-link{font-size:13px;font-weight:700;color:var(--tiffany-deep);margin-top:auto;padding-top:8px}
 </style>
 </head>
 <body>
@@ -219,6 +232,30 @@
 
       <div class="highlight-box reveal">
         <p><strong>Мой совет:</strong> запишитесь на пробное занятие в оба места. Посмотрите на реакцию ребёнка. Куда он хочет вернуться — туда и ходите. Интерес — лучший критерий выбора в этом возрасте.</p>
+      </div>
+
+      <div class="related-articles reveal">
+        <h3>Читайте <em>также</em></h3>
+        <div class="related-grid">
+          <a class="related-card" href="kak-vybrat-tantsevalnyuyu-shkolu.html">
+            <span class="rc-tag">Гид по выбору</span>
+            <h4>Как выбрать танцевальную школу: 10 критериев</h4>
+            <p>Нашли направление — теперь важно выбрать хорошую школу. Что проверять в первую очередь</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+          <a class="related-card" href="polza-tantsev-dlya-detej.html">
+            <span class="rc-tag">Польза танцев</span>
+            <h4>7 неочевидных навыков, которые дают танцы</h4>
+            <p>Почему танцы — это не только спорт, но и мощный инструмент развития ребёнка</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+          <a class="related-card" href="kak-razvit-plastiku-i-osanku.html">
+            <span class="rc-tag">Упражнения дома</span>
+            <h4>Как развить пластику и осанку у ребёнка</h4>
+            <p>7 безопасных упражнений, которые можно начать делать прямо сейчас, не дожидаясь школы</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+        </div>
       </div>
 
       <div class="article-cta reveal">
