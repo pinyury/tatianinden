@@ -4,8 +4,9 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="theme-color" content="#0ABAB5"/>
-<title>Польза танцев для детей: 7 неочевидных навыков · Татьянин День</title>
-<meta name="description" content="Не только осанка и гибкость. Танцы развивают концентрацию, эмпатию и уверенность в себе — рассказываем как и почему."/>
+<title>Польза танцев для детей: 7 неочевидных навыков · Татьянин День · Суханово, Видное</title>
+<meta name="description" content="Танцы развивают не только осанку и гибкость, но и концентрацию, эмпатию, командное мышление. 7 навыков, которые вы вряд ли ожидали — опыт педагога с 30-летним стажем. Детский театр танца «Татьянин День», Суханово, Видное."/>
+<meta name="keywords" content="польза танцев для детей, чем полезны танцы для ребёнка, развитие ребёнка через танцы, танцы для развития детей, танцы и осанка у детей, танцы для концентрации внимания, зачем отдавать ребёнка на танцы, польза хореографии для детей, танцы для уверенности в себе, детские танцы Видное, детские танцы Суханово, детский театр танца Татьянин День"/>
 <meta property="og:title" content="Польза танцев для детей: 7 неочевидных навыков"/>
 <meta property="og:description" content="Не только осанка и гибкость. Танцы развивают концентрацию, эмпатию и уверенность в себе."/>
 <meta property="og:type" content="article"/>
@@ -110,6 +111,26 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
   .reveal.in{opacity:1;transform:translateY(0)}
   @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+
+  /* Related Articles */
+  .related-articles{margin:48px 0 0}
+  .related-articles h3{font-family:var(--display);font-size:28px;font-weight:600;color:#1B2A4E;margin:0 0 20px}
+  .related-articles h3 em{font-style:italic;color:var(--tiffany-deep)}
+  .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+  .related-card{
+    background:#fff;border:1px solid rgba(27,27,46,.07);border-radius:var(--radius);
+    padding:20px 22px;display:flex;flex-direction:column;gap:8px;
+    transition:transform .25s,box-shadow .25s;text-decoration:none;
+  }
+  .related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft)}
+  .related-card .rc-tag{
+    font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--tiffany-deep);background:var(--tiffany-soft);
+    padding:3px 10px;border-radius:999px;align-self:flex-start;
+  }
+  .related-card h4{font-family:var(--display);font-size:18px;font-weight:600;color:#1B2A4E;margin:0;line-height:1.3}
+  .related-card p{font-size:13.5px;color:var(--ink-mute);margin:0;line-height:1.55}
+  .related-card .rc-link{font-size:13px;font-weight:700;color:var(--tiffany-deep);margin-top:auto;padding-top:8px}
 </style>
 </head>
 <body>
@@ -220,6 +241,30 @@
       <h2 class="reveal">С чего <em>начать</em></h2>
 
       <p class="reveal">Если вы ещё думаете, приходите на бесплатное пробное занятие. Никаких обязательств — просто посмотрите, как это работает вживую. Первое занятие у нас всегда бесплатное, для детей от 3 до 14 лет.</p>
+
+      <div class="related-articles reveal">
+        <h3>Читайте <em>также</em></h3>
+        <div class="related-grid">
+          <a class="related-card" href="kak-vybrat-tantsevalnyuyu-shkolu.html">
+            <span class="rc-tag">Гид по выбору</span>
+            <h4>Как выбрать танцевальную школу: 10 критериев</h4>
+            <p>Квалификация педагога, размер группы, зал — на что смотреть и что спросить на пробном</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+          <a class="related-card" href="tantsy-ili-gimnastika.html">
+            <span class="rc-tag">Сравнение</span>
+            <h4>Танцы или гимнастика: что выбрать ребёнку</h4>
+            <p>Честный разбор плюсов и минусов обоих направлений с таблицей и тестом для родителей</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+          <a class="related-card" href="vo-skolko-let-otdavat-rebenka-na-tancy.html">
+            <span class="rc-tag">Возраст и старт</span>
+            <h4>Во сколько лет отдавать ребёнка на танцы?</h4>
+            <p>Что развивают занятия в 3, 5, 7 и 10 лет — возрастной гид для родителей</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+        </div>
+      </div>
 
       <div class="article-cta reveal">
         <h3>Первое занятие — <em>бесплатно</em></h3>
