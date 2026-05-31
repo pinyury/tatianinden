@@ -4,8 +4,9 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="theme-color" content="#0ABAB5"/>
-<title>Как развить пластику и осанку у ребёнка · Татьянин День</title>
-<meta name="description" content="Простые упражнения для улучшения пластики и осанки, которые можно делать дома. И почему профессиональный педагог нужен всё равно."/>
+<title>Как развить пластику и осанку у ребёнка: 7 упражнений дома · Татьянин День · Видное</title>
+<meta name="description" content="7 безопасных упражнений для развития пластики и осанки у детей, которые можно делать дома — с важным предупреждением о том, чего нельзя делать. Объясняем, почему занятия с педагогом всё равно необходимы. Детский театр танца, Видное, Суханово."/>
+<meta name="keywords" content="как развить пластику у ребёнка, упражнения для осанки детям, как исправить осанку ребёнку, упражнения для гибкости детям, упражнения для пластики дома, как улучшить осанку ребёнка дома, развитие пластики у детей, растяжка для детей дома, упражнения для детей на гибкость, шпагат для детей дома, детская осанка, хореография для осанки, детские танцы Видное, детские танцы Суханово Парк, Татьянин День"/>
 <meta property="og:title" content="Как развить пластику и осанку у ребёнка"/>
 <meta property="og:type" content="article"/>
 <meta property="og:image" content="../hero-bg.jpg"/>
@@ -106,6 +107,18 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
   .reveal.in{opacity:1;transform:translateY(0)}
   @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+
+  /* Related Articles */
+  .related-articles{margin:48px 0 0}
+  .related-articles h3{font-family:var(--display);font-size:28px;font-weight:600;color:#1B2A4E;margin:0 0 20px}
+  .related-articles h3 em{font-style:italic;color:var(--tiffany-deep)}
+  .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+  .related-card{background:#fff;border:1px solid rgba(27,27,46,.07);border-radius:var(--radius);padding:20px 22px;display:flex;flex-direction:column;gap:8px;transition:transform .25s,box-shadow .25s;text-decoration:none;}
+  .related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft)}
+  .related-card .rc-tag{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tiffany-deep);background:var(--tiffany-soft);padding:3px 10px;border-radius:999px;align-self:flex-start;}
+  .related-card h4{font-family:var(--display);font-size:18px;font-weight:600;color:#1B2A4E;margin:0;line-height:1.3}
+  .related-card p{font-size:13.5px;color:var(--ink-mute);margin:0;line-height:1.55}
+  .related-card .rc-link{font-size:13px;font-weight:700;color:var(--tiffany-deep);margin-top:auto;padding-top:8px}
 </style>
 </head>
 <body>
@@ -224,6 +237,30 @@
 
       <div class="highlight-box reveal">
         <p><strong>Вывод:</strong> домашняя практика + занятия с педагогом = настоящий результат. Одно без другого работает медленнее и менее точно.</p>
+      </div>
+
+      <div class="related-articles reveal">
+        <h3>Читайте <em>также</em></h3>
+        <div class="related-grid">
+          <a class="related-card" href="polza-tantsev-dlya-detej.html">
+            <span class="rc-tag">Польза танцев</span>
+            <h4>7 неочевидных навыков, которые дают танцы</h4>
+            <p>Почему системные занятия дают то, чего не добиться упражнениями дома</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+          <a class="related-card" href="kak-vybrat-tantsevalnyuyu-shkolu.html">
+            <span class="rc-tag">Гид по выбору</span>
+            <h4>Как выбрать танцевальную школу: 10 критериев</h4>
+            <p>Как найти педагога, который видит линии тела и умеет работать с осанкой</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+          <a class="related-card" href="chto-nadet-na-pervoe-zanyatie.html">
+            <span class="rc-tag">Практический гид</span>
+            <h4>Что надеть на первое занятие танцами</h4>
+            <p>Одежда, обувь, что взять с собой — всё что нужно знать перед первым уроком</p>
+            <span class="rc-link">Читать →</span>
+          </a>
+        </div>
       </div>
 
       <div class="article-cta reveal">
