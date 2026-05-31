@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#0ABAB5"/>
+<title>Что надеть на первое занятие танцами · Татьянин День</title>
+<meta name="description" content="Гид для родителей: какая одежда нужна по возрастам, что брать с собой, какие ошибки чаще всего совершают на первом уроке."/>
+<meta property="og:title" content="Что надеть на первое занятие танцами?"/>
+<meta property="og:description" content="Гид для родителей: какая одежда нужна по возрастам, что брать с собой, какие ошибки чаще всего совершают."/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="../hero-bg.jpg"/>
+<link rel="canonical" href="https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BlogPosting",
+  "headline":"Что надеть на первое занятие танцами?",
+  "datePublished":"2026-05-23",
+  "author":{"@type":"Person","name":"Гурьянова Татьяна Ивановна"},
+  "publisher":{"@type":"Organization","name":"Детский театр танца «Татьянин День»","logo":{"@type":"ImageObject","url":"https://tatianinden.ru/logo.jpg"}},
+  "url":"https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --tiffany:#0ABAB5;--tiffany-light:#7FE0DC;--tiffany-soft:#D7F5F3;--tiffany-deep:#06877F;
+    --pink:#FF6FA9;--pink-soft:#FFD6E8;--pink-cloud:#FFEAF3;--pink-deep:#D44A85;
+    --gold:#C9A961;--gold-light:#E8CF8E;--gold-deep:#9A7E3D;
+    --cream:#FFFBF6;--paper:#FBF7F2;
+    --ink:#1B1B2E;--ink-soft:#4A4A5E;--ink-mute:#8A8A9C;
+    --display:"Cormorant Garamond",serif;
+    --body:"Manrope",-apple-system,sans-serif;
+    --radius:20px;--radius-lg:32px;
+    --shadow-soft:0 10px 30px -12px rgba(10,186,181,.18),0 6px 18px -10px rgba(255,111,169,.12);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:100px}
+  body{margin:0;font-family:var(--body);color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;line-height:1.65;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{width:min(100% - 32px,1240px);margin-inline:auto}
+
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#fff;border-bottom:1px solid rgba(27,27,46,.06);box-shadow:0 2px 16px -10px rgba(27,27,46,.15);padding:10px 0}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}
+  .logo{display:flex;align-items:center;gap:16px;line-height:1.1;color:var(--ink)}
+  .logo img{width:64px;height:64px;object-fit:contain;border-radius:50%}
+  .logo-text strong{font-family:var(--display);font-size:22px;font-weight:600;color:#1B2A4E}
+  .logo-text small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);display:block;margin-top:3px}
+  .nav-actions{display:flex;gap:14px;align-items:center}
+  .nav-phone{font-weight:600;font-size:14px;color:var(--ink-soft)}
+  .btn-back{padding:10px 22px;border-radius:999px;background:rgba(27,27,46,.06);font-size:13px;font-weight:600;color:var(--ink-soft);transition:background .2s}
+  .btn-back:hover{background:rgba(27,27,46,.1)}
+
+  .article-hero{padding:140px 0 60px;background:linear-gradient(180deg,#fff 0%,var(--cream) 100%)}
+  .article-hero .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--body);font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tiffany-deep);margin-bottom:20px}
+  .article-hero h1{font-family:var(--display);font-size:clamp(32px,5vw,56px);font-weight:600;line-height:1.1;color:#1B2A4E;margin:0 0 20px;max-width:780px}
+  .article-hero h1 em{font-style:italic;background:linear-gradient(120deg,var(--tiffany),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .article-meta{display:flex;gap:20px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-mute);margin-bottom:32px}
+  .article-meta strong{color:var(--ink-soft)}
+  .article-hero-lead{font-size:18px;line-height:1.65;color:var(--ink-soft);max-width:680px;margin:0}
+
+  .article-body{padding:50px 0 70px}
+  .article-content{max-width:740px;margin:0 auto}
+  .article-content h2{font-family:var(--display);font-size:clamp(24px,3.5vw,36px);font-weight:600;color:#1B2A4E;margin:48px 0 16px;line-height:1.2}
+  .article-content h2 em{font-style:italic;color:var(--tiffany-deep)}
+  .article-content h3{font-family:var(--display);font-size:22px;font-weight:600;color:#1B2A4E;margin:32px 0 10px}
+  .article-content p{font-size:16px;line-height:1.75;color:var(--ink-soft);margin:0 0 20px}
+  .article-content strong{color:var(--ink);font-weight:700}
+  .article-content ul,.article-content ol{padding-left:22px;margin:0 0 20px}
+  .article-content li{font-size:16px;line-height:1.7;color:var(--ink-soft);margin-bottom:8px}
+
+  /* Age table */
+  .age-table{width:100%;border-collapse:collapse;margin:24px 0}
+  .age-table th{background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));font-family:var(--display);font-size:16px;font-weight:600;color:#1B2A4E;padding:14px 16px;text-align:left;border-bottom:2px solid var(--tiffany)}
+  .age-table td{padding:14px 16px;border-bottom:1px solid rgba(27,27,46,.07);font-size:15px;color:var(--ink-soft);vertical-align:top}
+  .age-table tr:last-child td{border-bottom:none}
+  .age-table tr:hover td{background:rgba(10,186,181,.03)}
+
+  /* Check / Cross list */
+  .do-dont{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0}
+  .do-box,.dont-box{background:#fff;border-radius:var(--radius);padding:22px 24px;border:1px solid rgba(27,27,46,.07)}
+  .do-box{border-top:3px solid var(--tiffany)}
+  .dont-box{border-top:3px solid var(--pink)}
+  .do-box h4{font-family:var(--display);font-size:18px;color:var(--tiffany-deep);margin:0 0 14px}
+  .dont-box h4{font-family:var(--display);font-size:18px;color:var(--pink-deep);margin:0 0 14px}
+  .do-dont ul{padding-left:18px;margin:0}
+  .do-dont li{font-size:14px;color:var(--ink-soft);margin-bottom:7px;line-height:1.6}
+  @media (max-width:560px){.do-dont{grid-template-columns:1fr}}
+
+  .highlight-box{background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));border-radius:var(--radius);padding:28px 30px;margin:32px 0;border-left:4px solid var(--tiffany)}
+  .highlight-box p{margin:0;font-size:16px;line-height:1.7;color:var(--ink-soft)}
+  .highlight-box strong{color:var(--tiffany-deep)}
+
+  .article-cta{background:linear-gradient(135deg,#1B2A4E 0%,#2E2D45 100%);color:#fff;border-radius:var(--radius-lg);padding:48px 40px;text-align:center;margin:50px 0 0;position:relative;overflow:hidden}
+  .article-cta::before{content:"";position:absolute;top:-60px;right:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(255,111,169,.25),transparent 70%);pointer-events:none}
+  .article-cta h3{font-family:var(--display);font-size:30px;color:#fff;margin:0 0 12px}
+  .article-cta h3 em{font-style:italic;background:linear-gradient(120deg,var(--gold-light),var(--pink-soft));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .article-cta p{color:rgba(255,255,255,.8);font-size:16px;margin:0 0 28px}
+  .article-cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn-tg{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:14px;background:linear-gradient(135deg,#2AABEE,#229ED9);color:#fff;transition:transform .25s}
+  .btn-tg:hover{transform:translateY(-2px)}
+  .btn-ghost-w{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:14px;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2);transition:background .2s}
+  .btn-ghost-w:hover{background:rgba(255,255,255,.14)}
+  @media (max-width:560px){.article-cta{padding:36px 22px}.article-cta .btns{flex-direction:column;align-items:center}}
+
+  footer{background:var(--ink);color:rgba(255,255,255,.6);padding:30px 0;font-size:13.5px}
+  .foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+  footer a{color:rgba(255,255,255,.78)}footer a:hover{color:var(--gold-light)}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
+  .reveal.in{opacity:1;transform:translateY(0)}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-row">
+    <a href="../index.html" class="logo" aria-label="Татьянин День">
+      <img src="../logo.jpg" alt="Татьянин День"/>
+      <span class="logo-text">
+        <strong>Татьянин День</strong>
+        <small>Блог · Статьи для родителей</small>
+      </span>
+    </a>
+    <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone">+7 (963) 671-99-83</a>
+      <a href="index.html" class="btn-back">← В блог</a>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="container reveal">
+    <span class="eyebrow">Практический гид</span>
+    <h1>Что надеть на <em>первое занятие</em> танцами?</h1>
+    <div class="article-meta">
+      <span><strong>23 мая 2026</strong></span>
+      <span>5 минут чтения</span>
+      <span>Татьяна Ивановна Гурьянова</span>
+    </div>
+    <p class="article-hero-lead">Каждый сентябрь мы получаем один и тот же вопрос: «А что надеть на первое занятие?» Составила подробный гид — по возрастам, с таблицей и списком типичных ошибок.</p>
+  </div>
+</section>
+
+<section class="article-body">
+  <div class="container">
+    <div class="article-content">
+
+      <p class="reveal">Хорошая новость: на пробное занятие не нужно ничего специально покупать. Подойдёт любая удобная спортивная одежда. Но если ребёнок уже точно остаётся — вот что пригодится.</p>
+
+      <h2 class="reveal">Основное <em>правило</em></h2>
+
+      <p class="reveal">Одежда не должна стеснять движение. Звучит очевидно, но я видела детей в джинсах и платьях с оборками — и они честно пытались делать растяжку. Не мучайте ребёнка: свобода движений важнее красоты формы на первом занятии.</p>
+
+      <h2 class="reveal">По <em>возрастам</em></h2>
+
+      <table class="age-table reveal">
+        <thead>
+          <tr>
+            <th>Возраст</th>
+            <th>Одежда</th>
+            <th>Обувь</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>3–5 лет</strong></td>
+            <td>Леггинсы или шорты + футболка или боди. Волосы убрать в хвостик или пучок.</td>
+            <td>Носочки с нескользящей подошвой или мягкие чешки (балетки).</td>
+          </tr>
+          <tr>
+            <td><strong>6–9 лет</strong></td>
+            <td>Лосины/леггинсы, майка или футболка по размеру (не оверсайз). Без украшений, без молний.</td>
+            <td>Чешки (балетки) или джазовки. Кроссовки подойдут как временный вариант.</td>
+          </tr>
+          <tr>
+            <td><strong>10–14 лет</strong></td>
+            <td>Спортивные лосины/шорты, майка или топ. Девочкам — волосы убраны. Мальчикам — свободные спортивные штаны + футболка.</td>
+            <td>Джазовки или чешки. Для мальчиков — танцевальные кроссовки или лёгкие мокасины.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="reveal">Что взять <em>с собой</em></h2>
+
+      <ul class="reveal">
+        <li><strong>Сменная обувь</strong> — в зал входят только в танцевальной обуви или носках.</li>
+        <li><strong>Бутылка воды</strong> — 300–500 мл достаточно для урока 45–60 минут.</li>
+        <li><strong>Небольшое полотенце</strong> — особенно летом.</li>
+        <li><strong>Резинка для волос запасная</strong> — всегда теряется в самый неподходящий момент.</li>
+      </ul>
+
+      <h2 class="reveal">Типичные <em>ошибки</em></h2>
+
+      <div class="do-dont reveal">
+        <div class="do-box">
+          <h4>✓ Правильно</h4>
+          <ul>
+            <li>Леггинсы/лосины плотные, держат форму</li>
+            <li>Обувь без каблука, с мягкой подошвой</li>
+            <li>Волосы убраны, не мешают</li>
+            <li>Никаких сумочек через плечо, поясков, ремней</li>
+            <li>Одежда по размеру — не мешает видеть педагогу форму тела</li>
+          </ul>
+        </div>
+        <div class="dont-box">
+          <h4>✗ Частые ошибки</h4>
+          <ul>
+            <li>Джинсы и плотные брюки — нет растяжки</li>
+            <li>Платья и юбки — мешают ногам</li>
+            <li>Кеды на толстой подошве — нет чувства пола</li>
+            <li>Украшения — серьги, браслеты, кольца опасны</li>
+            <li>Очень свободная одежда — педагог не видит линии тела</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="reveal">Что покупать <em>после</em> первого занятия</h2>
+
+      <p class="reveal">Если ребёнок решил остаться — педагог на первом же занятии скажет, что нужно именно для вашего направления. Для эстрадного танца это будут джазовки и удобные лосины. Для классики — балетки, купальник, гольфы. Для акробатики — гимнастический купальник.</p>
+
+      <div class="highlight-box reveal">
+        <p><strong>Совет по бюджету:</strong> не торопитесь покупать дорогую форму сразу. Подождите месяц — станет понятно, насколько ребёнку нравится направление, и педагог точно подскажет марку и модель, которые реально носят дети в нашем коллективе.</p>
+      </div>
+
+      <p class="reveal">Если остались вопросы — напишите нам в Telegram, ответим быстро и конкретно для вашего ребёнка.</p>
+
+      <div class="article-cta reveal">
+        <h3>Приходите на <em>бесплатный урок</em></h3>
+        <p>Запишитесь через Telegram или позвоните — подберём удобное время.</p>
+        <div class="btns">
+          <a class="btn-tg" href="https://t.me/+79636719983" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+            Записаться в Telegram
+          </a>
+          <a class="btn-ghost-w" href="tel:+79636719983">Позвонить</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-row">
+    <div>© 2014–2026 Детский театр танца «Татьянин День»</div>
+    <div><a href="../index.html">Главная</a> · <a href="index.html">Блог</a> · <a href="../index.html#contacts">Контакты</a></div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
