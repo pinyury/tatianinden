@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#0ABAB5"/>
+<title>Танцы или гимнастика: что выбрать ребёнку · Татьянин День</title>
+<meta name="description" content="Разбираем плюсы и минусы танцев и гимнастики. Кому подойдёт спорт, а кому — сцена. Честный взгляд педагога."/>
+<meta property="og:title" content="Танцы или гимнастика: что выбрать ребёнку"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="../hero-bg.jpg"/>
+<link rel="canonical" href="https://tatianinden.ru/blog/tantsy-ili-gimnastika.html"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BlogPosting",
+  "headline":"Танцы или гимнастика: что выбрать ребёнку",
+  "datePublished":"2026-05-28",
+  "author":{"@type":"Person","name":"Гурьянова Татьяна Ивановна"},
+  "publisher":{"@type":"Organization","name":"Детский театр танца «Татьянин День»","logo":{"@type":"ImageObject","url":"https://tatianinden.ru/logo.jpg"}},
+  "url":"https://tatianinden.ru/blog/tantsy-ili-gimnastika.html"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --tiffany:#0ABAB5;--tiffany-light:#7FE0DC;--tiffany-soft:#D7F5F3;--tiffany-deep:#06877F;
+    --pink:#FF6FA9;--pink-soft:#FFD6E8;--pink-cloud:#FFEAF3;--pink-deep:#D44A85;
+    --gold:#C9A961;--gold-light:#E8CF8E;--gold-deep:#9A7E3D;
+    --cream:#FFFBF6;--paper:#FBF7F2;
+    --ink:#1B1B2E;--ink-soft:#4A4A5E;--ink-mute:#8A8A9C;
+    --display:"Cormorant Garamond",serif;
+    --body:"Manrope",-apple-system,sans-serif;
+    --radius:20px;--radius-lg:32px;
+    --shadow-soft:0 10px 30px -12px rgba(10,186,181,.18),0 6px 18px -10px rgba(255,111,169,.12);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:100px}
+  body{margin:0;font-family:var(--body);color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;line-height:1.65;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{width:min(100% - 32px,1240px);margin-inline:auto}
+
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#fff;border-bottom:1px solid rgba(27,27,46,.06);box-shadow:0 2px 16px -10px rgba(27,27,46,.15);padding:10px 0}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}
+  .logo{display:flex;align-items:center;gap:16px;line-height:1.1;color:var(--ink)}
+  .logo img{width:64px;height:64px;object-fit:contain;border-radius:50%}
+  .logo-text strong{font-family:var(--display);font-size:22px;font-weight:600;color:#1B2A4E}
+  .logo-text small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);display:block;margin-top:3px}
+  .nav-actions{display:flex;gap:14px;align-items:center}
+  .nav-phone{font-weight:600;font-size:14px;color:var(--ink-soft)}
+  .btn-back{padding:10px 22px;border-radius:999px;background:rgba(27,27,46,.06);font-size:13px;font-weight:600;color:var(--ink-soft);transition:background .2s}
+  .btn-back:hover{background:rgba(27,27,46,.1)}
+
+  .article-hero{padding:140px 0 60px;background:linear-gradient(180deg,#fff 0%,var(--cream) 100%)}
+  .article-hero .eyebrow{display:inline-flex;align-items:center;font-family:var(--body);font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tiffany-deep);margin-bottom:20px}
+  .article-hero h1{font-family:var(--display);font-size:clamp(32px,5vw,56px);font-weight:600;line-height:1.1;color:#1B2A4E;margin:0 0 20px;max-width:780px}
+  .article-hero h1 em{font-style:italic;background:linear-gradient(120deg,var(--tiffany),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .article-meta{display:flex;gap:20px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-mute);margin-bottom:32px}
+  .article-meta strong{color:var(--ink-soft)}
+  .article-hero-lead{font-size:18px;line-height:1.65;color:var(--ink-soft);max-width:680px;margin:0}
+
+  .article-body{padding:50px 0 70px}
+  .article-content{max-width:740px;margin:0 auto}
+  .article-content h2{font-family:var(--display);font-size:clamp(24px,3.5vw,36px);font-weight:600;color:#1B2A4E;margin:48px 0 16px;line-height:1.2}
+  .article-content h2 em{font-style:italic;color:var(--tiffany-deep)}
+  .article-content h3{font-family:var(--display);font-size:22px;font-weight:600;color:#1B2A4E;margin:28px 0 10px}
+  .article-content p{font-size:16px;line-height:1.75;color:var(--ink-soft);margin:0 0 20px}
+  .article-content strong{color:var(--ink);font-weight:700}
+  .article-content ul,.article-content ol{padding-left:22px;margin:0 0 20px}
+  .article-content li{font-size:16px;line-height:1.7;color:var(--ink-soft);margin-bottom:8px}
+
+  .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0}
+  .compare-box{background:#fff;border-radius:var(--radius);padding:26px 24px;border:1px solid rgba(27,27,46,.07)}
+  .compare-box.dance{border-top:4px solid var(--tiffany)}
+  .compare-box.gym{border-top:4px solid var(--pink)}
+  .compare-box h3{font-family:var(--display);font-size:22px;margin:0 0 16px}
+  .compare-box.dance h3{color:var(--tiffany-deep)}
+  .compare-box.gym h3{color:var(--pink-deep)}
+  .compare-box ul{padding-left:18px;margin:0}
+  .compare-box li{font-size:14px;color:var(--ink-soft);margin-bottom:8px;line-height:1.6}
+  .pro-item::marker{color:var(--tiffany-deep)}
+  .con-item{list-style:none;position:relative;padding-left:4px}
+  .con-item::before{content:"—";position:absolute;left:-14px;color:var(--ink-mute)}
+  @media (max-width:560px){.compare-grid{grid-template-columns:1fr}}
+
+  .quiz-box{background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));border-radius:var(--radius);padding:28px 30px;margin:32px 0}
+  .quiz-box h3{font-family:var(--display);font-size:22px;font-weight:600;color:#1B2A4E;margin:0 0 18px}
+  .quiz-row{display:flex;flex-direction:column;gap:10px}
+  .quiz-item{background:#fff;border-radius:12px;padding:14px 18px;font-size:15px;color:var(--ink-soft);line-height:1.5}
+  .quiz-item strong{color:var(--ink);display:block;margin-bottom:2px}
+
+  .highlight-box{background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));border-radius:var(--radius);padding:28px 30px;margin:32px 0;border-left:4px solid var(--tiffany)}
+  .highlight-box p{margin:0;font-size:16px;line-height:1.7;color:var(--ink-soft)}
+  .highlight-box strong{color:var(--tiffany-deep)}
+
+  .article-cta{background:linear-gradient(135deg,#1B2A4E 0%,#2E2D45 100%);color:#fff;border-radius:var(--radius-lg);padding:48px 40px;text-align:center;margin:50px 0 0;position:relative;overflow:hidden}
+  .article-cta::before{content:"";position:absolute;top:-60px;right:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(255,111,169,.25),transparent 70%);pointer-events:none}
+  .article-cta h3{font-family:var(--display);font-size:30px;color:#fff;margin:0 0 12px}
+  .article-cta h3 em{font-style:italic;background:linear-gradient(120deg,var(--gold-light),var(--pink-soft));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .article-cta p{color:rgba(255,255,255,.8);font-size:16px;margin:0 0 28px}
+  .article-cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn-tg{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:14px;background:linear-gradient(135deg,#2AABEE,#229ED9);color:#fff;transition:transform .25s}
+  .btn-tg:hover{transform:translateY(-2px)}
+  .btn-ghost-w{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:14px;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2);transition:background .2s}
+  .btn-ghost-w:hover{background:rgba(255,255,255,.14)}
+  @media (max-width:560px){.article-cta{padding:36px 22px}.article-cta .btns{flex-direction:column;align-items:center}}
+
+  footer{background:var(--ink);color:rgba(255,255,255,.6);padding:30px 0;font-size:13.5px}
+  .foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+  footer a{color:rgba(255,255,255,.78)}footer a:hover{color:var(--gold-light)}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
+  .reveal.in{opacity:1;transform:translateY(0)}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-row">
+    <a href="../index.html" class="logo" aria-label="Татьянин День">
+      <img src="../logo.jpg" alt="Татьянин День"/>
+      <span class="logo-text">
+        <strong>Татьянин День</strong>
+        <small>Блог · Статьи для родителей</small>
+      </span>
+    </a>
+    <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone">+7 (963) 671-99-83</a>
+      <a href="index.html" class="btn-back">← В блог</a>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="container reveal">
+    <span class="eyebrow">Сравнение направлений</span>
+    <h1>Танцы или гимнастика: <em>что выбрать</em>?</h1>
+    <div class="article-meta">
+      <span><strong>28 мая 2026</strong></span>
+      <span>7 минут чтения</span>
+      <span>Татьяна Ивановна Гурьянова</span>
+    </div>
+    <p class="article-hero-lead">Этот вопрос задаёт каждый второй родитель девочки 3–7 лет. Обе активности полезны — но они про разное. Разберём честно, без рекламы.</p>
+  </div>
+</section>
+
+<section class="article-body">
+  <div class="container">
+    <div class="article-content">
+
+      <p class="reveal">Прежде всего — важная оговорка. Я педагог по хореографии, и мой взгляд не нейтральный. Но именно поэтому я знаю, в чём танцы объективно слабее гимнастики — и скажу об этом честно.</p>
+
+      <h2 class="reveal">В чём <em>разница</em></h2>
+
+      <p class="reveal">Гимнастика — это прежде всего спорт. Есть разряды, нормативы, соревнования с судейством по строгим правилам. Главный результат — техническое мастерство и физические показатели. Танцы — это искусство с элементами спорта. Главный результат — выразительность, артистизм, умение рассказывать историю телом.</p>
+
+      <div class="compare-grid reveal">
+        <div class="compare-box dance">
+          <h3>🩰 Танцы</h3>
+          <ul>
+            <li class="pro-item">Сцена, костюмы, аплодисменты — мощная эмоциональная отдача</li>
+            <li class="pro-item">Широкий возрастной диапазон — от 3 лет и до пенсии</li>
+            <li class="pro-item">Меньше травматизм, нагрузка регулируется</li>
+            <li class="pro-item">Развивает артистизм, эмпатию, самовыражение</li>
+            <li class="pro-item">Нет жёстких спортивных нормативов — нет «неуспеха» по протоколу</li>
+            <li class="con-item">Меньше акцент на спортивный результат как таковой</li>
+            <li class="con-item">Гибкость развивается, но медленнее, чем в гимнастике</li>
+          </ul>
+        </div>
+        <div class="compare-box gym">
+          <h3>🤸 Гимнастика</h3>
+          <ul>
+            <li class="pro-item">Очень высокий уровень физической подготовки</li>
+            <li class="pro-item">Развивает координацию, силу, гибкость системно</li>
+            <li class="pro-item">Чёткие результаты — разряды, победы</li>
+            <li class="pro-item">Хорошая база для любого другого спорта</li>
+            <li class="con-item">Высокая нагрузка — не подходит всем детям физически</li>
+            <li class="con-item">Серьёзные тренировки начинаются рано и требуют большой отдачи времени</li>
+            <li class="con-item">Артистической составляющей меньше (кроме художественной гимнастики)</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="reveal">Как <em>выбрать</em> для своего ребёнка</h2>
+
+      <div class="quiz-box reveal">
+        <h3>Несколько вопросов, которые помогут определиться</h3>
+        <div class="quiz-row">
+          <div class="quiz-item">
+            <strong>Ребёнок любит выступать и показывать себя?</strong>
+            Скорее танцы — там сцена и зрители в приоритете.
+          </div>
+          <div class="quiz-item">
+            <strong>Хочет медалей, побед, чётких показателей?</strong>
+            Гимнастика или спортивные танцы — там есть турнирная таблица.
+          </div>
+          <div class="quiz-item">
+            <strong>Ребёнок чувствительный, не любит сравнений?</strong>
+            Театральные и эстрадные танцы — меньше жёсткой оценки, больше творчества.
+          </div>
+          <div class="quiz-item">
+            <strong>У ребёнка природная гибкость и отличная координация?</strong>
+            Можно попробовать оба направления — пусть сам почувствует разницу.
+          </div>
+          <div class="quiz-item">
+            <strong>Хотите, чтобы ребёнок занимался до 14–18 лет?</strong>
+            Танцы — меньший износ тела, проще совмещать со школой.
+          </div>
+        </div>
+      </div>
+
+      <h2 class="reveal">Можно ли <em>совмещать</em></h2>
+
+      <p class="reveal">Можно, если ребёнок сам хочет и у него есть энергия. Многие наши воспитанники занимаются акробатикой внутри танцевальной программы — это даёт отличную базу для обоих направлений. Главное — не перегружать ребёнка: 4–5 занятий в неделю разными видами — это уже много для дошкольника.</p>
+
+      <div class="highlight-box reveal">
+        <p><strong>Мой совет:</strong> запишитесь на пробное занятие в оба места. Посмотрите на реакцию ребёнка. Куда он хочет вернуться — туда и ходите. Интерес — лучший критерий выбора в этом возрасте.</p>
+      </div>
+
+      <div class="article-cta reveal">
+        <h3>Пробное занятие — <em>бесплатно</em></h3>
+        <p>Приходите и посмотрите сами — как проходят занятия, какая атмосфера, как работает педагог с детьми.</p>
+        <div class="btns">
+          <a class="btn-tg" href="https://t.me/+79636719983" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+            Записаться в Telegram
+          </a>
+          <a class="btn-ghost-w" href="tel:+79636719983">Позвонить</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-row">
+    <div>© 2014–2026 Детский театр танца «Татьянин День»</div>
+    <div><a href="../index.html">Главная</a> · <a href="index.html">Блог</a> · <a href="../index.html#contacts">Контакты</a></div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
