@@ -333,15 +333,14 @@
   }
   .archive-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns:repeat(3, 1fr);
     gap:24px;
     max-width:1100px;
     margin-inline:auto;
   }
   .archive-card{
-    display:grid;
-    grid-template-columns:240px 1fr;
-    gap:0;
+    display:flex;
+    flex-direction:column;
     background:#fff;
     border-radius:var(--radius);
     overflow:hidden;
@@ -350,12 +349,12 @@
     transition:all .35s ease;
     color:inherit;
   }
-  .archive-card:hover{transform:translateY(-4px); border-color:var(--gold-light)}
+  .archive-card:hover{transform:translateY(-5px); border-color:var(--gold-light); box-shadow:var(--shadow-md)}
   .archive-img{
-    aspect-ratio:1;
-    min-height:200px;
+    aspect-ratio:16/10;
     background:linear-gradient(135deg, var(--pink-soft), var(--tiffany-soft));
     overflow:hidden;
+    flex-shrink:0;
   }
   .archive-img img{
     width:100%; height:100%;
@@ -364,37 +363,42 @@
   }
   .archive-card:hover .archive-img img{transform:scale(1.06)}
   .archive-body{
-    padding:24px 26px;
-    display:flex; flex-direction:column; justify-content:center;
+    padding:22px 24px 26px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
     gap:8px;
   }
   .archive-meta{
     font-size:12px; color:var(--ink-mute);
     letter-spacing:.04em;
   }
-  .archive-meta strong{color:var(--tiffany-deep); margin-right:8px}
+  .archive-meta strong{color:var(--tiffany-deep); margin-right:6px}
   .archive-card h3{
     font-family:var(--display);
-    font-size:22px;
+    font-size:21px;
     font-weight:600;
     line-height:1.2;
     color:#1B2A4E;
     margin:0;
   }
   .archive-card p{
-    font-size:15px; line-height:1.55;
+    font-size:14.5px; line-height:1.6;
     color:var(--ink-soft);
     margin:0;
+    flex:1;
   }
   .archive-link{
-    margin-top:4px;
+    margin-top:8px;
     font-weight:700; font-size:14px;
     color:var(--tiffany-deep);
     letter-spacing:.02em;
   }
+  @media (max-width:900px){
+    .archive-grid{grid-template-columns:repeat(2, 1fr)}
+  }
   @media (max-width:560px){
-    .archive-card{grid-template-columns:1fr}
-    .archive-img{aspect-ratio:16/10; min-height:auto}
+    .archive-grid{grid-template-columns:1fr}
   }
 
   /* ============ UPCOMING ARTICLES ============ */
