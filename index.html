@@ -2928,7 +2928,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="hero-tags">
           <span class="tag"><span class="tag-dot"></span> Топ-100 лучших коллективов России</span>
           <span class="tag"><span class="tag-dot" style="background:var(--tiffany)"></span> 10 лет на сцене</span>
-          <span class="tag"><span class="tag-dot" style="background:var(--pink)"></span> <span id="ya-hero-tag">4,5 на Яндексе</span></span>
+          <span class="tag"><span class="tag-dot" style="background:var(--pink)"></span> 4,5 на Яндексе</span>
         </div>
 
         <span class="hero-kicker">Детский театр танца</span>
@@ -2961,8 +2961,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="trust-label">воспитанников</span>
           </div>
           <div class="trust-item">
-            <span class="trust-num" id="ya-trust-num">4,5</span>
-            <span class="trust-label" id="ya-trust-label">★ на Яндексе</span>
+            <span class="trust-num">4,5</span>
+            <span class="trust-label">★ на Яндексе</span>
           </div>
           <div class="trust-item">
             <span class="trust-num">Топ-100</span>
@@ -3564,7 +3564,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <article class="rev-card reveal" style="transition-delay:.2s">
-        <div class="rev-stars">★★★★★</div>
+        <div class="rev-stars">★★★★<span style="opacity:.5">★</span></div>
         <p class="rev-text">«Хорошая школа. Преподавательский состав и&nbsp;программы вполне устраивают. Разные возрастные группы. Дети с&nbsp;удовольствием ходят на&nbsp;занятия и&nbsp;показывают результат на&nbsp;сцене.»</p>
         <div class="rev-author">
           <div class="rev-avatar" style="background:linear-gradient(135deg, var(--tiffany), var(--gold))">А</div>
@@ -3774,7 +3774,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div>
             <small>Профиль на&nbsp;Яндекс Картах</small>
             <strong>
-              <span class="ya-stars" id="ya-contact-stars">★★★★<span style="opacity:.5">★</span></span> <span id="ya-contact-text">4,5 · много отзывов</span>
+              <span class="ya-stars">★★★★<span style="opacity:.5">★</span></span> 4,5 · много отзывов
             </strong>
             <span class="ya-arrow">Открыть на Яндексе →</span>
           </div>
@@ -3917,13 +3917,72 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
+<!-- Cookie info modal -->
+<div class="modal-bg" id="cookieInfoModal" onclick="if(event.target===this) closeCookieInfo()">
+  <div class="modal privacy-modal">
+    <button class="modal-close" onclick="closeCookieInfo()" aria-label="Закрыть">&times;</button>
+    <span class="eyebrow">Информация</span>
+    <h3>Как мы используем cookies</h3>
+    <p class="small">Сайт tatianinden.ru&nbsp;&mdash; детский театр танца &laquo;Татьянин День&raquo;</p>
+    <div class="privacy-body">
+      <h4>Что такое cookies?</h4>
+      <p>Cookies (куки) &mdash; небольшие текстовые файлы, которые сайт сохраняет в вашем браузере при посещении. Они помогают сайту работать корректно, а также позволяют нам анализировать, как посетители взаимодействуют со страницами.</p>
+      <h4>Необходимые cookies</h4>
+      <p>Эти cookies обязательны для работы сайта. Они сохраняют ваш выбор в уведомлении о cookies и обеспечивают работу виджетов Яндекс.Карт и Яндекс.Профиля. Используются <strong>всегда</strong>, независимо от вашего согласия. <strong>Хранение:</strong> до 1&nbsp;года (выбор согласия), сессия (технические).</p>
+      <h4>Аналитические cookies &mdash; только с вашего согласия</h4>
+      <p>Загружаются <strong>только после нажатия &laquo;Принять&raquo;</strong>. Помогают понять, сколько людей посещает сайт, какие разделы интересуют больше всего, откуда приходят посетители. Мы не используем эти данные для рекламы и не передаём третьим лицам.</p>
+      <p><strong>Яндекс.Метрика</strong> (Яндекс, Россия) &mdash; счётчик посещений, тепловые карты кликов, вебвизор (запись сессий для анализа UX). Собирает: анонимизированный IP-адрес, тип устройства и браузера, источник перехода, посещённые страницы, время на сайте. <a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener">Политика Яндекса</a>.</p>
+      <p><strong>Google Analytics / GTM</strong> (Google LLC, США) &mdash; статистика посещений с анонимизацией IP. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Политика Google</a>. Хранение: до 26&nbsp;месяцев.</p>
+      <h4>Как отказаться или удалить cookies?</h4>
+      <p>Нажмите <strong>&laquo;Только необходимые&raquo;</strong> &mdash; аналитические скрипты не загрузятся. Вы также можете удалить cookies через настройки браузера. Отключение может нарушить работу карт и некоторых элементов сайта.</p>
+      <p>Подробнее о персональных данных &mdash; в <a href="#" onclick="closeCookieInfo();openPrivacy();return false;" style="color:var(--tiffany-deep);text-decoration:underline">Политике обработки персональных данных</a>.</p>
+    </div>
+    <button class="btn btn-primary btn-lg" style="width:100%; margin-top:18px" onclick="closeCookieInfo()">Понятно, закрыть</button>
+  </div>
+</div>
+
+<!-- Cookie info modal -->
+<div class="modal-bg" id="cookieInfoModal" onclick="if(event.target===this) closeCookieInfo()" role="dialog" aria-modal="true" aria-label="Информация о куках">
+  <div class="modal" style="max-width:600px;max-height:85vh;overflow-y:auto">
+    <button class="modal-close" onclick="closeCookieInfo()" aria-label="Закрыть">×</button>
+    <span class="eyebrow">Политика куков</span>
+    <h3 style="margin-bottom:18px">Какие куки мы используем</h3>
+    <div style="font-size:15px;line-height:1.7;color:var(--ink)">
+      <p>Куки (cookies) — небольшие текстовые файлы, которые сайт сохраняет в вашем браузере. Они помогают сайту работать корректно и позволяют нам понимать, как вы им пользуетесь.</p>
+      <h4 style="margin:20px 0 8px;font-size:16px">🔧 Необходимые куки</h4>
+      <p>Эти куки нужны для работы самого сайта. Без них сайт не сможет правильно функционировать. Они не собирают личную информацию и не используются для рекламы.</p>
+      <ul style="padding-left:20px;margin:8px 0">
+        <li><strong>cookieChoice</strong> — запоминает ваш выбор согласия на куки, чтобы не показывать баннер повторно.</li>
+        <li><strong>cookieChoiceDate</strong> — дата, когда вы сделали этот выбор.</li>
+      </ul>
+      <h4 style="margin:20px 0 8px;font-size:16px">📊 Аналитические куки</h4>
+      <p>Устанавливаются только если вы нажали «Принять». Помогают нам понять, как посетители взаимодействуют с сайтом: какие страницы смотрят, откуда приходят, как долго остаются. Эти данные используются исключительно для улучшения сайта.</p>
+      <ul style="padding-left:20px;margin:8px 0">
+        <li><strong>Яндекс.Метрика</strong> — анализ посещаемости, карта кликов, вебвизор. Данные хранятся на серверах Яндекса. <a href="https://yandex.ru/legal/metrika_termsofuse/" target="_blank" rel="noopener" style="color:var(--accent)">Условия Яндекс.Метрики →</a></li>
+        <li><strong>Google Analytics (GA4)</strong> — статистика посещений и поведения пользователей. IP-адрес анонимизируется. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--accent)">Политика Google →</a></li>
+      </ul>
+      <h4 style="margin:20px 0 8px;font-size:16px">🗺 Куки сторонних сервисов</h4>
+      <p>При отображении Яндекс.Карт и Яндекс.Профиля Яндекс может устанавливать собственные куки в соответствии со своей политикой конфиденциальности.</p>
+      <h4 style="margin:20px 0 8px;font-size:16px">⚙️ Управление куками</h4>
+      <p>Вы можете в любой момент:</p>
+      <ul style="padding-left:20px;margin:8px 0">
+        <li>Удалить куки через настройки браузера.</li>
+        <li>Запретить сохранение куков в настройках браузера.</li>
+        <li>Отозвать согласие на аналитику, очистив куки сайта — баннер появится снова.</li>
+      </ul>
+      <p style="margin-top:18px;font-size:13px;color:#888">Если у вас есть вопросы — напишите нам в <a href="https://t.me/+79636719983" target="_blank" rel="noopener" style="color:var(--accent)">Telegram</a> или позвоните: +7&nbsp;(963)&nbsp;671-99-83.</p>
+    </div>
+    <button class="btn btn-primary btn-lg" style="width:100%;margin-top:20px" onclick="closeCookieInfo()">Понятно, закрыть</button>
+  </div>
+</div>
+
 <!-- Cookie consent banner (152-ФЗ) -->
 <div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Cookie-уведомление">
   <div class="cookie-content">
     <span class="cookie-icon" aria-hidden="true">🍪</span>
     <div class="cookie-text">
       <strong>Мы используем cookies</strong>
-      <p>Для работы виджетов Яндекс.Карт и&nbsp;Яндекс.Профиля, а&nbsp;также для&nbsp;аналитики посещений. Подробнее — в&nbsp;<a href="#" onclick="openPrivacy();return false;">Политике обработки персональных данных</a>.</p>
+      <p>Для работы виджетов Яндекс.Карт и&nbsp;Яндекс.Профиля, а&nbsp;также для&nbsp;аналитики посещений. <a href="#" onclick="openCookieInfo();return false;" style="color:inherit;text-decoration:underline;font-weight:600;">Подробнее о&nbsp;куках&nbsp;→</a></p>
     </div>
     <div class="cookie-actions">
       <button type="button" onclick="acceptCookies()" class="cookie-btn cookie-btn-primary">Принять</button>
@@ -3955,135 +4014,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
-
-<!-- ===== Yandex rating — единый источник данных ===== -->
-<script>
-(function(){
-  // ─── НАСТРОЙКА ────────────────────────────────────────────────
-  // Обновить эти значения вручную когда меняется рейтинг/число отзывов.
-  // Скрипт хранит их в localStorage 24 ч и синхронизирует все элементы страницы.
-  var FALLBACK = { rating: 4.5, reviews: 11 };
-  var CACHE_KEY = 'ya_rating_cache';
-  var TTL = 24 * 60 * 60 * 1000; // 24 часа в мс
-  // ──────────────────────────────────────────────────────────────
-
-  function starsHTML(rating) {
-    var full = Math.floor(rating);
-    var half = (rating - full) >= 0.25;
-    var html = '';
-    for (var i = 1; i <= 5; i++) {
-      if (i <= full) html += '★';
-      else if (i === full + 1 && half) html += '<span style="opacity:.6">★</span>';
-      else html += '<span style="opacity:.2">★</span>';
-    }
-    return html;
-  }
-
-  function starsText(rating) {
-    var full = Math.floor(rating);
-    var half = (rating - full) >= 0.25;
-    var s = '';
-    for (var i = 1; i <= 5; i++) {
-      s += (i <= full || (i === full + 1 && half)) ? '★' : '☆';
-    }
-    return s;
-  }
-
-  function fmt(rating) {
-    return String(rating).replace('.', ',');
-  }
-
-  function applyRating(data) {
-    var r = data.rating;
-    var n = data.reviews;
-    var rStr = fmt(r);
-    var nStr = n + ' ' + (n === 1 ? 'отзыв' : n < 5 ? 'отзыва' : 'отзывов');
-
-    // Герой — тег
-    var heroTag = document.getElementById('ya-hero-tag');
-    if (heroTag) heroTag.textContent = rStr + ' на Яндексе';
-
-    // Герой — trust-блок
-    var trustNum = document.getElementById('ya-trust-num');
-    if (trustNum) trustNum.textContent = rStr;
-    var trustLabel = document.getElementById('ya-trust-label');
-    if (trustLabel) trustLabel.textContent = '★ на Яндексе';
-
-    // Контакты — звёзды и текст
-    var contactStars = document.getElementById('ya-contact-stars');
-    if (contactStars) contactStars.innerHTML = starsHTML(r);
-    var contactText = document.getElementById('ya-contact-text');
-    if (contactText) contactText.textContent = rStr + ' · ' + nStr;
-
-    // Schema.org — обновляем мета-данные в LD+JSON
-    try {
-      document.querySelectorAll('script[type="application/ld+json"]').forEach(function(el) {
-        var obj = JSON.parse(el.textContent);
-        if (obj.aggregateRating) {
-          obj.aggregateRating.ratingValue = String(r);
-          obj.aggregateRating.reviewCount = String(n);
-          el.textContent = JSON.stringify(obj, null, 2);
-        }
-      });
-    } catch(e) {}
-  }
-
-  function loadFromCache() {
-    try {
-      var raw = localStorage.getItem(CACHE_KEY);
-      if (!raw) return null;
-      var obj = JSON.parse(raw);
-      if (Date.now() - obj.ts > TTL) return null;
-      return obj.data;
-    } catch(e) { return null; }
-  }
-
-  function saveToCache(data) {
-    try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: data })); } catch(e) {}
-  }
-
-  // Попытка получить актуальный рейтинг через Яндекс API (CORS-доступная точка)
-  function fetchRating(cb) {
-    // Яндекс не предоставляет публичный CORS API — используем прокси через iframe + postMessage
-    // или fallback на кешированные / ручные данные.
-    // Для автообновления подключите собственный прокси-эндпоинт и раскомментируйте:
-    //
-    // fetch('/api/ya-rating')
-    //   .then(function(r){ return r.json(); })
-    //   .then(function(d){ cb(d); })
-    //   .catch(function(){ cb(null); });
-    //
-    cb(null); // пока возвращаем null → используем кеш или FALLBACK
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var cached = loadFromCache();
-    if (cached) {
-      applyRating(cached);
-      return;
-    }
-    fetchRating(function(fresh) {
-      var data = fresh || FALLBACK;
-      saveToCache(data);
-      applyRating(data);
-    });
-  });
-
-  // Публичный метод: yaRating.set({rating:4.9, reviews:24}) — обновить вручную и сохранить в кеш
-  window.yaRating = {
-    set: function(data) {
-      saveToCache(data);
-      applyRating(data);
-    },
-    get: function() {
-      return loadFromCache() || FALLBACK;
-    },
-    reset: function() {
-      try { localStorage.removeItem(CACHE_KEY); } catch(e) {}
-    }
-  };
-})();
-</script>
 
 <script>
   // Inject elegant logo stamp into the top-right of every section (except hero, where the logo is already prominent)
@@ -4206,6 +4136,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     document.body.style.overflow = '';
   }
 
+  // Cookie info modal
+  function openCookieInfo() {
+    document.getElementById('cookieInfoModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCookieInfo() {
+    document.getElementById('cookieInfoModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
   // ============ Cookie consent (152-ФЗ) ============
   function showCookieBanner(){
     try{ if(localStorage.getItem('cookieChoice')) return; }catch(e){}
@@ -4304,7 +4244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     try{ if(localStorage.getItem('cookieChoice') === 'accepted') loadAnalytics(); }catch(e){}
   });
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { closeModal(); closePrivacy(); }
+    if (e.key === 'Escape') { closeModal(); closePrivacy(); closeCookieInfo(); }
   });
 
   // 152-ФЗ: enable submit button only when consent is checked
