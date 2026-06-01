@@ -27,27 +27,15 @@
   },
   "blogPost": [{
     "@type": "BlogPosting",
-    "headline": "Какие танцы выбрать для дочки: гид по стилям для родителей",
-    "url": "https://tatianinden.ru/blog/kakie-tancy-vybrat-dlja-dochki.html",
-    "datePublished": "2026-05-16",
-    "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
-  },{
-    "@type": "BlogPosting",
-    "headline": "Во сколько лет отдавать ребёнка на танцы? Подробный гид для родителей",
-    "url": "https://tatianinden.ru/blog/vo-skolko-let-otdavat-rebenka-na-tancy.html",
-    "datePublished": "2026-05-12",
-    "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
-  },{
-    "@type": "BlogPosting",
-    "headline": "Что надеть на первое занятие танцами?",
-    "url": "https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html",
-    "datePublished": "2026-05-23",
-    "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
-  },{
-    "@type": "BlogPosting",
-    "headline": "Как развить пластику и осанку у ребёнка",
+    "headline": "Как развить пластику и осанку у ребёнка: 7 упражнений дома",
     "url": "https://tatianinden.ru/blog/kak-razvit-plastiku-i-osanku.html",
     "datePublished": "2026-05-29",
+    "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
+  },{
+    "@type": "BlogPosting",
+    "headline": "Танцы или гимнастика: что выбрать ребёнку",
+    "url": "https://tatianinden.ru/blog/tantsy-ili-gimnastika.html",
+    "datePublished": "2026-05-28",
     "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
   },{
     "@type": "BlogPosting",
@@ -57,15 +45,27 @@
     "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
   },{
     "@type": "BlogPosting",
+    "headline": "Что надеть на первое занятие танцами: гид по возрастам",
+    "url": "https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html",
+    "datePublished": "2026-05-23",
+    "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
+  },{
+    "@type": "BlogPosting",
     "headline": "Польза танцев для детей: 7 неочевидных навыков",
     "url": "https://tatianinden.ru/blog/polza-tantsev-dlya-detej.html",
     "datePublished": "2026-05-20",
     "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
   },{
     "@type": "BlogPosting",
-    "headline": "Танцы или гимнастика: что выбрать ребёнку",
-    "url": "https://tatianinden.ru/blog/tantsy-ili-gimnastika.html",
-    "datePublished": "2026-05-28",
+    "headline": "Какие танцы выбрать для дочки: гид по стилям для родителей",
+    "url": "https://tatianinden.ru/blog/kakie-tancy-vybrat-dlja-dochki.html",
+    "datePublished": "2026-05-16",
+    "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
+  },{
+    "@type": "BlogPosting",
+    "headline": "Во сколько лет отдавать ребёнка на танцы? Подробный гид для родителей",
+    "url": "https://tatianinden.ru/blog/vo-skolko-let-otdavat-rebenka-na-tancy.html",
+    "datePublished": "2026-05-12",
     "author": {"@type":"Person","name":"Гурьянова Татьяна Ивановна"}
   }]
 }
@@ -85,8 +85,9 @@
     --display:"Cormorant Garamond",serif;
     --body:"Manrope",-apple-system,sans-serif;
     --script:"Caveat",cursive;
-    --radius:20px; --radius-lg:32px;
-    --shadow-soft:0 10px 30px -12px rgba(10,186,181,.18),0 6px 18px -10px rgba(255,111,169,.12);
+    --radius:20px;
+    --radius-lg:32px;
+    --shadow-soft:0 10px 30px -12px rgba(10,186,181,.18), 0 6px 18px -10px rgba(255,111,169,.12);
     --shadow-md:0 20px 50px -20px rgba(27,27,46,.18);
     --shadow-gold:0 18px 40px -18px rgba(201,169,97,.45);
   }
@@ -103,7 +104,8 @@
   }
   a{color:inherit; text-decoration:none}
   img{max-width:100%; display:block}
-  .container{width:min(100% - 32px,1240px); margin-inline:auto}
+
+  .container{width:min(100% - 32px, 1240px); margin-inline:auto}
 
   /* ============ NAV ============ */
   header.nav{
@@ -113,10 +115,14 @@
     box-shadow:0 2px 16px -10px rgba(27,27,46,.15);
     padding:10px 0;
   }
-  .nav-row{display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:78px}
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between; gap:24px;
+    min-height:78px;
+  }
   .logo{display:flex; align-items:center; gap:16px; line-height:1.1; color:var(--ink)}
   .logo img{width:72px; height:72px; object-fit:contain; border-radius:50%; transition:transform .4s}
   .logo:hover img{transform:rotate(-4deg) scale(1.05)}
+  .logo-text{display:flex; flex-direction:column; gap:3px}
   .logo-text strong{font-family:var(--display); font-size:24px; font-weight:600; color:#1B2A4E}
   .logo-text small{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-mute); margin-top:4px}
   .nav-actions{display:flex; gap:14px; align-items:center}
@@ -140,7 +146,9 @@
     .logo-text small{font-size:10px}
     .nav-phone{display:none}
   }
-  @media (max-width:480px){.btn-back{padding:8px 14px; font-size:13px}}
+  @media (max-width:480px){
+    .btn-back{padding:8px 14px; font-size:13px}
+  }
 
   /* ============ BLOG HERO ============ */
   .blog-hero{
@@ -208,9 +216,11 @@
     margin:0 auto;
   }
   .blog-hero p.lead strong{color:#1B2A4E; font-weight:700}
+
+  /* Decorative sparkles */
   .sparkle{position:absolute; pointer-events:none; color:var(--gold); opacity:.55; animation:twinkle 3.5s ease-in-out infinite}
   @keyframes twinkle{0%,100%{opacity:.3; transform:scale(.9)} 50%{opacity:.85; transform:scale(1.15)}}
-  
+
   /* ============ FEATURED ARTICLE ============ */
   .section{padding:80px 0; position:relative}
   .section-head{max-width:760px; margin:0 auto 50px; text-align:center}
@@ -229,7 +239,11 @@
     font-weight:500;
   }
   .section-head p{font-size:17px; color:var(--ink-soft); margin:0}
-  .featured-section{background:linear-gradient(180deg, #FFFFFF 0%, #FCFBF7 100%)}
+
+  /* Featured */
+  .featured-section{
+    background:linear-gradient(180deg, #FFFFFF 0%, #FCFBF7 100%);
+  }
   .featured-card{
     display:grid;
     grid-template-columns:1.05fr 1fr;
@@ -246,6 +260,7 @@
   .featured-card:hover{transform:translateY(-6px); border-color:var(--gold-light)}
   .featured-img{
     position:relative;
+    aspect-ratio:auto;
     min-height:420px;
     overflow:hidden;
     background:linear-gradient(135deg, var(--pink-soft), var(--tiffany-soft));
@@ -304,6 +319,7 @@
   .featured-cta:hover{transform:translateY(-2px)}
   .featured-cta svg{transition:transform .3s}
   .featured-cta:hover svg{transform:translateX(4px)}
+
   @media (max-width:900px){
     .featured-card{grid-template-columns:1fr}
     .featured-img{min-height:280px; aspect-ratio:16/10}
@@ -381,7 +397,7 @@
     .archive-img{aspect-ratio:16/10; min-height:auto}
   }
 
-  /* ============ UPCOMING ============ */
+  /* ============ UPCOMING ARTICLES ============ */
   .upcoming-section{
     background:
       radial-gradient(ellipse at 100% 100%, var(--tiffany-soft) 0%, transparent 50%),
@@ -444,6 +460,7 @@
     font-size:15px; line-height:1.55;
     margin:0; color:var(--ink-soft);
   }
+
   @media (max-width:1000px){.upcoming-grid{grid-template-columns:1fr 1fr}}
   @media (max-width:640px){.upcoming-grid{grid-template-columns:1fr; max-width:480px}}
 
@@ -518,7 +535,10 @@
     border:1px solid rgba(255,255,255,.2);
   }
   .cta-btn-ghost:hover{background:rgba(255,255,255,.14)}
-  @media (max-width:640px){.cta-card{padding:44px 28px}}
+
+  @media (max-width:640px){
+    .cta-card{padding:44px 28px}
+  }
 
   /* ============ FOOTER ============ */
   footer{background:var(--ink); color:rgba(255,255,255,.6); padding:30px 0; font-size:13.5px; border-top:1px solid rgba(255,255,255,.08)}
@@ -529,6 +549,7 @@
   /* ============ REVEAL ANIMATION ============ */
   .reveal{opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1)}
   .reveal.in{opacity:1; transform:translateY(0)}
+
   @media (prefers-reduced-motion: reduce){
     *, *::before, *::after{animation-duration:.01ms !important; transition-duration:.01ms !important}
   }
@@ -547,6 +568,7 @@
       </span>
     </a>
     <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone">+7 (963) 671-99-83</a>
       <a href="../index.html" class="btn-back">← На главную</a>
     </div>
   </div>
@@ -570,21 +592,21 @@
 <section class="section featured-section">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Главная статья</span>
+      <span class="eyebrow">Новая статья</span>
       <h2>Свежий <em>гид</em> для&nbsp;родителей</h2>
     </div>
 
-    <a class="featured-card reveal" href="https://tatianinden.ru/blog/kakie-tancy-vybrat-dlja-dochki.html">
+    <a class="featured-card reveal" href="kak-razvit-plastiku-i-osanku.html">
       <div class="featured-img">
-        <span class="featured-tag">Новая статья</span>
-        <img src="../zvezda2.jpg" alt="Какие танцы выбрать для дочки — гид по стилям"/>
+        <span class="featured-tag">Новое</span>
+        <img src="../zvezda2.jpg" alt="Как развить пластику и осанку у ребёнка"/>
       </div>
       <div class="featured-body">
         <div class="featured-meta">
-          <strong>16 мая 2026</strong> · 10 минут чтения · Татьяна Ивановна Гурьянова
+          <strong>29 мая 2026</strong> · 6 минут чтения · Татьяна Ивановна Гурьянова
         </div>
-        <h3>Какие танцы выбрать для&nbsp;дочки: гид по&nbsp;стилям для родителей</h3>
-        <p>Балет, эстрада, contemporary, народный&nbsp;— у&nbsp;мамы глаза разбегаются. Разбираем все 4 главных стиля под характер девочки и ваши цели. С таблицей‑сравнением и подсказками «что выбрать для принцессы / звёздочки / мечтательницы / энерджайзера».</p>
+        <h3>Как развить пластику и&nbsp;осанку у&nbsp;ребёнка</h3>
+        <p>7 безопасных упражнений для дома — с важным предупреждением о том, чего нельзя делать. И почему занятия с&nbsp;педагогом всё&nbsp;равно необходимы.</p>
         <span class="featured-cta">
           Читать статью
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
@@ -594,150 +616,88 @@
   </div>
 </section>
 
-<!-- ============ ARCHIVE / PREVIOUSLY PUBLISHED ============ -->
+<!-- ============ ARCHIVE — ALL ARTICLES ============ -->
 <section class="section archive-section">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Ранее опубликованное</span>
-      <h2>Другие <em>гиды</em> для&nbsp;родителей</h2>
+      <span class="eyebrow">Все статьи</span>
+      <h2>Гиды <em>для&nbsp;родителей</em></h2>
     </div>
 
     <div class="archive-grid">
-      <!-- 1️⃣ Оригинальная статья (во сколько лет) -->
-      <a class="archive-card reveal" href="https://tatianinden.ru/blog/vo-skolko-let-otdavat-rebenka-na-tancy.html">
+
+      <a class="archive-card reveal" href="tantsy-ili-gimnastika.html">
         <div class="archive-img">
-          <img src="../zvezda1.jpeg" alt="Во сколько лет отдавать ребёнка на танцы"/>
+          <img src="../zvezda1.jpeg" alt="Танцы или гимнастика"/>
         </div>
         <div class="archive-body">
-          <div class="archive-meta"><strong>12 мая 2026</strong> · 8 минут чтения</div>
-          <h3>Во сколько лет отдавать ребёнка на&nbsp;танцы?</h3>
-          <p>Возрастной гид: что развивают занятия в&nbsp;3, 5, 7 и 10 лет. Как выбрать первую группу и на что обращать внимание.</p>
+          <div class="archive-meta"><strong>28 мая 2026</strong> · 7 минут чтения</div>
+          <h3>Танцы или гимнастика: что выбрать ребёнку</h3>
+          <p>Честный разбор плюсов и минусов обоих направлений. Кому подойдёт спорт, а кому — сцена.</p>
           <span class="archive-link">Читать →</span>
         </div>
       </a>
 
-      <!-- 2️⃣ Что надеть на первое занятие -->
-      <a class="archive-card reveal" href="https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html">
+      <a class="archive-card reveal" href="kak-vybrat-tantsevalnyuyu-shkolu.html" style="transition-delay:.06s">
         <div class="archive-img">
-          <img src="../premier.jpg" alt="Гид по одежде для первого занятия"/>
+          <img src="../zvezda2.jpg" alt="Как выбрать танцевальную школу"/>
+        </div>
+        <div class="archive-body">
+          <div class="archive-meta"><strong>27 мая 2026</strong> · 9 минут чтения</div>
+          <h3>Как выбрать танцевальную школу для&nbsp;ребёнка</h3>
+          <p>10 критериев от педагога с 30-летним опытом. На что обращать внимание и о чём спросить на пробном.</p>
+          <span class="archive-link">Читать →</span>
+        </div>
+      </a>
+
+      <a class="archive-card reveal" href="chto-nadet-na-pervoe-zanyatie.html" style="transition-delay:.12s">
+        <div class="archive-img">
+          <img src="../zvezda1.jpeg" alt="Что надеть на первое занятие танцами"/>
         </div>
         <div class="archive-body">
           <div class="archive-meta"><strong>23 мая 2026</strong> · 5 минут чтения</div>
           <h3>Что надеть на первое занятие танцами?</h3>
-          <p>Практический гид: таблица по возрастам, обувь, что взять с собой, типичные ошибки.</p>
+          <p>Таблица по возрастам: одежда, обувь, что взять с собой. Список типичных ошибок родителей.</p>
           <span class="archive-link">Читать →</span>
         </div>
       </a>
 
-      <!-- 3️⃣ Как развить пластику и осанку -->
-      <a class="archive-card reveal" href="https://tatianinden.ru/blog/kak-razvit-plastiku-i-osanku.html">
+      <a class="archive-card reveal" href="polza-tantsev-dlya-detej.html" style="transition-delay:.18s">
         <div class="archive-img">
-          <img src="../zvezda1.jpeg" alt="Упражнения для пластики и осанки"/>
-        </div>
-        <div class="archive-body">
-          <div class="archive-meta"><strong>29 мая 2026</strong> · 6 минут чтения</div>
-          <h3>Как развить пластику и&nbsp;осанку у ребёнка</h3>
-          <p>7 безопасных упражнений для дома + предупреждения о том, чего нельзя делать.</p>
-          <span class="archive-link">Читать →</span>
-        </div>
-      </a>
-
-      <!-- 4️⃣ Как выбрать танцевальную школу -->
-      <a class="archive-card reveal" href="https://tatianinden.ru/blog/kak-vybrat-tantsevalnyuyu-shkolu.html">
-        <div class="archive-img">
-          <img src="../zvezda2.jpg" alt="Выбор танцевальной школы"/>
-        </div>
-        <div class="archive-body">
-          <div class="archive-meta"><strong>27 мая 2026</strong> · 9 минут чтения</div>
-          <h3>Как выбрать танцевальную школу: <em>10 критериев</em></h3>
-          <p>Квалификация педагога, размер группы, зал, атмосфера, концерты — на что смотреть и что спросить на пробном.</p>
-          <span class="archive-link">Читать →</span>
-        </div>
-      </a>
-
-      <!-- 5️⃣ Польза танцев для детей -->
-      <a class="archive-card reveal" href="https://tatianinden.ru/blog/polza-tantsev-dlya-detej.html">
-        <div class="archive-img">
-          <img src="../zvezda1.jpeg" alt="Польза танцев"/>
+          <img src="../zvezda2.jpg" alt="Польза танцев для детей"/>
         </div>
         <div class="archive-body">
           <div class="archive-meta"><strong>20 мая 2026</strong> · 7 минут чтения</div>
-          <h3>Польза танцев для детей: 7 неочевидных навыков</h3>
-          <p>Концентрация, эмпатия, командное мышление, уверенность и др.</p>
+          <h3>Польза танцев для детей: 7&nbsp;неочевидных навыков</h3>
+          <p>Не только осанка и гибкость. Танцы развивают концентрацию, эмпатию и уверенность в себе.</p>
           <span class="archive-link">Читать →</span>
         </div>
       </a>
 
-      <!-- 6️⃣ Танцы или гимнастика -->
-      <a class="archive-card reveal" href="https://tatianinden.ru/blog/tantsy-ili-gimnastika.html">
+      <a class="archive-card reveal" href="kakie-tancy-vybrat-dlja-dochki.html" style="transition-delay:.24s">
         <div class="archive-img">
-          <img src="../zvezda2.jpg" alt="Танцы или гимнастика"/>
+          <img src="../zvezda1.jpeg" alt="Какие танцы выбрать для дочки"/>
         </div>
         <div class="archive-body">
-          <div class="archive-meta"><strong>28 мая 2026</strong> · 7 минут чтения</div>
-          <h3>Танцы или гимнастика: что выбрать ребёнку?</h3>
-          <p>Сравнение двух направлений, плюсы‑минусы, тест для родителей.</p>
+          <div class="archive-meta"><strong>16 мая 2026</strong> · 10 минут чтения</div>
+          <h3>Какие танцы выбрать для&nbsp;дочки: гид по&nbsp;стилям</h3>
+          <p>Балет, эстрада, contemporary, народный — разбираем все 4 стиля под характер девочки и ваши цели.</p>
           <span class="archive-link">Читать →</span>
         </div>
       </a>
-    </div>
-  </div>
-</section>
 
-<!-- ============ UPCOMING / IN PROGRESS ============ -->
-<section class="section upcoming-section">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Готовим к&nbsp;выходу</span>
-      <h2>Что <em>появится</em> в&nbsp;ближайшее время</h2>
-      <p>Если хотите получить статью первыми — напишите нам в&nbsp;Telegram, пришлём ссылку как только опубликуем.</p>
-    </div>
-
-    <div class="upcoming-grid">
-      <div class="upcoming-card reveal">
-        <div class="upcoming-icon" style="background:linear-gradient(135deg, var(--pink-cloud), #FAF1DC); color:var(--pink-deep)">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <a class="archive-card reveal" href="vo-skolko-let-otdavat-rebenka-na-tancy.html" style="transition-delay:.30s">
+        <div class="archive-img">
+          <img src="../zvezda2.jpg" alt="Во сколько лет отдавать ребёнка на танцы"/>
         </div>
-        <span class="upcoming-status">Скоро</span>
-        <h3>Польза танцев для&nbsp;детей: 7&nbsp;неочевидных навыков</h3>
-        <p>Не&nbsp;только осанка и&nbsp;гибкость. Танцы развивают концентрацию, эмпатию и&nbsp;уверенность в&nbsp;себе — рассказываем&nbsp;как.</p>
-      </div>
-
-      <div class="upcoming-card reveal" style="transition-delay:.16s">
-        <div class="upcoming-icon" style="background:linear-gradient(135deg, #FAF1DC, var(--tiffany-soft)); color:var(--gold-deep)">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        <div class="archive-body">
+          <div class="archive-meta"><strong>12 мая 2026</strong> · 8 минут чтения</div>
+          <h3>Во сколько лет отдавать ребёнка на&nbsp;танцы?</h3>
+          <p>Возрастной гид: что развивают занятия в 3, 5, 7, 10 лет. Как выбрать первую группу.</p>
+          <span class="archive-link">Читать →</span>
         </div>
-        <span class="upcoming-status">Скоро</span>
-        <h3>Что надеть на&nbsp;первое занятие танцами?</h3>
-        <p>Гид для родителей: какая одежда нужна по&nbsp;возрастам, что брать с&nbsp;собой, какие ошибки чаще всего совершают.</p>
-      </div>
+      </a>
 
-      <div class="upcoming-card reveal">
-        <div class="upcoming-icon" style="background:linear-gradient(135deg, var(--tiffany-soft), var(--pink-cloud)); color:var(--tiffany-deep)">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2H22l-6.2 4.5 2.4 7.3L12 16.6l-6.2 4.4 2.4-7.3L2 9.2h7.6z"/></svg>
-        </div>
-        <span class="upcoming-status">Скоро</span>
-        <h3>Как выбрать танцевальную школу для&nbsp;ребёнка</h3>
-        <p>10&nbsp;критериев от&nbsp;педагога с&nbsp;30-летним опытом. На&nbsp;что обращать внимание и&nbsp;о&nbsp;чём спросить на&nbsp;пробном.</p>
-      </div>
-
-      <div class="upcoming-card reveal" style="transition-delay:.08s">
-        <div class="upcoming-icon" style="background:linear-gradient(135deg, var(--pink-cloud), var(--tiffany-soft)); color:var(--pink-deep)">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6"/></svg>
-        </div>
-        <span class="upcoming-status">Скоро</span>
-        <h3>Танцы или гимнастика: что выбрать ребёнку</h3>
-        <p>Разбираем плюсы и&nbsp;минусы обоих направлений. Кому подходит спорт, а&nbsp;кому&nbsp;— сцена.</p>
-      </div>
-
-      <div class="upcoming-card reveal" style="transition-delay:.16s">
-        <div class="upcoming-icon" style="background:linear-gradient(135deg, #FAF1DC, var(--pink-cloud)); color:var(--gold-deep)">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
-        </div>
-        <span class="upcoming-status">Скоро</span>
-        <h3>Как развить пластику и&nbsp;осанку у&nbsp;ребёнка</h3>
-        <p>Простые упражнения, которые можно делать дома. И&nbsp;почему профессиональный педагог нужен всё&nbsp;равно.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -765,7 +725,7 @@
 
 <footer>
   <div class="container foot-row">
-    <div>© 2014–2026 Детский театр танца «Татьянин День», ЖК «Суханово Парк»</div>
+    <div>© 2014–2026 Детский театр танца «Татьянин День», ЖК «Суханово&nbsp;Парк»</div>
     <div><a href="../index.html">Главная</a> · <a href="../index.html#programs">Группы</a> · <a href="../index.html#contacts">Контакты</a></div>
   </div>
 </footer>
