@@ -1126,9 +1126,16 @@
     filter:grayscale(100%) contrast(1.04);
     transition:transform .9s ease, filter .5s ease;
   }
+  .teacher-photo img[alt*="Анжелика"]{
+    object-position:center top;
+    filter:grayscale(40%) contrast(1.05);
+  }
   .teacher-card:hover .teacher-photo img{
     transform:scale(1.06);
     filter:grayscale(80%) contrast(1.06);
+  }
+  .teacher-card:hover .teacher-photo img[alt*="Анжелика"]{
+    filter:grayscale(15%) contrast(1.06);
   }
   .teacher-photo::after{
     content:""; position:absolute; left:0; right:0; bottom:0; height:60px;
@@ -3427,7 +3434,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="teacher-card reveal" style="transition-delay:.08s">
         <div class="teacher-photo">
-          <img src="Angelika.jpg" alt="Гурьянова Анжелика Вадимовна — хореограф-постановщик" loading="lazy" width="480" height="600" decoding="async"/>
+          <img src="Angelika.PNG" alt="Гурьянова Анжелика Вадимовна — хореограф-постановщик" loading="lazy" width="480" height="600" decoding="async"/>
         </div>
         <div class="teacher-info">
           <h3>Гурьянова<br/>Анжелика&nbsp;Вадимовна</h3>
