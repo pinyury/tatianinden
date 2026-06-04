@@ -10,13 +10,7 @@
 <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 <link rel="preconnect" href="https://mc.yandex.ru" crossorigin />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NG4GMMWB');</script>
-<!-- End Google Tag Manager -->
+<!-- Google Tag Manager: загружается после согласия на cookies (loadGTM) -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0ABAB5" />
 <!-- Security headers as meta equivalents -->
@@ -27,9 +21,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <!-- Preload critical font subset to improve LCP -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@400;600;700&display=swap" />
+<link rel="preload" as="image" href="hero-bg.jpg" fetchpriority="high" />
 <title>Танцы для детей 3–14 лет · Суханово · Видное · Татьянин День — Топ-100 в России</title>
 <meta name="description" content="Детский театр танца «Татьянин День» в ЖК «Суханово Парк» (Ленинский округ, Видное). Эстрадные танцы, классика, акробатика, умный фитнес. Дети 3–14 лет. Топ-100 лучших хореографических коллективов России. Первый урок бесплатно — записывайтесь!" />
-<meta name="keywords" content="танцы для детей видное, танцы суханово, детский театр танца, танцевальная школа ленинский округ, эстрадные танцы для детей, хореография для детей 3 лет, хореография для детей 4 лет, хореография для детей 5 лет, танцы для девочек видное, танцы для дошкольников, детская акробатика, балет для детей, татьянин день, умный фитнес, летний интенсив танцы, танцы суханово парк, куда отдать ребенка на танцы видное" />
 <meta property="og:title" content="Танцы для детей 3–14 лет · Татьянин День · Суханово Парк" />
 <meta property="og:description" content="Топ-100 лучших хореографических коллективов России. Эстрадный танец, классика, акробатика для детей. Первый урок — бесплатно." />
 <meta property="og:image" content="https://tatianinden.ru/hero-bg.jpg" />
@@ -49,78 +43,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="alternate" hreflang="ru" href="https://tatianinden.ru/" />
 <link rel="alternate" hreflang="x-default" href="https://tatianinden.ru/" />
 
-<!-- ============================================================ -->
-<!-- АНАЛИТИКА: GA4 + Яндекс.Метрика (после согласия на куки)      -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-31FPXBHXEV"></script>
-<script>
-  /* ---------- GA4 ---------- */
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-31FPXBHXEV', { 'anonymize_ip': true });
-
-  /* ---------- Yandex.Metrica (after consent) ---------- */
-  function loadYandexMetrika() {
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    k=e.createElement(t), a=e.getElementsByTagName(t)[0], k.async=1,
-    k.src=r, a.parentNode.insertBefore(k,a)})
-    (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
-    ym(89391976, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
-  }
-
-  /* ---------- Cookie consent (152‑ФЗ) ---------- */
-  function showCookieBanner() {
-    const banner = document.createElement('div');
-    banner.id = 'cookie-banner';
-    banner.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #ccc;padding:12px;display:flex;align-items:center;justify-content:space-between;z-index:999';
-    banner.innerHTML = `
-      <div>
-        <strong>Мы используем куки.</strong> Для аналитики и работы сайта.
-        <a href="#" id="cookie-more" style="color:#0053ba;">Подробнее</a>
-      </div>
-      <div>
-        <button id="cookie-accept" style="margin-right:6px;">Принять</button>
-        <button id="cookie-decline">Только необходимые</button>
-      </div>`;
-    document.body.appendChild(banner);
-
-    document.getElementById('cookie-accept').onclick = function(){
-      banner.remove();
-      loadYandexMetrika();          // <‑‑ load after consent
-    };
-    document.getElementById('cookie-decline').onclick = function(){ banner.remove(); };
-  }
-  document.addEventListener('DOMContentLoaded', showCookieBanner);
-
-  /* ---------- GA event helper ---------- */
-  function trackGoal(name, params) {
-    gtag('event', name, params || {});           // GA4
-    ym(89391976, 'reachGoal', name, params || {});  // Yandex
-  }
-
-  /* ---------- Event listeners for CTAs ---------- */
-  document.addEventListener('click', function(e){
-    const el = e.target.closest('[data-goal]');
-    if (el) {
-      const goal = el.getAttribute('data-goal');
-      // optionally send custom params
-      trackGoal(goal);
-    }
-  });
-</script>
-
 <!-- «Аналитика и SEO — чеклист подключения.md» в этой же папке.    -->
-<!-- ============================================================ -->
-<!-- Яндекс.Вебмастер: получить код в webmaster.yandex.ru -->
-<meta name="yandex-verification" content="ВСТАВЬТЕ_КОД_ЯНДЕКС_ВЕБМАСТЕРА" />
-<!-- Google Search Console: получить код в search.google.com/search-console -->
-<meta name="google-site-verification" content="ВСТАВЬТЕ_КОД_GOOGLE_SEARCH_CONSOLE" />
+<!-- Яндекс.Вебмастер: вставьте <meta name="yandex-verification" content="КОД" /> -->
+<!-- Google Search Console: вставьте <meta name="google-site-verification" content="КОД" /> -->
 <!-- Mail.ru / VK Аналитика: код подтверждения, если будете подключать -->
 <!-- <meta name="mailru-verification" content="ВАШ_КОД" /> -->
 
 <!-- Favicon (положите файлы в корень) -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
 <!-- Sitemap для краулеров -->
@@ -273,7 +203,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Сколько стоят занятия?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Актуальный прайс пришлём в ответ на вашу заявку. Стоимость зависит от возрастной группы, количества занятий в неделю и выбранных направлений. Есть подарочные сертификаты."
+        "text": "Смотрите страницу «Цены и тарифы» на сайте или напишите нам — пришлём актуальный прайс. Стоимость зависит от группы и количества занятий. Есть подарочные сертификаты."
       }
     },
     {
@@ -368,7 +298,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* ==================== PERFORMANCE ==================== */
   /* content-visibility: auto defers rendering of off-screen sections,
      improving LCP and FID by reducing initial render work */
-  .about, .advantages, .programs, .teachers, .disciplines,
+  .video-section, .about, .advantages, .programs, .teachers, .disciplines,
   .summer, .fitness, .achievements, .gallery, .reviews,
   .faq, .cta-block, .blog-teaser, .contacts {
     content-visibility: auto;
@@ -650,7 +580,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position:absolute;
     inset:0;
     z-index:-2;
-    background-image:url("hero-bg.jpg"), url("https://avatars.mds.yandex.net/get-altay/16457969/2a0000019bcb663ded5634513018c55517a4/XXL_height");
+    background-image:url("https://avatars.mds.yandex.net/get-altay/16457969/2a0000019bcb663ded5634513018c55517a4/XXL_height");
     background-size:cover;
     background-position:center 45%;
     background-repeat:no-repeat;
@@ -872,6 +802,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   section{padding:110px 0; position:relative}
   .section-head{max-width:760px; margin-bottom:64px}
   .section-head.center{margin-inline:auto; text-align:center}
+
+  /* Video — RuTube embed */
+  .video-section{
+    background:linear-gradient(180deg, #FFFFFF 0%, #F4FBFA 100%);
+    padding:80px 0;
+  }
+  .video-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr;
+    gap:32px;
+    align-items:start;
+    max-width:1100px;
+    margin-inline:auto;
+  }
+  .video-embed{
+    position:relative;
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    border:1px solid rgba(201,169,97,.25);
+    box-shadow:var(--shadow-md);
+    aspect-ratio:16/9;
+    background:#1B2A4E;
+  }
+  .video-embed iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+  }
+  .video-side p{margin:0 0 16px; color:var(--ink-soft); font-size:16px; line-height:1.6}
+  .video-side .btn{margin-top:8px}
+  @media (max-width:900px){
+    .video-grid{grid-template-columns:1fr}
+    .video-section{padding:60px 0}
+  }
 
   /* About — Tiffany mist with soft diagonal light */
   .about{
@@ -2998,7 +2964,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "description": "Ритмика и танцевальная азбука в игровой форме для детей 3–5 лет. Развитие гибкости, координации, осанки. Первые выступления и конкурсный состав.",
       "provider": {"@type": "DanceSchool", "name": "Детский театр танца «Татьянин День»", "url": "https://tatianinden.ru/"},
       "courseSchedule": {"@type": "Schedule", "repeatFrequency": "P1W", "byDay": ["Monday","Wednesday","Friday"], "startTime": "17:00", "endTime": "18:00"},
-      "typicalAgeRange": "3-5"
+      "typicalAgeRange": "3-5",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://tatianinden.ru/prices.html",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "description": "Абонемент зависит от количества занятий. Первое занятие — бесплатно.",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "RUB",
+          "valueAddedTaxIncluded": true
+        }
+      }
     },
     {
       "@type": "Course",
@@ -3007,7 +2985,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "description": "Современная хореография, классический и эстрадный танец, акробатика, постановки номеров для детей 6–9 лет.",
       "provider": {"@type": "DanceSchool", "name": "Детский театр танца «Татьянин День»", "url": "https://tatianinden.ru/"},
       "courseSchedule": {"@type": "Schedule", "repeatFrequency": "P1W", "byDay": ["Monday","Thursday","Saturday"], "startTime": "18:00", "endTime": "20:00"},
-      "typicalAgeRange": "6-9"
+      "typicalAgeRange": "6-9",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://tatianinden.ru/prices.html",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "description": "Абонемент зависит от количества занятий. Первое занятие — бесплатно."
+      }
     },
     {
       "@type": "Course",
@@ -3016,7 +3001,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "description": "Углублённое изучение современного и эстрадного танца, актёрское мастерство, сольные и групповые номера, международные фестивали для детей 10–14 лет.",
       "provider": {"@type": "DanceSchool", "name": "Детский театр танца «Татьянин День»", "url": "https://tatianinden.ru/"},
       "courseSchedule": {"@type": "Schedule", "repeatFrequency": "P1W", "byDay": ["Tuesday","Friday","Saturday"], "startTime": "18:00", "endTime": "20:30"},
-      "typicalAgeRange": "10-14"
+      "typicalAgeRange": "10-14",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://tatianinden.ru/prices.html",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "description": "Абонемент зависит от количества занятий. Первое занятие — бесплатно."
+      }
     },
     {
       "@type": "Course",
@@ -3025,7 +3017,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "description": "Умный фитнес — осознанный подход к тренировочному процессу: работа с двигательными паттернами, осанкой, дыханием. Офлайн и онлайн форматы.",
       "provider": {"@type": "DanceSchool", "name": "Детский театр танца «Татьянин День»", "url": "https://tatianinden.ru/"},
       "audience": {"@type": "Audience", "audienceType": "Взрослые"},
-      "availableOnline": true
+      "availableOnline": true,
+      "offers": {
+        "@type": "Offer",
+        "url": "https://tatianinden.ru/prices.html",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "description": "Офлайн и онлайн. Стоимость уточняйте по телефону."
+      }
     }
   ]
 }
@@ -3060,7 +3059,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="nav" id="nav" role="banner">
   <div class="container nav-row">
     <a href="#" class="logo" aria-label="Татьянин День — Детский театр танца">
-      <img class="logo-img" src="/logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" fetchpriority="high" />
+      <img class="logo-img" src="logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" fetchpriority="high" />
       <span class="logo-text">
         <strong>Татьянин День</strong>
         <small>ЖК «Суханово Парк»</small>
@@ -3074,6 +3073,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#summer">Интенсив</a>
       <a href="#fitness">Умный фитнес</a>
       <a href="blog/" class="nav-blog">Блог</a>
+      <a href="prices.html">Цены</a>
       <a href="#contacts">Контакты</a>
     </nav>
     <div class="nav-actions">
@@ -3214,6 +3214,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             Смотреть выступления на RuTube
           </a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="video-section" id="video" aria-labelledby="heading-video">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Выступления</span>
+      <h2 id="heading-video">Смотрите, как <em>танцуют наши звёзды</em></h2>
+      <p class="lead">Отчётный концерт и&nbsp;занятия в&nbsp;коллективе — чтобы почувствовать атмосферу до&nbsp;первого визита.</p>
+    </div>
+    <div class="video-grid reveal">
+      <div class="video-embed">
+        <iframe
+          src="https://rutube.ru/play/embed/39bd120fd23be2a050a0888c21aa752b"
+          title="Отчётный концерт «Татьянин День» 2025"
+          allow="clipboard-write; autoplay"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+      <div class="video-side">
+        <p>На&nbsp;канале RuTube — выступления, репетиции и&nbsp;летний интенсив. Подпишитесь, чтобы не&nbsp;пропустить юбилейный концерт <strong>30&nbsp;мая&nbsp;2026</strong> в&nbsp;ДК&nbsp;Быково.</p>
+        <a class="btn btn-rutube" href="https://rutube.ru/channel/38794454/" target="_blank" rel="noopener noreferrer" data-goal="cta_rutube_video">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 6.2a3 3 0 0 0-2.1-2.1C17.5 3.5 12 3.5 12 3.5s-5.5 0-7.4.6A3 3 0 0 0 2.5 6.2C2 8.1 2 12 2 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 7.4.6 7.4.6s5.5 0 7.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+          Все видео на RuTube
+        </a>
+        <a class="btn btn-primary" href="#" onclick="openModal();return false;" data-goal="cta_open_form_video" style="margin-left:8px">Записаться на пробное</a>
       </div>
     </div>
   </div>
@@ -3365,7 +3394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </article>
     </div>
-    <p class="prog-schedule-note">⏱ Уточнить актуальное расписание и&nbsp;записаться в&nbsp;группу можно по&nbsp;<a href="tel:+79636719983" data-goal="cta_call_programs">телефону +7&nbsp;(963)&nbsp;671-99-83</a> или&nbsp;<a href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_programs">в&nbsp;Telegram</a></p>
+    <p class="prog-schedule-note">⏱ <a href="prices.html">Тарифы и абонементы</a> · уточнить расписание и&nbsp;записаться: <a href="tel:+79636719983" data-goal="cta_call_programs">+7&nbsp;(963)&nbsp;671-99-83</a> или&nbsp;<a href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_programs">Telegram</a></p>
   </div>
 </section>
 
@@ -3398,7 +3427,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="teacher-card reveal" style="transition-delay:.08s">
         <div class="teacher-photo">
-          <img src="Angelika.PNG" alt="Гурьянова Анжелика Вадимовна — хореограф-постановщик" loading="lazy" width="480" height="600" decoding="async"/>
+          <img src="Angelika.jpg" alt="Гурьянова Анжелика Вадимовна — хореограф-постановщик" loading="lazy" width="480" height="600" decoding="async"/>
         </div>
         <div class="teacher-info">
           <h3>Гурьянова<br/>Анжелика&nbsp;Вадимовна</h3>
@@ -3806,7 +3835,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </details>
         <details class="faq-item">
           <summary class="faq-q">Сколько стоят занятия? <span class="faq-icon">+</span></summary>
-          <div class="faq-a"><p>Актуальный прайс пришлём в&nbsp;ответ на&nbsp;вашу заявку. Стоимость зависит от&nbsp;возрастной группы, количества занятий в&nbsp;неделю и&nbsp;выбранных направлений. Есть подарочные сертификаты.</p></div>
+          <div class="faq-a"><p>Смотрите <a href="prices.html">страницу «Цены и тарифы»</a> или&nbsp;напишите нам — пришлём актуальный прайс. Стоимость зависит от&nbsp;группы и&nbsp;количества занятий. Есть <a href="certificates.html">подарочные сертификаты</a>.</p></div>
         </details>
         <details class="faq-item">
           <summary class="faq-q">Где проходят отчётные концерты? <span class="faq-icon">+</span></summary>
@@ -4036,7 +4065,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span itemprop="addressRegion">Московская область</span>.
       </span> Все права защищены.
     </div>
-    <div><a href="#about">О коллективе</a> · <a href="#programs">Группы</a> · <a href="#contacts">Контакты</a> · <a href="akciya/">Акции</a> · <a href="#" onclick="openPrivacy();return false;">Политика обработки персональных данных</a></div>
+    <div><a href="#about">О коллективе</a> · <a href="#programs">Группы</a> · <a href="prices.html">Цены</a> · <a href="blog/">Блог</a> · <a href="#contacts">Контакты</a> · <a href="akciya/">Акции</a> · <a href="#" onclick="openPrivacy();return false;">Политика обработки персональных данных</a></div>
   </div>
 </footer>
 
@@ -4107,30 +4136,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <button class="btn btn-primary btn-lg" style="width:100%; margin-top:18px" onclick="closePrivacy()">Понятно, закрыть</button>
-  </div>
-</div>
-
-<!-- Cookie info modal -->
-<div class="modal-bg" id="cookieInfoModal" onclick="if(event.target===this) closeCookieInfo()">
-  <div class="modal privacy-modal">
-    <button class="modal-close" onclick="closeCookieInfo()" aria-label="Закрыть">&times;</button>
-    <span class="eyebrow">Информация</span>
-    <h3>Как мы используем cookies</h3>
-    <p class="small">Сайт tatianinden.ru&nbsp;&mdash; детский театр танца &laquo;Татьянин День&raquo;</p>
-    <div class="privacy-body">
-      <h4>Что такое cookies?</h4>
-      <p>Cookies (куки) &mdash; небольшие текстовые файлы, которые сайт сохраняет в вашем браузере при посещении. Они помогают сайту работать корректно, а также позволяют нам анализировать, как посетители взаимодействуют со страницами.</p>
-      <h4>Необходимые cookies</h4>
-      <p>Эти cookies обязательны для работы сайта. Они сохраняют ваш выбор в уведомлении о cookies и обеспечивают работу виджетов Яндекс.Карт и Яндекс.Профиля. Используются <strong>всегда</strong>, независимо от вашего согласия. <strong>Хранение:</strong> до 1&nbsp;года (выбор согласия), сессия (технические).</p>
-      <h4>Аналитические cookies &mdash; только с вашего согласия</h4>
-      <p>Загружаются <strong>только после нажатия &laquo;Принять&raquo;</strong>. Помогают понять, сколько людей посещает сайт, какие разделы интересуют больше всего, откуда приходят посетители. Мы не используем эти данные для рекламы и не передаём третьим лицам.</p>
-      <p><strong>Яндекс.Метрика</strong> (Яндекс, Россия) &mdash; счётчик посещений, тепловые карты кликов, вебвизор (запись сессий для анализа UX). Собирает: анонимизированный IP-адрес, тип устройства и браузера, источник перехода, посещённые страницы, время на сайте. <a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener noreferrer">Политика Яндекса</a>.</p>
-      <p><strong>Google Analytics / GTM</strong> (Google LLC, США) &mdash; статистика посещений с анонимизацией IP. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Политика Google</a>. Хранение: до 26&nbsp;месяцев.</p>
-      <h4>Как отказаться или удалить cookies?</h4>
-      <p>Нажмите <strong>&laquo;Только необходимые&raquo;</strong> &mdash; аналитические скрипты не загрузятся. Вы также можете удалить cookies через настройки браузера. Отключение может нарушить работу карт и некоторых элементов сайта.</p>
-      <p>Подробнее о персональных данных &mdash; в <a href="#" onclick="closeCookieInfo();openPrivacy();return false;" style="color:var(--tiffany-deep);text-decoration:underline">Политике обработки персональных данных</a>.</p>
-    </div>
-    <button class="btn btn-primary btn-lg" style="width:100%; margin-top:18px" onclick="closeCookieInfo()">Понятно, закрыть</button>
   </div>
 </div>
 
@@ -4216,7 +4221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     mark.className = 'section-mark';
     mark.setAttribute('aria-hidden', 'true');
     const img = document.createElement('img');
-    img.src = '/logo.jpg';
+    img.src = 'logo.jpg';
     img.alt = '';
     img.loading = 'lazy';
     img.decoding = 'async';
@@ -4376,7 +4381,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // ============================================================
   var YM_COUNTER_ID  = 89391976;  // Татьянин День — metrika.yandex.ru/dashboard?id=89391976
   var CLARITY_ID     = null;  // например: "abcd1234ef"  (получить на clarity.microsoft.com)
-  // var GA4_ID      = null;  // например: "G-XXXXXXXXXX"  (раскомментируйте, если нужен GA4)
+  var GA4_ID         = 'G-31FPXBHXEV';
+  var GTM_ID         = 'GTM-NG4GMMWB';
   // var VK_PIXEL_ID = null;  // например: "VK-RTRG-000000-XXXXX"  (для рекламы ВКонтакте)
 
   function loadYandexMetrika(){
@@ -4408,22 +4414,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     })(window, document, "clarity", "script", CLARITY_ID);
   }
 
-  // function loadGA4(){
-  //   if(!GA4_ID) return;
-  //   var s=document.createElement('script'); s.async=true;
-  //   s.src='https://www.googletagmanager.com/gtag/js?id='+GA4_ID;
-  //   document.head.appendChild(s);
-  //   window.dataLayer = window.dataLayer || [];
-  //   function gtag(){dataLayer.push(arguments);}
-  //   window.gtag = gtag;
-  //   gtag('js', new Date());
-  //   gtag('config', GA4_ID, { anonymize_ip: true });
-  // }
+  function loadGTM(){
+    if(!GTM_ID || window.__gtmLoaded) return;
+    window.__gtmLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID;
+    document.head.appendChild(s);
+  }
+
+  function loadGA4(){
+    if(!GA4_ID || window.__ga4Loaded) return;
+    window.__ga4Loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA4_ID, { anonymize_ip: true });
+  }
 
   function loadAnalytics(){
+    try { loadGTM(); } catch(e) { console.warn('GTM load failed', e); }
+    try { loadGA4(); } catch(e) { console.warn('GA4 load failed', e); }
     try { loadYandexMetrika(); } catch(e) { console.warn('YM load failed', e); }
     try { loadMicrosoftClarity(); } catch(e) { console.warn('Clarity load failed', e); }
-    // try { loadGA4(); } catch(e) { console.warn('GA4 load failed', e); }
   }
 
   // ============================================================
@@ -4520,6 +4540,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       window.open('https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y', '_blank', 'noopener');
     } else {
       showFormToast('Сообщение скопировано — вставьте его в Telegram');
+      reachGoal('trial_form_submit', { age: age });
       reachGoal('form_submit', { age: age });
       window.open('https://t.me/+79636719983', '_blank', 'noopener');
     }
