@@ -1,38 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
 
-  <!-- Главная -->
   <url>
     <loc>https://tatianinden.ru/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://tatianinden.ru/hero-bg.jpg</image:loc>
+      <image:title>Детский театр танца «Татьянин День» — Суханово, Видное</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://tatianinden.ru/logo.jpg</image:loc>
+      <image:title>Логотип «Татьянин День»</image:title>
+    </image:image>
   </url>
 
-  <!-- Якорные секции внутри index.html -->
-  <url><loc>https://tatianinden.ru/#about</loc></url>
-  <url><loc>https://tatianinden.ru/#programs</loc></url>
-  <url><loc>https://tatianinden.ru/#teachers</loc></url>
-  <url><loc>https://tatianinden.ru/#disciplines</loc></url>
-  <url><loc>https://tatianinden.ru/#summer</loc></url>
-  <url><loc>https://tatianinden.ru/#fitness</loc></url>
-  <url><loc>https://tatianinden.ru/#contacts</loc></url>
+  <url>
+    <loc>https://tatianinden.ru/prices.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-  <!-- Пример блога (добавляйте свои страницы) -->
+  <url>
+    <loc>https://tatianinden.ru/blog/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://tatianinden.ru/blog/vo-skolko-let-otdavat-rebenka-na-tancy.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
-  <!-- Политика конфиденциальности (если будет отдельная страница) -->
   <url>
-    <loc>https://tatianinden.ru/privacy.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <loc>https://tatianinden.ru/blog/kakie-tancy-vybrat-dlja-dochki.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/polza-tantsev-dlya-detej.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/kak-vybrat-tantsevalnyuyu-shkolu.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/tantsy-ili-gimnastika.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/kak-razvit-plastiku-i-osanku.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/certificates.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
-  <!-- При необходимости добавьте сюда остальные важные страницы -->
 </urlset>
