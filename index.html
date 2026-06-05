@@ -92,7 +92,7 @@
     "streetAddress": "ЖК «Суханово Парк»",
     "addressLocality": "Суханово",
     "addressRegion": "Московская область",
-    "postalCode": "142717",
+    "postalCode": "142702",
     "addressCountry": "RU"
   },
   "geo": {
@@ -100,7 +100,7 @@
     "latitude": 55.555,
     "longitude": 37.609
   },
-  "hasMap": "https://yandex.ru/profile/108175150878",
+  "hasMap": "https://yandex.ru/maps/?ll=37.647540%2C55.522587&mode=poi&poi%5Bpoint%5D=37.647502%2C55.522631&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D108175150878&z=17.17",
   "areaServed": [
     {"@type":"City","name":"Видное"},
     {"@type":"City","name":"Суханово"},
@@ -3950,24 +3950,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============ CONTACTS ============ -->
+<!-- CONTACTS -->
 <section class="contacts" id="contacts" aria-labelledby="heading-contacts">
   <div class="container">
     <span class="eyebrow">Контакты</span>
-    <h2 id="heading-contacts">Ждём вас в&nbsp;<em>«Татьянин День»</em></h2>
+    <h2 id="heading-contacts">Ждём вас в <em>«Татьянин День»</em></h2>
 
     <div class="contacts-grid">
       <div class="contact-list">
+
+        <!-- Адрес -->
         <div class="contact-item">
           <div class="contact-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
           </div>
           <div>
             <small>Адрес</small>
-            <strong>Московская область, Ленинский&nbsp;г.о.,<br/>деревня Суханово</strong>
+            <strong>
+              Московская область, Ленинский г.о.,<br>
+              деревня Суханово, <strong>142702</strong>
+            </strong>
+            <!-- Кнопка, открывающая готовую ссылку в Яндекс.Карты -->
+            <div style="margin-top:8px">
+              <a class="btn btn-primary btn-sm"
+                 href="https://yandex.ru/maps/?ll=37.647540%2C55.522587&mode=poi&poi%5Bpoint%5D=37.647502%2C55.522631&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D108175150878&z=17.17"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 data-goal="cta_yandex_map_contact"
+                 style="font-size:13px; padding:6px 12px;">
+                Посмотреть на карте
+              </a>
+            </div>
           </div>
         </div>
-
         <div class="contact-item">
           <div class="contact-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -4032,13 +4052,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
       </div>
 
-      <div class="map-frame">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?ll=37.611%2C55.560&z=13&pt=37.611%2C55.560%2Cpm2rdm&mode=search&text=Татьянин%20день%20Суханово"
-          allowfullscreen
-          title="Карта проезда"
-          loading="lazy"
-        ></iframe>
+<div class="map-frame">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.611%2C55.560&z=13&pt=37.611%2C55.560%2Cpm2rdm&mode=search&text=Татьянин%20день%20Суханово"
+                allowfullscreen title="Карта проезда" loading="lazy"></iframe>
       </div>
     </div>
   </div>
