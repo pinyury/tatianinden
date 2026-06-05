@@ -1,90 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ======= ГЛАВНЫЕ СТРАНИЦЫ ======= -->
 
   <url>
     <loc>https://tatianinden.ru/</loc>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://tatianinden.ru/hero-bg.jpg</image:loc>
-      <image:title>Детский театр танца «Татьянин День» — Суханово, Видное</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tatianinden.ru/logo.jpg</image:loc>
-      <image:title>Логотип «Татьянин День»</image:title>
+      <image:title>Детский театр танца «Татьянин День» — Видное, Суханово Парк</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://tatianinden.ru/prices.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
+
+  <!-- ======= БЛОГ — ЛИСТИНГ ======= -->
 
   <url>
     <loc>https://tatianinden.ru/blog/</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ======= ОПУБЛИКОВАННЫЕ СТАТЬИ БЛОГА ======= -->
+
+  <url>
+    <loc>https://tatianinden.ru/blog/kak-razvit-plastiku-i-osanku.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/blog/vo-skolko-let-otdavat-rebenka-na-tancy.html</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/blog/kakie-tancy-vybrat-dlja-dochki.html</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/blog/polza-tantsev-dlya-detej.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/blog/kak-vybrat-tantsevalnyuyu-shkolu.html</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://tatianinden.ru/zvezda2.jpg</image:loc>
+      <image:title>Как развить пластику и осанку у ребёнка: 7 упражнений дома</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://tatianinden.ru/blog/tantsy-ili-gimnastika.html</loc>
     <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/blog/kak-razvit-plastiku-i-osanku.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/certificates.html</loc>
-    <lastmod>2026-06-05</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tatianinden.ru/zvezda1.jpeg</image:loc>
+      <image:title>Танцы или гимнастика: что выбрать ребёнку</image:title>
+    </image:image>
   </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/kak-vybrat-tantsevalnyuyu-shkolu.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tatianinden.ru/zvezda2.jpg</image:loc>
+      <image:title>Как выбрать танцевальную школу для ребёнка: 10 критериев</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tatianinden.ru/zvezda1.jpeg</image:loc>
+      <image:title>Что надеть на первое занятие танцами: гид по возрастам</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/polza-tantsev-dlya-detej.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tatianinden.ru/zvezda2.jpg</image:loc>
+      <image:title>Польза танцев для детей: 7 неочевидных навыков</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/kakie-tancy-vybrat-dlja-dochki.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tatianinden.ru/zvezda1.jpeg</image:loc>
+      <image:title>Какие танцы выбрать для дочки: гид по стилям для родителей</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/blog/vo-skolko-let-otdavat-rebenka-na-tancy.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tatianinden.ru/zvezda2.jpg</image:loc>
+      <image:title>Во сколько лет отдавать ребёнка на танцы? Подробный гид для родителей</image:title>
+    </image:image>
+  </url>
+
+  <!-- NOTE: Статьи с датой публикации в будущем (июнь–июль 2026) не включены.
+       Добавляйте каждую в этот файл в день публикации. -->
 
 </urlset>
