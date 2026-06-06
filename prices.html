@@ -82,11 +82,13 @@
     "sameAs": ["https://vk.com/tatianinden"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Группы для девочек",
+      "name": "Группы и направления",
       "itemListElement": [
-        {"@type":"Offer","name":"Звёздочки (3–5 лет) — игровая хореография","price":"0","priceCurrency":"RUB","description":"Пробное занятие бесплатно"},
-        {"@type":"Offer","name":"Премьера (6–9 лет) — классика и эстрада","price":"0","priceCurrency":"RUB","description":"Пробное занятие бесплатно"},
-        {"@type":"Offer","name":"Бенефис (10–14 лет) — сцена и конкурсы","price":"0","priceCurrency":"RUB","description":"Пробное занятие бесплатно"}
+        {"@type":"Offer","name":"Звёздочки (3–5 лет) — игровая хореография","price":"9000","priceCurrency":"RUB","description":"Абонемент на месяц. Пробное занятие бесплатно."},
+        {"@type":"Offer","name":"Премьера (6–9 лет) — классика и эстрада","price":"9000","priceCurrency":"RUB","description":"Абонемент на месяц. Пробное занятие бесплатно."},
+        {"@type":"Offer","name":"Бенефис (10–14 лет) — сцена и конкурсы","price":"9000","priceCurrency":"RUB","description":"Абонемент на месяц. Пробное занятие бесплатно."},
+        {"@type":"Offer","name":"Умный фитнес для взрослых","price":"8500","priceCurrency":"RUB","description":"Абонемент на месяц. Пробное занятие бесплатно."},
+        {"@type":"Offer","name":"Летний интенсив (6–14 лет) — 5 раз в неделю","price":"9000","priceCurrency":"RUB","description":"Абонемент на месяц. Занятия пн–пт, 18:00–20:00. Классика и эстрада."}
       ]
     }
   },
@@ -334,7 +336,7 @@
 <section id="groups">
   <div class="container">
     <h2 class="section-title">Группы и расписание — Видное</h2>
-    <p class="section-sub">Точный тариф назовём после пробного — когда увидим, какая группа подойдёт дочке.</p>
+    <p class="section-sub">Первое занятие — бесплатно. Стоимость абонемента на&nbsp;месяц — <strong>9&nbsp;000&nbsp;₽</strong> для всех детских групп.</p>
 
     <div class="groups">
       <article class="group-card">
@@ -343,7 +345,7 @@
           <span class="group-age">3–5 лет</span>
           <p class="group-meta"><strong>Пн · Ср · Пт</strong> · 17:00–18:00 · игровая хореография</p>
         </div>
-        <div class="group-price"><em>Пробное — 0 ₽</em>Абонемент после визита</div>
+        <div class="group-price"><em>9&nbsp;000 ₽/мес</em>Пробное — бесплатно</div>
       </article>
 
       <article class="group-card">
@@ -352,7 +354,7 @@
           <span class="group-age">6–9 лет</span>
           <p class="group-meta"><strong>Пн · Чт · Сб</strong> · 18:00–20:00 · классика и эстрада</p>
         </div>
-        <div class="group-price"><em>Пробное — 0 ₽</em>Абонемент после визита</div>
+        <div class="group-price"><em>9&nbsp;000 ₽/мес</em>Пробное — бесплатно</div>
       </article>
 
       <article class="group-card">
@@ -361,14 +363,161 @@
           <span class="group-age">10–14 лет</span>
           <p class="group-meta"><strong>Вт · Пт · Сб</strong> · 18:00–20:30 · сцена и конкурсы</p>
         </div>
-        <div class="group-price"><em>Пробное — 0 ₽</em>Абонемент после визита</div>
+        <div class="group-price"><em>9&nbsp;000 ₽/мес</em>Пробное — бесплатно</div>
       </article>
     </div>
 
     <div class="extras">
-      <span class="extra-pill">Летний интенсив · 6–14</span>
+      <span class="extra-pill"><a href="#summer" style="color:var(--gold); font-weight:700;">☀️ Летний интенсив · 6–14</a></span>
       <span class="extra-pill"><a href="certificates.html">Подарочный сертификат</a></span>
     </div>
+
+    <!-- Летний интенсив -->
+    <div id="summer" style="margin-top:32px; border-radius:24px; overflow:hidden; border:2px solid var(--gold-light); background:#fff; box-shadow:0 16px 48px -20px rgba(201,169,97,.22);">
+
+      <!-- Шапка -->
+      <div style="background:linear-gradient(135deg, #FFF8EC 0%, #FFF2E0 100%); padding:28px 32px 22px; border-bottom:2px solid var(--gold-light); position:relative; overflow:hidden;">
+        <div style="position:absolute; top:-30px; right:-30px; width:160px; height:160px; background:radial-gradient(circle, rgba(201,169,97,.18), transparent 70%); pointer-events:none;"></div>
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+          <div>
+            <span style="display:inline-flex; align-items:center; gap:6px; background:var(--gold); color:#fff; font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:5px 13px; border-radius:999px; margin-bottom:10px;">
+              ☀️ Только летом
+            </span>
+            <h2 style="font-family:var(--display); font-size:clamp(26px,4vw,36px); font-weight:600; color:#1B2A4E; margin:0 0 6px; line-height:1.1;">Летний интенсив</h2>
+            <p style="font-size:15px; color:var(--ink-soft); margin:0; line-height:1.6;">Для девочек <strong>6–14 лет</strong> · ЖК «Суханово&nbsp;Парк», Видное</p>
+          </div>
+          <div style="text-align:center; background:#fff; border:2px solid var(--gold-light); border-radius:18px; padding:14px 22px; min-width:150px; flex-shrink:0;">
+            <div style="font-family:var(--display); font-size:36px; font-weight:700; color:var(--gold); line-height:1;">9&nbsp;000 ₽</div>
+            <div style="font-size:11px; color:var(--ink-mute); letter-spacing:.07em; text-transform:uppercase; margin-top:3px;">абонемент / месяц</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Тело -->
+      <div style="padding:28px 32px;">
+
+        <!-- Ключевые факты — 3 пилюли -->
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px;">
+          <div style="display:flex; align-items:center; gap:8px; background:var(--tiffany-soft); border-radius:12px; padding:10px 16px;">
+            <span style="font-size:18px;">📅</span>
+            <div>
+              <div style="font-size:13px; font-weight:700; color:#1B2A4E;">5 раз в неделю</div>
+              <div style="font-size:12px; color:var(--ink-mute);">Пн — Пт</div>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; background:var(--pink-cloud); border-radius:12px; padding:10px 16px;">
+            <span style="font-size:18px;">🕕</span>
+            <div>
+              <div style="font-size:13px; font-weight:700; color:#1B2A4E;">18:00 — 20:00</div>
+              <div style="font-size:12px; color:var(--ink-mute);">2 часа занятий</div>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; background:#F3F0FF; border-radius:12px; padding:10px 16px;">
+            <span style="font-size:18px;">🎭</span>
+            <div>
+              <div style="font-size:13px; font-weight:700; color:#1B2A4E;">Хореография + постановка</div>
+              <div style="font-size:12px; color:var(--ink-mute);">классика и эстрада</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Что входит -->
+        <h3 style="font-family:var(--display); font-size:20px; font-weight:600; color:#1B2A4E; margin:0 0 12px;">Что входит в интенсив</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:10px; margin-bottom:24px;">
+          <div style="display:flex; align-items:flex-start; gap:10px; padding:14px 16px; background:#FAFAFA; border-radius:14px; border:1px solid rgba(27,27,46,.06);">
+            <span style="font-size:20px; flex-shrink:0;">🩰</span>
+            <div style="font-size:14px; color:var(--ink-soft); line-height:1.5;"><strong style="color:#1B2A4E; display:block; margin-bottom:2px;">Классическая хореография</strong>Станок, растяжка, постановка корпуса — база, которая остаётся навсегда</div>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:10px; padding:14px 16px; background:#FAFAFA; border-radius:14px; border:1px solid rgba(27,27,46,.06);">
+            <span style="font-size:20px; flex-shrink:0;">✨</span>
+            <div style="font-size:14px; color:var(--ink-soft); line-height:1.5;"><strong style="color:#1B2A4E; display:block; margin-bottom:2px;">Эстрадные постановки</strong>Готовим номер за месяц — дочка выйдет с&nbsp;готовым танцем</div>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:10px; padding:14px 16px; background:#FAFAFA; border-radius:14px; border:1px solid rgba(27,27,46,.06);">
+            <span style="font-size:20px; flex-shrink:0;">🎵</span>
+            <div style="font-size:14px; color:var(--ink-soft); line-height:1.5;"><strong style="color:#1B2A4E; display:block; margin-bottom:2px;">Ритмика и музыкальность</strong>Слух, ритм, координация — занятия каждый день дают быстрый результат</div>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:10px; padding:14px 16px; background:#FAFAFA; border-radius:14px; border:1px solid rgba(27,27,46,.06);">
+            <span style="font-size:20px; flex-shrink:0;">👭</span>
+            <div style="font-size:14px; color:var(--ink-soft); line-height:1.5;"><strong style="color:#1B2A4E; display:block; margin-bottom:2px;">Группа и атмосфера</strong>Дочка не скучает летом — каждый день общение, движение, творчество</div>
+          </div>
+        </div>
+
+        <!-- Для кого подходит -->
+        <div style="background:linear-gradient(135deg, var(--tiffany-soft), var(--pink-cloud)); border-radius:16px; padding:18px 22px; margin-bottom:24px;">
+          <h3 style="font-family:var(--display); font-size:18px; font-weight:600; color:#1B2A4E; margin:0 0 10px;">Кому подходит летний интенсив?</h3>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--ink-soft);">
+              <span style="width:22px; height:22px; border-radius:50%; background:var(--tiffany); color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0;">✓</span>
+              Девочки <strong style="color:#1B2A4E;">6–14 лет</strong> — с опытом и без, берём всех
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--ink-soft);">
+              <span style="width:22px; height:22px; border-radius:50%; background:var(--tiffany); color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0;">✓</span>
+              Те, кто занимается в студии — <strong style="color:#1B2A4E;">не потерять форму</strong> за лето
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--ink-soft);">
+              <span style="width:22px; height:22px; border-radius:50%; background:var(--tiffany); color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0;">✓</span>
+              Новички — <strong style="color:#1B2A4E;">отличный старт</strong> перед учебным годом
+            </div>
+          </div>
+        </div>
+
+        <!-- Сравнение с учебным годом -->
+        <div style="background:#fff; border:1px solid rgba(27,27,46,.08); border-radius:16px; overflow:hidden; margin-bottom:24px;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; text-align:center;">
+            <div style="padding:14px 16px; border-right:1px solid rgba(27,27,46,.08);">
+              <div style="font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:6px;">Учебный год</div>
+              <div style="font-size:15px; color:var(--ink-soft);">3 раза в неделю</div>
+              <div style="font-size:13px; color:var(--ink-mute); margin-top:4px;">9 000 ₽/мес</div>
+            </div>
+            <div style="padding:14px 16px; background:linear-gradient(135deg,#FFFBF0,#FFF8EC);">
+              <div style="font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin-bottom:6px;">Летний интенсив</div>
+              <div style="font-size:15px; font-weight:700; color:#1B2A4E;">5 раз в неделю</div>
+              <div style="font-size:13px; color:var(--gold); font-weight:600; margin-top:4px;">9 000 ₽/мес — та же цена</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:14px;">
+          <a href="index.html#signup" style="display:inline-flex; align-items:center; gap:8px; padding:14px 28px; border-radius:999px; background:linear-gradient(135deg,var(--gold),#B8903A); color:#fff; font-weight:700; font-size:15px; text-decoration:none; box-shadow:0 10px 28px -10px rgba(201,169,97,.55);">
+            Записаться на интенсив
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+79636719983" style="font-size:15px; font-weight:600; color:var(--tiffany-deep); display:flex; align-items:center; gap:6px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.27-.76a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +7 (963) 671-99-83
+          </a>
+        </div>
+        <p style="font-size:11px; color:var(--ink-mute); margin:12px 0 0; line-height:1.5;">* Стоимость абонемента на месяц — 9 000 ₽. Оплата до начала периода. Места ограничены.</p>
+      </div>
+    </div>
+    <!-- /Летний интенсив -->
+
+    <!-- Взрослый фитнес -->
+    <div id="adult-fitness" style="margin-top:40px; padding:32px 36px; background:linear-gradient(135deg,#1B2A4E 0%,#2a3558 100%); border-radius:20px; color:#fff; position:relative; overflow:hidden;">
+      <div style="position:absolute; top:-40px; right:-40px; width:180px; height:180px; background:radial-gradient(circle, rgba(10,186,181,.22), transparent 70%); pointer-events:none;"></div>
+      <span style="font-family:var(--script); font-size:22px; color:var(--gold-light); display:block; margin-bottom:6px;">для взрослых</span>
+      <h2 style="font-family:var(--display); font-size:clamp(24px,3.5vw,32px); font-weight:500; margin:0 0 10px; color:#fff;">Умный фитнес для взрослых</h2>
+      <p style="font-size:15px; color:rgba(255,255,255,.82); margin:0 0 20px; max-width:560px; line-height:1.7;">Занятия для взрослых на базе студии — осознанное движение, работа с&nbsp;телом и&nbsp;ритмом без возрастных ограничений. Подходит с&nbsp;нуля, без хореографического опыта.</p>
+      <div style="display:inline-flex; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div style="background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); border-radius:16px; padding:16px 24px; text-align:center; min-width:160px;">
+          <div style="font-family:var(--display); font-size:32px; font-weight:600; color:var(--gold-light); line-height:1;">8&nbsp;500 ₽</div>
+          <div style="font-size:12px; color:rgba(255,255,255,.65); margin-top:4px; letter-spacing:.05em;">АБОНЕМЕНТ НА МЕСЯЦ</div>
+        </div>
+        <div style="font-size:14px; color:rgba(255,255,255,.75); line-height:1.6; max-width:320px;">
+          Стоимость абонемента на&nbsp;месяц — <strong style="color:#fff;">8&nbsp;500&nbsp;₽</strong>. Первое занятие — бесплатно.<br>
+          Расписание и&nbsp;запись — по&nbsp;телефону или в&nbsp;форме ниже.
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <a href="index.html#signup" style="display:inline-flex; align-items:center; gap:8px; padding:13px 26px; border-radius:999px; background:linear-gradient(135deg,var(--tiffany),var(--pink)); color:#fff; font-weight:700; font-size:15px; text-decoration:none;">
+          Записаться бесплатно
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <p style="font-size:11px; color:rgba(255,255,255,.4); margin:16px 0 0; line-height:1.5;">* Цена абонемента действительна при оплате до начала месяца. ИП Гурьянова Т.И. вправе изменить стоимость, уведомив за 14 дней.</p>
+    </div>
+    <!-- /Взрослый фитнес -->
 
     <div style="margin-top:40px; padding:32px 36px; background:#fff; border-radius:20px; border:1px solid rgba(27,27,46,.06);">
       <h2 style="font-family:var(--display); font-size:clamp(22px,3vw,28px); font-weight:500; color:#1B2A4E; margin:0 0 14px;">О студии: детский театр танца в ЖК «Суханово Парк»</h2>
