@@ -62,7 +62,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
 
 <!-- Schema.org structured data: DanceSchool organization -->
-<script type="application/ld+json">
+<script type="application/ld+json" id="schema-main-jsonld">
 {
   "@context": "https://schema.org",
   "@type": "DanceSchool",
@@ -203,7 +203,7 @@
       "name": "Сколько стоят занятия?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Смотрите страницу «Цены и тарифы» на сайте или напишите нам — пришлём актуальный прайс. Стоимость зависит от группы и количества занятий. Есть подарочные сертификаты."
+        "text": "Единая стоимость на все виды детских групп — 9 000 рублей в месяц (группы «Звёздочки», «Премьера», «Бенефис»). Умный фитнес для взрослых — 8 500 рублей в месяц. Первое занятие — бесплатно. Есть подарочные сертификаты. Оплата производится ежемесячно в соответствии с договором об оказании платных образовательных услуг."
       }
     },
     {
@@ -211,7 +211,7 @@
       "name": "Где проходят отчётные концерты?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Большие отчётные концерты проходят в ДК Быково — это профессиональная концертная сцена, где выступают известные артисты, и на других площадках Ленинского округа."
+        "text": "Наши воспитанники выступают на всероссийских и международных хореографических конкурсах и фестивалях — «Гордость Страны», «Танцевальный Олимп», «Звёздный дождь» и других. Помимо конкурсной деятельности, большие отчётные концерты проходят на профессиональных концертных площадках Ленинского округа."
       }
     },
     {
@@ -1077,6 +1077,62 @@
   }
   .prog-schedule-note a{color:var(--tiffany-deep); font-weight:600; text-decoration:underline}
 
+  .prog-price-block{
+    grid-column:1 / -1;
+    margin:18px auto 0;
+    display:flex; align-items:center; justify-content:center; gap:18px; flex-wrap:wrap;
+    padding:20px 32px;
+    background:linear-gradient(135deg, var(--pink-cloud) 0%, var(--tiffany-soft) 100%);
+    border:1.5px solid rgba(201,169,97,.35);
+    border-radius:var(--radius);
+    text-align:center;
+  }
+  .prog-price-amount{
+    font-family:var(--display);
+    font-size:clamp(32px,3.5vw,46px);
+    font-weight:700;
+    color:var(--ink);
+    line-height:1;
+  }
+  .prog-price-amount span{
+    font-size:.55em;
+    color:var(--ink-mute);
+    font-weight:400;
+    display:block;
+    margin-top:4px;
+    font-style:italic;
+  }
+  .prog-price-note{
+    font-size:14px;
+    color:var(--ink-soft);
+    max-width:340px;
+    line-height:1.5;
+  }
+  .prog-price-note strong{color:var(--tiffany-deep)}
+
+  /* Fitness price badge */
+  .fitness-price-badge{
+    display:inline-flex; align-items:center; gap:12px;
+    background:linear-gradient(135deg, var(--tiffany-soft) 0%, var(--pink-cloud) 100%);
+    border:1.5px solid rgba(201,169,97,.4);
+    border-radius:var(--radius);
+    padding:18px 28px;
+    margin-top:24px;
+  }
+  .fitness-price-badge .fpb-amount{
+    font-family:var(--display);
+    font-size:clamp(28px,3vw,40px);
+    font-weight:700;
+    color:var(--ink);
+    line-height:1;
+  }
+  .fitness-price-badge .fpb-label{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    line-height:1.45;
+  }
+  .fitness-price-badge .fpb-label strong{display:block; font-size:15px; color:var(--ink)}
+
   @media (max-width:960px){.programs-grid{grid-template-columns:1fr; max-width:520px; margin-inline:auto}}
 
   /* Teachers — editorial monochrome with champagne underglow */
@@ -1734,14 +1790,15 @@
   }
   .blog-grid{
     display:grid;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
     gap:24px;
-    max-width:780px;
+    max-width:1100px;
     margin-inline:auto;
   }
+  @media (max-width:820px){.blog-grid{grid-template-columns:1fr; max-width:600px}}
   .blog-card{
     display:grid;
-    grid-template-columns:280px 1fr;
+    grid-template-columns:1fr;
     background:#fff;
     border-radius:var(--radius-lg);
     overflow:hidden;
@@ -1759,6 +1816,7 @@
   .blog-card-img{
     position:relative;
     overflow:hidden;
+    aspect-ratio:16/9;
     background:linear-gradient(135deg, var(--pink-soft), var(--tiffany-soft));
   }
   .blog-card-img img{
@@ -2976,11 +3034,15 @@
         "@type": "Offer",
         "url": "https://tatianinden.ru/prices.html",
         "priceCurrency": "RUB",
+        "price": "9000",
         "availability": "https://schema.org/InStock",
-        "description": "Абонемент зависит от количества занятий. Первое занятие — бесплатно.",
+        "description": "Абонемент на любые виды групп — 9 000 рублей в месяц. Первое занятие — бесплатно.",
         "priceSpecification": {
+          "@type": "UnitPriceSpecification",
           "@type": "PriceSpecification",
+          "price": "9000",
           "priceCurrency": "RUB",
+          "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitCode": "MON"},
           "valueAddedTaxIncluded": true
         }
       }
@@ -2997,8 +3059,9 @@
         "@type": "Offer",
         "url": "https://tatianinden.ru/prices.html",
         "priceCurrency": "RUB",
+        "price": "9000",
         "availability": "https://schema.org/InStock",
-        "description": "Абонемент зависит от количества занятий. Первое занятие — бесплатно."
+        "description": "Абонемент на любые виды групп — 9 000 рублей в месяц. Первое занятие — бесплатно."
       }
     },
     {
@@ -3013,8 +3076,9 @@
         "@type": "Offer",
         "url": "https://tatianinden.ru/prices.html",
         "priceCurrency": "RUB",
+        "price": "9000",
         "availability": "https://schema.org/InStock",
-        "description": "Абонемент зависит от количества занятий. Первое занятие — бесплатно."
+        "description": "Абонемент на любые виды групп — 9 000 рублей в месяц. Первое занятие — бесплатно."
       }
     },
     {
@@ -3029,8 +3093,9 @@
         "@type": "Offer",
         "url": "https://tatianinden.ru/prices.html",
         "priceCurrency": "RUB",
+        "price": "8500",
         "availability": "https://schema.org/InStock",
-        "description": "Офлайн и онлайн. Стоимость уточняйте по телефону."
+        "description": "Умный фитнес для взрослых — 8 500 рублей в месяц. Офлайн и онлайн форматы."
       }
     }
   ]
@@ -3108,7 +3173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="hero-tags">
           <span class="tag"><span class="tag-dot"></span> Топ-100 лучших коллективов России</span>
           <span class="tag"><span class="tag-dot" style="background:var(--tiffany)"></span> 10 лет на сцене</span>
-          <span class="tag"><span class="tag-dot" style="background:var(--pink)"></span> 4,5 на Яндексе</span>
+          <span class="tag"><span class="tag-dot" style="background:var(--pink)"></span> <span id="ya-tag-rating">4,5</span> на Яндексе</span>
         </div>
 
         <span class="hero-kicker">Детский театр танца</span>
@@ -3141,7 +3206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="trust-label">воспитанников</span>
           </div>
           <div class="trust-item">
-            <span class="trust-num">4,5</span>
+            <span class="trust-num" id="ya-trust-rating">4,5</span>
             <span class="trust-label">★ на Яндексе</span>
           </div>
           <div class="trust-item">
@@ -3209,7 +3274,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Наши воспитанники — <strong>неоднократные обладатели премии Гран-при международных и&nbsp;отечественных хореографических конкурсов и&nbsp;фестивалей</strong> и&nbsp;<strong>многократные лауреаты первой&nbsp;степени</strong>, финалисты <strong>«Гордости Страны»</strong>, входим в&nbsp;<strong>Топ-100&nbsp;лучших хореографических коллективов России</strong>. Каждый ребёнок — от&nbsp;3&nbsp;до&nbsp;14&nbsp;лет — проходит путь от&nbsp;первого занятия до&nbsp;большой профессиональной сцены.
         </p>
         <p style="margin-bottom:32px">
-          В&nbsp;мае 2026&nbsp;мы празднуем юбилей — <strong>10&nbsp;лет на&nbsp;сцене</strong>. Большой концерт «Нам&nbsp;10&nbsp;лет!» состоится 30&nbsp;мая в&nbsp;ДК&nbsp;Быково — на&nbsp;профессиональной концертной сцене.
+          В&nbsp;мае 2026&nbsp;мы празднуем юбилей — <strong>10&nbsp;лет на&nbsp;сцене</strong>. Большой концерт «Нам&nbsp;10&nbsp;лет!» состоится 30&nbsp;мая на&nbsp;профессиональной концертной площадке.
         </p>
         <div class="about-cta">
           <a class="btn btn-gold" href="#programs">
@@ -3244,7 +3309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           loading="lazy"></iframe>
       </div>
       <div class="video-side">
-        <p>На&nbsp;канале RuTube — выступления, репетиции и&nbsp;летний интенсив. Подпишитесь, чтобы не&nbsp;пропустить юбилейный концерт <strong>30&nbsp;мая&nbsp;2026</strong> в&nbsp;ДК&nbsp;Быково.</p>
+        <p>На&nbsp;канале RuTube — выступления, репетиции и&nbsp;летний интенсив. Подпишитесь, чтобы не&nbsp;пропустить юбилейный концерт <strong>30&nbsp;мая&nbsp;2026</strong>.</p>
         <a class="btn btn-rutube" href="https://rutube.ru/channel/38794454/" target="_blank" rel="noopener noreferrer" data-goal="cta_rutube_video">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 6.2a3 3 0 0 0-2.1-2.1C17.5 3.5 12 3.5 12 3.5s-5.5 0-7.4.6A3 3 0 0 0 2.5 6.2C2 8.1 2 12 2 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 7.4.6 7.4.6s5.5 0 7.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
           Все видео на RuTube
@@ -3386,8 +3451,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <ul class="prog-list">
             <li>Углублённое изучение современного и&nbsp;эстрадного танцев</li>
             <li>Импровизация и&nbsp;актёрское мастерство</li>
-            <li>Сольные и&nbsp;групповые номера для&nbsp;большой сцены</li>
-            <li>Конкурсный состав, гастроли и&nbsp;международные фестивали</li>
+            <li>Сольные и&nbsp;групповые номера конкурсного уровня</li>
+            <li>Всероссийские и&nbsp;международные хореографические конкурсы и&nbsp;фестивали</li>
           </ul>
           <div class="prog-meta">
             <span class="pill">3 раза в неделю</span>
@@ -3402,6 +3467,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
     </div>
     <p class="prog-schedule-note">⏱ <a href="prices.html">Тарифы и абонементы</a> · уточнить расписание и&nbsp;записаться: <a href="tel:+79636719983" data-goal="cta_call_programs">+7&nbsp;(963)&nbsp;671-99-83</a> или&nbsp;<a href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_programs">Telegram</a></p>
+
+    <div class="prog-price-block reveal">
+      <div class="prog-price-amount">
+        9&nbsp;000&nbsp;₽
+        <span>в&nbsp;месяц</span>
+      </div>
+      <div class="prog-price-note">
+        <strong>Единая стоимость</strong> на&nbsp;все виды детских групп:<br/>
+        «Звёздочки» (3–5 лет) · «Премьера» (6–9 лет) · «Бенефис» (10–14 лет).<br/>
+        Первое пробное занятие — <strong>бесплатно</strong>. Оплата — ежемесячно.<br/>
+        <a href="prices.html" style="color:var(--tiffany-deep); font-weight:600; text-decoration:underline">Подробнее о тарифах и абонементах →</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -3620,6 +3698,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>не&nbsp;максимальная нагрузка любой ценой, а&nbsp;<strong>сильное, подвижное и&nbsp;сбалансированное тело</strong>, которое уверенно функционирует в&nbsp;повседневной жизни.</p>
         </div>
 
+        <div class="fitness-price-badge">
+          <div class="fpb-amount">8&nbsp;500&nbsp;₽</div>
+          <div class="fpb-label">
+            <strong>Умный фитнес для взрослых</strong>
+            в&nbsp;месяц · офлайн и&nbsp;онлайн-формат<br/>
+            <a href="prices.html" style="color:var(--tiffany-deep); font-weight:600; font-size:13px; text-decoration:underline">Подробнее о тарифах →</a>
+          </div>
+        </div>
+
         <div class="hero-cta" style="margin-top:32px">
           <a class="btn btn-primary btn-lg" href="#" onclick="openModal('trial');return false;" data-goal="cta_open_form_trial">
             Записаться на пробное
@@ -3703,8 +3790,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Marquee strip -->
     <div class="marquee-wrap">
       <div class="marquee">
-        <span>★ Гордость Страны ★ Топ-100 лучших хореографических коллективов России ★ Неоднократные обладатели Гран-при ★ Многократные лауреаты первой степени ★ Международные и отечественные хореографические конкурсы и фестивали ★ ДК Быково ★ Юбилей 10 лет ★&nbsp;</span>
-        <span>★ Гордость Страны ★ Топ-100 лучших хореографических коллективов России ★ Неоднократные обладатели Гран-при ★ Многократные лауреаты первой степени ★ Международные и отечественные хореографические конкурсы и фестивали ★ ДК Быково ★ Юбилей 10 лет ★&nbsp;</span>
+        <span>★ Гордость Страны ★ Топ-100 лучших хореографических коллективов России ★ Неоднократные обладатели Гран-при ★ Многократные лауреаты первой степени ★ Всероссийские и международные хореографические конкурсы ★ Международные фестивали ★ Юбилей 10 лет ★&nbsp;</span>
+        <span>★ Гордость Страны ★ Топ-100 лучших хореографических коллективов России ★ Неоднократные обладатели Гран-при ★ Многократные лауреаты первой степени ★ Всероссийские и международные хореографические конкурсы ★ Международные фестивали ★ Юбилей 10 лет ★&nbsp;</span>
       </div>
     </div>
   </div>
@@ -3842,11 +3929,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </details>
         <details class="faq-item">
           <summary class="faq-q">Сколько стоят занятия? <span class="faq-icon">+</span></summary>
-          <div class="faq-a"><p>Смотрите <a href="prices.html">страницу «Цены и тарифы»</a> или&nbsp;напишите нам — пришлём актуальный прайс. Стоимость зависит от&nbsp;группы и&nbsp;количества занятий. Есть <a href="certificates.html">подарочные сертификаты</a>.</p></div>
+          <div class="faq-a"><p>Единая стоимость на&nbsp;все виды детских групп — <strong>9&nbsp;000&nbsp;₽ в&nbsp;месяц</strong> (группы «Звёздочки», «Премьера», «Бенефис»). Умный фитнес для взрослых — <strong>8&nbsp;500&nbsp;₽ в&nbsp;месяц</strong>. Первое занятие — <strong>бесплатно</strong>. Оплата ежемесячно согласно договору. Есть <a href="certificates.html">подарочные сертификаты</a>. Подробнее — на&nbsp;<a href="prices.html">странице «Цены и тарифы»</a>.</p></div>
         </details>
         <details class="faq-item">
           <summary class="faq-q">Где проходят отчётные концерты? <span class="faq-icon">+</span></summary>
-          <div class="faq-a"><p>Большие отчётные концерты проходят в&nbsp;<strong>ДК&nbsp;Быково — это профессиональная концертная сцена</strong>, где выступают известные артисты, и&nbsp;на&nbsp;других площадках Ленинского округа. 30&nbsp;мая&nbsp;2026 у&nbsp;нас юбилейный концерт «Нам&nbsp;10&nbsp;лет!».</p></div>
+          <div class="faq-a"><p>Наши воспитанники выступают на&nbsp;<strong>всероссийских и&nbsp;международных хореографических конкурсах и&nbsp;фестивалях</strong> — «Гордость Страны», «Танцевальный Олимп», «Звёздный дождь» и&nbsp;других. Большие отчётные концерты проходят на&nbsp;профессиональных концертных площадках Ленинского округа. 30&nbsp;мая&nbsp;2026 у&nbsp;нас юбилейный концерт «Нам&nbsp;10&nbsp;лет!».</p></div>
         </details>
         <details class="faq-item">
           <summary class="faq-q">Есть ли подарочные сертификаты? <span class="faq-icon">+</span></summary>
@@ -3928,7 +4015,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="section-head center reveal">
       <span class="eyebrow center">Полезные статьи</span>
       <h2>Родителям <em>о&nbsp;танцах</em></h2>
-      <p class="lead">Делимся опытом 10&nbsp;лет работы с&nbsp;детьми разного возраста. Отвечаем на&nbsp;самые частые вопросы.</p>
+      <p class="lead">Для&nbsp;мам девочек 4–14&nbsp;лет: когда начинать, как выбрать группу и&nbsp;что даёт ребёнку серьёзная хореография. Делимся&nbsp;10&nbsp;годами опыта.</p>
     </div>
 
     <div class="blog-grid">
@@ -3941,6 +4028,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Во сколько лет отдавать ребёнка на&nbsp;танцы?</h3>
           <p>Возрастной гид: что развивают занятия в&nbsp;3, 4, 5, 6 и&nbsp;7&nbsp;лет. Какие стили подходят. Как выбрать первую группу.</p>
           <span class="blog-card-meta">8&nbsp;минут чтения · Татьяна&nbsp;Ивановна Гурьянова</span>
+        </div>
+      </a>
+
+      <a class="blog-card reveal" href="blog/tancy-dlya-podrostkov-10-14-let.html" style="transition-delay:.08s">
+        <div class="blog-card-img">
+          <img src="benifis.jpg" alt="Старшая группа Бенефис — 10–14 лет на всероссийских конкурсах" loading="lazy" width="600" height="400" decoding="async"/>
+          <span class="blog-card-tag" style="background:linear-gradient(135deg,var(--gold),var(--pink))">10–14 лет</span>
+        </div>
+        <div class="blog-card-body">
+          <h3>Танцы для подростков 10–14 лет: углублённый курс и&nbsp;большая сцена</h3>
+          <p>Как старшая группа «Бенефис» готовит детей к&nbsp;всероссийским и&nbsp;международным хореографическим конкурсам. Импровизация, актёрство, сольные номера.</p>
+          <span class="blog-card-meta">6&nbsp;минут чтения · Татьяна&nbsp;Ивановна Гурьянова</span>
         </div>
       </a>
     </div>
@@ -3995,7 +4094,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div>
             <small>Профиль на&nbsp;Яндекс Картах</small>
             <strong>
-              <span class="ya-stars">★★★★<span style="opacity:.5">★</span></span> 4,5 · много отзывов
+              <span class="ya-stars" id="ya-contact-stars">★★★★<span style="opacity:.5">★</span></span> <span id="ya-contact-rating">4,5</span> · <span id="ya-contact-count">много отзывов</span>
             </strong>
             <span class="ya-arrow">Открыть на Яндексе →</span>
           </div>
@@ -4386,7 +4485,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Чтобы активировать: замените YM_COUNTER_ID и CLARITY_ID на реальные.
   // Инструкция: см. «Аналитика и SEO — чеклист подключения.md»
   // ============================================================
-  var YM_COUNTER_ID  = 109457377;  // Татьянин День — metrika.yandex.ru/dashboard?id=109457377
+  var YM_COUNTER_ID  = 89391976;  // Татьянин День — metrika.yandex.ru/dashboard?id=89391976
   var CLARITY_ID     = null;  // например: "abcd1234ef"  (получить на clarity.microsoft.com)
   var GA4_ID         = 'G-31FPXBHXEV';
   var GTM_ID         = 'GTM-NG4GMMWB';
@@ -4404,9 +4503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       trackLinks: true,
       accurateTrackBounce: true,
       webvisor: true,
-      ecommerce: "dataLayer",
-      trackHash: true,
-      params: { page_type: "main" }
+      ecommerce: "dataLayer"
     });
     // <noscript> fallback
     var ns = document.createElement('noscript');
@@ -4570,6 +4667,104 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     clearTimeout(window.__toastTimer);
     window.__toastTimer = setTimeout(() => { t.style.opacity = '0'; }, 3200);
   }
+</script>
+
+<!-- ============================================================
+     Яндекс рейтинг — единый источник данных
+     Редактируйте ТОЛЬКО файл yandex-rating.json на сервере.
+     Скрипт читает его раз в сутки и обновляет все блоки сразу:
+       • тег «4,5 на Яндексе» в шапке героя
+       • блок trust «4,5 ★ на Яндексе»
+       • карточка контактов (звёзды + цифра + кол-во отзывов)
+       • JSON-LD schema aggregateRating
+     ============================================================ -->
+<script>
+(function() {
+  var CACHE_KEY  = 'ya_rating_cache';
+  var CACHE_DATE = 'ya_rating_date';
+  var JSON_URL   = '/yandex-rating.json';   // путь к файлу на вашем сервере
+
+  function starsHtml(rating) {
+    var full  = Math.floor(rating);
+    var half  = (rating - full) >= 0.3 && (rating - full) < 0.8;
+    var empty = 5 - full - (half ? 1 : 0);
+    var s = '';
+    for (var i = 0; i < full;  i++) s += '★';
+    if (half) s += '<span style="opacity:.5">★</span>';
+    for (var i = 0; i < empty; i++) s += '<span style="opacity:.25">★</span>';
+    return s;
+  }
+
+  function reviewLabel(count) {
+    if (!count || count === 0) return 'нет отзывов';
+    var n = count % 100;
+    var m = count % 10;
+    if (n >= 11 && n <= 19) return count + '\u00a0отзывов';
+    if (m === 1)  return count + '\u00a0отзыв';
+    if (m >= 2 && m <= 4) return count + '\u00a0отзыва';
+    return count + '\u00a0отзывов';
+  }
+
+  function applyRating(data) {
+    var r   = parseFloat(data.rating);
+    var cnt = parseInt(data.reviewCount, 10);
+    var rStr = r.toFixed(1).replace('.', ',');    // «4,5»
+
+    // 1. Тег в hero-tags
+    var tagEl = document.getElementById('ya-tag-rating');
+    if (tagEl) tagEl.textContent = rStr;
+
+    // 2. Trust-bar
+    var trustEl = document.getElementById('ya-trust-rating');
+    if (trustEl) trustEl.textContent = rStr;
+
+    // 3. Контакты — звёзды + цифра + кол-во
+    var starsEl = document.getElementById('ya-contact-stars');
+    if (starsEl) starsEl.innerHTML = starsHtml(r);
+    var cRating = document.getElementById('ya-contact-rating');
+    if (cRating) cRating.textContent = rStr;
+    var cCount  = document.getElementById('ya-contact-count');
+    if (cCount)  cCount.textContent  = reviewLabel(cnt);
+
+    // 4. JSON-LD schema
+    var schemaEl = document.getElementById('schema-main-jsonld');
+    if (schemaEl) {
+      try {
+        var obj = JSON.parse(schemaEl.textContent);
+        if (obj.aggregateRating) {
+          obj.aggregateRating.ratingValue  = String(r.toFixed(1));
+          obj.aggregateRating.reviewCount  = String(cnt);
+        }
+        schemaEl.textContent = JSON.stringify(obj);
+      } catch(e) {}
+    }
+  }
+
+  function fetchAndApply() {
+    fetch(JSON_URL + '?v=' + Date.now())
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        localStorage.setItem(CACHE_KEY,  JSON.stringify(data));
+        localStorage.setItem(CACHE_DATE, new Date().toDateString());
+        applyRating(data);
+      })
+      .catch(function() {
+        // Если fetch не удался — молча оставляем дефолтные значения из HTML
+      });
+  }
+
+  // Запустить сразу из кэша (мгновенно), затем обновить если кэш устарел
+  var cached = null;
+  try { cached = JSON.parse(localStorage.getItem(CACHE_KEY)); } catch(e) {}
+  var cacheDate = localStorage.getItem(CACHE_DATE);
+
+  if (cached) applyRating(cached);  // моментально из кэша
+
+  var todayStr = new Date().toDateString();
+  if (cacheDate !== todayStr) {
+    fetchAndApply();  // обновляем раз в сутки
+  }
+})();
 </script>
 </body>
 </html>
