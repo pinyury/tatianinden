@@ -654,7 +654,7 @@
 <header class="nav" id="nav">
   <div class="container nav-row">
     <a href="../index.html" class="logo" aria-label="Татьянин День">
-      <img src="https://tatianinden.ru/logo.jpg" alt="Татьянин День — детский театр танца" width="72" height="72" />
+      <img src="../logo.jpg" alt="Татьянин День — детский театр танца" width="72" height="72" />
       <span class="logo-text">
         <strong>Татьянин День</strong>
         <small>Блог · Полезные статьи</small>
@@ -708,7 +708,7 @@
     <a class="featured-card reveal" href="kak-razvit-plastiku-i-osanku.html">
       <div class="featured-img">
         <span class="featured-tag">Новое</span>
-        <img src="https://tatianinden.ru/photo_2024-05-24_21-46-24.jpg" alt="Как развить пластику и осанку у ребёнка" width="660" height="440" fetchpriority="high" />
+        <img src="photo_2024-05-24_21-46-24.jpg" alt="Как развить пластику и осанку у ребёнка" width="660" height="440" fetchpriority="high" />
       </div>
       <div class="featured-body">
         <div class="featured-meta">
@@ -738,7 +738,7 @@
 
       <a class="archive-card reveal" href="tantsy-ili-gimnastika.html">
         <div class="archive-img">
-          <img src="https://tatianinden.ru/photo_2025-06-11_00-01-18.jpg" alt="Танцы или гимнастика" width="400" height="250" loading="lazy" />
+          <img src="photo_2025-06-11_00-01-18.jpg" alt="Танцы или гимнастика" width="400" height="250" loading="lazy" />
         </div>
         <div class="archive-body">
           <div class="archive-meta"><strong>28 мая 2026</strong> · 7 минут чтения</div>
@@ -750,7 +750,7 @@
 
       <a class="archive-card reveal" href="kak-vybrat-tantsevalnyuyu-shkolu.html" style="transition-delay:.06s">
         <div class="archive-img">
-          <img src="https://tatianinden.ru/photo_2026-04-21_17-09-04.jpg" alt="Как выбрать танцевальную школу" width="400" height="250" loading="lazy" />
+          <img src="photo_2026-04-21_17-09-04.jpg" alt="Как выбрать танцевальную школу" width="400" height="250" loading="lazy" />
         </div>
         <div class="archive-body">
           <div class="archive-meta"><strong>27 мая 2026</strong> · 9 минут чтения</div>
@@ -762,7 +762,7 @@
 
       <a class="archive-card reveal" href="chto-nadet-na-pervoe-zanyatie.html" style="transition-delay:.12s">
         <div class="archive-img">
-          <img src="https://tatianinden.ru/photo_2026-06-05_12-37-33.jpg" alt="Что надеть на первое занятие танцами" width="400" height="250" loading="lazy" />
+          <img src="photo_2026-06-05_12-37-33.jpg" alt="Что надеть на первое занятие танцами" width="400" height="250" loading="lazy" />
         </div>
         <div class="archive-body">
           <div class="archive-meta"><strong>23 мая 2026</strong> · 5 минут чтения</div>
@@ -774,7 +774,7 @@
 
       <a class="archive-card reveal" href="polza-tantsev-dlya-detej.html" style="transition-delay:.18s">
         <div class="archive-img">
-          <img src="https://tatianinden.ru/photo_2024-05-24_21-46-24.jpg" alt="Польза танцев для детей" width="400" height="250" loading="lazy" />
+          <img src="photo_2024-05-24_21-46-24.jpg" alt="Польза танцев для детей" width="400" height="250" loading="lazy" />
         </div>
         <div class="archive-body">
           <div class="archive-meta"><strong>20 мая 2026</strong> · 7 минут чтения</div>
@@ -819,7 +819,7 @@
 
       <a class="archive-card reveal" href="kakie-tancy-vybrat-dlja-dochki.html" style="transition-delay:.24s">
         <div class="archive-img">
-          <img src="https://tatianinden.ru/photo_2025-06-11_00-01-18.jpg" alt="Какие танцы выбрать для дочки" width="400" height="250" loading="lazy" />
+          <img src="photo_2025-06-11_00-01-18.jpg" alt="Какие танцы выбрать для дочки" width="400" height="250" loading="lazy" />
         </div>
         <div class="archive-body">
           <div class="archive-meta"><strong>16 мая 2026</strong> · 10 минут чтения</div>
@@ -831,7 +831,7 @@
 
       <a class="archive-card reveal" href="vo-skolko-let-otdavat-rebenka-na-tancy.html" style="transition-delay:.30s">
         <div class="archive-img">
-          <img src="https://tatianinden.ru/photo_2026-04-21_17-09-04.jpg" alt="Во сколько лет отдавать ребёнка на танцы" width="400" height="250" loading="lazy" />
+          <img src="photo_2026-04-21_17-09-04.jpg" alt="Во сколько лет отдавать ребёнка на танцы" width="400" height="250" loading="lazy" />
         </div>
         <div class="archive-body">
           <div class="archive-meta"><strong>12 мая 2026</strong> · 8 минут чтения</div>
@@ -964,11 +964,8 @@
 </footer>
 
 <script>
-  // Reveal on scroll
   const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    });
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
