@@ -1887,12 +1887,29 @@
   .contact-item a:hover{color:var(--gold-light)}
   .map-frame{
     border-radius:var(--radius);
-    overflow:hidden;
+    overflow:visible;
     border:1px solid rgba(255,255,255,.12);
     height:380px;
     background:rgba(255,255,255,.04);
+    position:relative;
   }
-  .map-frame iframe{width:100%; height:100%; border:0}
+  .map-frame iframe{width:100%; height:100%; border:0; border-radius:var(--radius);}
+  .btn-navigate{
+    display:inline-flex; align-items:center; gap:8px;
+    position:absolute; bottom:16px; left:50%; transform:translateX(-50%);
+    background:linear-gradient(135deg, var(--tiffany) 0%, var(--tiffany-deep) 100%);
+    color:#fff;
+    padding:12px 22px;
+    border-radius:999px;
+    font-weight:600;
+    font-size:14px;
+    letter-spacing:.01em;
+    box-shadow:0 8px 24px -8px rgba(10,186,181,.65);
+    white-space:nowrap;
+    transition:transform .3s ease, box-shadow .3s ease;
+    z-index:5;
+  }
+  .btn-navigate:hover{transform:translateX(-50%) translateY(-2px); box-shadow:0 14px 30px -10px rgba(10,186,181,.75)}
 
   .socials{display:flex; gap:12px; margin-top:8px}
   .social-btn{
@@ -4133,11 +4150,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="map-frame">
         <iframe
-          src="https://yandex.ru/map-widget/v1/?ll=37.611%2C55.560&z=13&pt=37.611%2C55.560%2Cpm2rdm&mode=search&text=Татьянин%20день%20Суханово"
+          src="https://yandex.ru/map-widget/v1/?oid=108175150878&ol=biz&z=16"
           allowfullscreen
           title="Карта проезда"
           loading="lazy"
         ></iframe>
+        <a
+          class="btn-navigate"
+          href="https://yandex.ru/maps/?rtext=~55.555555,37.609417&rtt=auto&oid=108175150878"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-goal="cta_navigate_yandex"
+          aria-label="Построить маршрут до Татьянин День в Яндекс Картах"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          Построить маршрут
+        </a>
       </div>
     </div>
   </div>
