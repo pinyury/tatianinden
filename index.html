@@ -4536,7 +4536,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     // <noscript> fallback
     var ns = document.createElement('noscript');
     ns.innerHTML = '<div><img src="https://mc.yandex.ru/watch/' + YM_COUNTER_ID + '" style="position:absolute; left:-9999px;" alt="" /></div>';
-    document.body.appendChild(ns);
+    if (document.body) { document.body.appendChild(ns); }
   }
 
   function loadMicrosoftClarity(){
@@ -4621,8 +4621,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     reachGoal(el.getAttribute('data-goal'));
   }, { passive: true });
   document.addEventListener('DOMContentLoaded', function(){
-    showCookieBanner();
-    try{ if(localStorage.getItem('cookieChoice') === 'accepted') loadAnalytics(); }catch(e){}
+    // Check consent FIRST, before showing banner
+    var choice = null;
+    try { choice = localStorage.getItem('cookieChoice'); } catch(e) {}
+
+    if (choice === 'accepted') {
+      // Already accepted — load analytics immediately, keep banner hidden
+      loadAnalytics();
+    } else if (!choice) {
+      // No choice yet — show the banner
+      showCookieBanner();
+    }
+    // choice === 'rejected' → do nothing (banner stays hidden, analytics not loaded)
   });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { closeModal(); closePrivacy(); closeCookieInfo(); }
