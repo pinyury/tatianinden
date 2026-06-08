@@ -4621,18 +4621,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     reachGoal(el.getAttribute('data-goal'));
   }, { passive: true });
   document.addEventListener('DOMContentLoaded', function(){
-    // Check consent FIRST, before showing banner
-    var choice = null;
-    try { choice = localStorage.getItem('cookieChoice'); } catch(e) {}
+    // ------------  🎯  Показ баннера ОТЛИЧНО ПРИ КАЖДОМ ОТКРЫТИИ СТРАНИЦЫ ------------
+    // Всегда показываем баннер, независимо от того, сохранялся ли ранее выбор.
+    // (Для тестов / демонстраций – пользователь всё равно может нажать «Только необходимые»,
+    //  после чего скрипты аналитики не загрузятся, но баннер будет виден.)
+    showCookieBanner();
 
-    if (choice === 'accepted') {
-      // Already accepted — load analytics immediately, keep banner hidden
-      loadAnalytics();
-    } else if (!choice) {
-      // No choice yet — show the banner
-      showCookieBanner();
-    }
-    // choice === 'rejected' → do nothing (banner stays hidden, analytics not loaded)
+    // Если пользователь уже дал согласие в текущей сессии (клик «Принять»),
+    // то при следующем открытии страницы тоже будет показан баннер,
+    // а в функции acceptCookies() уже будет вызван loadAnalytics().
   });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { closeModal(); closePrivacy(); closeCookieInfo(); }
