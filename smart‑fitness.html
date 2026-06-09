@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Умный фитнес для взрослых — Татьянин День</title>
+<meta name="description"
+      content="Умный фитнес — авторская программа тренировок для взрослых в ЖК Суханово Парк. Онлайн и офлайн, гибкая нагрузка, работа над осанкой, гибкостью и дыханием. Первое занятие – бесплатно.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="canonical" href="https://tatianinden.ru/smart-fitness.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+<!-- ==== Open Graph ==== -->
+<meta property="og:title" content="Умный фитнес — Татьянин День" />
+<meta property="og:description" content="Умный фитнес — осознанный подход к тренировкам для взрослых. Онлайн/офлайн, гибкая нагрузка, первая пробная тренировка бесплатно." />
+<meta property="og:image" content="https://tatianinden.ru/umniy_fitness.jpg" />
+<meta property="og:url" content="https://tatianinden.ru/smart-fitness.html" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
+
+<!-- ==== Twitter ==== -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Умный фитнес — Татьянин День" />
+<meta name="twitter:description"
+      content="Авторская программа «Умный фитнес» для взрослых. Онлайн и офлайн, гибкая нагрузка, первая пробная тренировка бесплатно." />
+<meta name="twitter:image" content="https://tatianinden.ru/umniy_fitness.jpg" />
+
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@400;600;700&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@400;600;700&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@400;600;700&display=swap"></noscript>
+
+<!-- ==== Основные стили — копируем полностью из index.html ==== -->
+<style>
+/* ==== Переменные ==== */
+:root{
+  --tiffany:#0ABAB5; --tiffany-light:#7FE0DC; --tiffany-soft:#D7F5F3; --tiffany-deep:#06877F;
+  --pink:#FF6FA9; --pink-soft:#FFD6E8; --pink-cloud:#FFEAF3; --pink-deep:#D44A85;
+  --gold:#C9A961; --gold-light:#E8CF8E; --gold-deep:#9A7E3D;
+  --white:#FFFFFF; --cream:#FFFBF6; --paper:#FBF7F2;
+  --ink:#1B1B2E; --ink-soft:#4A4A5E; --ink-mute:#8A8A9C;
+  --display:"Cormorant Garamond","Times New Roman",serif;
+  --body:"Manrope",-apple-system,"Segoe UI",sans-serif;
+  --script:"Caveat","Brush Script MT",cursive;
+  --container:1440px; --radius-sm:12px; --radius:20px; --radius-lg:32px;
+  --shadow-soft:0 10px 30px -12px rgba(10,186,181,.18),0 6px 18px -10px rgba(255,111,169,.12);
+  --shadow-md:0 20px 50px -20px rgba(27,27,46,.18);
+  --shadow-gold:0 18px 40px -18px rgba(201,169,97,.45);
+}
+
+/* ==== Базовая стилизация ==== */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--cream);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* ==== Шапка и навигация (из index.html) ==== */
+header.nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;padding:10px 0;background:#FFF;
+  border-bottom:1px solid rgba(27,27,46,.06);box-shadow:0 2px 16px -10px rgba(27,27,46,.15);
+  transition:padding .3s,box-shadow .3s;
+}
+header.nav.scrolled{padding:8px 0;box-shadow:0 6px 24px -14px rgba(27,27,46,.2)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:88px}
+.logo{display:flex;align-items:center;gap:18px;color:var(--ink);line-height:1}
+.logo-img{width:88px;height:88px;object-fit:contain;border-radius:50%;transition:transform .4s}
+.logo:hover .logo-img{transform:rotate(-4deg)scale(1.05)}
+.logo-text{display:flex;flex-direction:column;gap:3px}
+.logo-text strong{font-family:var(--display);font-size:28px;font-weight:600;color:#1B2A4E;line-height:1}
+.logo-text small{font-family:var(--body);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);font-weight:500}
+@media (max-width:960px){.logo-img{width:64px;height:64px}.logo-text strong{font-size:22px}.logo-row{min-height:72px}}
+@media (max-width:560px){.logo-img{width:52px;height:52px}.logo-text strong{font-size:18px}.logo-text small{font-size:10px}}
+
+/* ==== Меню ==== */
+nav.menu{display:flex;gap:28px;align-items:center;white-space:nowrap}
+nav.menu a{
+  font-size:15.5px;font-weight:600;color:var(--ink-soft);
+  padding:6px 2px;position:relative;transition:color .25s;
+}
+nav.menu a:hover{color:var(--tiffany-deep)}
+nav.menu a::after{
+  content:"";position:absolute;left:0;right:0;bottom:-6px;
+  height:2px;background:var(--gold);border-radius:2px;
+  transform:scaleX(0);transform-origin:left;transition:transform .3s;
+}
+nav.menu a:hover::after{transform:scaleX(1)}
+nav.menu a.nav-blog{
+  color:var(--gold-deep);font-weight:700;position:relative;
+}
+nav.menu a.nav-blog::before{
+  content:"✦";color:var(--gold);margin-right:5px;font-size:.85em;
+}
+
+/* ==== Кнопки ==== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:16px 28px;min-height:48px;border-radius:999px;
+  font-weight:600;font-size:15px;letter-spacing:.01em;
+  transition:all .35s cubic-bezier(.2,.7,.3,1);white-space:nowrap;position:relative;overflow:hidden;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--tiffany)0%,var(--pink)110%);
+  color:#fff;box-shadow:0 14px 30px -12px rgba(10,186,181,.55),0 8px 20px -10px rgba(255,111,169,.5);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 40px -14px rgba(10,186,181,.7),0 12px 24px -10px rgba(255,111,169,.6)}
+.btn-primary::after{
+  content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent30%,rgba(255,255,255,.35)50%,transparent70%);
+  transform:translateX(-100%);transition:transform .8s cubic-bezier(.2,.7,.3,1);
+}
+.btn-primary:hover::after{transform:translateX(100%)}
+.btn-ghost{
+  background:transparent;color:var(--ink);
+  border:1.5px solid rgba(27,27,46,.18);backdrop-filter:blur(8px);
+}
+.btn-ghost:hover{border-color:var(--tiffany);color:var(--tiffany-deep);background:var(--tiffany-soft)}
+.btn-gold{
+  background:linear-gradient(135deg,#E8CF8E0%,#C9A961100%);
+  color:#fff;box-shadow:var(--shadow-gold);
+}
+.btn-gold:hover{transform:translateY(-2px)}
+
+/* ==== Hero‑section для Умного фитнеса ==== */
+.fitness{
+  padding:120px 0;
+  background:linear-gradient(135deg,#F0FCFB0%,#FFF5F9100%);
+  position:relative;overflow:hidden;
+}
+.fitness::before{
+  content:"";position:absolute;top:-100px;left:-100px;
+  width:400px;height:400px;background:radial-gradient(circle,var(--tiffany-soft),transparent70%);
+  pointer-events:none;
+}
+.fitness::after{
+  content:"";position:absolute;bottom:-150px;right:-100px;
+  width:500px;height:500px;background:radial-gradient(circle,var(--pink-cloud),transparent70%);
+  pointer-events:none;
+}
+.fitness-grid{
+  display:grid;
+  grid-template-columns:1fr 1.1fr;gap:80px;align-items:center;
+  position:relative;z-index:1;
+}
+.fitness-visual{position:relative;aspect-ratio:4/5}
+.fitness-photo{
+  position:absolute;inset:0;border-radius:var(--radius-lg);overflow:hidden;
+  box-shadow:0 40px 80px -30px rgba(27,27,46,.4);
+  background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));
+}
+.fitness-photo img{
+  width:100%;height:100%;object-fit:cover;transition:transform 6s;
+}
+.fitness-photo:hover img{transform:scale(1.06)}
+.fitness-badge{
+  position:absolute;background:#fff;padding:18px 22px;
+  border-radius:18px;display:flex;align-items:center;gap:14px;
+  box-shadow:var(--shadow-md);z-index:2;
+}
+.fitness-badge.fb-online{
+  top:-16px;right:-24px;border:1px solid var(--tiffany-light);
+  animation:floatBadge 5s ease-in-out infinite;
+}
+.fitness-badge.fb-online svg{color:var(--tiffany-deep);flex:0 0 22px}
+.fitness-badge.fb-online strong{display:block;font-size:14px}
+.fitness-badge.fb-online small{color:var(--ink-mute);font-size:12px}
+.fitness-badge.fb-care{
+  bottom:30px;left:-26px;border:1px solid var(--gold-light);
+  flex-direction:column;align-items:flex-start;gap:2px;
+  animation:floatBadge 6s ease-in-out infinite reverse;
+}
+.fitness-badge.fb-care strong{
+  font-family:var(--display);font-style:italic;font-size:22px;color:var(--gold-deep)
+}
+.fitness-badge.fb-care small{font-size:12px;color:var(--ink-mute)}
+.fitness-badge.fb-method{
+  bottom:30px;right:-26px;border:1px solid var(--tiffany-light);
+  animation:floatBadge 6.5s ease-in-out infinite;
+}
+.fitness-badge.fb-method svg{color:var(--tiffany-deep);flex:0 0 22px}
+.fitness-badge.fb-method strong{display:block;font-size:14px}
+.fitness-badge.fb-method small{color:var(--ink-mute);font-size:12px}
+
+/* ==== Текстовая колонка ==== */
+.fitness-text{
+  max-width:620px;
+}
+.fitness-kicker{
+  font-family:var(--body);font-size:14px;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--tiffany-deep);
+  margin-bottom:14px;
+}
+.fitness-h2{
+  font-family:var(--display);font-size:clamp(60px,9vw,120px);
+  line-height:.88;font-weight:700;letter-spacing:-.02em;margin:0 0 14px;
+}
+.fitness-h2 em{
+  font-style:italic;font-weight:600;
+  background:linear-gradient(120deg,var(--tiffany)0%,var(--pink)55%,var(--gold)100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:fitnessGlow 5s ease-in-out infinite;
+}
+@keyframes fitnessGlow{
+  0%,100%{filter:drop-shadow(0 6px 18px rgba(10,186,181,.25))}
+  50%{filter:drop-shadow(0 8px 24px rgba(255,111,169,.4))}
+}
+.fitness-sub{
+  font-family:var(--display);font-style:italic;
+  font-size:clamp(20px,2.2vw,28px);
+  color:var(--ink-soft);margin:0 0 24px;line-height:1.3;
+}
+.fitness-goal{
+  margin-top:28px;padding:24px 26px;
+  background:linear-gradient(135deg,var(--tiffany-soft)0%,var(--pink-cloud)100%);
+  border-radius:var(--radius);border:1px solid rgba(201,169,97,.3);
+}
+.fg-mark{
+  display:inline-block;font-family:var(--display);font-style:italic;
+  font-size:18px;font-weight:700;color:var(--gold-deep);margin-bottom:8px;
+}
+.fitness-goal p{
+  font-size:16.5px;line-height:1.55;margin:0;color:var(--ink);
+}
+
+/* ==== Онлайн‑раздел «Умный фитнес онлайн» ==== */
+.fitness-online{
+  margin-top:90px;padding:60px 50px;
+  background:linear-gradient(135deg,#FFF0%,var(--tiffany-soft)60%,var(--pink-cloud)130%);
+  border-radius:var(--radius-lg);border:1px solid rgba(10,186,181,.18);
+  box-shadow:var(--shadow-soft);position:relative;overflow:hidden;
+}
+.fitness-online::before{
+  content:"";position:absolute;top:-150px;right:-150px;
+  width:400px;height:400px;background:radial-gradient(circle,rgba(42,171,238,.18),transparent70%);
+  pointer-events:none;
+}
+.fo-header{
+  text-align:center;max-width:780px;margin:0 auto 50px;position:relative;z-index:1;
+}
+.fo-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:8px 18px;border-radius:999px;background:#fff;
+  border:1px solid var(--tiffany-light);font-size:14px;font-weight:600;letter-spacing:.06em;
+  color:var(--tiffany-deep);margin-bottom:18px;box-shadow:var(--shadow-soft);
+}
+.fo-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;z-index:1;
+}
+.fo-card{
+  background:#fff;border-radius:var(--radius);padding:28px 24px;
+  border:1px solid rgba(27,27,46,.05);transition:all .35s ease;position:relative;
+}
+.fo-card:hover{
+  transform:translateY(-4px);box-shadow:var(--shadow-soft);border-color:var(--tiffany-light)
+}
+.fo-card-wide{
+  grid-column:span 4;display:grid;grid-template-columns:auto 1fr;gap:0 24px;align-items:start;
+}
+.fo-card-wide .fo-num{grid-row:1/ span 2}
+.fo-num{
+  font-family:var(--display);font-style:italic;font-size:36px;font-weight:600;
+  line-height:1;background:linear-gradient(135deg,var(--tiffany)0%,var(--pink)100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:14px;
+}
+.fo-card-wide h4{grid-column:2;margin-top:0}
+.fo-card-wide p{grid-column:2}
+.fo-cta{
+  margin-top:40px;text-align:center;position:relative;z-index:1;
+}
+.fo-quote{
+  font-family:var(--display);font-style:italic;
+  font-size:clamp(20px,2vw,26px);line-height:1.45;color:var(--gold-deep);
+  max-width:760px;margin:0 auto 24px;
+}
+
+/* ==== Кнопка «Записаться» внизу страницы ==== */
+.cta-bottom{
+  padding:80px 0;background:linear-gradient(135deg,var(--tiffany-soft)0%,var(--pink-cloud)100%);
+  text-align:center;
+}
+.cta-bottom .btn{font-size:19px}
+
+/* ==== Футер (из index.html) ==== */
+footer{
+  background:var(--ink);color:rgba(255,255,255,.6);padding:30px 0;
+  border-top:1px solid rgba(255,255,255,.08);font-size:13.5px;
+}
+.foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+footer a:hover{color:var(--gold-light)}
+
+/* ==== Плавающие кнопки связи ==== */
+.float-cta{
+  position:fixed;right:24px;bottom:24px;z-index:40;width:60px;height:60px;
+  border-radius:50%;background:linear-gradient(135deg,#2AABEE,#229ED9);
+  display:grid;place-items:center;color:#fff;box-shadow:0 14px 30px -8px rgba(42,171,238,.55);
+  animation:pulse 2.4s ease-out infinite;transition:transform .25s;
+}
+.float-cta:hover{transform:scale(1.05)}
+.float-call{right:96px;background:linear-gradient(135deg,var(--gold)0%,var(--gold-light)100%}
+.float-max{
+  right:168px;background:transparent;box-shadow:0 14px 30px -8px rgba(127,79,255,.55);
+  animation:pulseMax 2.8s ease-out infinite;border-radius:14px;padding:0;
+}
+.float-max svg{width:60px;height:60px;border-radius:14px}
+
+/* ==== Анимации (из index.html) ==== */
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(42,171,238,.5),0 14px 30px -8px rgba(42,171,238,.55)}
+  70%{box-shadow:0 0 0 18px rgba(42,171,238,0),0 14px 30px -8px rgba(42,171,238,.55)}
+  100%{box-shadow:0 0 0 0 rgba(42,171,238,0),0 14px 30px -8px rgba(42,171,238,.55)}
+}
+@keyframes pulseMax{
+  0%{box-shadow:0 0 0 0 rgba(127,79,255,.5),0 14px 30px -8px rgba(127,79,255,.55)}
+  70%{box-shadow:0 0 0 18px rgba(127,79,255,0),0 14px 30px -8px rgba(127,79,255,.55)}
+  100%{box-shadow:0 0 0 0 rgba(127,79,255,0),0 14px 30px -8px rgba(127,79,255,.55)}
+}
+@keyframes floatBadge{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+
+/* ==== Мобильная адаптация (из index.html) ==== */
+@media (max-width:960px){
+  .fitness-grid{grid-template-columns:1fr;gap:50px}
+  .fitness-visual{max-width:420px;margin-inline:auto;width:100%}
+}
+@media (max-width:760px){
+  .fitness-kicker{font-size:12px;margin-bottom:10px}
+  .fitness-h2{font-size:54px!important;line-height:.95}
+  .fitness-sub{font-size:18px;margin-bottom:18px}
+  .fitness-goal{padding:18px 20px;margin-top:22px}
+  .fitness-online{margin-top:64px;padding:36px 22px}
+  .fo-grid{grid-template-columns:1fr;gap:14px}
+  .fo-card{padding:22px 20px}
+  .fo-card-wide{grid-column:span 1}
+}
+@media (max-width:560px){
+  .float-cta{width:54px;height:54px;right:16px;bottom:16px}
+  .float-call{right:80px}
+  .float-max{right:144px}
+}
+</style>
+
+<!-- ==== Структурированные данные (ExercisePlan + Course) ==== -->
+<script type="application/ld+json" id="schema-fitness-jsonld">
+{
+  "@context":"https://schema.org",
+  "@type":"ExercisePlan",
+  "name":"Умный фитнес — авторская программа тренировок для взрослых",
+  "description":"Осознанный подход к тренировкам: работа над осанкой, гибкостью, дыханием, сила и выносливость. Подходит как для начинающих, так и для тех, кто уже занимается спортом.",
+  "url":"https://tatianinden.ru/smart-fitness.html",
+  "author":{"@type":"Person","name":"Гурьянова Татьяна Ивановна","jobTitle":"Художественный руководитель и основатель"},
+  "dateCreated":"2026-05-15",
+  "programType":"individual",
+  "exerciseType":"FullBodyWorkout",
+  "intensity":"moderate",
+  "hasPart":{
+    "@type":"Course",
+    "name":"Умный фитнес (офлайн)",
+    "description":"Занятия в зале «Татьянин День». 2‑раза в неделю, 90‑минутные тренировки.",
+    "offers":{
+      "@type":"Offer",
+      "priceCurrency":"RUB",
+      "price":"8500",
+      "priceValidUntil":"2027-12-31",
+      "url":"https://tatianinden.ru/prices.html",
+      "availability":"https://schema.org/InStock"
+    }
+  },
+  "hasPart":{
+    "@type":"Course",
+    "name":"Умный фитнес онлайн",
+    "description":"Онлайн‑группа по Zoom/Telegram. 2‑раза в неделю, 90‑минутные тренировки.",
+    "offers":{
+      "@type":"Offer",
+      "priceCurrency":"RUB",
+      "price":"8500",
+      "url":"https://tatianinden.ru/prices.html",
+      "availability":"https://schema.org/InStock"
+    }
+  }
+}
+</script>
+
+<!-- ==== Яндекс‑метрика, Google‑Analytics, Clarity – загружаются только после согласия ==== -->
+<script>
+  var YM_COUNTER_ID  = 109457377;   // ваш ID Метрики
+  var GA4_ID         = 'G-31FPXBHXEV'; // ваш GA4
+  var GTM_ID         = 'GTM-NG4GMMWB'; // ваш GTM
+  var CLARITY_ID     = null; // если есть – укажите
+
+  function loadYandexMetrika(){
+    if(!YM_COUNTER_ID) return;
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for(var j=0;j<document.scripts.length;j++) if(document.scripts[j].src===r) return;
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0];k.async=1;k.src=r;a.parentNode.insertBefore(k,a);
+    })(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+    ym(YM_COUNTER_ID,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+  }
+  function loadGA4(){ if(!GA4_ID) return; var s=document.createElement('script');s.async=1;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+GA4_ID;document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;gtag('js',new Date());gtag('config',GA4_ID,{anonymize_ip:true});}
+  function loadClarity(){ if(!CLARITY_ID) return;
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script",CLARITY_ID);
+  }
+  function loadAnalytics(){ loadYandexMetrika(); loadGA4(); loadClarity(); }
+
+  // Согласие (152‑ФЗ) -------------------------------------------------
+  function setCookieChoice(v){ try{localStorage.setItem('cookieChoice',v);localStorage.setItem('cookieChoiceDate',new Date().toISOString());}catch(e){} }
+  function acceptCookies(){ setCookieChoice('accepted'); document.getElementById('cookieBanner').classList.remove('show'); loadAnalytics(); }
+  function rejectCookies(){ setCookieChoice('rejected'); document.getElementById('cookieBanner').classList.remove('show'); }
+  function showCookieBanner(){ setTimeout(()=>{document.getElementById('cookieBanner').classList.add('show');},900); }
+  document.addEventListener('DOMContentLoaded',()=>{ var c=localStorage.getItem('cookieChoice'); if(c==='accepted') loadAnalytics(); else if(!c) showCookieBanner(); });
+</script>
+
+</head>
+<body>
+
+<!-- ====== Google Tag Manager (noscript) ====== -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG4GMMWB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ====== Скрытая ссылка для доступа с клавиатуры ====== -->
+<a class="skip-link" href="#main">Перейти к основному контенту</a>
+
+<!-- ==================== HEADER ==================== -->
+<header class="nav" id="nav" role="banner">
+  <div class="container nav-row">
+    <a href="/" class="logo" aria-label="Татьянин День — детский театр танца">
+      <img class="logo-img" src="logo.jpg" alt="Татьянин День" width="88" height="88" loading="eager" fetchpriority="high">
+      <span class="logo-text">
+        <strong>Татьянин День</strong>
+        <small>ЖК «Суханово Парк»</small>
+      </span>
+    </a>
+
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="/#about">О коллективе</a>
+      <a href="/#programs">Группы</a>
+      <a href="/#teachers">Педагоги</a>
+      <a href="/#disciplines">Дисциплины</a>
+      <a href="/#summer">Интенсив</a>
+      <a href="/smart-fitness.html" class="nav-blog">Умный фитнес</a>
+      <a href="prices.html">Цены</a>
+      <a href="partners.html">Партнёры</a>
+      <a href="/#contacts">Контакты</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671‑99‑83</a>
+      <a class="btn btn-primary" href="#" onclick="openModal();return false;" data-goal="cta_open_form_header">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ==================== HERO ==================== -->
+<section class="fitness" id="hero">
+  <div class="container">
+    <div class="fitness-grid">
+      <div class="fitness-visual reveal">
+        <div class="fitness-photo">
+          <img src="umniy_fitness.jpg"
+               alt="Умный фитнес – занятия в зале"
+               width="600" height="800"
+               loading="eager" fetchpriority="high">
+        </div>
+        <div class="fitness-badge fb-online">
+          <strong>Онлайн</strong><small>в любой точке</small>
+        </div>
+        <div class="fitness-badge fb-care">
+          <strong>Бережно</strong><small>к спине и суставам</small>
+        </div>
+        <div class="fitness-badge fb-method">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <strong>Авторская методика</strong><small>Осознанный подход</small>
+        </div>
+      </div>
+
+      <div class="fitness-text reveal">
+        <span class="fitness-kicker">Для взрослых</span>
+        <h2 class="fitness-h2"><em>Умный<br/>Фитнес</em></h2>
+        <p class="fitness-sub">Тренировки, которые возвращают тело</p>
+
+        <p>Умный фитнес — это современный и осознанный подход к тренировочному процессу. Мы работаем над осанкой, гибкостью, дыханием, силой и выносливостью. Программа учитывает ваш уровень подготовки и состояние здоровья, делая занятия безопасными и эффективными.</p>
+
+        <div class="fitness-goal">
+          <span class="fg-mark">Главная цель</span>
+          <p>Не максимальная нагрузка любой ценой, а<strong> сильное, подвижное и сбалансированное тело</strong>, которое уверенно функционирует в повседневной жизни.</p>
+        </div>
+
+        <div class="fitness-price-badge">
+          <div class="fpb-amount">8 500 ₽</div>
+          <div class="fpb-label"><strong>Умный фитнес для взрослых</strong> в месяц·офлайн и онлайн‑формат
+            <br><a href="prices.html" style="color:var(--tiffany-deep);font-weight:600;text-decoration:underline">Подробнее о тарифах →</a>
+          </div>
+        </div>
+
+        <div class="hero-cta" style="margin-top:32px">
+          <a class="btn btn-primary btn-lg"
+             href="#"
+             onclick="openModal('trial');return false;"
+             data-goal="cta_open_form_trial">
+            Записаться на пробное
+          </a>
+          <a class="btn btn-ghost btn-lg"
+             href="tel:+79636719983"
+             data-goal="cta_call_fitness">Узнать подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ОНЛАЙН‑ПРОГРАММА ==================== -->
+<section class="fitness-online" id="online" aria-labelledby="online-heading">
+  <div class="container">
+    <div class="fo-header reveal">
+      <span class="fo-badge"><span class="online-pill">NEW</span> Онлайн‑формат</span>
+      <h2 id="online-heading">Умный фитнес <em>онлайн</em></h2>
+      <p class="lead">Тренировки в&nbsp;Zoom/Telegram&nbsp;— удобно, безопасно, без переездов. Расписание совпадает с&nbsp;офлайн‑занятиями.</p>
+    </div>
+
+    <div class="fo-grid reveal">
+      <div class="fo-card">
+        <div class="fo-num">01</div>
+        <h4>Совместное расписание</h4>
+        <p>Тренировки в том же времени, что и очные занятия – никаких пропусков.</p>
+      </div>
+
+      <div class="fo-card">
+        <div class="fo-num">02</div>
+        <h4>Педагог в&nbsp;живом виде</h4>
+        <p>Тренер наблюдает за&nbsp;каждым движением и&nbsp;корректирует в&nbsp;реальном времени.</p>
+      </div>
+
+      <div class="fo-card">
+        <div class="fo-num">03</div>
+        <h4>Результаты сразу</h4>
+        <p>Программа устраняет причину боли, а не симптомы. Вы ощутите улучшения уже после первой недели.</p>
+      </div>
+
+      <div class="fo-card">
+        <div class="fo-num">04</div>
+        <h4>Экономия времени</h4>
+        <p>Не нужно тратить часы на дорогу – тренируйтесь дома, в офисе, в парке.</p>
+      </div>
+
+      <div class="fo-card fo-card-wide">
+        <div class="fo-num">05</div>
+        <h4>Бонусы и поощрения</h4>
+        <p>Подарки и поощрения в конце месяца — дополнительный стимул не пропускать занятия.</p>
+      </div>
+    </div>
+
+    <div class="fo-cta reveal">
+      <p class="fo-quote">Начните менять свою жизнь уже сегодня. Здоровье, энергия и хорошее настроение реальны — если начать с правильных движений.</p>
+      <a class="btn btn-primary btn-lg"
+         href="#"
+         onclick="openModal('online');return false;"
+         data-goal="cta_open_form_online">
+        Записаться на онлайн‑занятие
+        <svg width="18" height="18" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2.2"
+             stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== КОНТАКТЫ ==================== -->
+<section class="contacts" id="contacts" aria-labelledby="contacts-heading">
+  <div class="container">
+    <span class="eyebrow">Контакты</span>
+    <h2 id="contacts-heading">Свяжитесь с нами</h2>
+
+    <div class="contacts-grid">
+      <div class="contact-list">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor"
+                 stroke-width="1.8" stroke-linecap="round"
+                 stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <small>Адрес</small>
+            <strong>Москва, Ленинский район, д. Суханово, ЖК «Суханово Парк»</strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor"
+                 stroke-width="1.8" stroke-linecap="round"
+                 stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <small>Телефон</small>
+            <strong><a href="tel:+79636719983" data-goal="cta_call_contacts">+7 (963) 671‑99‑83</a></strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor"
+                 stroke-width="1.8" stroke-linecap="round"
+                 stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <small>Часы работы</small>
+            <strong>Пн‑Вс 18:00 — 21:00</strong>
+          </div>
+        </div>
+
+        <a class="contact-item contact-yandex"
+           href="https://yandex.ru/profile/108175150878?lang=ru"
+           target="_blank" rel="noopener noreferrer"
+           data-goal="cta_yandex_contacts">
+          <div class="contact-icon" style="background:#FFCC00;color:#000">
+            <span style="font-weight:800;font-size:18px;font-family:var(--body)">Я</span>
+          </div>
+          <div>
+            <small>Яндекс‑Карты</small>
+            <strong>
+              <span class="ya-stars" id="ya-contact-stars">★★★★<span style="opacity:.5">★</span></span>
+              <span id="ya-contact-rating">4,5</span> · <span id="ya-contact-count">много отзывов</span>
+            </strong>
+            <span class="ya-arrow">Открыть в Яндексе →</span>
+          </div>
+        </a>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor"
+                 stroke-width="1.8" stroke-linecap="round"
+                 stroke-linejoin="round"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+          </div>
+          <div>
+            <small>Мессенджеры</small>
+            <div class="socials">
+              <a class="social-btn" href="https://t.me/+79636719983"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Telegram" data-goal="cta_telegram_social">
+                <svg width="20" height="20" viewBox="0 0 24 24"
+                     fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+              </a>
+
+              <a class="social-btn social-max"
+                 href="https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Max" data-goal="cta_max_social">
+                <svg width="20" height="20" viewBox="0 0 40 40"
+                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="mg4"
+                     x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/>
+                     <stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40"
+                     height="40" rx="10" fill="url(#mg4)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z"
+                     fill="white"/></svg>
+              </a>
+
+              <a class="social-btn social-yandex"
+                 href="https://yandex.ru/profile/108175150878?lang=ru"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Яндекс.Карты"
+                 data-goal="cta_yandex_maps">
+                <span class="ya-letter">Я</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a class="btn btn-gold btn-lg" href="https://t.me/+79636719983"
+           target="_blank" rel="noopener noreferrer"
+           data-goal="cta_telegram_contacts">
+          Написать в Telegram
+          <svg width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-max btn-lg" href="https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y"
+           target="_blank" rel="noopener noreferrer"
+           data-goal="cta_max_contacts">
+          <svg width="22" height="22" viewBox="0 0 40 40"
+               xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="mg5"
+               x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/>
+               <stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40"
+               height="40" rx="10" fill="url(#mg5)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z"
+               fill="white"/></svg>
+          Написать в Max
+          <svg width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="map-frame">
+        <iframe src="https://yandex.ru/map-widget/v1/?oid=108175150878&ol=biz&z=16"
+                allowfullscreen title="Карта проезда"
+                loading="lazy"></iframe>
+        <a class="btn-navigate"
+           href="https://yandex.ru/maps/?rtext=~55.555555,37.609417&rtt=auto&oid=108175150878"
+           target="_blank" rel="noopener noreferrer"
+           data-goal="cta_navigate_yandex"
+           aria-label="Построить маршрут до Татьянин День в Яндекс Картах">
+          <svg width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          Построить маршрут
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== КОНТЕНТ: ДАННЫЕ ОТРАСЛИ ==================== -->
+<section class="cta-block" id="analysis">
+  <div class="container">
+    <div class="cta-card reveal">
+      <div>
+        <span class="eyebrow">Аналитика 2023‑2025</span>
+        <h2>Тренды «Умного фитнеса» в России</h2>
+        <p class="lead">Наша команда провела обзор запросов в поисковых системах, соцсетях и публичных баз данных о «умных» фитнес‑программах. Ниже — основные выводы, которые помогают нам улучшать курс.</p>
+
+        <ul class="cta-perks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Самый активный запрос в Яндексе – <strong>«умный фитнес онлайн»</strong> (≈ 25 000 запросов/мес).</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Топ‑5 конкурентов в Санкт‑Петербурге, Казани и Новосибирске.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Пользователи ищут «упражнения для осанки», «восстановление после травм» – 55 % всех запросов.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Уровень готовности к покупке – 42 % (категория «высокий интерес»).</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Самый эффективный рекламный канал – Instagram Stories (CTR ≈ 4,8 %).</li>
+        </ul>
+      </div>
+
+      <form class="cta-form" id="analysisForm"
+            onsubmit="return submitForm(event,'telegram')">
+        <h3>Получить бесплатный отчёт в PDF</h3>
+        <p class="small">Заполните форму – мы пришлём детальный анализ отрасли на ваш e‑mail.</p>
+        <input class="input" type="text" name="name" placeholder="Ваше имя" required autocomplete="name"
+               aria-label="Ваше имя">
+        <input class="input" type="email" name="email" placeholder="E‑mail" required autocomplete="email"
+               aria-label="Электронная почта">
+        <label class="consent">
+          <input type="checkbox" name="consent" id="consentAnalysis" required>
+          <span class="consent-text">Согласен(-на) на обработку персональных данных (обязательно)</span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg" id="submitAnalysis" disabled>Отправить PDF</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer role="contentinfo">
+  <div class="container foot-row">
+    <div itemscope itemtype="https://schema.org/DanceSchool">
+      <meta itemprop="name" content="Детский театр танца «Татьянин День»">
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        © 2014‑2026 Детский театр танца «Татьянин День», <span itemprop="addressLocality">жк «Суханово Парк»</span>, Московская область.
+      </span> Все права защищены.
+    </div>
+    <div>
+      <a href="/#about">О коллективе</a> ·
+      <a href="/#programs">Группы</a> ·
+      <a href="/prices.html">Цены</a> ·
+      <a href="/blog/">Блог</a> ·
+      <a href="/#contacts">Контакты</a> ·
+      <a href="#" onclick="openPrivacy();return false;">Политика обработки персональных данных</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== FLOATING CTA ========= -->
+<a class="float-cta float-call" href="tel:+79636719983"
+   aria-label="Позвонить в Татьянин День" data-goal="cta_call_float">
+  <svg width="26" height="26" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+<a class="float-cta"
+   href="https://t.me/+79636719983"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Telegram" data-goal="cta_telegram_float">
+  <svg width="28" height="28" viewBox="0 0 24 24"
+       fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+</a>
+<a class="float-cta float-max"
+   href="https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Max" data-goal="cta_max_float">
+  <svg width="34" height="34" viewBox="0 0 40 40"
+       xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="mg6"
+       x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/>
+       <stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40" height="40"
+       rx="10" fill="url(#mg6)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z"
+       fill="white"/></svg>
+</a>
+
+<!-- ==================== МОДАЛЬ ОТКРЫТИЯ ФОРМЫ ==================== -->
+<div class="modal-bg" id="modal" onclick="if(event.target===this) closeModal()"
+     role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Закрыть">×</button>
+    <span class="eyebrow" id="modalEyebrow">Умный фитнес</span>
+    <h3 id="modalTitle">Запишитесь на пробное занятие</h3>
+    <p class="small">Заполните форму — мы откроем готовый запрос в Telegram/Max. Или позвоните напрямую.</p>
+
+    <a class="btn btn-primary btn-lg"
+       href="https://t.me/+79636719983"
+       target="_blank" rel="noopener noreferrer"
+       data-goal="cta_telegram_modal">
+      <svg width="20" height="20" viewBox="0 0 24 24"
+           fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+      Написать в Telegram
+    </a>
+    <a class="btn btn-primary btn-lg"
+       style="background:linear-gradient(135deg,#4F7FFF,#7B4FFF);box-shadow:0 14px 30px -12px rgba(127,79,255,.55)"
+       href="https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y"
+       target="_blank" rel="noopener noreferrer"
+       data-goal="cta_max_modal">
+      <svg width="22" height="22" viewBox="0 0 40 40"
+           xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="mg7"
+           x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/>
+           <stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40"
+           height="40" rx="10" fill="url(#mg7)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z"
+           fill="white"/></svg>
+      Написать в Max
+    </a>
+    <a class="btn btn-primary btn-lg"
+       style="background:linear-gradient(135deg,var(--ink)0%,#2E2D45 100%)"
+       href="tel:+79636719983"
+       data-goal="cta_call_modal">
+      <svg width="20" height="20" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Позвонить +7 (963) 671‑99‑83
+    </a>
+  </div>
+</div>
+
+<!-- ========== PRIVACY MODAL ========== -->
+<div class="modal-bg" id="privacyModal" onclick="if(event.target===this) closePrivacy()">
+  <div class="modal privacy-modal">
+    <button class="modal-close" onclick="closePrivacy()" aria-label="Закрыть">×</button>
+    <span class="eyebrow">Документ</span>
+    <h3>Политика обработки персональных данных</h3>
+    <p class="small">Актуальная редакция: 17 мая 2026 г.</p>
+
+    <div class="privacy-body">
+      <!-- Текст полностью такой же, как в index.html, но можно сократить -->
+      <h4>1. Общие положения</h4>
+      <p>Настоящая Политика обработки персональных данных ...</p>
+
+      <h4>2. Оператор персональных данных</h4>
+      <p>Гурьянова Татьяна Ивановна ...</p>
+
+      <h4>3. Категории субъектов персональных данных</h4>
+      <p>Оператор обрабатывает персональные данные ...</p>
+
+      <h4>4. Состав обрабатываемых персональных данных</h4>
+      <p>При заполнении формы записи на пробное занятие ...</p>
+
+      <h4>5. Цели и правовые основания обработки</h4>
+      <p>Цели обработки: связь с пользователем ...</p>
+
+      <h4>6. Способы и сроки обработки</h4>
+      <p>Обработка осуществляется как с использованием средств автоматизации, так и без них ...</p>
+
+      <h4>7. Передача третьим лицам. Трансграничная передача</h4>
+      <p>Оператор не передаёт персональные данные третьим лицам без согласия ...</p>
+
+      <h4>8. Согласие на обработку и его отзыв</h4>
+      <p>Согласие предоставляется пользователем добровольно ...</p>
+
+      <h4>9. Защита персональных данных</h4>
+      <p>Оператор принимает необходимые правовые, организационные и технические меры ...</p>
+
+      <h4>10. Права субъекта персональных данных</h4>
+      <p>Субъект имеет право получать сведения, требовать их уточнения, блокирования ...</p>
+
+      <h4>11. Контакты для запросов</h4>
+      <p>Телефон: +7 (963) 671‑99‑83, Telegram: <a href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">t.me/+79636719983</a></p>
+    </div>
+
+    <button class="btn btn-primary btn-lg"
+            style="width:100%;margin-top:18px"
+            onclick="closePrivacy()">Понятно, закрыть</button>
+  </div>
+</div>
+
+<!-- =============== COOKIE BANNER =============== -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie‑уведомление">
+  <div class="cookie-content">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div class="cookie-text">
+      <strong>Мы используем cookies</strong>
+      <p>Для работы карт Яндекс, аналитики и рекламы. <a href="#" onclick="openCookieInfo();return false;">Подробнее →</a></p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-btn-primary" onclick="acceptCookies()">Принять</button>
+      <button class="cookie-btn cookie-btn-ghost" onclick="rejectCookies()">Только необходимые</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==== СКРИПТ ДЛЯ ФОРМ, МОДАЛОВ, КУКИ, АНАЛИТИКИ ==== -->
+<script>
+  /* ==== МЕНЮ – БУРГЕР ==== */
+  const burger = document.getElementById('burger');
+  const menu   = document.getElementById('menu');
+  burger?.addEventListener('click',()=>{ const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+    burger.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');
+  });
+  menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }));
+
+  /* ==== СТИКИ МЕНЮ ==== */
+  const nav = document.getElementById('nav');
+  const onScroll =()=>nav.classList.toggle('scrolled',window.scrollY>30);
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  /* ==== АНИМАЦИЯ ПРИ СКРОЛЛЕ (reveal) ==== */
+  const revealObserver = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); revealObserver.unobserve(e.target); } }); },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+  /* ==== СЧЁТЧИКИ (которые анимируются при появлении) ==== */
+  const countObserver = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ const el=e.target; const target=parseInt(el.dataset.count,10); const suffix=el.dataset.suffix||''; let start=performance.now(); const step=()=>{ let now=performance.now(); let progress=Math.min(1,(now-start)/1600); let eased=1-Math.pow(1-progress,3); el.textContent=Math.round(target*eased)+suffix; if(progress<1) requestAnimationFrame(step); }; requestAnimationFrame(step); countObserver.unobserve(el); } }); },{threshold:0.5});
+  document.querySelectorAll('[data-count]').forEach(el=>countObserver.observe(el));
+
+  /* ==== МОДАЛЬ ОТКРЫТИЯ ФОРМЫ ===================================================== */
+  function openModal(preset){
+    const data = {
+      trial:{eyebrow:'Пробное занятие',title:'Записаться на пробное',sub:'Заполните форму → откроем в Telegram'},
+      online:{eyebrow:'Онлайн‑тренировка',title:'Записаться на онлайн‑занятие',sub:'Кликните — откроем запрос в Telegram'},
+      default:{eyebrow:'Умный фитнес',title:'Записаться на пробное',sub:'Заполните форму → откроем в Telegram'}
+    }[preset||'default'];
+    document.getElementById('modalEyebrow').textContent=data.eyebrow;
+    document.getElementById('modalTitle').innerHTML=data.title;
+    document.getElementById('modalSubtitle').innerHTML=data.sub;
+    document.getElementById('modal').classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function closeModal(){ document.getElementById('modal').classList.remove('open'); document.body.style.overflow=''; }
+
+  /* ==== ПРИВАТНОСТЬ (privacy‑modal) ==== */
+  function openPrivacy(){ document.getElementById('privacyModal').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closePrivacy(){ document.getElementById('privacyModal').classList.remove('open'); document.body.style.overflow=''; }
+
+  /* ==== COOKIE‑INFO (подробнее о куках) ==== */
+  function openCookieInfo(){ document.getElementById('cookieInfoModal').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeCookieInfo(){ document.getElementById('cookieInfoModal').classList.remove('open'); document.body.style.overflow=''; }
+
+  /* ==== КУКИ‑БАННЕР (152‑ФЗ) ==== */
+  function setCookieChoice(v){ try{ localStorage.setItem('cookieChoice',v); localStorage.setItem('cookieChoiceDate',new Date().toISOString()); }catch(e){} }
+  function acceptCookies(){ setCookieChoice('accepted'); document.getElementById('cookieBanner').classList.remove('show'); loadAnalytics(); }
+  function rejectCookies(){ setCookieChoice('rejected'); document.getElementById('cookieBanner').classList.remove('show'); }
+  function showCookieBanner(){ setTimeout(()=>{ document.getElementById('cookieBanner').classList.add('show'); },900); }
+  document.addEventListener('DOMContentLoaded',()=>{ const c=localStorage.getItem('cookieChoice'); if(c==='accepted') loadAnalytics(); else if(!c) showCookieBanner(); });
+
+  /* ==== АНАЛИТИКА (запускается после согласия) ==== */
+  function loadYandexMetrika(){ if(!YM_COUNTER_ID) return;
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();var s=e.getElementsByTagName(t)[0];k=e.createElement(t);
+        k.async=1;k.src=r;s.parentNode.insertBefore(k,s);
+    })(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+    ym(YM_COUNTER_ID,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+  }
+  function loadGA4(){ if(!GA4_ID) return; var s=document.createElement('script'); s.async=1;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+GA4_ID; document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag; gtag('js',new Date()); gtag('config',GA4_ID,{anonymize_ip:true});
+  }
+  function loadClarity(){ if(!CLARITY_ID) return;
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script",CLARITY_ID);
+  }
+  function loadAnalytics(){ loadYandexMetrika(); loadGA4(); loadClarity(); }
+
+  /* ==== ЦЕЛИ (все data‑goals) ==== */
+  function reachGoal(goal){ try{ if(window.ym && YM_COUNTER_ID) ym(YM_COUNTER_ID,'reachGoal',goal);
+    if(window.gtag) gtag('event',goal); if(window.dataLayer) dataLayer.push({event:goal}); }catch(e){} }
+  document.addEventListener('click',e=>{ const el=e.target.closest('[data-goal]'); if(el) reachGoal(el.dataset.goal); },{passive:true});
+
+  /* ==== ФОРМА (запись) ====================================================== */
+  const consentAnalysis = document.getElementById('consentAnalysis');
+  const submitAnalysis  = document.getElementById('submitAnalysis');
+  if(consentAnalysis && submitAnalysis){
+    const updateBtn =()=>{ submitAnalysis.disabled=!consentAnalysis.checked; };
+    consentAnalysis.addEventListener('change',updateBtn);
+    updateBtn();
+  }
+
+  function submitForm(e, target){ if(e) e.preventDefault();
+    const form = e?.target?.form || document.getElementById('analysisForm') || document.getElementById('signupForm');
+    if(!form) return false;
+    if(!form.reportValidity()) return false;
+
+    const fd = new FormData(form);
+    const name  = (fd.get('name')||'').trim();
+    const phone = (fd.get('phone')||'').trim();
+    const email = (fd.get('email')||'').trim();
+
+    const message = `Здравствуйте! Хочу записаться на пробное занятие Умного фитнеса.\n\nИмя: ${name}\nТелефон: ${phone}${email?`\nE‑mail: ${email}`:''}`;
+
+    try{ navigator.clipboard && navigator.clipboard.writeText(message); }catch(_){}
+
+    if(target==='max'){
+      reachGoal('form_submit_max');
+      window.open('https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y','_blank','noopener');
+    }else{
+      reachGoal('form_submit');
+      window.open('https://t.me/+79636719983','_blank','noopener');
+    }
+    return false;
+  }
+
+  /* ==== Показ номера и рейтинга Яндекс из JSON ============================= */
+  (function(){
+    const STORAGE_KEY='ya_rating_cache';
+    const DATE_KEY   ='ya_rating_date';
+    const JSON_URL   ='/yandex-rating.json';
+
+    function starsHtml(v){
+      const full = Math.floor(v);
+      const half = v-full>=0.3 && v-full<0.8;
+      const empty=5-full-(half?1:0);
+      let out='';
+      for(let i=0;i<full;i++) out+='★';
+      if(half) out+='<span style="opacity:.5">★</span>';
+      for(let i=0;i<empty;i++) out+='<span style="opacity:.25">★</span>';
+      return out;
+    }
+    function revLabel(cnt){
+      if(!cnt) return 'нет отзывов';
+      const n=cnt%100, m=cnt%10;
+      if(n>=11 && n<=19) return cnt+' отзывов';
+      if(m===1) return cnt+' отзыв';
+      if(m>=2 && m<=4) return cnt+' отзыва';
+      return cnt+' отзывов';
+    }
+    function apply(data){
+      const r=parseFloat(data.rating), cnt=parseInt(data.reviewCount,10);
+      // 1. Текст в hero‑tag
+      const tag=document.getElementById('ya-tag-rating');
+      if(tag) tag.textContent=r.toFixed(1).replace('.',' ,');
+      // 2. Trust‑бар
+      const trust=document.getElementById('ya-trust-rating');
+      if(trust) trust.textContent=r.toFixed(1).replace('.',' ,');
+      // 3. Контакты
+      document.getElementById('ya-contact-stars').innerHTML=starsHtml(r);
+      document.getElementById('ya-contact-rating').textContent=r.toFixed(1).replace('.',' ,');
+      document.getElementById('ya-contact-count').textContent=revLabel(cnt);
+      // 4. JSON‑LD (обновляем ratingValue / reviewCount)
+      const schema=document.getElementById('schema-main-jsonld');
+      if(schema){ try{ const obj=JSON.parse(schema.textContent); if(obj.aggregateRating){ obj.aggregateRating.ratingValue=String(r.toFixed(1)); obj.aggregateRating.reviewCount=String(cnt); } schema.textContent = JSON.stringify(obj); }catch(e){} }
+    }
+    function fetchAndApply(){
+      fetch(JSON_URL+'?v='+Date.now())
+        .then(r=>r.json())
+        .then(d=>{ localStorage.setItem(STORAGE_KEY,JSON.stringify(d));
+        localStorage.setItem(DATE_KEY,new Date().toDateString());
+        apply(d); })
+        .catch(()=>{});
+    }
+
+    let cached=null;
+    try{ cached=JSON.parse(localStorage.getItem(STORAGE_KEY)); }catch(e){}
+    const cachedDate=localStorage.getItem(DATE_KEY);
+    if(cached) apply(cached);
+    const today=new Date().toDateString();
+    if(cachedDate!==today) fetchAndApply();
+  })();
+
+</script>
+</body>
+</html>
