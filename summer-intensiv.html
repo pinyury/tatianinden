@@ -1,1773 +1,840 @@
-<!doctype html>
-<html lang="ru" dir="ltr">
-<head>
-<meta charset="utf-8">
-<title>Летний интенсив «прожок в Росте 2025»</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#FF6FA9">
-<link rel="canonical" href="https://tatianinden.ru/summer-intensiv.html">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-<meta name="description"
-      content="Летний интенсив детского лето. Обучаем детей навыкам: танцам, спорту, творчеству, здоровью и развитию, без ущерба для учебы.">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Летний интенсив «прожок в Росте 2025»">
-<meta property="og:description"
-      content="Летний интенсив в Росте: занятия спортом, танцами, творчеством, здоровьем и развитием.">
-<meta property="og:image" content="https://tatianinden.ru/intensiv0.jpg">
-<meta property="og:url" content="https://tatianinden.ru/summer-intensiv.html">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ru_RU">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap"
-      rel="stylesheet">
-
-<!-- Structured Data (Course) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Летний интенсив «прожок в Росте»",
-  "description": "Интенсивный летний курс для детей 5‑12 лет, включающий спорт, танцы и развитие творческих навыков.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Детский центр «Танцы в Денях»",
-    "url": "https://tatianinden.ru"
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "RUB",
-    "price": "9000",
-    "availability": "https://schema.org/InStock"
-  }
-}
-</script>
-
-<style>
-/* -------------------------------------------------
-   1.   Design Tokens (colors, fonts, radii, etc.)
-   ------------------------------------------------- */
-:root {
-  --c-tiffany: #0ABAB5;
-  --c-tiffany-light: #7FE0DC;
-  --c-tiffany-soft: #D7F5F3;
-  --c-tiffany-deep: #06877F;
-
-  --c-pink: #FF6FA9;
-  --c-pink-cloud: #FFEAF3;
-  --c-pink-deep: #D44A85;
-
-  --c-gold: #C9A961;
-  --c-gold-light: #E8CF8E;
-  --c-gold-deep: #9A7E3D;
-
-  --c-sun: #FFD166;
-  --c-sun-soft: #FFF3D4;
-
-  --c-white: #FFFFFF;
-  --c-cream: #FFFBF6;
-  --c-ink: #1B1B2E;
-  --c-ink-soft: #4A4A5E;
-  --c-ink-mute: #8A8A9C;
-
-  --font-display: "Cormorant Garamond", "Times New Roman", serif;
-  --font-body: "Manrope", -apple-system, "Segoe UI", sans-serif;
-  --font-script: "Caveat", "Brush Script MT", cursive;
-
-  --max-width: 1440px;
-  --radius: 20px;
-  --radius-lg: 32px;
-
-  --shadow-soft: 0 10px 30px -12px rgba(255,111,169,.18), 0 6px 18px -10px rgba(201,169,97,.12);
-  --shadow-md: 0 20px 50px -20px rgba(27,27,46,.18);
-}
-
-/* -------------------------------------------------
-   2.   Global Reset / Base Styles
-   ------------------------------------------------- */
-*, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 110px; }
-body {
-  margin:0;
-  font-family: var(--font-body);
-  color: var(--c-ink);
-  background: var(--c-cream);
-  overflow-x:hidden;
-}
-img { max-width:100%; display:block; }
-a { color:inherit; text-decoration:none; }
-button, a.btn { font-family:inherit; cursor:pointer; border:none; background:none; }
-h1,h2,h3 { font-family:var(--font-display); margin:0 0 20px; line-height:1.05; color:var(--c-ink); }
-h2 { font-size: clamp(34px,4.5vw,56px); }
-h3 { font-size: clamp(22px,2.4vw,28px); font-weight:600; line-height:1.2; }
-p { line-height:1.65; margin:0 0 16px; font-size:17px; color:var(--c-ink-soft); }
-.lead { font-size:19px; max-width:780px; }
-.container {
-  width: min(100% - 40px, var(--max-width));
-  margin-inline:auto;
-  position:relative;
-  z-index:2;
-}
-
-/* -------------------------------------------------
-   3.   Utility Helpers
-   ------------------------------------------------- */
-.text-center { text-align:center; }
-.btn {
-  display:inline-flex; align-items:center; justify-content:center;
-  gap:10px; padding:16px 28px; min-height:48px; border-radius:999px;
-  font-weight:600; font-size:15px; white-space:nowrap;
-  transition:transform .35s cubic-bezier(.2,.7,.3,1);
-  position:relative; overflow:hidden;
-}
-.btn-primary {
-  background:linear-gradient(135deg,var(--c-pink),var(--c-gold));
-  color:#fff;
-  box-shadow:0 14px 30px -12px rgba(255,111,169,.55),0 8px 20px -10px rgba(201,169,97,.4);
-}
-.btn-primary:hover { transform:translateY(-2px); }
-.btn-ghost {
-  background:transparent;
-  color:var(--c-ink);
-  border:1.5px solid rgba(27,27,46,.18);
-}
-.btn-ghost:hover {
-  border-color:var(--c-pink);
-  background:var(--c-pink-cloud);
-  color:var(--c-pink-deep);
-}
-
-/* -------------------------------------------------
-   4.   Layout Components
-   ------------------------------------------------- */
-
-/* ---- Header (fixed) ---- */
-header.nav {
-  position:fixed; inset:0 0 auto;
-  padding:10px 0; background:#fff;
-  border-bottom:1px solid rgba(27,27,46,.06);
-  box-shadow:0 2px 16px -10px rgba(27,27,46,.15);
-  transition:padding .3s,box-shadow .3s;
-  z-index:50;
-}
-header.nav.scrolled { padding:8px 0; box-shadow:0 6px 24px -14px rgba(27,27,46,.2); }
-
-.nav-row {
-  display:flex; align-items:center; justify-content:space-between;
-  gap:24px; min-height:88px;
-}
-.logo { display:flex; align-items:center; gap:18px; line-height:1; }
-.logo-img {
-  width:88px; height:88px;
-  object-fit:contain; border-radius:50%;
-  transition:transform .4s;
-}
-.logo:hover .logo-img { transform:rotate(-4deg) scale(1.05); }
-.logo-text strong {
-  font-family:var(--font-display);
-  font-size:28px; font-weight:600;
-  color:#1B2A4E;
-}
-.logo-text small {
-  font-size:12px; letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--c-ink-mute);
-}
-
-/* ---- Navigation menu ---- */
-nav.menu {
-  display:flex; align-items:center; gap:28px;
-  white-space:nowrap;
-}
-nav.menu a {
-  font-size:15.5px; font-weight:600;
-  color:var(--c-ink-soft);
-  padding:6px 2px;
-  position:relative;
-  transition:color .25s;
-}
-nav.menu a:hover { color:var(--c-pink-deep); }
-nav.menu a::after {
-  content:""; position:absolute; left:0; right:0; bottom:-6px;
-  height:2px; background:var(--c-gold);
-  border-radius:2px; transform:scaleX(0);
-  transform-origin:left; transition:transform .3s;
-}
-nav.menu a:hover::after { transform:scaleX(1); }
-nav.menu a.nav-active {
-  color:var(--c-pink-deep);
-  font-weight:700;
-}
-nav.menu a.nav-active::before {
-  content:"★ ";
-  color:var(--c-sun);
-  margin-right:5px;
-  font-size:.85em;
-}
-
-/* ---- Burger (mobile) ---- */
-.burger {
-  display:none; width:40px; height:40px;
-  border-radius:50%; background:var(--c-white);
-  box-shadow:var(--shadow-soft);
-}
-.burger span {
-  display:block; width:18px; height:1.5px;
-  background:var(--c-ink);
-  margin:4px auto;
-  transition:all .3s;
-}
-
-/* ---- Hero Section ---- */
-.si-hero {
-  padding:130px 0 100px;
-  background:linear-gradient(135deg,#FFF8EE 0%,#FFF5F9 100%);
-  position:relative; overflow:hidden;
-}
-.si-hero::before,
-.si-hero::after {
-  content:""; position:absolute; pointer-events:none;
-}
-.si-hero::before {
-  top:-120px; right:-100px;
-  width:480px; height:480px;
-  background:radial-gradient(circle,var(--c-sun-soft),transparent 65%);
-  animation:sunPulse 8s ease-in-out infinite;
-}
-.si-hero::after {
-  bottom:-150px; left:-80px;
-  width:420px; height:420px;
-  background:radial-gradient(circle,var(--c-pink-cloud),transparent 65%);
-}
-@keyframes sunPulse{
-  0%,100%{transform:scale(1);opacity:.8}
-  50%{transform:scale(1.08);opacity:1}
-}
-
-/* Hero Grid – mobile first (single column) */
-.hero-grid {
-  display:grid;
-  grid-template-columns:1fr;
-  gap:50px;
-  align-items:center;
-  position:relative;
-  z-index:1;
-}
-@media (min-width:960px){
-  .hero-grid { grid-template-columns:1fr 1.1fr; gap:80px; }
-}
-
-/* Hero visual */
-.hero-visual {
-  position:relative;
-  aspect-ratio:4/5;
-}
-.hero-photo {
-  inset:0; position:absolute;
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  box-shadow:0 40px 80px -30px rgba(27,27,46,.4);
-  background:linear-gradient(135deg,var(--c-sun-soft),var(--c-pink-cloud));
-}
-.hero-photo img {
-  width:100%; height:100%; object-fit:cover;
-  transition:transform 6s;
-}
-.hero-photo:hover img { transform:scale(1.06); }
-
-/* Hero badges */
-.hero-badge {
-  position:absolute; display:flex; align-items:center;
-  gap:12px; background:#fff; padding:16px 20px;
-  border-radius:18px; box-shadow:var(--shadow-md); z-index:2;
-}
-.hero-badge.hb-age   { top:-16px; right:-24px; border:1px solid var(--c-gold-light);   animation:floatBadge 5s ease-in-out infinite; }
-.hero-badge.hb-time  { bottom:80px; left:-26px; border:1px solid var(--c-pink-cloud);   flex-direction:column; align-items:flex-start; gap:2px; animation:floatBadge 6s ease-in-out infinite reverse; }
-.hero-badge.hb-place { bottom:20px; right:-20px; border:1px solid var(--c-tiffany-light); animation:floatBadge 6.5s ease-in-out infinite; }
-@keyframes floatBadge{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-8px)}
-}
-.hb-big {font-family:var(--font-display); font-style:italic; font-size:22px; font-weight:700; color:var(--c-gold-deep);}
-.hb-small{font-size:12px; color:var(--c-ink-mute); font-weight:500;}
-
-/* Hero text */
-.si-kicker {
-  font-size:14px; font-weight:700; letter-spacing:.22em;
-  text-transform:uppercase; color:var(--c-pink-deep);
-  margin-bottom:14px;
-}
-.si-h1 {
-  font-size: clamp(58px,8vw,110px) !important;
-  line-height:.9 !important;
-  font-weight:700; letter-spacing:-.02em;
-  margin:0 0 12px !important;
-  text-transform:uppercase;
-}
-.si-h1 em {
-  font-style:italic; font-weight:600;
-  background:linear-gradient(120deg,var(--c-pink) 0%,var(--c-gold) 55%,var(--c-tiffany) 100%);
-  -webkit-background-clip:text; background-clip:text;
-  color:transparent;
-  animation:heroGlow 5s ease-in-out infinite;
-}
-@keyframes heroGlow{
-  0%,100%{filter:drop-shadow(0 6px 18px rgba(255,111,169,.25))}
-  50%{filter:drop-shadow(0 8px 24px rgba(201,169,97,.4))}
-}
-.si-script {
-  font-family:var(--font-script);
-  font-size: clamp(28px,3.5vw,44px);
-  color:var(--c-pink-deep);
-  line-height:1.2;
-  margin:0 0 20px;
-  display:block;
-  transform:rotate(-1.5deg);
-  transform-origin:left;
-}
-.si-lead {
-  font-size: clamp(17px,1.6vw,20px);
-  max-width:620px;
-}
-
-/* Schedule tags (inline) */
-.schedule-tags {
-  display:flex; flex-wrap:wrap; gap:10px;
-  margin:22px 0;
-}
-.stag {
-  display:inline-flex; align-items:center; gap:8px;
-  padding:10px 18px; border-radius:999px;
-  font-weight:700; font-size:14px;
-  background:#fff;
-  border:1.5px solid rgba(201,169,97,.35);
-  box-shadow:0 4px 12px -6px rgba(27,27,46,.1);
-}
-
-/* Price badge */
-.si-price-badge {
-  display:inline-flex; align-items:center; gap:12px;
-  background:linear-gradient(135deg,var(--c-sun-soft),var(--c-pink-cloud));
-  border:1.5px solid rgba(201,169,97,.4);
-  border-radius:var(--radius);
-  padding:18px 28px;
-  margin-top:20px;
-}
-.spb-amount {font-family:var(--font-display); font-size: clamp(28px,3vw,42px); font-weight:700; color:var(--c-gold-deep);}
-.spb-label {font-size:13.5px; color:var(--c-ink-soft); line-height:1.5;}
-.spb-label strong {display:block; font-size:15px; color:var(--c-ink);}
-
-/* -------------------------------------------------
-   5.   Section – “Why Outdoor”
-   ------------------------------------------------- */
-.si-outdoor {background:#FFF9F2;}
-.outdoor-grid {
-  display:grid;
-  grid-template-columns:1fr;
-  gap:36px;
-  align-items:start;
-}
-@media (min-width:960px){
-  .outdoor-grid { grid-template-columns:1fr 1fr; gap:50px; }
-}
-.outdoor-text p {font-size:17px; line-height:1.7;}
-.outdoor-quote {
-  font-family:var(--font-display); font-style:italic;
-  font-size: clamp(20px,2vw,26px);
-  color:var(--c-gold-deep);
-  padding:22px 28px;
-  border-left:4px solid var(--c-gold);
-  background:rgba(255,231,168,.2);
-  border-radius:0 var(--radius) var(--radius) 0;
-  margin:24px 0;
-}
-.outdoor-card {
-  background:#fff;
-  border-radius:var(--radius);
-  padding:24px 26px;
-  box-shadow:var(--shadow-soft);
-  border:1px solid rgba(27,27,46,.04);
-  display:flex; gap:18px; align-items:flex-start;
-  transition:transform .3s;
-}
-.outdoor-card:hover {transform:translateY(-3px);}
-.oc-icon {
-  flex:0 0 48px; width:48px; height:48px;
-  border-radius:14px;
-  background:linear-gradient(135deg,var(--c-sun-soft),var(--c-pink-cloud));
-  display:grid; place-items:center;
-  color:var(--c-pink-deep); font-size:22px;
-}
-.oc-body h3 {
-  font-family:var(--font-body);
-  font-size:16px; font-weight:700;
-  margin:0 0 6px; color:var(--c-ink);
-}
-.oc-body p {font-size:15px; margin:0; line-height:1.55;}
-
-/* -------------------------------------------------
-   6.   Section – “Program”
-   ------------------------------------------------- */
-.si-program {background:#F8FFF5;}
-.lesson-intro {max-width:820px; margin:20px auto 48px; text-align:center;}
-.triad {display:flex; flex-direction:column; gap:24px; max-width:980px; margin-inline:auto;}
-.triad-block {
-  display:grid;
-  grid-template-columns:auto 1fr;
-  gap:28px;
-  background:#fff;
-  border-radius:var(--radius-lg);
-  padding:36px 40px;
-  box-shadow:var(--shadow-soft);
-  border:1px solid rgba(27,27,46,.04);
-  transition:transform .35s, box-shadow .35s;
-}
-.triad-block:hover {
-  transform:translateY(-3px);
-  box-shadow:var(--shadow-md);
-}
-.triad-num {
-  font-family:var(--font-display);
-  font-style:italic;
-  font-size:52px; font-weight:600;
-  line-height:1;
-  background:linear-gradient(135deg,var(--c-pink),var(--c-gold));
-  -webkit-background-clip:text; background-clip:text;
-  color:transparent; white-space:nowrap;
-}
-.triad-detail {margin-top:14px; padding-top:14px; border-top:1px solid rgba(27,27,46,.06);}
-.detail-list {
-  list-style:none; padding:0; margin:0;
-  display:flex; flex-direction:column; gap:8px;
-}
-.detail-list li {
-  display:flex; gap:10px; align-items:flex-start;
-  font-size:15px; color:var(--c-ink-soft);
-}
-.detail-list li::before {
-  content:"·";
-  color:var(--c-gold);
-  font-size:20px; line-height:1.2; flex:0 0 12px;
-}
-.triad-closing {
-  max-width:820px; margin:48px auto 0;
-  padding:32px 36px;
-  background:linear-gradient(135deg,var(--c-sun-soft),var(--c-pink-cloud));
-  border-radius:var(--radius-lg);
-  border:1px solid rgba(201,169,97,.2);
-  text-align:center;
-}
-.triad-closing p {font-size:17px; color:var(--c-ink); line-height:1.65;}
-
-/* -------------------------------------------------
-   7.   Section – “Ages”
-   ------------------------------------------------- */
-.si-ages {background:#FFF5F0;}
-.age-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-  margin-top:36px;
-}
-@media (max-width:960px){
-  .age-grid {grid-template-columns:repeat(2,1fr);}
-}
-@media (max-width:640px){
-  .age-grid {grid-template-columns:1fr;}
-}
-.age-card {
-  background:#fff;
-  border-radius:var(--radius);
-  padding:30px 26px;
-  box-shadow:var(--shadow-soft);
-  border:1px solid rgba(27,27,46,.04);
-  position:relative; overflow:hidden;
-  transition:transform .3s;
-}
-.age-card::before {
-  content:""; position:absolute; top:0; left:0; right:0; height:4px;
-  background:linear-gradient(90deg,var(--c-pink),var(--c-gold));
-}
-.age-card:hover {transform:translateY(-4px);}
-.age-emoji {font-size:36px; margin-bottom:12px; display:block;}
-.age-range {
-  font-family:var(--font-display);
-  font-style:italic;
-  font-size:32px; font-weight:700;
-  color:var(--c-pink-deep);
-}
-.age-label {
-  font-size:12px; font-weight:700;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--c-ink-mute);
-  margin-bottom:14px;
-  display:block;
-}
-.age-card h3 {font-family:var(--font-body); font-size:17px; font-weight:700; margin:0 0 10px; color:var(--c-ink);}
-.age-why,.age-how {font-size:14.5px; line-height:1.55; margin:0 0 10px;}
-.age-tag {
-  display:inline-block;
-  padding:4px 12px;
-  border-radius:999px;
-  font-size:12px; font-weight:700;
-  background:linear-gradient(135deg,var(--c-pink-cloud),var(--c-sun-soft));
-  color:var(--c-pink-deep);
-  margin-top:4px;
-}
-
-/* -------------------------------------------------
-   8.   Section – “Letter to Parents”
-   ------------------------------------------------- */
-.si-letter {
-  background:linear-gradient(135deg,#1B2A4E 0%,#2a2040 100%);
-  color:#fff;
-  position:relative; overflow:hidden;
-}
-.si-letter::before,
-.si-letter::after {
-  content:""; position:absolute; pointer-events:none;
-}
-.si-letter::before {
-  top:-200px; right:-200px;
-  width:600px; height:600px;
-  background:radial-gradient(circle,rgba(255,209,102,.12),transparent 65%);
-}
-.si-letter::after {
-  bottom:-200px; left:-150px;
-  width:500px; height:500px;
-  background:radial-gradient(circle,rgba(255,111,169,.1),transparent 65%);
-}
-.letter-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  align-items:start;
-}
-@media (max-width:960px){
-  .letter-grid {grid-template-columns:1fr; gap:36px;}
-}
-.letter-head .eyebrow {color:var(--c-gold-light);}
-.letter-head .eyebrow::before {background:linear-gradient(90deg,transparent,var(--c-gold-light));}
-.letter-head h2 {color:#fff; margin-top:16px;}
-.letter-head h2 em {
-  background:linear-gradient(120deg,var(--c-gold-light),var(--c-pink));
-  -webkit-background-clip:text; background-clip:text;
-  color:transparent;
-}
-.letter-intro {font-size:18px; line-height:1.65; color:rgba(255,255,255,.82); max-width:500px;}
-.scenario {
-  border-radius:var(--radius);
-  padding:28px;
-  border:1px solid rgba(255,255,255,.1);
-}
-.scenario.bad {background:rgba(255,255,255,.05);}
-.scenario.good {
-  background:linear-gradient(135deg,rgba(255,209,102,.12),rgba(255,111,169,.1));
-  border-color:rgba(201,169,97,.3);
-}
-.scenario-label {
-  display:flex; align-items:center; gap:10px;
-  font-size:13px; font-weight:700;
-  letter-spacing:.14em; text-transform:uppercase;
-  margin-bottom:12px;
-}
-.scenario.bad .scenario-label {color:rgba(255,255,255,.5);}
-.scenario.good .scenario-label {color:var(--c-gold-light);}
-.scenario h3 {
-  font-family:var(--font-body);
-  font-size:17px; font-weight:700;
-  margin:0 0 10px; color:rgba(255,255,255,.9);
-}
-.scenario p {font-size:15px; line-height:1.6; color:rgba(255,255,255,.65); margin:0;}
-.scenario.good p {color:rgba(255,255,255,.82);}
-
-/* -------------------------------------------------
-   9.   Section – “Schedule”
-   ------------------------------------------------- */
-.si-schedule {background:#FCFBFF;}
-.sessions-grid {
-  display:grid;
-  grid-template-columns:1fr;
-  gap:24px;
-  max-width:860px;
-  margin:40px auto 0;
-}
-@media (min-width:960px){
-  .sessions-grid {grid-template-columns:1fr 1fr;}
-}
-.session-card {
-  background:#fff;
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  box-shadow:var(--shadow-soft);
-  border:1px solid rgba(27,27,46,.05);
-}
-.session-head {
-  padding:26px 28px 20px;
-  background:linear-gradient(135deg,var(--c-pink-cloud),var(--c-sun-soft));
-}
-.session-badge {
-  display:inline-flex; align-items:center; gap:8px;
-  padding:6px 14px;
-  border-radius:999px;
-  background:linear-gradient(135deg,var(--c-pink),var(--c-gold));
-  color:#fff;
-  font-size:12px; font-weight:700;
-  letter-spacing:.06em;
-  margin-bottom:12px;
-}
-.session-title {
-  font-family:var(--font-display);
-  font-size:28px; font-weight:700;
-  color:var(--c-ink);
-  margin:0 0 4px;
-}
-.session-dates {
-  font-size:16px; font-weight:600;
-  color:var(--c-pink-deep);
-}
-.session-body {padding:24px 28px;}
-.session-row {
-  display:flex; align-items:center; gap:12px;
-  margin-bottom:12px;
-}
-.session-row:last-child {margin:0;}
-.sr-icon {
-  width:36px; height:36px;
-  border-radius:10px;
-  background:linear-gradient(135deg,var(--c-tiffany-soft),var(--c-pink-cloud));
-  display:grid; place-items:center;
-  color:var(--c-tiffany-deep);
-}
-.sr-label {
-  font-size:14px; color:var(--c-ink-mute); font-weight:500;
-}
-.sr-val {
-  font-size:15px; font-weight:700;
-  color:var(--c-ink);
-}
-.session-note {
-  margin-top:16px;
-  padding:14px 16px;
-  background:linear-gradient(135deg,var(--c-tiffany-soft),var(--c-sun-soft));
-  border-radius:var(--radius);
-  font-size:14px;
-  color:var(--c-tiffany-deep);
-  font-weight:600;
-  text-align:center;
-}
-
-/* Outfit box – after schedule */
-.outfit-box {
-  max-width:860px;
-  margin:32px auto 0;
-  padding:28px 32px;
-  background:#fff;
-  border-radius:var(--radius);
-  box-shadow:var(--shadow-soft);
-  border:1px solid rgba(27,27,46,.04);
-  display:flex; gap:24px; align-items:flex-start;
-}
-@media (max-width:960px){
-  .outfit-box {flex-direction:column; gap:12px;}
-}
-.outfit-icon {
-  font-size:32px;
-  flex:0 0 40px;
-}
-.outfit-body h3 {
-  font-family:var(--font-body);
-  font-size:17px; font-weight:700;
-  margin:0 0 8px;
-  color:var(--c-ink);
-}
-.outfit-body p {font-size:15px; margin:0; line-height:1.6;}
-
-/* -------------------------------------------------
-   10.   Section – “Why choose us”
-   ------------------------------------------------- */
-.si-why {background:#FAF8FF;}
-.why-grid {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:22px;
-  margin-top:36px;
-}
-@media (max-width:960px){
-  .why-grid {grid-template-columns:repeat(2,1fr);}
-}
-@media (max-width:640px){
-  .why-grid {grid-template-columns:1fr;}
-}
-.why-card {
-  background:#fff;
-  border-radius:var(--radius);
-  padding:30px 24px;
-  text-align:center;
-  box-shadow:var(--shadow-soft);
-  border:1px solid rgba(27,27,46,.04);
-  transition:transform .3s;
-}
-.why-card:hover {transform:translateY(-4px);}
-.why-icon {
-  width:56px; height:56px;
-  margin:0 auto 16px;
-  border-radius:14px;
-  background:linear-gradient(135deg,var(--c-sun-soft),var(--c-pink-cloud));
-  display:grid; place-items:center;
-  color:var(--c-pink-deep);
-}
-.why-card h3 {font-size:19px; margin-bottom:10px;}
-.why-card p {font-size:14.5px; line-height:1.55;}
-
-/* -------------------------------------------------
-   11.   CTA Block (dark)
-   ------------------------------------------------- */
-.cta-block {
-  background:linear-gradient(135deg,#1B2A4E 0%,#2a3558 100%);
-  color:#fff; text-align:center;
-  position:relative; overflow:hidden;
-  padding:100px 0;
-}
-.cta-block::before {
-  content:"";
-  position:absolute; top:-200px; right:-200px;
-  width:500px; height:500px;
-  background:radial-gradient(circle,rgba(255,209,102,.15),transparent 65%);
-}
-.cta-block h2 {color:#fff;}
-.cta-block h2 em {
-  background:linear-gradient(120deg,var(--c-gold-light),var(--c-pink));
-  -webkit-background-clip:text; background-clip:text;
-  color:transparent;
-}
-.cta-block .lead {color:rgba(255,255,255,.88); margin:0 auto 32px;}
-.cta-block .hero-cta {justify-content:center;}
-
-/* -------------------------------------------------
-   12.   FAQ
-   ------------------------------------------------- */
-.faq {background:#FCFAF7;}
-.faq-grid {
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:80px;
-  align-items:start;
-}
-@media (max-width:960px){
-  .faq-grid {grid-template-columns:1fr; gap:40px;}
-}
-.faq-side h2 {margin-top:12px;}
-.msg-choice {display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;}
-.faq-item {
-  background:#fff;
-  border-radius:var(--radius);
-  padding:0 24px;
-  margin-bottom:12px;
-  border:1px solid rgba(27,27,46,.06);
-  box-shadow:0 4px 16px -8px rgba(27,27,46,.08);
-}
-.faq-q {
-  padding:20px 0;
-  font-weight:600; font-size:16px;
-  cursor:pointer;
-  display:flex; justify-content:space-between; align-items:center;
-  gap:16px;
-  color:var(--c-ink);
-}
-.faq-q::-webkit-details-marker {display:none;}
-.faq-a {
-  padding:0 0 20px;
-  font-size:15px; color:var(--c-ink-soft);
-  line-height:1.6;
-}
-.faq-icon {
-  font-size:22px; color:var(--c-pink);
-  transition:transform .3s;
-}
-.faq-item[open] .faq-icon {transform:rotate(45deg);}
-
-/* -------------------------------------------------
-   13.   Footer
-   ------------------------------------------------- */
-footer {
-  background:var(--c-ink);
-  color:rgba(255,255,255,.65);
-  padding:32px 0;
-  font-size:13.5px;
-}
-.foot-row {
-  display:flex; justify-content:space-between;
-  flex-wrap:wrap; gap:16px;
-}
-.foot-row a {color:rgba(255,255,255,.75);}
-.foot-row a:hover {color:#fff;}
-
-/* -------------------------------------------------
-   14.   Modal (form selector)
-   ------------------------------------------------- */
-.modal-bg {
-  position:fixed; inset:0;
-  background:rgba(27,27,46,.55);
-  backdrop-filter:blur(8px);
-  display:none; align-items:center; justify-content:center;
-  padding:20px; z-index:100;
-}
-.modal-bg.open {display:flex;}
-.modal {
-  background:#fff;
-  border-radius:var(--radius-lg);
-  padding:36px 32px;
-  max-width:460px; width:100%;
-  position:relative; text-align:center;
-}
-.modal-close {
-  position:absolute; top:14px; right:16px;
-  background:none; border:none; font-size:24px;
-  cursor:pointer; color:var(--c-ink-mute);
-}
-.modal h3 {font-size:28px; margin:12px 0;}
-.modal .small {font-size:14px; color:var(--c-ink-soft); margin-bottom:20px;}
-.modal .btn {width:100%; margin-bottom:10px;}
-
-/* -------------------------------------------------
-   15.   Float CTAs (phone + telegram)
-   ------------------------------------------------- */
-.float-cta {
-  position:fixed; right:24px; bottom:24px;
-  width:60px; height:60px;
-  border-radius:50%;
-  background:linear-gradient(135deg,#2AABEE,#229ED9);
-  display:grid; place-items:center;
-  color:#fff; box-shadow:0 14px 30px -8px rgba(42,171,238,.55);
-  animation:pulse 2.4s ease-out infinite;
-  z-index:40;
-}
-.float-call {right:96px; background:linear-gradient(135deg,var(--c-gold),var(--c-gold-light));}
-@keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(42,171,238,.5),0 14px 30px -8px rgba(42,171,238,.55);}
-  70%{box-shadow:0 0 0 18px rgba(42,171,238,0),0 14px 30px -8px rgba(42,171,238,.55);}
-  100%{box-shadow:0 0 0 0 rgba(42,171,238,0),0 14px 30px -8px rgba(42,171,238,.55);}
-}
-
-/* -------------------------------------------------
-   16.   Reveal on scroll
-   ------------------------------------------------- */
-.reveal {opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1);}
-.reveal.in {opacity:1; transform:none;}
-
-/* -------------------------------------------------
-   17.   Reduced‑motion preference
-   ------------------------------------------------- */
-@media (prefers-reduced-motion: reduce) {
-  .hero-badge,
-  .float-cta,
-  .hero-badge,
-  .session-card,
-  .hero-visual,
-  .float-cta,
-  .reveal {animation:none; transition:none;}
-}
-
-/* -------------------------------------------------
-   18.   Mobile‑first overrides (≤640 px)
-   ------------------------------------------------- */
-@media (max-width:640px){
-  section {padding:64px 0;}
-  .si-hero {padding:120px 0 64px;}
-  .container {width:min(100% - 28px, var(--max-width));}
-  .logo-img {width:64px; height:64px;}
-  .logo-text strong {font-size:22px;}
-  .cta-block {padding:64px 0;}
-}
-
-/* -------------------------------------------------
-   19.   Navigation (burger) – show on small screens
-   ------------------------------------------------- */
-@media (max-width:1100px){
-  nav.menu {display:none;}
-  .nav-actions .nav-phone {display:none;}
-  .burger {display:block;}
-  nav.menu.open {
-    display:flex; flex-direction:column;
-    position:fixed; top:96px; left:16px; right:16px;
-    background:#fff; padding:22px 24px;
-    border-radius:22px; box-shadow:var(--shadow-md);
-    gap:16px; align-items:flex-start; z-index:60;
-  }
-}
-</style>
-</head>
-
-<body>
-
-<a class="skip-link" href="#main"
-   style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
-  Перейти к основному содержимому
-</a>
-
-<header class="nav" id="nav" role="banner">
-  <div class="container nav-row">
-    <a href="index.html" class="logo" aria-label="Таттян в Денях">
-      <img class="logo-img" src="logo.jpg" alt="Таттян в Денях"
-           width="88" height="88"
-           loading="eager" fetchpriority="high">
-      <span class="logo-text">
-        <strong>Таттян в Денях</strong>
-        <small>МК «Суханов» парка</small>
-      </span>
-    </a>
-
-    <nav class="menu" id="menu" aria-label="Навигация по сайту">
-      <a href="index.html#about">О колективах</a>
-      <a href="index.html#programs">Группы</a>
-      <a href="smart-fitness.html">Смный фитнес</a>
-      <a href="summer-intensiv.html" class="nav-active">Летний интенсив</a>
-      <a href="prices.html">Цены</a>
-      <a href="blog/">Блог</a>
-      <a href="index.html#contacts">Контакты</a>
-    </nav>
-
-    <div class="nav-actions">
-      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671‑99‑83</a>
-      <a class="btn btn-primary"
-         href="#"
-         onclick="openModal();return false;"
-         data-goal="cta_open_form_header">Записаться</a>
-      <button class="burger"
-              id="burger"
-              aria-label="Открыть меню"
-              aria-expanded="false"
-              aria-controls="menu"
-              type="button"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- ===================== HERO ===================== -->
-  <section class="si-hero" id="hero">
-    <div class="container">
-      <div class="hero-grid">
-
-        <!-- Visual -->
-        <div class="hero-visual reveal">
-          <div class="hero-photo">
-            <img src="intensiv0.jpg"
-                 alt="Летний интенсив в городе, лето – 2025"
-                 width="480" height="600"
-                 loading="eager" fetchpriority="high">
-          </div>
-
-          <!-- Age badge -->
-          <div class="hero-badge hb-age">
-            <span style="font-size:22px">6‑12 лет</span>
-            <div>
-              <div class="hb-big">6 5 15 лет</div>
-              <div class="hb-small">в свободном возрасте</div>
-            </div>
-          </div>
-
-          <!-- Time badge -->
-          <div class="hero-badge hb-time">
-            <div class="hb-big">120 мин</div>
-            <div class="hb-small">пн‑вт 18:00‑20:00</div>
-          </div>
-
-          <!-- Place badge -->
-          <div class="hero-badge hb-place">
-            <span style="font-size:20px">📍</span>
-            <div>
-              <div class="hb-big" style="font-size:16px;font-family:var(--font-body);font-weight:700">
-                На свежем воздухе
-              </div>
-              <div class="hb-small">парк – пешком – трава</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Text -->
-        <div class="si-text reveal">
-          <span class="si-kicker">Детский летний интенсив 2025</span>
-          <h1 class="si-h1"><em>Прожок в Рост</em></h1>
-          <span class="si-script">Танцу в вас лето!</span>
-
-          <p class="lead si-lead">
-            Летний интенсив – это быстрый способ получить навыки без
-            давления. Мы предлагаем спорт, танцы, творчество, здоровый образ
-            жизни и развитие, а также заботу о том, чтобы каждый ребёнок
-            чувствовал себя уверенно и получал удовольствие.
-          </p>
-
-          <div class="schedule-tags">
-            <span class="stag">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2.2"
-                   stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2"/>
-                <line x1="16" y1="2" x2="16" y2="6"/>
-                <line x1="8"  y1="2" x2="8"  y2="6"/>
-                <line x1="3"  y1="10" x2="21" y2="10"/>
-              </svg>
-              6‑12 лет • Авангард
-            </span>
-            <span class="stag">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2.2"
-                   stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-              18:00‑20:00
-            </span>
-            <span class="stag">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2.2"
-                   stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/>
-                <circle cx="12" cy="11" r="3"/>
-              </svg>
-              ОТКРЫТ В ПАРКЕ
-            </span>
-            <span class="stag">
-              5‑дневный • 120‑минутный • Стоимость 9 000 ₽
-            </span>
-          </div>
-
-          <div class="si-price-badge">
-            <div class="spb-amount">9 000 ₽</div>
-            <div class="spb-label">
-              <strong>Летний интенсив — однa с­мена</strong>
-              5 ч. ранка в неделе • 120 мин в сутках
-              <a href="prices.html"
-                 style="color:var(--c-gold-deep);font-weight:600;text-decoration:underline">
-                Подробнее о тарифе →
-              </a>
-            </div>
-          </div>
-
-          <div class="hero-cta">
-            <a class="btn btn-primary btn-lg"
-               href="#"
-               onclick="openModal('intensiv');return false;"
-               data-goal="cta_open_form_hero">Записаться сейчас</a>
-            <a class="btn btn-ghost btn-lg"
-               href="tel:+79636719983"
-               data-goal="cta_call_hero">Позвонить</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== WHY OUTDOOR ===================== -->
-  <section class="si-outdoor" id="outdoor">
-    <div class="container">
-      <div class="text-center reveal">
-        <span class="eyebrow center">НА ШАГ В ПОДОЗРЕНИЕ</span>
-        <h2>Почему мы <em>на улице</em></h2>
-      </div>
-
-      <div class="outdoor-grid reveal">
-        <div class="outdoor-text">
-          <p>
-            Летний интенсив в городе — это возможность сочетать спорт,
-            танцы и творчество с чистым воздухом. Дети проводят время
-            на открытом просторе, а родители могут контролировать процесс.
-            Мы создаём среду, в которой каждый ребёнок чувствует себя
-            уверенно и получает поддержку.
-          </p>
-
-          <div class="outdoor-quote">
-            2 часа почти каждый день. За счёт этого ребёнок получает
-            100 % пользы и улучшает состояние организма.
-          </div>
-
-          <p>
-            Дети могут сразу увидеть результаты работы: развитие гибкости,
-            выдержка, уверенность в себе — всё это без ущерба учебе.
-          </p>
-        </div>
-
-        <div class="outdoor-cards">
-          <article class="outdoor-card">
-            <div class="oc-icon">🏃‍♂️</div>
-            <div class="oc-body">
-              <h3>Массимум физических нагрузок</h3>
-              <p>
-                Мы комбинируем кардио, силовые упражнения, растяжку и
-                координацию, чтобы каждый ребёнок развивал тело гармонично.
-              </p>
-            </div>
-          </article>
-
-          <article class="outdoor-card">
-            <div class="oc-icon">🤸‍♀️</div>
-            <div class="oc-body">
-              <h3>Развитие творческих способностей</h3>
-              <p>
-                На наших занятиях дети учатся рисовать, танцевать и
-                петь, что способствует развитию эмоционального интеллекта.
-              </p>
-            </div>
-          </article>
-
-          <article class="outdoor-card">
-            <div class="oc-icon">⚽</div>
-            <div class="oc-body">
-              <h3>Тренировка в команде</h3>
-              <p>
-                Работая в дружном коллективе дети учатся ответственности,
-                взаимопомощи и лидерству.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== PROGRAM ===================== -->
-  <section class="si-program" id="program">
-    <div class="container">
-      <div class="text-center reveal">
-        <span class="eyebrow center">ПРОГРАММА</span>
-        <h2>Ключевая <em>программа воспитания детей</em></h2>
-      </div>
-
-      <p class="lesson-intro lead reveal">
-        Программа построена на принципах:
-        — развитие физической выносливости,
-        — укрепление мышечной силы,
-        — формирование координации.
-      </p>
-
-      <div class="triad">
-
-        <!-- 01 -->
-        <article class="triad-block reveal">
-          <div class="triad-num">01</div>
-          <div>
-            <h3>Этап i – основы движения</h3>
-            <p>
-              На первом этапе детям даются базовые техники
-              (бег, прыжки, захваты). При этом основной упор делается на
-              развитие гибкости, силы, выносливости.
-            </p>
-            <div class="triad-detail">
-              <ul class="detail-list">
-                <li><strong>База: гибкость, сила, выносливость</strong> – развиваем мышцы, учим детей правильно дышать, сдаём тело в растяжку.</li>
-                <li><strong>Тренировки: от простых к сложным</strong> – повышаем нагрузку постепенно, следим за техникой выполнения.</li>
-                <li><strong>Питание: здоровое и сбалансированное</strong> – советуем, как правильно питаться, чтобы ребёнок получал энергию.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- 02 -->
-        <article class="triad-block reveal">
-          <div class="triad-num">02</div>
-          <div>
-            <h3>Танцевальная нарезка «Танцевальная акробатика»</h3>
-            <p>
-              На втором этапе соединяем танец с лёгкой акробатикой.
-              Ребёнок учится свободно передвигаться и выполнять простые
-              акробатические приёмы, развивая гибкость и координацию.
-            </p>
-            <div class="triad-detail">
-              <ul class="detail-list">
-                <li><strong>Динамика: быстрый темп</strong> – учим работать в быстром темпе без потери качества.</li>
-                <li><strong>Координация: точные движения</strong> – повторяем базовые фигуры, учим выстраивать правильные позы.</li>
-                <li><strong>Упражнения: дыхание, растяжка, расслабление</strong> – держим тело в тонусе, а разум – в покое.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- 03 -->
-        <article class="triad-block reveal">
-          <div class="triad-num">03</div>
-          <div>
-            <h3>Творческий финальный проект</h3>
-            <p>
-              На заключительном этапе дети готовят небольшое представление,
-              объединяя спорт, хореографию и творческий подход.
-              Родители могут наблюдать за процессом в режиме онлайн.
-            </p>
-            <div class="triad-detail">
-              <ul class="detail-list">
-                <li><strong>Детали проекта</strong> – постановка сцен, репетиции, подготовка костюмов.</li>
-                <li><strong>Итоги: награждение, сертификаты</strong> – подводим счёт, вручаем грамоты.</li>
-                <li><strong>Продолжительность</strong> – 3‑недельный курс, 5‑разовых тренировок в неделю.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="triad-closing reveal">
-        <p>
-          Если вы хотите подарить ребёнку яркое и полезное лето,
-          приходите к нам уже сейчас! Наши специалисты помогут
-          каждому ребёнку раскрыть потенциал.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== AGE GROUPS ===================== -->
-  <section class="si-ages" id="for-whom">
-    <div class="container">
-      <div class="text-center reveal">
-        <span class="eyebrow center">ДЛЯ КОГО</span>
-        <h2>Программа для <em>разных возрастов</em></h2>
-      </div>
-
-      <div class="age-grid">
-        <!-- 3‑5 years -->
-        <article class="age-card reveal">
-          <span class="age-emoji">👶</span>
-          <div class="age-range">3‑5</div>
-          <span class="age-label">Малыши‑первоклашки</span>
-          <h3>Для малышей, которые только учатся держать баланс</h3>
-          <p class="age-why">
-            На этом этапе мы развиваем мышечный тонус, координацию,
-            уверенность в движениях и базовые навыки самостоятельного
-            поведения.
-          </p>
-          <p class="age-how" style="color:var(--c-ink-mute)">
-            Включаем игровые упражнения (прыжки, бег, ползание) на мягком покрытии.
-          </p>
-          <span class="age-tag">Физическое развитие</span>
-        </article>
-
-        <!-- 7‑11 years -->
-        <article class="age-card reveal">
-          <span class="age-emoji">🧒</span>
-          <div class="age-range">7‑11</div>
-          <span class="age-label">Основная школьная группа</span>
-          <h3>Танцы, спорт, творческий рост</h3>
-          <p class="age-why">
-            Дети в этом возрасте получают комплексную программу —
-            занятия спортом, развитые танцевальные навыки, укрепление
-            здорового образа жизни и развитие социокультурных навыков.
-          </p>
-          <p class="age-how" style="color:var(--c-ink-mute)">
-            Активные поэтапные упражнения: силовая гимнастика, танцы, работа в паре.
-          </p>
-          <span class="age-tag">Танец + спорт</span>
-        </article>
-
-        <!-- 12‑15 years -->
-        <article class="age-card reveal">
-          <span class="age-emoji">🧑‍🦱</span>
-          <div class="age-range">12‑15</div>
-          <span class="age-label">Подростки‑спортсмены</span>
-          <h3>Турнирные навыки, профессиональный рост</h3>
-          <p class="age-why">
-            На этом этапе обучаем техникам спорта, танца, укрепляем
-            физическую форму и развиваем лидерские качества.
-          </p>
-          <p class="age-how" style="color:var(--c-ink-mute)">
-            Тренировки в командах, индивидуальная подготовка, подготовка к соревнованиям.
-          </p>
-          <span class="age-tag">Тренировки для будущих победителей</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== LETTER TO PARENTS ===================== -->
-  <section class="si-letter" id="parents">
-    <div class="container">
-      <div class="letter-grid">
-        <div class="reveal">
-          <div class="letter-head">
-            <span class="eyebrow">ОТ КРЫТЫХ ПИСЬМОВ</span>
-            <h2>Дорога к <em>внутреннему росту</em></h2>
-          </div>
-          <p class="letter-intro">
-            Мы понимаем, как тяжело доверять ребёнку свободу в росте. Поэтому
-            в течение 15 минут мы проводим открытый диалог, объясняя, как
-            ребёнок без задач будет честно участвовать в группе.
-          </p>
-          <p style="font-size:16px;color:rgba(255,255,255,.65);line-height:1.65">
-            Если вы захотите подробнее, напишите нам в Telegram или
-            позвоните – с удовольствием расскажем, как выжать максимум
-            пользы из летнего интенсивного курса.
-          </p>
-
-          <div class="hero-cta">
-            <a class="btn btn-primary btn-lg"
-               href="#"
-               onclick="openModal('intensiv');return false;"
-               data-goal="cta_open_form_letter">Записаться на встречу</a>
-          </div>
-        </div>
-
-        <div class="scenario-cards reveal">
-          <!-- Bad scenario -->
-          <div class="scenario bad">
-            <div class="scenario-label">
-              <span class="scenario-icon">⚠️</span> Вариант «плохой»
-            </div>
-            <h3>Плохой исход без родительского контроля</h3>
-            <p>
-              Дети могут «протянуть» урок, позже окажется, что они ничего
-              не выучили. На этом этапе необходимо ввести строгий график,
-              назначить домашние задания и вести открытый диалог с
-              родителями.
-            </p>
-          </div>
-
-          <!-- Good scenario -->
-          <div class="scenario good">
-            <div class="scenario-label">
-              <span class="scenario-icon">✅</span> Вариант «хороший»
-            </div>
-            <h3>Успешный прогресс благодаря взаимоподдержке</h3>
-            <p>
-              Родители и ребёнок работают вместе, ребёнок получает
-              удовольствие от занятий и уверенно растёт.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== SCHEDULE ===================== -->
-  <section class="si-schedule" id="schedule">
-    <div class="container">
-      <div class="text-center reveal">
-        <span class="eyebrow center">РАСПИСАНИЕ</span>
-        <h2>Смеи <em>двоеной программы</em></h2>
-      </div>
-
-      <div class="sessions-grid reveal">
-        <!-- Session 1 -->
-        <div class="session-card">
-          <div class="session-head">
-            <div class="session-badge">📅 2‑й набор 30‑е</div>
-            <div class="session-title">Интенсив</div>
-            <div class="session-dates">2 июня – 30 июня</div>
-          </div>
-          <div class="session-body">
-            <div class="session-row">
-              <div class="sr-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24"
-                     fill="none" stroke="currentColor" stroke-width="2.2"
-                     stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2"/>
-                  <line x1="16" y1="2" x2="16" y2="6"/>
-                  <line x1="8"  y1="2" x2="8"  y2="6"/>
-                  <line x1="3"  y1="10" x2="21" y2="10"/>
-                </svg>
-              </div>
-              <div>
-                <div class="sr-label">Дата начала</div>
-                <div class="sr-val">Понедельник 10:00</div>
-              </div>
-            </div>
-
-            <div class="session-row">
-              <div class="sr-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24"
-                     fill="none" stroke="currentColor" stroke-width="2.2"
-                     stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
-                </svg>
-              </div>
-              <div>
-                <div class="sr-label">Время занятий</div>
-                <div class="sr-val">18:00 – 20:00</div>
-              </div>
-            </div>
-
-            <div class="session-note">
-              Стартовая скидка 5 % при быстром отклике!
-            </div>
-          </div>
-        </div>
-
-        <!-- Session 2 -->
-        <div class="session-card">
-          <div class="session-head" style="background:linear-gradient(135deg,var(--c-tiffany-soft),var(--c-sun-soft))">
-            <div class="session-badge" style="background:linear-gradient(135deg,var(--c-tiffany-deep),var(--c-gold-deep))">
-              🎉 4‑й набор 29‑е
-            </div>
-            <div class="session-title">Август</div>
-            <div class="session-dates">4 августа – 29 августа</div>
-          </div>
-
-          <div class="session-body">
-            <div class="session-row">
-              <div class="sr-icon" style="background:linear-gradient(135deg,var(--c-tiffany-soft),var(--c-sun-soft))">
-                <svg width="18" height="18" viewBox="0 0 24 24"
-                     fill="none" stroke="currentColor" stroke-width="2.2"
-                     stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2"/>
-                  <line x1="16" y1="2" x2="16" y2="6"/>
-                  <line x1="8"  y1="2" x2="8"  y2="6"/>
-                  <line x1="3"  y1="10" x2="21" y2="10"/>
-                </svg>
-              </div>
-              <div>
-                <div class="sr-label">Дата начала</div>
-                <div class="sr-val">Понедельник 10:00</div>
-              </div>
-            </div>
-
-            <div class="session-row">
-              <div class="sr-icon" style="background:linear-gradient(135deg,var(--c-tiffany-soft),var(--c-sun-soft))">
-                <svg width="18" height="18" viewBox="0 0 24 24"
-                     fill="none" stroke="currentColor" stroke-width="2.2"
-                     stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
-                </svg>
-              </div>
-              <div>
-                <div class="sr-label">Время занятий</div>
-                <div class="sr-val">18:00 – 20:00</div>
-              </div>
-            </div>
-
-            <div class="session-note" style="background:linear-gradient(135deg,var(--c-tiffany-soft),var(--c-sun-soft));color:var(--c-tiffany-deep)">
-              При старте – подарок в виде бесплатного браслета!
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Outfit suggestion -->
-      <div class="outfit-box reveal">
-        <div class="outfit-icon">🧦</div>
-        <div class="outfit-body">
-          <h3>Подготовка к занятиям</h3>
-          <p>
-            Возьмите с собой кроссовки, спортивный костюм,
-            шорты/леопард или лёгкую футболку. При желании можно
-            добавить аксессуары – повязку на голову, спортивные очки.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== WHY CHOOSE US ===================== -->
-  <section class="si-why" id="why">
-    <div class="container text-center reveal">
-      <span class="eyebrow center">ПРЕИМУЩЕСТВА</span>
-      <h2>Почему <em>летний интенсив</em></h2>
-
-      <div class="why-grid">
-        <article class="why-card">
-          <div class="why-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24"
-                 fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <h3>Внимание к каждому ребёнку</h3>
-          <p>
-            Мы обучаем в дружелюбной атмосфере, регулируя нагрузку под
-            каждого участника. Профессиональная команда
-            гарантирует безопасный процесс.
-          </p>
-        </article>
-
-        <article class="why-card">
-          <div class="why-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24"
-                 fill="none" stroke="currentColor" stroke-width="1.8">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="12" y1="8" x2="12" y2="12"/>
-              <line x1="12" y1="16" x2="12.01" y2="16"/>
-            </svg>
-          </div>
-          <h3>Интегрированный подход к развитию</h3>
-          <p>
-            На основе нашей методики ребёнок растёт физически,
-            умственно и эмоционально, а занятия помогают раскрыть
-            творческий потенциал.
-          </p>
-        </article>
-
-        <article class="why-card">
-          <div class="why-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24"
-                 fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
-              <line x1="4" y1="22" x2="4" y2="15"/>
-            </svg>
-          </div>
-          <h3>Результат в короткий срок</h3>
-          <p>
-            После 3‑недельного курса вы почувствуете разницу в
-            физических способностях и координации.
-          </p>
-        </article>
-
-        <article class="why-card">
-          <div class="why-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24"
-                 fill="none" stroke="currentColor" stroke-width="1.8">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-            </svg>
-          </div>
-          <h3>Уникальная авторская методика</h3>
-          <p>
-            Мы проверяем каждую программу, используя лучшие мировые
-            практики и адаптируя их под российский контекст.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CALL‑TO‑ACTION ===================== -->
-  <section class="cta-block" id="cta">
-    <div class="container reveal">
-      <h2>Запишитесь <em>на интенсив сейчас</em></h2>
-      <p class="lead">
-        На летний интенсив открыты места только на 2 недели.
-        Поторопитесь — цены фиксированы и просты.
-        <strong>Бронируйте прямо сейчас!</strong>
-      </p>
-      <div class="hero-cta">
-        <a class="btn btn-primary btn-lg"
-           href="#"
-           onclick="openModal('intensiv');return false;"
-           data-goal="cta_open_form_main">Записаться</a>
-        <a class="btn btn-ghost btn-lg"
-           href="tel:+79636719983"
-           style="border-color:rgba(255,255,255,.35);color:#fff"
-           data-goal="cta_call_main">+7 (963) 671‑99‑83</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FAQ ===================== -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="faq-grid">
-        <div class="faq-side reveal">
-          <span class="eyebrow">FAQ</span>
-          <h2>Часто <em>задаваемые вопросы</em></h2>
-          <p>
-            Если у вас возникли вопросы, напишите нам в Telegram или позвоните.
-            Мы ответим в течение 24 часов.
-          </p>
-
-          <div class="msg-choice">
-            <a class="btn btn-primary"
-               href="https://t.me/+79636719983"
-               target="_blank"
-               rel="noopener noreferrer"
-               data-goal="cta_telegram_faq">Telegram</a>
-            <a class="btn btn-ghost"
-               href="tel:+79636719983"
-               data-goal="cta_call_faq">Позвонить</a>
-          </div>
-        </div>
-
-        <div class="faq-list reveal">
-          <details class="faq-item" open>
-            <summary class="faq-q">Сколько длится интенсив и сколько занятий в неделе? <span class="faq-icon">+</span></summary>
-            <div class="faq-a">
-              Интенсив длится 3 недели, 5‑дневная программа. На каждой неделе
-              проводятся 2‑3 занятия по 1,5‑2 часа.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Можно ли записаться, если у меня уже есть расписание в школе? <span class="faq-icon">+</span></summary>
-            <div class="faq-a">
-              Да, занятия проходят в утренние/дневные часы, что позволяет
-              совмещать их со школьными предметами.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Сколько стоит программа? <span class="faq-icon">+</span></summary>
-            <div class="faq-a">
-              Стоимость – <strong>9 000 ₽</strong> за весь курс (5 дней в неделе,
-              120 минут в день). <a href="prices.html"
-                 style="color:var(--c-pink-deep);font-weight:600">
-                Подробнее о тарифе →</a>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Есть ли скидки для групп? <span class="faq-icon">+</span></summary>
-            <div class="faq-a">
-              При записи группы от 3‑х человек — 5 % скидка. При оплате
-              «все‑вовремя» – 10 % бонус.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Можно ли изменить дату начала занятий? <span class="faq-icon">+</span></summary>
-            <div class="faq-a">
-              Все изменения согласовываются индивидуально, но стараемся
-              подобрать удобный график.
-            </div>
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer role="contentinfo">
-  <div class="container foot-row">
-    <div>
-      © 2014‑2025 Детский центр «Танцы в Денях». Все права защищены.
-    </div>
-    <div>
-      <a href="index.html">Главная</a> ·
-      <a href="prices.html">Цены</a> ·
-      <a href="smart-fitness.html">Смный фитнес</a> ·
-      <a href="index.html#contacts">Контакты</a>
-    </div>
-  </div>
-</footer>
-
-<!-- Floating CTA: Phone -->
-<a class="float-cta float-call"
-   href="tel:+79636719983"
-   aria-label="Позвонить"
-   data-goal="cta_call_float">
-  <svg width="26" height="26" viewBox="0 0 24 24"
-       fill="none" stroke="currentColor" stroke-width="2.2"
-       stroke-linecap="round" stroke-linejoin="round">
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
-  </svg>
-</a>
-
-<!-- Floating CTA: Telegram -->
-<a class="float-cta"
-   href="https://t.me/+79636719983"
-   target="_blank" rel="noopener noreferrer"
-   aria-label="Telegram"
-   data-goal="cta_telegram_float">
-  <svg width="28" height="28" viewBox="0 0 24 24"
-       fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
-</a>
-
-<!-- Modal (forms) -->
-<div class="modal-bg" id="modal" onclick="if(event.target===this) closeModal()" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal">
-    <button class="modal-close"
-            onclick="closeModal()"
-            aria-label="Закрыть">✕</button>
-
-    <span class="eyebrow" id="modalEyebrow" style="justify-content:center;margin-bottom:8px">
-      Записаться
-    </span>
-    <h3 id="modalTitle">Записаться на интенсив</h3>
-    <p class="small" id="modalSubtitle">
-      Оставьте заявку в Telegram или позвоните – мы ответим в течение нескольких минут.
-    </p>
-
-    <a class="btn btn-primary btn-lg"
-       href="https://t.me/+79636719983"
-       target="_blank"
-       rel="noopener noreferrer"
-       data-goal="cta_telegram_modal"
-       style="background:linear-gradient(135deg,#2AABEE,#229ED9)">
-      <svg width="20" height="20" viewBox="0 0 24 24"
-           fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
-      Записаться в Telegram
-    </a>
-
-    <a class="btn btn-primary btn-lg"
-       href="tel:+79636719983"
-       data-goal="cta_call_modal"
-       style="background:linear-gradient(135deg,var(--c-ink),#2E2D45)">
-      Позвонить +7 (963) 671‑99‑83
-    </a>
-  </div>
-</div>
-
-<script>
-/* ------- Navigation & Burger ------- */
-const burger = document.getElementById('burger');
-const menu   = document.getElementById('menu');
-
-burger?.addEventListener('click', () => {
-  const opened = menu.classList.toggle('open');
-  burger.setAttribute('aria-expanded', opened ? 'true' : 'false');
-});
-
-/* When a link in the menu is clicked – close burger */
-menu?.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('open');
-    burger?.setAttribute('aria-expanded', 'false');
-  });
-});
-
-/* ------- Header scroll effect ------- */
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 30);
-}, {passive:true});
-
-/* ------- Reveal on scroll (IntersectionObserver) ------- */
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('in');
-      io.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.1,
-  rootMargin: '0px 0px -40px 0px'
-});
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-/* ------- Modal handling ------- */
-function openModal(preset) {
-  const data = {
-    intensiv: {
-      eyebrow: 'Записаться',
-      title:   'Записаться на интенсив',
-      sub:    'Оставьте заявку в Telegram или позвоните — мы ответим в течение нескольких минут.'
-    },
-    default: {
-      eyebrow: 'Записаться',
-      title:   'Записаться',
-      sub:    'Свяжитесь с нами в Telegram или по телефону.'
-    }
-  }[preset || 'default'];
-
-  document.getElementById('modalEyebrow').textContent   = data.eyebrow;
-  document.getElementById('modalTitle').textContent    = data.title;
-  document.getElementById('modalSubtitle').textContent = data.sub;
-
-  document.getElementById('modal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeModal() {
-  document.getElementById('modal').classList.remove('open');
-  document.body.style.overflow = '';
-}
-</script>
-</body>
-</html>
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!doctype html>\
+<html lang="ru">\
+<head>\
+<meta charset="utf-8" />\
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />\
+<meta name="theme-color" content="#FF6FA9" />\
+<title>\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \'ab\u1055 \u1088 \u1099 \u1078 \u1086 \u1082  \u1074  \u1056 \u1086 \u1089 \u1090 \'bb \'97 \u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100  \'b7 \u1042 \u1080 \u1076 \u1085 \u1086 \u1077  \'b7 6\'9615 \u1083 \u1077 \u1090 </title>\
+<meta name="description" content="\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \u1076 \u1077 \u1090 \u1089 \u1082 \u1086 \u1075 \u1086  \u1090 \u1077 \u1072 \u1090 \u1088 \u1072  \u1090 \u1072 \u1085 \u1094 \u1072  \'ab\u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100 \'bb: \u1090 \u1088 \u1077 \u1085 \u1080 \u1088 \u1086 \u1074 \u1082 \u1080  \u1085 \u1072  \u1089 \u1074 \u1077 \u1078 \u1077 \u1084  \u1074 \u1086 \u1079 \u1076 \u1091 \u1093 \u1077 , \u1088 \u1072 \u1073 \u1086 \u1090 \u1072  \u1085 \u1072  \u1087 \u1077 \u1089 \u1082 \u1077 , \u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1082 \u1072 , \u1088 \u1072 \u1089 \u1090 \u1103 \u1078 \u1082 \u1072 . \u1048 \u1102 \u1085 \u1100  \u1080  \u1072 \u1074 \u1075 \u1091 \u1089 \u1090 . 9 000 \u8381 /\u1084 \u1077 \u1089 . \u1055 \u1077 \u1088 \u1074 \u1086 \u1077  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1077  \'97 \u1073 \u1077 \u1089 \u1087 \u1083 \u1072 \u1090 \u1085 \u1086 ." />\
+<link rel="canonical" href="https://tatianinden.ru/summer-intensiv.html" />\
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />\
+<meta property="og:title" content="\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \'ab\u1055 \u1088 \u1099 \u1078 \u1086 \u1082  \u1074  \u1056 \u1086 \u1089 \u1090 \'bb \'97 \u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100 " />\
+<meta property="og:description" content="5 \uc0\u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1081  \u1074  \u1085 \u1077 \u1076 \u1077 \u1083 \u1102 , 6\'9615 \u1083 \u1077 \u1090 , \u1080 \u1102 \u1085 \u1100  \u1080  \u1072 \u1074 \u1075 \u1091 \u1089 \u1090 . \u1058 \u1088 \u1077 \u1085 \u1080 \u1088 \u1086 \u1074 \u1082 \u1080  \u1085 \u1072  \u1089 \u1074 \u1077 \u1078 \u1077 \u1084  \u1074 \u1086 \u1079 \u1076 \u1091 \u1093 \u1077 , \u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1082 \u1072 , \u1088 \u1072 \u1073 \u1086 \u1090 \u1072  \u1085 \u1072  \u1087 \u1077 \u1089 \u1082 \u1077 ." />\
+<meta property="og:image" content="https://tatianinden.ru/intensiv0.jpg" />\
+<meta property="og:url" content="https://tatianinden.ru/summer-intensiv.html" />\
+<meta property="og:type" content="website" />\
+<meta property="og:locale" content="ru_RU" />\
+<meta name="twitter:card" content="summary_large_image" />\
+<link rel="preconnect" href="https://fonts.googleapis.com" />\
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />\
+<script type="application/ld+json">\
+\{\
+  "@context": "https://schema.org",\
+  "@type": "Course",\
+  "name": "\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \'ab\u1055 \u1088 \u1099 \u1078 \u1086 \u1082  \u1074  \u1056 \u1086 \u1089 \u1090 \'bb \'97 5 \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1081  \u1074  \u1085 \u1077 \u1076 \u1077 \u1083 \u1102 , 6\'9615 \u1083 \u1077 \u1090 ",\
+  "description": "\uc0\u1048 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \u1074  \u1080 \u1102 \u1085 \u1077 \'96\u1072 \u1074 \u1075 \u1091 \u1089 \u1090 \u1077 , 5 \u1090 \u1088 \u1077 \u1085 \u1080 \u1088 \u1086 \u1074 \u1086 \u1082  \u1074  \u1085 \u1077 \u1076 \u1077 \u1083 \u1102  (\u1087 \u1085 \'96\u1087 \u1090 , 18:00\'9620:00). \u1042  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1077 : \u1090 \u1088 \u1077 \u1085 \u1080 \u1088 \u1086 \u1074 \u1082 \u1080  \u1085 \u1072  \u1089 \u1074 \u1077 \u1078 \u1077 \u1084  \u1074 \u1086 \u1079 \u1076 \u1091 \u1093 \u1077 , \u1088 \u1072 \u1073 \u1086 \u1090 \u1072  \u1085 \u1072  \u1087 \u1077 \u1089 \u1082 \u1077 , \u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1082 \u1072 , \u1088 \u1072 \u1089 \u1090 \u1103 \u1078 \u1082 \u1072 , \u1054 \u1060 \u1055 , \u1082 \u1086 \u1084 \u1072 \u1085 \u1076 \u1085 \u1099 \u1077  \u1080 \u1075 \u1088 \u1099 .",\
+  "url": "https://tatianinden.ru/summer-intensiv.html",\
+  "provider": \{"@type": "Organization", "name": "\uc0\u1044 \u1077 \u1090 \u1089 \u1082 \u1080 \u1081  \u1090 \u1077 \u1072 \u1090 \u1088  \u1090 \u1072 \u1085 \u1094 \u1072  \'ab\u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100 \'bb", "url": "https://tatianinden.ru"\},\
+  "offers": \{"@type": "Offer", "priceCurrency": "RUB", "price": "9000", "availability": "https://schema.org/InStock"\}\
+\}\
+</script>\
+<style>\
+:root\{\
+  --tiffany:#0ABAB5; --tiffany-light:#7FE0DC; --tiffany-soft:#D7F5F3; --tiffany-deep:#06877F;\
+  --pink:#FF6FA9; --pink-cloud:#FFEAF3; --pink-deep:#D44A85;\
+  --gold:#C9A961; --gold-light:#E8CF8E; --gold-deep:#9A7E3D;\
+  --sun:#FFD166; --sun-soft:#FFF3D4;\
+  --white:#FFFFFF; --cream:#FFFBF6;\
+  --ink:#1B1B2E; --ink-soft:#4A4A5E; --ink-mute:#8A8A9C;\
+  --display:"Cormorant Garamond","Times New Roman",serif;\
+  --body:"Manrope",-apple-system,"Segoe UI",sans-serif;\
+  --script:"Caveat","Brush Script MT",cursive;\
+  --container:1440px; --radius:20px; --radius-lg:32px;\
+  --shadow-soft:0 10px 30px -12px rgba(255,111,169,.18),0 6px 18px -10px rgba(201,169,97,.12);\
+  --shadow-md:0 20px 50px -20px rgba(27,27,46,.18);\
+  --shadow-gold:0 18px 40px -18px rgba(201,169,97,.45);\
+\}\
+*\{box-sizing:border-box\}\
+html\{scroll-behavior:smooth;scroll-padding-top:110px\}\
+body\{margin:0;font-family:var(--body);color:var(--ink);background:var(--cream);overflow-x:hidden\}\
+img\{max-width:100%;display:block\}\
+a\{color:inherit;text-decoration:none\}\
+button\{font-family:inherit;cursor:pointer;border:none;background:none\}\
+.container\{width:min(100% - 40px,var(--container));margin-inline:auto;position:relative;z-index:2\}\
+section\{padding:100px 0\}\
+.text-center\{text-align:center\}\
+.text-center .lead\{margin-inline:auto\}\
+\
+/* Eyebrow */\
+.eyebrow\{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--pink-deep)\}\
+.eyebrow::before\{content:"";width:32px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))\}\
+.eyebrow.center\{justify-content:center\}\
+.eyebrow.center::after\{content:"";width:32px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)\}\
+\
+/* Typography */\
+h1,h2,h3\{font-family:var(--display);font-weight:500;line-height:1.05;margin:0 0 20px;color:var(--ink)\}\
+h2\{font-size:clamp(34px,4.5vw,56px)\}\
+h3\{font-size:clamp(22px,2.4vw,28px);font-weight:600;line-height:1.2\}\
+h2 em,h3 em\{font-style:italic;background:linear-gradient(120deg,var(--pink) 0%,var(--gold) 60%,var(--tiffany) 100%);-webkit-background-clip:text;background-clip:text;color:transparent\}\
+p\{line-height:1.65;color:var(--ink-soft);margin:0 0 16px;font-size:17px\}\
+.lead\{font-size:19px;max-width:780px\}\
+\
+/* Header */\
+header.nav\{position:fixed;top:0;left:0;right:0;z-index:50;padding:10px 0;background:#fff;border-bottom:1px solid rgba(27,27,46,.06);box-shadow:0 2px 16px -10px rgba(27,27,46,.15);transition:padding .3s,box-shadow .3s\}\
+header.nav.scrolled\{padding:8px 0;box-shadow:0 6px 24px -14px rgba(27,27,46,.2)\}\
+.nav-row\{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:88px\}\
+.logo\{display:flex;align-items:center;gap:18px;line-height:1\}\
+.logo-img\{width:88px;height:88px;object-fit:contain;border-radius:50%;transition:transform .4s\}\
+.logo:hover .logo-img\{transform:rotate(-4deg) scale(1.05)\}\
+.logo-text strong\{font-family:var(--display);font-size:28px;font-weight:600;color:#1B2A4E;display:block\}\
+.logo-text small\{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);font-weight:500\}\
+nav.menu\{display:flex;gap:28px;align-items:center;white-space:nowrap\}\
+nav.menu a\{font-size:15.5px;font-weight:600;color:var(--ink-soft);padding:6px 2px;position:relative;transition:color .25s\}\
+nav.menu a:hover\{color:var(--pink-deep)\}\
+nav.menu a::after\{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--gold);border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform .3s\}\
+nav.menu a:hover::after\{transform:scaleX(1)\}\
+nav.menu a.nav-active\{color:var(--pink-deep);font-weight:700\}\
+nav.menu a.nav-active::before\{content:"\uc0\u9728 ";color:var(--sun);margin-right:5px;font-size:.85em\}\
+.nav-actions\{display:flex;align-items:center;gap:18px\}\
+.nav-phone\{font-weight:700;font-size:16px;white-space:nowrap\}\
+.burger\{display:none;width:40px;height:40px;border-radius:50%;background:var(--white);box-shadow:var(--shadow-soft)\}\
+.burger span\{display:block;width:18px;height:1.5px;background:var(--ink);margin:4px auto;transition:all .3s\}\
+\
+/* Buttons */\
+.btn\{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;min-height:48px;border-radius:999px;font-weight:600;font-size:15px;transition:all .35s cubic-bezier(.2,.7,.3,1);white-space:nowrap;position:relative;overflow:hidden\}\
+.btn-primary\{background:linear-gradient(135deg,var(--pink) 0%,var(--gold) 110%);color:#fff;box-shadow:0 14px 30px -12px rgba(255,111,169,.55),0 8px 20px -10px rgba(201,169,97,.4)\}\
+.btn-primary:hover\{transform:translateY(-2px)\}\
+.btn-ghost\{background:transparent;color:var(--ink);border:1.5px solid rgba(27,27,46,.18)\}\
+.btn-ghost:hover\{border-color:var(--pink);color:var(--pink-deep);background:var(--pink-cloud)\}\
+.btn-lg\{padding:20px 36px;font-size:16px\}\
+.hero-cta\{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px\}\
+\
+/* ===== HERO ===== */\
+.si-hero\{padding:130px 0 100px;background:linear-gradient(135deg,#FFF8EE 0%,#FFF5F9 100%);position:relative;overflow:hidden\}\
+.si-hero::before\{content:"";position:absolute;top:-120px;right:-100px;width:480px;height:480px;background:radial-gradient(circle,var(--sun-soft),transparent 65%);pointer-events:none;animation:sunPulse 8s ease-in-out infinite\}\
+.si-hero::after\{content:"";position:absolute;bottom:-150px;left:-80px;width:420px;height:420px;background:radial-gradient(circle,var(--pink-cloud),transparent 65%);pointer-events:none\}\
+@keyframes sunPulse\{0%,100%\{transform:scale(1);opacity:.8\}50%\{transform:scale(1.08);opacity:1\}\}\
+.hero-grid\{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center;position:relative;z-index:1\}\
+\
+/* Hero visual */\
+.hero-visual\{position:relative;aspect-ratio:4/5\}\
+.hero-photo\{position:absolute;inset:0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 40px 80px -30px rgba(27,27,46,.4);background:linear-gradient(135deg,var(--sun-soft),var(--pink-cloud))\}\
+.hero-photo img\{width:100%;height:100%;object-fit:cover;transition:transform 6s\}\
+.hero-photo:hover img\{transform:scale(1.06)\}\
+.hero-badge\{position:absolute;background:#fff;padding:16px 20px;border-radius:18px;box-shadow:var(--shadow-md);z-index:2;display:flex;align-items:center;gap:12px\}\
+.hero-badge.hb-age\{top:-16px;right:-24px;border:1px solid var(--gold-light);animation:floatBadge 5s ease-in-out infinite\}\
+.hero-badge.hb-time\{bottom:80px;left:-26px;border:1px solid var(--pink-cloud);flex-direction:column;align-items:flex-start;gap:2px;animation:floatBadge 6s ease-in-out infinite reverse\}\
+.hero-badge.hb-place\{bottom:20px;right:-20px;border:1px solid var(--tiffany-light);animation:floatBadge 6.5s ease-in-out infinite\}\
+.hb-big\{font-family:var(--display);font-style:italic;font-size:22px;font-weight:700;color:var(--gold-deep);line-height:1\}\
+.hb-small\{font-size:12px;color:var(--ink-mute);font-weight:500\}\
+@keyframes floatBadge\{0%,100%\{transform:translateY(0)\}50%\{transform:translateY(-8px)\}\}\
+\
+/* Hero text */\
+.si-kicker\{display:block;font-size:14px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--pink-deep);margin-bottom:14px\}\
+.si-h1\{font-size:clamp(58px,8vw,110px)!important;line-height:.9!important;font-weight:700;letter-spacing:-.02em;margin:0 0 12px!important;text-transform:uppercase\}\
+.si-h1 em\{font-style:italic;font-weight:600;background:linear-gradient(120deg,var(--pink) 0%,var(--gold) 55%,var(--tiffany) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;animation:heroGlow 5s ease-in-out infinite\}\
+@keyframes heroGlow\{0%,100%\{filter:drop-shadow(0 6px 18px rgba(255,111,169,.25))\}50%\{filter:drop-shadow(0 8px 24px rgba(201,169,97,.4))\}\}\
+.si-script\{font-family:var(--script);font-size:clamp(28px,3.5vw,44px);color:var(--pink-deep);line-height:1.2;margin:0 0 20px;display:block;transform:rotate(-1.5deg);transform-origin:left\}\
+.si-lead\{font-size:clamp(17px,1.6vw,20px);max-width:620px\}\
+\
+/* Schedule tags */\
+.schedule-tags\{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0\}\
+.stag\{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;background:#fff;border:1.5px solid rgba(201,169,97,.35);box-shadow:0 4px 12px -6px rgba(27,27,46,.1)\}\
+.stag svg\{color:var(--pink-deep)\}\
+\
+/* Price badge hero */\
+.si-price-badge\{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,var(--sun-soft) 0%,var(--pink-cloud) 100%);border:1.5px solid rgba(201,169,97,.4);border-radius:var(--radius);padding:18px 28px;margin-top:20px\}\
+.spb-amount\{font-family:var(--display);font-size:clamp(28px,3vw,42px);font-weight:700;color:var(--gold-deep);line-height:1\}\
+.spb-label\{font-size:13.5px;color:var(--ink-soft);line-height:1.5\}\
+.spb-label strong\{display:block;font-size:15px;color:var(--ink)\}\
+\
+/* ===== WHY OUTDOOR ===== */\
+.si-outdoor\{background:#FFF9F2\}\
+.outdoor-grid\{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-top:40px\}\
+.outdoor-text p\{font-size:17px;line-height:1.7\}\
+.outdoor-quote\{font-family:var(--display);font-style:italic;font-size:clamp(20px,2vw,26px);color:var(--gold-deep);padding:22px 28px;border-left:4px solid var(--gold);background:rgba(255,231,168,.2);border-radius:0 var(--radius) var(--radius) 0;margin:24px 0\}\
+.outdoor-cards\{display:flex;flex-direction:column;gap:16px\}\
+.outdoor-card\{background:#fff;border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow-soft);border:1px solid rgba(27,27,46,.04);display:flex;gap:18px;align-items:flex-start;transition:transform .3s\}\
+.outdoor-card:hover\{transform:translateY(-3px)\}\
+.oc-icon\{flex:0 0 48px;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--sun-soft),var(--pink-cloud));display:grid;place-items:center;color:var(--pink-deep);font-size:22px\}\
+.oc-body h3\{font-family:var(--body);font-size:16px;font-weight:700;margin:0 0 6px;color:var(--ink)\}\
+.oc-body p\{font-size:15px;margin:0;line-height:1.55\}\
+\
+/* ===== PROGRAM BLOCKS ===== */\
+.si-program\{background:#F8FFF5\}\
+.lesson-intro\{max-width:820px;margin:20px auto 48px;text-align:center\}\
+.triad\{display:flex;flex-direction:column;gap:24px;max-width:980px;margin-inline:auto\}\
+.triad-block\{display:grid;grid-template-columns:auto 1fr;gap:28px;background:#fff;border-radius:var(--radius-lg);padding:36px 40px;box-shadow:var(--shadow-soft);border:1px solid rgba(27,27,46,.04);transition:transform .35s,box-shadow .35s\}\
+.triad-block:hover\{transform:translateY(-3px);box-shadow:var(--shadow-md)\}\
+.triad-num\{font-family:var(--display);font-style:italic;font-size:52px;font-weight:600;line-height:1;background:linear-gradient(135deg,var(--pink),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap\}\
+.triad-block h3\{margin-bottom:12px;color:var(--ink)\}\
+.triad-block p\{margin:0 0 12px;font-size:16px\}\
+.triad-block p:last-child\{margin:0\}\
+.triad-detail\{margin-top:14px;padding-top:14px;border-top:1px solid rgba(27,27,46,.06)\}\
+.detail-list\{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px\}\
+.detail-list li\{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--ink-soft);line-height:1.5\}\
+.detail-list li::before\{content:"\'b7";color:var(--gold);font-size:20px;line-height:1.2;flex:0 0 12px\}\
+.triad-closing\{max-width:820px;margin:48px auto 0;padding:32px 36px;background:linear-gradient(135deg,var(--sun-soft) 0%,var(--pink-cloud) 100%);border-radius:var(--radius-lg);border:1px solid rgba(201,169,97,.2);text-align:center\}\
+.triad-closing p\{font-size:17px;color:var(--ink);margin:0;line-height:1.65\}\
+\
+/* ===== AGE GROUPS ===== */\
+.si-ages\{background:#FFF5F0\}\
+.age-grid\{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px\}\
+.age-card\{background:#fff;border-radius:var(--radius);padding:30px 26px;box-shadow:var(--shadow-soft);border:1px solid rgba(27,27,46,.04);transition:transform .3s;position:relative;overflow:hidden\}\
+.age-card::before\{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--pink),var(--gold))\}\
+.age-card:hover\{transform:translateY(-4px)\}\
+.age-emoji\{font-size:36px;margin-bottom:12px;display:block\}\
+.age-range\{font-family:var(--display);font-style:italic;font-size:32px;font-weight:700;color:var(--pink-deep);line-height:1;margin-bottom:4px\}\
+.age-label\{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:14px;display:block\}\
+.age-card h3\{font-family:var(--body);font-size:17px;font-weight:700;margin:0 0 10px;color:var(--ink)\}\
+.age-why,.age-how\{font-size:14.5px;line-height:1.55;margin:0 0 10px\}\
+.age-tag\{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:700;background:linear-gradient(135deg,var(--pink-cloud),var(--sun-soft));color:var(--pink-deep);margin-top:4px\}\
+\
+/* ===== LETTER TO PARENTS ===== */\
+.si-letter\{background:linear-gradient(135deg,#1B2A4E 0%,#2a2040 100%);color:#fff;position:relative;overflow:hidden\}\
+.si-letter::before\{content:"";position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(255,209,102,.12),transparent 65%);pointer-events:none\}\
+.si-letter::after\{content:"";position:absolute;bottom:-200px;left:-150px;width:500px;height:500px;background:radial-gradient(circle,rgba(255,111,169,.1),transparent 65%);pointer-events:none\}\
+.letter-grid\{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;position:relative;z-index:1\}\
+.letter-head\{margin-bottom:10px\}\
+.letter-head .eyebrow\{color:var(--gold-light)\}\
+.letter-head .eyebrow::before\{background:linear-gradient(90deg,transparent,var(--gold-light))\}\
+.letter-head h2\{color:#fff;margin-top:16px\}\
+.letter-head h2 em\{background:linear-gradient(120deg,var(--gold-light),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent\}\
+.letter-intro\{font-size:18px;line-height:1.65;color:rgba(255,255,255,.82);max-width:500px\}\
+.scenario-cards\{display:flex;flex-direction:column;gap:20px\}\
+.scenario\{border-radius:var(--radius);padding:28px 28px;border:1px solid rgba(255,255,255,.1)\}\
+.scenario.bad\{background:rgba(255,255,255,.05)\}\
+.scenario.good\{background:linear-gradient(135deg,rgba(255,209,102,.12) 0%,rgba(255,111,169,.1) 100%);border-color:rgba(201,169,97,.3)\}\
+.scenario-label\{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px\}\
+.scenario.bad .scenario-label\{color:rgba(255,255,255,.5)\}\
+.scenario.good .scenario-label\{color:var(--gold-light)\}\
+.scenario-icon\{font-size:20px\}\
+.scenario h3\{font-family:var(--body);font-size:17px;font-weight:700;margin:0 0 10px;color:rgba(255,255,255,.9)\}\
+.scenario p\{font-size:15px;line-height:1.6;color:rgba(255,255,255,.65);margin:0\}\
+.scenario.good p\{color:rgba(255,255,255,.82)\}\
+\
+/* ===== SCHEDULE ===== */\
+.si-schedule\{background:#FCFBFF\}\
+.sessions-grid\{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px;max-width:860px;margin-inline:auto\}\
+.session-card\{background:#fff;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-soft);border:1px solid rgba(27,27,46,.05)\}\
+.session-head\{padding:26px 28px 20px;background:linear-gradient(135deg,var(--pink-cloud) 0%,var(--sun-soft) 100%)\}\
+.session-badge\{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:linear-gradient(135deg,var(--pink),var(--gold));color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;margin-bottom:12px\}\
+.session-title\{font-family:var(--display);font-size:28px;font-weight:700;color:var(--ink);margin:0 0 4px;line-height:1.1\}\
+.session-dates\{font-size:16px;font-weight:600;color:var(--pink-deep)\}\
+.session-body\{padding:24px 28px\}\
+.session-row\{display:flex;align-items:center;gap:12px;margin-bottom:12px\}\
+.session-row:last-child\{margin:0\}\
+.sr-icon\{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));display:grid;place-items:center;flex:0 0 36px;color:var(--tiffany-deep)\}\
+.sr-label\{font-size:14px;color:var(--ink-mute);font-weight:500\}\
+.sr-val\{font-size:15px;font-weight:700;color:var(--ink)\}\
+.session-note\{margin-top:16px;padding:14px 16px;background:linear-gradient(135deg,var(--tiffany-soft),var(--sun-soft));border-radius:var(--radius);font-size:14px;color:var(--tiffany-deep);font-weight:600;text-align:center\}\
+.outfit-box\{max-width:860px;margin:32px auto 0;padding:28px 32px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-soft);border:1px solid rgba(27,27,46,.04);display:flex;gap:24px;align-items:flex-start\}\
+.outfit-icon\{font-size:32px;flex:0 0 40px\}\
+.outfit-body h3\{font-family:var(--body);font-size:17px;font-weight:700;margin:0 0 8px;color:var(--ink)\}\
+.outfit-body p\{font-size:15px;margin:0;line-height:1.6\}\
+\
+/* ===== WHY CHOOSE ===== */\
+.si-why\{background:#FAF8FF\}\
+.why-grid\{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:36px\}\
+.why-card\{background:#fff;border-radius:var(--radius);padding:30px 24px;text-align:center;box-shadow:var(--shadow-soft);border:1px solid rgba(27,27,46,.04);transition:transform .3s\}\
+.why-card:hover\{transform:translateY(-4px)\}\
+.why-icon\{width:56px;height:56px;margin:0 auto 16px;border-radius:14px;background:linear-gradient(135deg,var(--sun-soft),var(--pink-cloud));display:grid;place-items:center;color:var(--pink-deep)\}\
+.why-card h3\{font-size:19px;margin-bottom:10px\}\
+.why-card p\{font-size:14.5px;margin:0;line-height:1.55\}\
+\
+/* ===== CTA ===== */\
+.cta-block\{background:linear-gradient(135deg,#1B2A4E 0%,#2a3558 100%);color:#fff;text-align:center;position:relative;overflow:hidden;padding:100px 0\}\
+.cta-block::before\{content:"";position:absolute;top:-200px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(255,209,102,.15),transparent 65%);pointer-events:none\}\
+.cta-block h2\{color:#fff\}\
+.cta-block h2 em\{background:linear-gradient(120deg,var(--gold-light),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent\}\
+.cta-block .lead\{color:rgba(255,255,255,.88);margin:0 auto 32px\}\
+.cta-block .hero-cta\{justify-content:center\}\
+\
+/* ===== FAQ ===== */\
+.faq\{background:#FCFAF7\}\
+.faq-grid\{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start\}\
+.faq-side h2\{margin-top:12px\}\
+.msg-choice\{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px\}\
+.faq-item\{background:#fff;border-radius:var(--radius);padding:0 24px;margin-bottom:12px;border:1px solid rgba(27,27,46,.06);box-shadow:0 4px 16px -8px rgba(27,27,46,.08)\}\
+.faq-q\{padding:20px 0;font-weight:600;font-size:16px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;color:var(--ink)\}\
+.faq-q::-webkit-details-marker\{display:none\}\
+.faq-a\{padding:0 0 20px;font-size:15px;color:var(--ink-soft);line-height:1.6\}\
+.faq-icon\{font-family:var(--display);font-size:22px;color:var(--pink);transition:transform .3s\}\
+.faq-item[open] .faq-icon\{transform:rotate(45deg)\}\
+\
+/* Footer */\
+footer\{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-size:13.5px\}\
+.foot-row\{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px\}\
+.foot-row a\{color:rgba(255,255,255,.75)\}\
+.foot-row a:hover\{color:#fff\}\
+\
+/* Modal */\
+.modal-bg\{position:fixed;inset:0;background:rgba(27,27,46,.55);backdrop-filter:blur(8px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px\}\
+.modal-bg.open\{display:flex\}\
+.modal\{background:#fff;border-radius:var(--radius-lg);padding:36px 32px;max-width:460px;width:100%;position:relative;text-align:center\}\
+.modal-close\{position:absolute;top:14px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:var(--ink-mute)\}\
+.modal h3\{font-size:28px;margin:12px 0\}\
+.modal .small\{font-size:14px;color:var(--ink-soft);margin-bottom:20px\}\
+.modal .btn\{width:100%;margin-bottom:10px\}\
+\
+/* Float CTAs */\
+.float-cta\{position:fixed;right:24px;bottom:24px;z-index:40;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#2AABEE,#229ED9);display:grid;place-items:center;color:#fff;box-shadow:0 14px 30px -8px rgba(42,171,238,.55);animation:pulse 2.4s ease-out infinite\}\
+.float-call\{right:96px;background:linear-gradient(135deg,var(--gold),var(--gold-light))\}\
+@keyframes pulse\{0%\{box-shadow:0 0 0 0 rgba(42,171,238,.5),0 14px 30px -8px rgba(42,171,238,.55)\}70%\{box-shadow:0 0 0 18px rgba(42,171,238,0),0 14px 30px -8px rgba(42,171,238,.55)\}100%\{box-shadow:0 0 0 0 rgba(42,171,238,0),0 14px 30px -8px rgba(42,171,238,.55)\}\}\
+\
+/* Reveal */\
+.reveal\{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)\}\
+.reveal.in\{opacity:1;transform:none\}\
+\
+/* ===== RESPONSIVE ===== */\
+@media (max-width:1100px)\{\
+  nav.menu\{display:none\}\
+  .nav-actions .nav-phone\{display:none\}\
+  .burger\{display:block\}\
+  nav.menu.open\{display:flex;flex-direction:column;position:fixed;top:96px;left:16px;right:16px;background:#fff;padding:22px 24px;border-radius:22px;box-shadow:var(--shadow-md);gap:16px;align-items:flex-start;z-index:60\}\
+\}\
+@media (max-width:960px)\{\
+  .hero-grid\{grid-template-columns:1fr;gap:50px\}\
+  .hero-visual\{max-width:420px;margin-inline:auto;width:100%\}\
+  .outdoor-grid,.letter-grid,.sessions-grid\{grid-template-columns:1fr;gap:36px\}\
+  .age-grid\{grid-template-columns:repeat(2,1fr)\}\
+  .why-grid\{grid-template-columns:repeat(2,1fr)\}\
+  .faq-grid\{grid-template-columns:1fr;gap:40px\}\
+  .triad-block\{grid-template-columns:1fr;gap:12px;padding:28px 24px\}\
+  .outfit-box\{flex-direction:column;gap:12px\}\
+  .hero-badge.hb-age\{right:-4px\}\
+  .hero-badge.hb-time\{left:-4px\}\
+  .hero-badge.hb-place\{right:-4px\}\
+\}\
+@media (max-width:640px)\{\
+  section\{padding:64px 0\}\
+  .si-hero\{padding:120px 0 64px\}\
+  .age-grid,.why-grid\{grid-template-columns:1fr\}\
+  .container\{width:min(100% - 28px,var(--container))\}\
+  .logo-img\{width:64px;height:64px\}\
+  .logo-text strong\{font-size:22px\}\
+  .cta-block\{padding:64px 0\}\
+\}\
+</style>\
+</head>\
+<body>\
+\
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden">\uc0\u1055 \u1077 \u1088 \u1077 \u1081 \u1090 \u1080  \u1082  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1080 \u1084 \u1086 \u1084 \u1091 </a>\
+\
+<header class="nav" id="nav" role="banner">\
+  <div class="container nav-row">\
+    <a href="index.html" class="logo" aria-label="\uc0\u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100  \'97 \u1085 \u1072  \u1075 \u1083 \u1072 \u1074 \u1085 \u1091 \u1102 ">\
+      <img class="logo-img" src="logo.jpg" alt="\uc0\u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100 " width="88" height="88" loading="eager" fetchpriority="high" />\
+      <span class="logo-text">\
+        <strong>\uc0\u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100 </strong>\
+        <small>\uc0\u1046 \u1050  \'ab\u1057 \u1091 \u1093 \u1072 \u1085 \u1086 \u1074 \u1086  \u1055 \u1072 \u1088 \u1082 \'bb</small>\
+      </span>\
+    </a>\
+    <nav class="menu" id="menu" aria-label="\uc0\u1054 \u1089 \u1085 \u1086 \u1074 \u1085 \u1072 \u1103  \u1085 \u1072 \u1074 \u1080 \u1075 \u1072 \u1094 \u1080 \u1103 ">\
+      <a href="index.html#about">\uc0\u1054  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1090 \u1080 \u1074 \u1077 </a>\
+      <a href="index.html#programs">\uc0\u1043 \u1088 \u1091 \u1087 \u1087 \u1099 </a>\
+      <a href="smart-fitness.html">\uc0\u1059 \u1084 \u1085 \u1099 \u1081  \u1092 \u1080 \u1090 \u1085 \u1077 \u1089 </a>\
+      <a href="summer-intensiv.html" class="nav-active">\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074 </a>\
+      <a href="prices.html">\uc0\u1062 \u1077 \u1085 \u1099 </a>\
+      <a href="blog/">\uc0\u1041 \u1083 \u1086 \u1075 </a>\
+      <a href="index.html#contacts">\uc0\u1050 \u1086 \u1085 \u1090 \u1072 \u1082 \u1090 \u1099 </a>\
+    </nav>\
+    <div class="nav-actions">\
+      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671-99-83</a>\
+      <a class="btn btn-primary" href="#" onclick="openModal();return false;" data-goal="cta_open_form_header">\uc0\u1047 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100 \u1089 \u1103 </a>\
+      <button class="burger" id="burger" aria-label="\uc0\u1054 \u1090 \u1082 \u1088 \u1099 \u1090 \u1100  \u1084 \u1077 \u1085 \u1102 " aria-expanded="false" aria-controls="menu" type="button"><span></span><span></span><span></span></button>\
+    </div>\
+  </div>\
+</header>\
+\
+<main id="main">\
+\
+<!-- ===== HERO ===== -->\
+<section class="si-hero" id="hero">\
+  <div class="container">\
+    <div class="hero-grid">\
+\
+      <div class="hero-visual reveal">\
+        <div class="hero-photo">\
+          <img src="intensiv0.jpg" alt="\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \u1085 \u1072  \u1089 \u1074 \u1077 \u1078 \u1077 \u1084  \u1074 \u1086 \u1079 \u1076 \u1091 \u1093 \u1077  \'97 \u1090 \u1077 \u1072 \u1090 \u1088  \u1090 \u1072 \u1085 \u1094 \u1072  \u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100 " width="480" height="600" loading="eager" fetchpriority="high" />\
+        </div>\
+        <div class="hero-badge hb-age">\
+          <span style="font-size:22px">\uc0\u55356 \u57119 </span>\
+          <div>\
+            <div class="hb-big">6\'9615 \uc0\u1083 \u1077 \u1090 </div>\
+            <div class="hb-small">\uc0\u1074 \u1089 \u1077  \u1091 \u1088 \u1086 \u1074 \u1085 \u1080 </div>\
+          </div>\
+        </div>\
+        <div class="hero-badge hb-time">\
+          <div class="hb-big">120 \uc0\u1084 \u1080 \u1085 </div>\
+          <div class="hb-small">\uc0\u1077 \u1078 \u1077 \u1076 \u1085 \u1077 \u1074 \u1085 \u1086  \'b7 \u1087 \u1085 \'96\u1087 \u1090 </div>\
+        </div>\
+        <div class="hero-badge hb-place">\
+          <span style="font-size:20px">\uc0\u9728 \u65039 </span>\
+          <div>\
+            <div class="hb-big" style="font-size:16px;font-family:var(--body);font-weight:700">\uc0\u1053 \u1072  \u1089 \u1074 \u1077 \u1078 \u1077 \u1084  \u1074 \u1086 \u1079 \u1076 \u1091 \u1093 \u1077 </div>\
+            <div class="hb-small">\uc0\u1087 \u1072 \u1088 \u1082  \'b7 \u1087 \u1077 \u1089 \u1086 \u1082  \'b7 \u1090 \u1088 \u1072 \u1074 \u1072 </div>\
+          </div>\
+        </div>\
+      </div>\
+\
+      <div class="si-text reveal">\
+        <span class="si-kicker">\uc0\u1044 \u1077 \u1090 \u1089 \u1082 \u1080 \u1081  \u1090 \u1077 \u1072 \u1090 \u1088  \u1090 \u1072 \u1085 \u1094 \u1072  \'b7 \u1051 \u1077 \u1090 \u1086  2025</span>\
+        <h1 class="si-h1"><em>\uc0\u1055 \u1088 \u1099 \u1078 \u1086 \u1082 <br/>\u1074 &nbsp;\u1056 \u1086 \u1089 \u1090 </em></h1>\
+        <span class="si-script">\uc0\u1058 \u1072 \u1085 \u1094 \u1091 \u1081  \u1074 \u1089 \u1105  \u1083 \u1077 \u1090 \u1086 !</span>\
+        <p class="lead si-lead">\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \'97 \u1101 \u1090 \u1086  \u1085 \u1077 &nbsp;\u1087 \u1088 \u1086 \u1089 \u1090 \u1086  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1103 . \u1069 \u1090 \u1086 &nbsp;\u1087 \u1077 \u1089 \u1086 \u1082 , \u1074 \u1086 \u1079 \u1076 \u1091 \u1093 , \u1079 \u1072 \u1082 \u1072 \u1090  \u1080 &nbsp;\u1076 \u1074 \u1072  \u1095 \u1072 \u1089 \u1072  \u1074 &nbsp;\u1076 \u1077 \u1085 \u1100 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1087 \u1088 \u1077 \u1074 \u1088 \u1072 \u1097 \u1072 \u1102 \u1090  \u1083 \u1077 \u1090 \u1086  \u1074 &nbsp;\u1085 \u1072 \u1089 \u1090 \u1086 \u1103 \u1097 \u1091 \u1102  \u1089 \u1087 \u1077 \u1094 \u1087 \u1086 \u1076 \u1075 \u1086 \u1090 \u1086 \u1074 \u1082 \u1091  \u1090 \u1072 \u1085 \u1094 \u1086 \u1088 \u1072 .</p>\
+\
+        <div class="schedule-tags">\
+          <span class="stag">\
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>\
+            \uc0\u1048 \u1102 \u1085 \u1100 &nbsp;\'b7 \u1040 \u1074 \u1075 \u1091 \u1089 \u1090 \
+          </span>\
+          <span class="stag">\
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>\
+            18:00\'9620:00\
+          </span>\
+          <span class="stag">\
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="11" r="3"/></svg>\
+            \uc0\u1046 \u1050  \u1057 \u1091 \u1093 \u1072 \u1085 \u1086 \u1074 \u1086  \u1055 \u1072 \u1088 \u1082 \
+          </span>\
+          <span class="stag">\uc0\u55356 \u57302  \u1055 \u1085 \'96\u1055 \u1090  \'b7 5 \u1076 \u1085 \u1077 \u1081  \u1074  \u1085 \u1077 \u1076 \u1077 \u1083 \u1102 </span>\
+        </div>\
+\
+        <div class="si-price-badge">\
+          <div class="spb-amount">9&nbsp;000&nbsp;\uc0\u8381 </div>\
+          <div class="spb-label">\
+            <strong>\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \'b7 \u1086 \u1076 \u1085 \u1072  \u1089 \u1084 \u1077 \u1085 \u1072 </strong>\
+            5&nbsp;\uc0\u1088 \u1072 \u1079  \u1074 &nbsp;\u1085 \u1077 \u1076 \u1077 \u1083 \u1102  \'b7 120&nbsp;\u1084 \u1080 \u1085 \u1091 \u1090  \u1074 &nbsp;\u1076 \u1077 \u1085 \u1100 <br/>\
+            <a href="prices.html" style="color:var(--gold-deep);font-weight:600;text-decoration:underline">\uc0\u1055 \u1086 \u1076 \u1088 \u1086 \u1073 \u1085 \u1077 \u1077  \u1086 &nbsp;\u1090 \u1072 \u1088 \u1080 \u1092 \u1072 \u1093 &nbsp;\u8594 </a>\
+          </div>\
+        </div>\
+\
+        <div class="hero-cta">\
+          <a class="btn btn-primary btn-lg" href="#" onclick="openModal('intensiv');return false;" data-goal="cta_open_form_hero">\uc0\u1047 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100 \u1089 \u1103  \u1085 \u1072 &nbsp;\u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074 </a>\
+          <a class="btn btn-ghost btn-lg" href="tel:+79636719983" data-goal="cta_call_hero">\uc0\u1055 \u1086 \u1079 \u1074 \u1086 \u1085 \u1080 \u1090 \u1100 </a>\
+        </div>\
+      </div>\
+\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- ===== WHY OUTDOOR ===== -->\
+<section class="si-outdoor" id="outdoor">\
+  <div class="container">\
+    <div class="text-center reveal">\
+      <span class="eyebrow center">\uc0\u1053 \u1072 \u1096  \u1087 \u1086 \u1076 \u1093 \u1086 \u1076 </span>\
+      <h2>\uc0\u1055 \u1086 \u1095 \u1077 \u1084 \u1091  \u1084 \u1099 &nbsp;\u1074 \u1099 \u1096 \u1083 \u1080  <em>\u1085 \u1072 &nbsp;\u1091 \u1083 \u1080 \u1094 \u1091 </em></h2>\
+    </div>\
+    <div class="outdoor-grid reveal">\
+      <div class="outdoor-text">\
+        <p>\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \'97 \u1101 \u1090 \u1086  \u1085 \u1077 &nbsp;\u1076 \u1091 \u1096 \u1085 \u1099 \u1081  \u1079 \u1072 \u1083  \u1089 &nbsp;\u1079 \u1077 \u1088 \u1082 \u1072 \u1083 \u1072 \u1084 \u1080 . \u1069 \u1090 \u1086 &nbsp;\u1087 \u1072 \u1088 \u1082 , \u1089 \u1074 \u1077 \u1078 \u1080 \u1081  \u1074 \u1077 \u1090 \u1077 \u1088  \u1080 &nbsp;\u1077 \u1089 \u1090 \u1077 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1086 \u1077  \u1087 \u1086 \u1082 \u1088 \u1099 \u1090 \u1080 \u1077 . \u1050 \u1086 \u1075 \u1076 \u1072  \u1088 \u1077 \u1073 \u1105 \u1085 \u1086 \u1082  \u1079 \u1072 \u1085 \u1080 \u1084 \u1072 \u1077 \u1090 \u1089 \u1103  \u1085 \u1072 &nbsp;\u1091 \u1083 \u1080 \u1094 \u1077 , \u1086 \u1088 \u1075 \u1072 \u1085 \u1080 \u1079 \u1084  \u1088 \u1072 \u1073 \u1086 \u1090 \u1072 \u1077 \u1090  \u1080 \u1085 \u1072 \u1095 \u1077 .</p>\
+        <div class="outdoor-quote">2 \uc0\u1095 \u1072 \u1089 \u1072  \'97 \u1079 \u1086 \u1083 \u1086 \u1090 \u1072 \u1103  \u1089 \u1077 \u1088 \u1077 \u1076 \u1080 \u1085 \u1072 . \u1047 \u1072  \u1095 \u1072 \u1089  \u1090 \u1086 \u1083 \u1100 \u1082 \u1086  \u1088 \u1072 \u1079 \u1086 \u1075 \u1088 \u1077 \u1074 \u1072 \u1077 \u1084 \u1089 \u1103 , \u1072  \u1079 \u1072  \u1090 \u1088 \u1080  \'97 \u1090 \u1077 \u1088 \u1103 \u1077 \u1090 \u1089 \u1103  \u1082 \u1086 \u1085 \u1094 \u1077 \u1085 \u1090 \u1088 \u1072 \u1094 \u1080 \u1103 . \u1044 \u1074 \u1072  \u1095 \u1072 \u1089 \u1072  \u1085 \u1072  \u1087 \u1088 \u1080 \u1088 \u1086 \u1076 \u1077 : \u1074 \u1099 \u1083 \u1086 \u1078 \u1080 \u1090 \u1100 \u1089 \u1103  \u1085 \u1072  100% \u1080  \u1089 \u1086 \u1093 \u1088 \u1072 \u1085 \u1080 \u1090 \u1100  \u1086 \u1075 \u1086 \u1085 \u1100  \u1074  \u1075 \u1083 \u1072 \u1079 \u1072 \u1093 .</div>\
+        <p>\uc0\u1056 \u1077 \u1073 \u1105 \u1085 \u1086 \u1082 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1081  \u1087 \u1088 \u1086 \u1096 \u1105 \u1083  \'ab\u1083 \u1077 \u1090 \u1085 \u1102 \u1102 \'bb \u1087 \u1086 \u1076 \u1075 \u1086 \u1090 \u1086 \u1074 \u1082 \u1091 , \u1074 &nbsp;\u1089 \u1077 \u1085 \u1090 \u1103 \u1073 \u1088 \u1077  \u1074 \u1089 \u1090 \u1072 \u1105 \u1090  \u1085 \u1072  \u1087 \u1072 \u1088 \u1082 \u1077 \u1090  \u1089 &nbsp;\u1078 \u1077 \u1083 \u1077 \u1079 \u1086 \u1073 \u1077 \u1090 \u1086 \u1085 \u1085 \u1099 \u1084  \u1087 \u1086 \u1076 \u1098 \u1105 \u1084 \u1086 \u1084  \u1089 \u1090 \u1086 \u1087 \u1099  \u1080 &nbsp;\u1095 \u1091 \u1074 \u1089 \u1090 \u1074 \u1086 \u1084  \u1073 \u1072 \u1083 \u1072 \u1085 \u1089 \u1072 , \u1082 \u1072 \u1082  \u1091 &nbsp;\u1082 \u1072 \u1085 \u1072 \u1090 \u1086 \u1093 \u1086 \u1076 \u1094 \u1072 .</p>\
+      </div>\
+      <div class="outdoor-cards">\
+        <div class="outdoor-card">\
+          <div class="oc-icon">\uc0\u55357 \u56488 </div>\
+          <div class="oc-body">\
+            <h3>\uc0\u1052 \u1072 \u1082 \u1089 \u1080 \u1084 \u1091 \u1084  \u1082 \u1080 \u1089 \u1083 \u1086 \u1088 \u1086 \u1076 \u1072 </h3>\
+            <p>\uc0\u1052 \u1086 \u1079 \u1075  \u1080  \u1084 \u1099 \u1096 \u1094 \u1099  \'ab\u1087 \u1088 \u1086 \u1089 \u1099 \u1087 \u1072 \u1102 \u1090 \u1089 \u1103 \'bb. \u1058 \u1077 \u1083 \u1086  \u1091 \u1095 \u1080 \u1090 \u1089 \u1103  \u1087 \u1088 \u1072 \u1074 \u1080 \u1083 \u1100 \u1085 \u1086 \u1081  \u1090 \u1077 \u1088 \u1084 \u1086 \u1088 \u1077 \u1075 \u1091 \u1083 \u1103 \u1094 \u1080 \u1080  \u1080 &nbsp;\u1079 \u1072 \u1082 \u1072 \u1083 \u1103 \u1077 \u1090 \u1089 \u1103  \u1073 \u1077 \u1079  \u1080 \u1089 \u1082 \u1091 \u1089 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1086 \u1075 \u1086  \u1086 \u1093 \u1083 \u1072 \u1078 \u1076 \u1077 \u1085 \u1080 \u1103 .</p>\
+          </div>\
+        </div>\
+        <div class="outdoor-card">\
+          <div class="oc-icon">\uc0\u55356 \u57151 </div>\
+          <div class="oc-body">\
+            <h3>\uc0\u1041 \u1077 \u1079 \u1075 \u1088 \u1072 \u1085 \u1080 \u1095 \u1085 \u1086 \u1077  \u1087 \u1088 \u1086 \u1089 \u1090 \u1088 \u1072 \u1085 \u1089 \u1090 \u1074 \u1086 </h3>\
+            <p>\uc0\u1052 \u1099  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1077 \u1084  \u1084 \u1072 \u1089 \u1096 \u1090 \u1072 \u1073  \u1076 \u1083 \u1103  \u1084 \u1086 \u1097 \u1085 \u1099 \u1093  \u1087 \u1088 \u1099 \u1078 \u1082 \u1086 \u1074  \u1080 &nbsp;\u1088 \u1072 \u1079 \u1075 \u1086 \u1085 \u1072 . \u1057 \u1090 \u1077 \u1085 \u1099  \u1085 \u1077 &nbsp;\u1086 \u1075 \u1088 \u1072 \u1085 \u1080 \u1095 \u1080 \u1074 \u1072 \u1102 \u1090  \u1072 \u1084 \u1087 \u1083 \u1080 \u1090 \u1091 \u1076 \u1091  \u1076 \u1074 \u1080 \u1078 \u1077 \u1085 \u1080 \u1081 .</p>\
+          </div>\
+        </div>\
+        <div class="outdoor-card">\
+          <div class="oc-icon">\uc0\u55356 \u57302 </div>\
+          <div class="oc-body">\
+            <h3>\uc0\u1055 \u1088 \u1080 \u1088 \u1086 \u1076 \u1085 \u1099 \u1081  \u1090 \u1088 \u1077 \u1085 \u1072 \u1078 \u1105 \u1088  \'97 \u1087 \u1077 \u1089 \u1086 \u1082 </h3>\
+            <p>\uc0\u1053 \u1077 \u1089 \u1090 \u1072 \u1073 \u1080 \u1083 \u1100 \u1085 \u1072 \u1103  \u1087 \u1086 \u1074 \u1077 \u1088 \u1093 \u1085 \u1086 \u1089 \u1090 \u1100  \u1074 \u1082 \u1083 \u1102 \u1095 \u1072 \u1077 \u1090  \u1075 \u1083 \u1091 \u1073 \u1086 \u1082 \u1080 \u1077  \u1084 \u1099 \u1096 \u1094 \u1099 -\u1089 \u1090 \u1072 \u1073 \u1080 \u1083 \u1080 \u1079 \u1072 \u1090 \u1086 \u1088 \u1099  \u1075 \u1086 \u1083 \u1077 \u1085 \u1086 \u1089 \u1090 \u1086 \u1087 \u1072 . \u1055 \u1088 \u1099 \u1078 \u1082 \u1080  \u1085 \u1072  \u1087 \u1077 \u1089 \u1082 \u1077  \'97 \u1074 \u1079 \u1088 \u1099 \u1074 \u1085 \u1072 \u1103  \u1089 \u1080 \u1083 \u1072  \u1073 \u1077 \u1079  \u1087 \u1077 \u1088 \u1077 \u1075 \u1088 \u1091 \u1079 \u1082 \u1080  \u1089 \u1091 \u1089 \u1090 \u1072 \u1074 \u1086 \u1074 .</p>\
+          </div>\
+        </div>\
+      </div>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- ===== PROGRAM ===== -->\
+<section class="si-program" id="program">\
+  <div class="container">\
+    <div class="text-center reveal">\
+      <span class="eyebrow center">\uc0\u1055 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1072 </span>\
+      <h2>\uc0\u1050 \u1086 \u1088 \u1086 \u1083 \u1077 \u1074 \u1089 \u1082 \u1072 \u1103 &nbsp;\u1090 \u1088 \u1080 \u1072 \u1076 \u1072  <em>\u1088 \u1072 \u1079 \u1074 \u1080 \u1090 \u1080 \u1103  \u1076 \u1072 \u1085 \u1085 \u1099 \u1093 </em></h2>\
+    </div>\
+    <p class="lesson-intro lead reveal">\uc0\u1055 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1072  \u1087 \u1086 \u1089 \u1090 \u1088 \u1086 \u1077 \u1085 \u1072  \u1074 \u1086 \u1082 \u1088 \u1091 \u1075  \u1090 \u1088 \u1105 \u1093  \u1085 \u1072 \u1087 \u1088 \u1072 \u1074 \u1083 \u1077 \u1085 \u1080 \u1081 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1089 \u1086 \u1079 \u1076 \u1072 \u1102 \u1090  \u1073 \u1072 \u1079 \u1091  \u1076 \u1083 \u1103  \u1090 \u1072 \u1085 \u1094 \u1086 \u1088 \u1072  \u1083 \u1102 \u1073 \u1086 \u1075 \u1086  \u1091 \u1088 \u1086 \u1074 \u1085 \u1103  \'97 \u1086 \u1090 &nbsp;\u1084 \u1072 \u1083 \u1099 \u1096 \u1072  3&nbsp;\u1083 \u1077 \u1090  \u1076 \u1086 &nbsp;\u1087 \u1088 \u1086 \u1076 \u1074 \u1080 \u1085 \u1091 \u1090 \u1086 \u1075 \u1086  \u1087 \u1086 \u1076 \u1088 \u1086 \u1089 \u1090 \u1082 \u1072  15&nbsp;\u1083 \u1077 \u1090 .</p>\
+\
+    <div class="triad">\
+\
+      <article class="triad-block reveal">\
+        <div class="triad-num">01</div>\
+        <div>\
+          <h3>\uc0\u55356 \u57302  \u1048 \u1075 \u1088 \u1099  \u1080 &nbsp;\u1089 \u1080 \u1083 \u1086 \u1074 \u1099 \u1077  \u1087 \u1088 \u1072 \u1082 \u1090 \u1080 \u1082 \u1080  \u1085 \u1072 &nbsp;\u1087 \u1077 \u1089 \u1082 \u1077 </h3>\
+          <p>\uc0\u1055 \u1077 \u1089 \u1086 \u1082  \'97 \u1087 \u1088 \u1080 \u1088 \u1086 \u1076 \u1085 \u1099 \u1081  \u1090 \u1088 \u1077 \u1085 \u1072 \u1078 \u1105 \u1088 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1081  \u1085 \u1077 \u1074 \u1086 \u1079 \u1084 \u1086 \u1078 \u1085 \u1086  \u1079 \u1072 \u1084 \u1077 \u1085 \u1080 \u1090 \u1100  \u1088 \u1086 \u1074 \u1085 \u1099 \u1084  \u1087 \u1086 \u1083 \u1086 \u1084  \u1079 \u1072 \u1083 \u1072 . \u1052 \u1086 \u1097 \u1085 \u1072 \u1103  \u1088 \u1072 \u1079 \u1084 \u1080 \u1085 \u1082 \u1072 : \u1073 \u1077 \u1075  \u1074 &nbsp;\u1088 \u1072 \u1079 \u1085 \u1086 \u1084  \u1087 \u1088 \u1086 \u1089 \u1090 \u1088 \u1072 \u1085 \u1089 \u1090 \u1074 \u1077 , \u1084 \u1080 \u1082 \u1089  \u1091 \u1087 \u1088 \u1072 \u1078 \u1085 \u1077 \u1085 \u1080 \u1081  \u1085 \u1072 &nbsp;\u1076 \u1099 \u1093 \u1072 \u1083 \u1082 \u1091  \u1080 &nbsp;\u1089 \u1080 \u1083 \u1091  \u1085 \u1086 \u1075 . \u1044 \u1072 \u1083 \u1100 \u1096 \u1077  \'97 \u1087 \u1072 \u1088 \u1090 \u1077 \u1088 : \u1089 \u1080 \u1083 \u1072  \u1089 \u1090 \u1086 \u1087 , \u1075 \u1080 \u1073 \u1082 \u1086 \u1089 \u1090 \u1100  \u1089 \u1087 \u1080 \u1085 \u1099 , \u1083 \u1105 \u1075 \u1082 \u1086 \u1089 \u1090 \u1100  \u1085 \u1086 \u1075 , \u1088 \u1072 \u1089 \u1090 \u1103 \u1078 \u1082 \u1072 .</p>\
+          <div class="triad-detail">\
+            <ul class="detail-list">\
+              <li><strong>\uc0\u1041 \u1072 \u1083 \u1077 \u1090 \u1085 \u1072 \u1103  \u1089 \u1090 \u1086 \u1087 \u1072  \u1073 \u1086 \u1089 \u1080 \u1082 \u1086 \u1084 :</strong> \u1087 \u1072 \u1083 \u1100 \u1094 \u1099  \u1079 \u1072 \u1088 \u1099 \u1074 \u1072 \u1102 \u1090 \u1089 \u1103  \u1074 &nbsp;\u1087 \u1077 \u1089 \u1086 \u1082 , \u1079 \u1072 \u1093 \u1074 \u1072 \u1090 \u1099 \u1074 \u1072 \u1102 \u1090  \u1077 \u1075 \u1086  \'97 \u1091 \u1082 \u1088 \u1077 \u1087 \u1083 \u1077 \u1085 \u1080 \u1077  \u1089 \u1074 \u1103 \u1079 \u1086 \u1082  \u1075 \u1086 \u1083 \u1077 \u1085 \u1086 \u1089 \u1090 \u1086 \u1087 \u1072 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1086 \u1077  \u1085 \u1077 &nbsp;\u1076 \u1072 \u1089 \u1090  \u1085 \u1080 \u1082 \u1072 \u1082 \u1086 \u1081  \u1082 \u1086 \u1074 \u1088 \u1080 \u1082 .</li>\
+              <li><strong>\uc0\u1055 \u1088 \u1099 \u1078 \u1082 \u1080  \u1089 &nbsp;\u1089 \u1086 \u1087 \u1088 \u1086 \u1090 \u1080 \u1074 \u1083 \u1077 \u1085 \u1080 \u1077 \u1084 :</strong> \u1074 \u1079 \u1088 \u1099 \u1074 \u1085 \u1072 \u1103  \u1089 \u1080 \u1083 \u1072  \u1073 \u1077 \u1079  \u1087 \u1077 \u1088 \u1077 \u1075 \u1088 \u1091 \u1079 \u1082 \u1080  \u1089 \u1091 \u1089 \u1090 \u1072 \u1074 \u1086 \u1074  \'97 \u1087 \u1077 \u1089 \u1086 \u1082  \u1072 \u1084 \u1086 \u1088 \u1090 \u1080 \u1079 \u1080 \u1088 \u1091 \u1077 \u1090  \u1087 \u1088 \u1080 \u1079 \u1077 \u1084 \u1083 \u1077 \u1085 \u1080 \u1077  \u1080 &nbsp;\u1079 \u1072 \u1097 \u1080 \u1097 \u1072 \u1077 \u1090  \u1082 \u1086 \u1083 \u1077 \u1085 \u1080 .</li>\
+              <li><strong>\uc0\u1055 \u1077 \u1089 \u1086 \u1095 \u1085 \u1099 \u1077  \u1101 \u1089 \u1090 \u1072 \u1092 \u1077 \u1090 \u1099 :</strong> \'ab\u1044 \u1086 \u1075 \u1086 \u1085 \u1080  \u1074 \u1077 \u1090 \u1077 \u1088 \'bb, \u1087 \u1077 \u1088 \u1077 \u1090 \u1072 \u1089 \u1082 \u1080 \u1074 \u1072 \u1085 \u1080 \u1077  \u1084 \u1086 \u1076 \u1091 \u1083 \u1077 \u1081 , \u1092 \u1080 \u1075 \u1091 \u1088 \u1099  \u1085 \u1086 \u1075 \u1072 \u1084 \u1080  \'97 \u1074 \u1099 \u1085 \u1086 \u1089 \u1083 \u1080 \u1074 \u1086 \u1089 \u1090 \u1100  \u1095 \u1077 \u1088 \u1077 \u1079  \u1080 \u1075 \u1088 \u1091 .</li>\
+            </ul>\
+          </div>\
+        </div>\
+      </article>\
+\
+      <article class="triad-block reveal">\
+        <div class="triad-num">02</div>\
+        <div>\
+          <h3>\uc0\u55358 \u56632 \u8205 \u9792 \u65039  \u1058 \u1072 \u1085 \u1094 \u1077 \u1074 \u1072 \u1083 \u1100 \u1085 \u1072 \u1103  \u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1082 \u1072 </h3>\
+          <p>\uc0\u1053 \u1077  \u1087 \u1088 \u1086 \u1089 \u1090 \u1086  \u1082 \u1091 \u1074 \u1099 \u1088 \u1082 \u1080  \'97 \u1101 \u1090 \u1086  \u1072 \u1088 \u1093 \u1080 \u1090 \u1077 \u1082 \u1090 \u1091 \u1088 \u1072  \u1090 \u1077 \u1083 \u1072 . \u1043 \u1080 \u1073 \u1082 \u1086 \u1089 \u1090 \u1100  \u1087 \u1083 \u1102 \u1089  \u1086 \u1090 \u1074 \u1072 \u1075 \u1072 . \u1044 \u1077 \u1090 \u1080  \u1091 \u1095 \u1072 \u1090 \u1089 \u1103  \'ab\u1087 \u1077 \u1088 \u1077 \u1090 \u1077 \u1082 \u1072 \u1090 \u1100 \'bb \u1080 \u1079  \u1086 \u1076 \u1085 \u1086 \u1081  \u1092 \u1086 \u1088 \u1084 \u1099  \u1074 &nbsp;\u1076 \u1088 \u1091 \u1075 \u1091 \u1102 , \u1092 \u1086 \u1088 \u1084 \u1080 \u1088 \u1091 \u1103  \u1087 \u1086 \u1089 \u1083 \u1091 \u1096 \u1085 \u1091 \u1102  \u1089 \u1087 \u1080 \u1085 \u1091  \u1080 &nbsp;\u1088 \u1086 \u1089 \u1082 \u1086 \u1096 \u1085 \u1091 \u1102  \u1072 \u1084 \u1087 \u1083 \u1080 \u1090 \u1091 \u1076 \u1091  \u1076 \u1074 \u1080 \u1078 \u1077 \u1085 \u1080 \u1081 .</p>\
+          <div class="triad-detail">\
+            <ul class="detail-list">\
+              <li><strong>\uc0\u1044 \u1080 \u1085 \u1072 \u1084 \u1080 \u1095 \u1077 \u1089 \u1082 \u1072 \u1103  \u1088 \u1072 \u1089 \u1090 \u1103 \u1078 \u1082 \u1072 :</strong> \u1084 \u1072 \u1093 \u1080  \u1085 \u1086 \u1075 \u1072 \u1084 \u1080  \u1074 &nbsp;\u1087 \u1088 \u1086 \u1076 \u1074 \u1080 \u1078 \u1077 \u1085 \u1080 \u1080 , \u1082 \u1086 \u1083 \u1077 \u1089 \u1086 , \'ab\u1073 \u1077 \u1088 \u1105 \u1079 \u1082 \u1072 \'bb, \u1087 \u1077 \u1088 \u1077 \u1093 \u1086 \u1076 \u1099  \u1074 &nbsp;\u1084 \u1086 \u1089 \u1090 \u1080 \u1082  \'97 \u1092 \u1086 \u1088 \u1084 \u1080 \u1088 \u1091 \u1077 \u1090  \u1087 \u1086 \u1089 \u1083 \u1091 \u1096 \u1085 \u1091 \u1102  \u1089 \u1087 \u1080 \u1085 \u1091  \u1080 &nbsp;\u1072 \u1084 \u1087 \u1083 \u1080 \u1090 \u1091 \u1076 \u1091  \u1076 \u1074 \u1080 \u1078 \u1077 \u1085 \u1080 \u1081 .</li>\
+              <li><strong>\uc0\u1040 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1095 \u1077 \u1089 \u1082 \u1080 \u1077  \u1089 \u1074 \u1103 \u1079 \u1082 \u1080 :</strong> \u1082 \u1091 \u1074 \u1099 \u1088 \u1082 \u1080  \u1074 \u1087 \u1077 \u1088 \u1105 \u1076 /\u1085 \u1072 \u1079 \u1072 \u1076 , \u1089 \u1090 \u1086 \u1081 \u1082 \u1080  \u1085 \u1072 &nbsp;\u1088 \u1091 \u1082 \u1072 \u1093  \u1091 &nbsp;\u1089 \u1090 \u1077 \u1085 \u1099 , \u1087 \u1086 \u1076 \u1076 \u1077 \u1088 \u1078 \u1082 \u1080  \'97 \u1086 \u1097 \u1091 \u1097 \u1077 \u1085 \u1080 \u1077  \u1090 \u1077 \u1083 \u1072  \u1074 &nbsp;\u1087 \u1088 \u1086 \u1089 \u1090 \u1088 \u1072 \u1085 \u1089 \u1090 \u1074 \u1077  (\u1087 \u1088 \u1086 \u1087 \u1088 \u1080 \u1086 \u1094 \u1077 \u1087 \u1094 \u1080 \u1103 ).</li>\
+              <li><strong>\uc0\u1041 \u1077 \u1079 \u1086 \u1087 \u1072 \u1089 \u1085 \u1086 \u1077  \u1087 \u1088 \u1080 \u1079 \u1077 \u1084 \u1083 \u1077 \u1085 \u1080 \u1077 :</strong> \'ab\u1082 \u1086 \u1096 \u1072 \u1095 \u1100 \u1077 \'bb \u1087 \u1088 \u1080 \u1079 \u1077 \u1084 \u1083 \u1077 \u1085 \u1080 \u1077  \u1089 &nbsp;\u1087 \u1077 \u1088 \u1077 \u1082 \u1072 \u1090 \u1086 \u1084  \u1085 \u1072 &nbsp;\u1085 \u1086 \u1089 \u1086 \u1082  \'97 \u1085 \u1072 \u1074 \u1099 \u1082 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1081  \u1079 \u1072 \u1097 \u1080 \u1090 \u1080 \u1090  \u1086 \u1090 &nbsp;\u1090 \u1088 \u1072 \u1074 \u1084  \u1074 &nbsp;\u1073 \u1099 \u1090 \u1091  \u1080 &nbsp;\u1085 \u1072 &nbsp;\u1083 \u1102 \u1073 \u1086 \u1081  \u1089 \u1094 \u1077 \u1085 \u1077 .</li>\
+            </ul>\
+          </div>\
+        </div>\
+      </article>\
+\
+      <article class="triad-block reveal">\
+        <div class="triad-num">03</div>\
+        <div>\
+          <h3>\uc0\u55356 \u57283 \u8205 \u9794 \u65039  \u1057 \u1087 \u1086 \u1088 \u1090 \u1080 \u1074 \u1085 \u1086 -\u1090 \u1072 \u1085 \u1094 \u1077 \u1074 \u1072 \u1083 \u1100 \u1085 \u1099 \u1077  \u1080 \u1075 \u1088 \u1099  \u1080 &nbsp;\u1101 \u1089 \u1090 \u1072 \u1092 \u1077 \u1090 \u1099 </h3>\
+          <p>\uc0\u1052 \u1072 \u1089 \u1082 \u1080 \u1088 \u1086 \u1074 \u1082 \u1072  \u1089 \u1077 \u1088 \u1100 \u1105 \u1079 \u1085 \u1086 \u1081  \u1088 \u1072 \u1073 \u1086 \u1090 \u1099  \u1087 \u1086 \u1076  \u1088 \u1072 \u1079 \u1074 \u1083 \u1077 \u1095 \u1077 \u1085 \u1080 \u1077 . \u1056 \u1077 \u1073 \u1105 \u1085 \u1086 \u1082  \u1076 \u1091 \u1084 \u1072 \u1077 \u1090 , \u1095 \u1090 \u1086  \u1087 \u1088 \u1086 \u1089 \u1090 \u1086  \u1080 \u1075 \u1088 \u1072 \u1077 \u1090  \u1074 &nbsp;\'ab\u1056 \u1091 \u1095 \u1077 \u1105 \u1082  \u1089 &nbsp;\u1087 \u1088 \u1077 \u1087 \u1103 \u1090 \u1089 \u1090 \u1074 \u1080 \u1103 \u1084 \u1080 \'bb \'97 \u1072 &nbsp;\u1085 \u1072 &nbsp;\u1089 \u1072 \u1084 \u1086 \u1084  \u1076 \u1077 \u1083 \u1077  \u1088 \u1072 \u1089 \u1090 \u1105 \u1090  \u1077 \u1075 \u1086  \u1087 \u1088 \u1099 \u1075 \u1091 \u1095 \u1077 \u1089 \u1090 \u1100  \u1080 &nbsp;\u1089 \u1082 \u1086 \u1088 \u1086 \u1089 \u1090 \u1100  \u1088 \u1077 \u1072 \u1082 \u1094 \u1080 \u1080 .</p>\
+          <div class="triad-detail">\
+            <ul class="detail-list">\
+              <li><strong>\uc0\u1058 \u1072 \u1085 \u1094 \u1077 \u1074 \u1072 \u1083 \u1100 \u1085 \u1099 \u1077  \u1089 \u1072 \u1083 \u1086 \u1095 \u1082 \u1080 :</strong> \u1091 \u1073 \u1077 \u1078 \u1072 \u1090 \u1100 , \u1076 \u1077 \u1083 \u1072 \u1103  \u1075 \u1072 \u1083 \u1086 \u1087  \u1080 \u1083 \u1080  \u1087 \u1086 \u1076 \u1089 \u1082 \u1086 \u1082 \u1080  \'97 \u1091 \u1073 \u1080 \u1074 \u1072 \u1077 \u1090  \'ab\u1074 \u1103 \u1083 \u1099 \u1077 \'bb \u1085 \u1086 \u1075 \u1080  \u1080 &nbsp;\u1092 \u1086 \u1088 \u1084 \u1080 \u1088 \u1091 \u1077 \u1090  \u1072 \u1082 \u1090 \u1080 \u1074 \u1085 \u1099 \u1081  \u1096 \u1072 \u1075 .</li>\
+              <li><strong>\uc0\u1069 \u1089 \u1090 \u1072 \u1092 \u1077 \u1090 \u1099  \u1089 &nbsp;\u1083 \u1077 \u1085 \u1090 \u1072 \u1084 \u1080  \u1080 &nbsp;\u1084 \u1103 \u1095 \u1072 \u1084 \u1080 :</strong> \u1082 \u1086 \u1086 \u1088 \u1076 \u1080 \u1085 \u1072 \u1094 \u1080 \u1103  \u1087 \u1086 \u1083 \u1091 \u1096 \u1072 \u1088 \u1080 \u1081 , \u1084 \u1077 \u1083 \u1082 \u1072 \u1103  \u1084 \u1086 \u1090 \u1086 \u1088 \u1080 \u1082 \u1072  \'97 \u1089 \u1074 \u1103 \u1079 \u1072 \u1085 \u1086  \u1089 &nbsp;\u1088 \u1077 \u1095 \u1100 \u1102  \u1080 &nbsp;\u1087 \u1072 \u1084 \u1103 \u1090 \u1100 \u1102  (\u1088 \u1086 \u1076 \u1080 \u1090 \u1077 \u1083 \u1080 , \u1085 \u1072 &nbsp;\u1079 \u1072 \u1084 \u1077 \u1090 \u1082 \u1091 !).</li>\
+              <li><strong>\uc0\u1056 \u1080 \u1090 \u1084 \u1080 \u1095 \u1077 \u1089 \u1082 \u1080 \u1077  \u1073 \u1080 \u1090 \u1074 \u1099 :</strong> \u1087 \u1086 \u1074 \u1090 \u1086 \u1088 \u1080 \u1090 \u1100  \u1088 \u1080 \u1090 \u1084 \u1080 \u1095 \u1077 \u1089 \u1082 \u1080 \u1081  \u1088 \u1080 \u1089 \u1091 \u1085 \u1086 \u1082  \'97 \u1093 \u1083 \u1086 \u1087 \u1082 \u1072 \u1084 \u1080  \u1080 &nbsp;\u1085 \u1086 \u1075 \u1072 \u1084 \u1080 . \u1052 \u1091 \u1079 \u1099 \u1082 \u1072 \u1083 \u1100 \u1085 \u1086 \u1089 \u1090 \u1100 , \u1073 \u1077 \u1079  \u1082 \u1086 \u1090 \u1086 \u1088 \u1086 \u1081  \u1090 \u1072 \u1085 \u1077 \u1094  \u1084 \u1105 \u1088 \u1090 \u1074 .</li>\
+            </ul>\
+          </div>\
+        </div>\
+      </article>\
+\
+    </div>\
+\
+    <div class="triad-closing reveal">\
+      <p>\uc0\u1050 \u1072 \u1078 \u1076 \u1086 \u1077  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1077  \'97 \u1101 \u1090 \u1086  \u1094 \u1077 \u1083 \u1086 \u1089 \u1090 \u1085 \u1099 \u1081  \u1091 \u1088 \u1086 \u1082 , \u1075 \u1076 \u1077  \u1092 \u1080 \u1079 \u1080 \u1082 \u1072 , \u1088 \u1072 \u1076 \u1086 \u1089 \u1090 \u1100  \u1080 &nbsp;\u1076 \u1080 \u1089 \u1094 \u1080 \u1087 \u1083 \u1080 \u1085 \u1072  \u1089 \u1083 \u1080 \u1074 \u1072 \u1102 \u1090 \u1089 \u1103  \u1074 &nbsp;\u1086 \u1076 \u1085 \u1086 . \u1052 \u1099  \u1089 \u1086 \u1079 \u1076 \u1072 \u1105 \u1084  \u1072 \u1090 \u1084 \u1086 \u1089 \u1092 \u1077 \u1088 \u1091  \u1074 \u1076 \u1086 \u1093 \u1085 \u1086 \u1074 \u1077 \u1085 \u1080 \u1103  \u1080 &nbsp;\u1087 \u1086 \u1076 \u1076 \u1077 \u1088 \u1078 \u1082 \u1080 , \u1095 \u1090 \u1086 \u1073 \u1099  \u1082 \u1072 \u1078 \u1076 \u1072 \u1103  \u1084 \u1080 \u1085 \u1091 \u1090 \u1072  \u1089 \u1090 \u1072 \u1083 \u1072  \u1096 \u1072 \u1075 \u1086 \u1084  \u1082 &nbsp;\u1085 \u1086 \u1074 \u1099 \u1084  \u1089 \u1087 \u1086 \u1089 \u1086 \u1073 \u1085 \u1086 \u1089 \u1090 \u1103 \u1084  \u1088 \u1077 \u1073 \u1105 \u1085 \u1082 \u1072 .</p>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- ===== AGE GROUPS ===== -->\
+<section class="si-ages" id="for-whom">\
+  <div class="container">\
+    <div class="text-center reveal">\
+      <span class="eyebrow center">\uc0\u1044 \u1083 \u1103  \u1082 \u1086 \u1075 \u1086 </span>\
+      <h2>\uc0\u1055 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1072  \u1076 \u1083 \u1103 &nbsp;<em>\u1082 \u1072 \u1078 \u1076 \u1086 \u1075 \u1086  \u1074 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 \u1072 </em></h2>\
+    </div>\
+    <div class="age-grid">\
+\
+      <article class="age-card reveal">\
+        <span class="age-emoji">\uc0\u55356 \u57137 </span>\
+        <div class="age-range">3\'966</div>\
+        <span class="age-label">\uc0\u1052 \u1072 \u1083 \u1099 \u1096 \u1080 -\u1082 \u1088 \u1077 \u1087 \u1099 \u1096 \u1080 </span>\
+        <h3>\uc0\u1059 \u1073 \u1088 \u1072 \u1090 \u1100  \u1082 \u1086 \u1089 \u1086 \u1083 \u1072 \u1087 \u1080 \u1077 , \u1088 \u1072 \u1079 \u1074 \u1080 \u1090 \u1100  \u1088 \u1080 \u1090 \u1084 </h3>\
+        <p class="age-why">\uc0\u1042 \u1099 \u1087 \u1083 \u1077 \u1089 \u1085 \u1091 \u1090 \u1100  \u1076 \u1080 \u1082 \u1091 \u1102  \u1101 \u1085 \u1077 \u1088 \u1075 \u1080 \u1102  \u1074 &nbsp;\u1087 \u1088 \u1072 \u1074 \u1080 \u1083 \u1100 \u1085 \u1086 \u1077  \u1088 \u1091 \u1089 \u1083 \u1086 , \u1079 \u1072 \u1083 \u1086 \u1078 \u1080 \u1090 \u1100  \u1082 \u1086 \u1086 \u1088 \u1076 \u1080 \u1085 \u1072 \u1094 \u1080 \u1102  \u1080 &nbsp;\u1095 \u1091 \u1074 \u1089 \u1090 \u1074 \u1086  \u1088 \u1080 \u1090 \u1084 \u1072  \'97 \u1092 \u1091 \u1085 \u1076 \u1072 \u1084 \u1077 \u1085 \u1090  \u1074 \u1089 \u1077 \u1075 \u1086 .</p>\
+        <p class="age-how" style="color:var(--ink-mute)">\uc0\u1063 \u1077 \u1088 \u1077 \u1079  \u1086 \u1073 \u1088 \u1072 \u1079 \u1099  (\'ab\u1090 \u1103 \u1085 \u1077 \u1084 \u1089 \u1103  \u1082 &nbsp;\u1089 \u1086 \u1083 \u1085 \u1099 \u1096 \u1082 \u1091 \'bb, \'ab\u1087 \u1088 \u1099 \u1075 \u1072 \u1077 \u1084  \u1082 \u1072 \u1082  \u1084 \u1103 \u1095 \u1080 \u1082 \u1080 \'bb). \u1040 \u1082 \u1094 \u1077 \u1085 \u1090  \u1085 \u1072 &nbsp;\u1080 \u1075 \u1088 \u1099  \u1080 &nbsp;\u1087 \u1077 \u1089 \u1086 \u1082 .</p>\
+        <span class="age-tag">\uc0\u1048 \u1075 \u1088 \u1086 \u1074 \u1086 \u1081  \u1092 \u1086 \u1088 \u1084 \u1072 \u1090 </span>\
+      </article>\
+\
+      <article class="age-card reveal">\
+        <span class="age-emoji">\uc0\u11088 </span>\
+        <div class="age-range">7\'9611</div>\
+        <span class="age-label">\uc0\u1054 \u1089 \u1086 \u1079 \u1085 \u1072 \u1085 \u1085 \u1072 \u1103  \u1088 \u1072 \u1073 \u1086 \u1090 \u1072 </span>\
+        <h3>\uc0\u1054 \u1089 \u1072 \u1085 \u1082 \u1072 , \u1089 \u1090 \u1088 \u1086 \u1081 \u1085 \u1086 \u1089 \u1090 \u1100 , \u1087 \u1086 \u1089 \u1090 \u1072 \u1085 \u1086 \u1074 \u1082 \u1072  \u1082 \u1086 \u1088 \u1087 \u1091 \u1089 \u1072 </h3>\
+        <p class="age-why">\uc0\u1060 \u1086 \u1088 \u1084 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077  \u1087 \u1088 \u1072 \u1074 \u1080 \u1083 \u1100 \u1085 \u1086 \u1081  \u1086 \u1089 \u1072 \u1085 \u1082 \u1080  \u1080 &nbsp;\u1087 \u1086 \u1089 \u1090 \u1072 \u1085 \u1086 \u1074 \u1082 \u1080  \u1082 \u1086 \u1088 \u1087 \u1091 \u1089 \u1072 , \u1087 \u1086 \u1076 \u1075 \u1086 \u1090 \u1086 \u1074 \u1082 \u1072  \u1082 &nbsp;\u1089 \u1077 \u1088 \u1100 \u1105 \u1079 \u1085 \u1086 \u1081  \u1093 \u1086 \u1088 \u1077 \u1086 \u1075 \u1088 \u1072 \u1092 \u1080 \u1080 .</p>\
+        <p class="age-how" style="color:var(--ink-mute)">\uc0\u1063 \u1105 \u1090 \u1082 \u1080 \u1077  \u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1095 \u1077 \u1089 \u1082 \u1080 \u1077  \u1079 \u1072 \u1076 \u1072 \u1095 \u1080 , \u1088 \u1072 \u1089 \u1090 \u1103 \u1078 \u1082 \u1072  \u1074 &nbsp;\u1087 \u1072 \u1088 \u1072 \u1093 , \u1087 \u1077 \u1088 \u1074 \u1099 \u1077  \u1089 \u1080 \u1083 \u1086 \u1074 \u1099 \u1077  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1099  \u1085 \u1072 &nbsp;\u1073 \u1072 \u1083 \u1072 \u1085 \u1089 .</p>\
+        <span class="age-tag">\uc0\u1058 \u1077 \u1093 \u1085 \u1080 \u1082 \u1072  + \u1089 \u1080 \u1083 \u1072 </span>\
+      </article>\
+\
+      <article class="age-card reveal">\
+        <span class="age-emoji">\uc0\u55356 \u57286 </span>\
+        <div class="age-range">12\'9615</div>\
+        <span class="age-label">\uc0\u1058 \u1072 \u1085 \u1094 \u1077 \u1074 \u1072 \u1083 \u1100 \u1085 \u1072 \u1103  \u1101 \u1083 \u1080 \u1090 \u1072 </span>\
+        <h3>\uc0\u1058 \u1077 \u1093 \u1085 \u1080 \u1082 \u1072 , \u1088 \u1077 \u1083 \u1100 \u1077 \u1092 , \u1072 \u1088 \u1090 \u1080 \u1089 \u1090 \u1080 \u1079 \u1084 </h3>\
+        <p class="age-why">\uc0\u1057 \u1086 \u1074 \u1077 \u1088 \u1096 \u1077 \u1085 \u1089 \u1090 \u1074 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077  \u1090 \u1077 \u1093 \u1085 \u1080 \u1082 \u1080 , \u1088 \u1077 \u1083 \u1100 \u1077 \u1092  \u1084 \u1099 \u1096 \u1094 , \u1088 \u1072 \u1073 \u1086 \u1090 \u1072  \u1085 \u1072 \u1076  \u1074 \u1099 \u1074 \u1086 \u1088 \u1086 \u1090 \u1085 \u1086 \u1089 \u1090 \u1100 \u1102  \u1080 &nbsp;\u1074 \u1099 \u1089 \u1086 \u1082 \u1080 \u1084  \u1087 \u1088 \u1099 \u1078 \u1082 \u1086 \u1084 .</p>\
+        <p class="age-how" style="color:var(--ink-mute)">\uc0\u1057 \u1083 \u1086 \u1078 \u1085 \u1072 \u1103  \u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1082 \u1072 , \u1073 \u1099 \u1089 \u1090 \u1088 \u1099 \u1077  \u1082 \u1086 \u1084 \u1073 \u1080 \u1085 \u1072 \u1094 \u1080 \u1080 , \u1085 \u1072 \u1089 \u1090 \u1072 \u1074 \u1085 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086  \u1085 \u1072 \u1076  \u1084 \u1083 \u1072 \u1076 \u1096 \u1080 \u1084 \u1080  \'97 \u1088 \u1072 \u1079 \u1074 \u1080 \u1074 \u1072 \u1077 \u1090  \u1083 \u1080 \u1076 \u1077 \u1088 \u1089 \u1090 \u1074 \u1086 .</p>\
+        <span class="age-tag">\uc0\u1055 \u1088 \u1086 \u1092 \u1077 \u1089 \u1089 \u1080 \u1086 \u1085 \u1072 \u1083 \u1100 \u1085 \u1099 \u1081  \u1088 \u1086 \u1089 \u1090 </span>\
+      </article>\
+\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- ===== LETTER TO PARENTS ===== -->\
+<section class="si-letter" id="parents">\
+  <div class="container">\
+    <div class="letter-grid">\
+      <div class="reveal">\
+        <div class="letter-head">\
+          <span class="eyebrow">\uc0\u1054 \u1090 \u1082 \u1088 \u1099 \u1090 \u1086 \u1077  \u1087 \u1080 \u1089 \u1100 \u1084 \u1086 </span>\
+          <h2>\uc0\u1057 \u1077 \u1085 \u1090 \u1103 \u1073 \u1088 \u1100 <br/>\u1085 \u1072 \u1095 \u1080 \u1085 \u1072 \u1077 \u1090 \u1089 \u1103  <em>\u1074 &nbsp;\u1080 \u1102 \u1085 \u1077 </em></h2>\
+        </div>\
+        <p class="letter-intro">\uc0\u1044 \u1086 \u1088 \u1086 \u1075 \u1080 \u1077  \u1084 \u1072 \u1084 \u1099  \u1080  \u1087 \u1072 \u1087 \u1099 . \u1057 \u1077 \u1085 \u1090 \u1103 \u1073 \u1088 \u1100  \'97 \u1101 \u1090 \u1086  \u1083 \u1072 \u1082 \u1084 \u1091 \u1089 \u1086 \u1074 \u1072 \u1103  \u1073 \u1091 \u1084 \u1072 \u1078 \u1082 \u1072 . \u1047 \u1072  \u1087 \u1077 \u1088 \u1074 \u1099 \u1077  15 \u1084 \u1080 \u1085 \u1091 \u1090  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1103  \u1074  \u1085 \u1086 \u1074 \u1086 \u1084  \u1091 \u1095 \u1077 \u1073 \u1085 \u1086 \u1084  \u1075 \u1086 \u1076 \u1091  \u1090 \u1088 \u1077 \u1085 \u1077 \u1088  \u1090 \u1086 \u1095 \u1085 \u1086  \u1079 \u1085 \u1072 \u1077 \u1090 , \u1082 \u1090 \u1086  \'ab\u1087 \u1072 \u1093 \u1072 \u1083 \'bb \u1083 \u1077 \u1090 \u1086 \u1084 , \u1072  \u1082 \u1090 \u1086  \'ab\u1074 \u1072 \u1088 \u1080 \u1083 \u1089 \u1103 \'bb.</p>\
+        <p style="font-size:16px;color:rgba(255,255,255,.65);line-height:1.65">\uc0\u1051 \u1077 \u1090 \u1086  \'97 \u1101 \u1090 \u1086  \u1085 \u1077  \u1087 \u1072 \u1091 \u1079 \u1072 . \u1069 \u1090 \u1086  \u1086 \u1075 \u1088 \u1086 \u1084 \u1085 \u1099 \u1081  \u1088 \u1099 \u1074 \u1086 \u1082 . \u1054 \u1082 \u1085 \u1086  \u1074 \u1086 \u1079 \u1084 \u1086 \u1078 \u1085 \u1086 \u1089 \u1090 \u1077 \u1081 , \u1082 \u1086 \u1075 \u1076 \u1072  \u1084 \u1086 \u1078 \u1085 \u1086  \u1079 \u1072 \u1085 \u1080 \u1084 \u1072 \u1090 \u1100 \u1089 \u1103  \u1074 &nbsp;\u1086 \u1073 \u1083 \u1077 \u1075 \u1095 \u1105 \u1085 \u1085 \u1086 \u1081  \u1086 \u1076 \u1077 \u1078 \u1076 \u1077 , \u1085 \u1072  \u1087 \u1088 \u1080 \u1088 \u1086 \u1076 \u1077 , \u1089  \u1084 \u1072 \u1082 \u1089 \u1080 \u1084 \u1072 \u1083 \u1100 \u1085 \u1086 \u1081  \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1081  \u1076 \u1083 \u1103  \u1080 \u1084 \u1084 \u1091 \u1085 \u1080 \u1090 \u1077 \u1090 \u1072 .</p>\
+        <div class="hero-cta">\
+          <a class="btn btn-primary btn-lg" href="#" onclick="openModal('intensiv');return false;" data-goal="cta_open_form_letter">\uc0\u1047 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100  \u1088 \u1077 \u1073 \u1105 \u1085 \u1082 \u1072 </a>\
+        </div>\
+      </div>\
+      <div class="scenario-cards reveal">\
+        <div class="scenario bad">\
+          <div class="scenario-label"><span class="scenario-icon">\uc0\u55357 \u56852 </span> \u1042 \u1072 \u1088 \u1080 \u1072 \u1085 \u1090  \u1040  \'97 \u1073 \u1077 \u1079 &nbsp;\u1083 \u1077 \u1090 \u1085 \u1077 \u1081  \u1087 \u1086 \u1076 \u1075 \u1086 \u1090 \u1086 \u1074 \u1082 \u1080 </div>\
+          <h3>\'ab\uc0\u1054 \u1089 \u1090 \u1088 \u1099 \u1081  \u1089 \u1090 \u1088 \u1077 \u1089 \u1089 \'bb \u1074 &nbsp;\u1089 \u1077 \u1085 \u1090 \u1103 \u1073 \u1088 \u1077 </h3>\
+          <p>\uc0\u1055 \u1088 \u1086 \u1096 \u1083 \u1086  3 \u1084 \u1077 \u1089 \u1103 \u1094 \u1072 . \u1052 \u1086 \u1079 \u1075  \u1086 \u1090 \u1074 \u1099 \u1082  \u1082 \u1086 \u1085 \u1094 \u1077 \u1085 \u1090 \u1088 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100 \u1089 \u1103 , \u1089 \u1087 \u1080 \u1085 \u1072  \'ab\u1089 \u1090 \u1077 \u1082 \u1083 \u1072 \'bb, \u1089 \u1074 \u1103 \u1079 \u1082 \u1080  \u1079 \u1072 \u1076 \u1091 \u1073 \u1077 \u1083 \u1080 , \u1084 \u1099 \u1096 \u1077 \u1095 \u1085 \u1099 \u1081  \u1082 \u1086 \u1088 \u1089 \u1077 \u1090  \u1088 \u1072 \u1089 \u1089 \u1083 \u1072 \u1073 \u1080 \u1083 \u1089 \u1103 . \u1055 \u1077 \u1088 \u1074 \u1072 \u1103  \u1085 \u1077 \u1076 \u1077 \u1083 \u1103  \'97 \u1082 \u1088 \u1077 \u1087 \u1072 \u1090 \u1091 \u1088 \u1072 , \u1087 \u1089 \u1080 \u1093 \u1086 \u1083 \u1086 \u1075 \u1080 \u1095 \u1077 \u1089 \u1082 \u1072 \u1103  \u1103 \u1084 \u1072  \'ab\u1103  \u1074 \u1089 \u1105  \u1079 \u1072 \u1073 \u1099 \u1083 \'bb. \u1042 \u1099 \u1082 \u1072 \u1088 \u1072 \u1073 \u1082 \u1080 \u1074 \u1072 \u1077 \u1084 \u1089 \u1103  \u1076 \u1086 &nbsp;\u1086 \u1082 \u1090 \u1103 \u1073 \u1088 \u1103 .</p>\
+        </div>\
+        <div class="scenario good">\
+          <div class="scenario-label"><span class="scenario-icon">\uc0\u55356 \u57286 </span> \u1042 \u1072 \u1088 \u1080 \u1072 \u1085 \u1090  \u1041  \'97 \u1087 \u1086 \u1089 \u1083 \u1077  \u1051 \u1077 \u1090 \u1085 \u1077 \u1075 \u1086 &nbsp;\u1048 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074 \u1072 </div>\
+          <h3>\'ab\uc0\u1058 \u1088 \u1080 \u1091 \u1084 \u1092 \'bb \u1074 &nbsp;\u1089 \u1077 \u1085 \u1090 \u1103 \u1073 \u1088 \u1077 </h3>\
+          <p>\uc0\u1042 \u1072 \u1096  \u1088 \u1077 \u1073 \u1105 \u1085 \u1086 \u1082  \u1089 \u1090 \u1086 \u1080 \u1090  \u1074  \u1075 \u1088 \u1091 \u1087 \u1087 \u1077  \u1089  \u1088 \u1086 \u1074 \u1085 \u1086 \u1081  \u1089 \u1087 \u1080 \u1085 \u1086 \u1081 , \u1087 \u1086 \u1076 \u1090 \u1103 \u1085 \u1091 \u1090 \u1099 \u1084  \u1078 \u1080 \u1074 \u1086 \u1090 \u1086 \u1084 , \'ab\u1088 \u1072 \u1073 \u1086 \u1095 \u1077 \u1081 \'bb \u1089 \u1090 \u1086 \u1087 \u1086 \u1081  \u1080  \u1072 \u1079 \u1072 \u1088 \u1090 \u1086 \u1084  \u1074  \u1075 \u1083 \u1072 \u1079 \u1072 \u1093 . \u1045 \u1084 \u1091  \u1083 \u1077 \u1075 \u1082 \u1086 . \u1055 \u1086 \u1082 \u1072  \u1076 \u1088 \u1091 \u1075 \u1080 \u1077  \u1074 \u1089 \u1087 \u1086 \u1084 \u1080 \u1085 \u1072 \u1102 \u1090  \u1087 \u1083 \u1080 \u1077  \'97 \u1086 \u1085  \u1087 \u1088 \u1099 \u1075 \u1072 \u1077 \u1090  \u1074 \u1099 \u1096 \u1077  \u1074 \u1089 \u1077 \u1093 . \u1053 \u1077  \u1088 \u1072 \u1089 \u1090 \u1088 \u1072 \u1090 \u1080 \u1083  \u1092 \u1086 \u1088 \u1084 \u1091 , \u1072  \u1087 \u1088 \u1080 \u1086 \u1073 \u1088 \u1105 \u1083  \u1057 \u1091 \u1087 \u1077 \u1088 -\u1060 \u1086 \u1088 \u1084 \u1091 .</p>\
+        </div>\
+      </div>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- ===== SCHEDULE ===== -->\
+<section class="si-schedule" id="schedule">\
+  <div class="container">\
+    <div class="text-center reveal">\
+      <span class="eyebrow center">\uc0\u1056 \u1072 \u1089 \u1087 \u1080 \u1089 \u1072 \u1085 \u1080 \u1077 </span>\
+      <h2>\uc0\u1044 \u1074 \u1077  \u1089 \u1084 \u1077 \u1085 \u1099  \'97 <em>\u1076 \u1074 \u1086 \u1081 \u1085 \u1086 \u1081  \u1088 \u1077 \u1079 \u1091 \u1083 \u1100 \u1090 \u1072 \u1090 </em></h2>\
+    </div>\
+    <div class="sessions-grid reveal">\
+\
+      <div class="session-card">\
+        <div class="session-head">\
+          <div class="session-badge">\uc0\u9728 \u65039  \u1048 \u1102 \u1085 \u1100 \u1089 \u1082 \u1072 \u1103  \u1089 \u1084 \u1077 \u1085 \u1072 </div>\
+          <div class="session-title">\uc0\u1048 \u1102 \u1085 \u1100 </div>\
+          <div class="session-dates">2 \uc0\u1080 \u1102 \u1085 \u1103  \'97 30 \u1080 \u1102 \u1085 \u1103 </div>\
+        </div>\
+        <div class="session-body">\
+          <div class="session-row">\
+            <div class="sr-icon">\
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>\
+            </div>\
+            <div>\
+              <div class="sr-label">\uc0\u1044 \u1085 \u1080  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1081 </div>\
+              <div class="sr-val">\uc0\u1055 \u1086 \u1085 \u1077 \u1076 \u1077 \u1083 \u1100 \u1085 \u1080 \u1082  \'97 \u1055 \u1103 \u1090 \u1085 \u1080 \u1094 \u1072 </div>\
+            </div>\
+          </div>\
+          <div class="session-row">\
+            <div class="sr-icon">\
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>\
+            </div>\
+            <div>\
+              <div class="sr-label">\uc0\u1042 \u1088 \u1077 \u1084 \u1103 </div>\
+              <div class="sr-val">18:00 \'97 20:00</div>\
+            </div>\
+          </div>\
+          <div class="session-note">\uc0\u1057 \u1090 \u1072 \u1088 \u1090 \u1086 \u1074 \u1072 \u1103  \u1089 \u1084 \u1077 \u1085 \u1072  \'97 \u1085 \u1072 \u1095 \u1085 \u1080  \u1083 \u1077 \u1090 \u1086  \u1089 \u1080 \u1083 \u1100 \u1085 \u1099 \u1084 !</div>\
+        </div>\
+      </div>\
+\
+      <div class="session-card">\
+        <div class="session-head" style="background:linear-gradient(135deg,var(--tiffany-soft) 0%,var(--sun-soft) 100%)">\
+          <div class="session-badge" style="background:linear-gradient(135deg,var(--tiffany-deep),var(--gold-deep))">\uc0\u55356 \u57119  \u1040 \u1074 \u1075 \u1091 \u1089 \u1090 \u1086 \u1074 \u1089 \u1082 \u1072 \u1103  \u1089 \u1084 \u1077 \u1085 \u1072 </div>\
+          <div class="session-title">\uc0\u1040 \u1074 \u1075 \u1091 \u1089 \u1090 </div>\
+          <div class="session-dates">4 \uc0\u1072 \u1074 \u1075 \u1091 \u1089 \u1090 \u1072  \'97 29 \u1072 \u1074 \u1075 \u1091 \u1089 \u1090 \u1072 </div>\
+        </div>\
+        <div class="session-body">\
+          <div class="session-row">\
+            <div class="sr-icon" style="background:linear-gradient(135deg,var(--tiffany-soft),var(--sun-soft))">\
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>\
+            </div>\
+            <div>\
+              <div class="sr-label">\uc0\u1044 \u1085 \u1080  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1081 </div>\
+              <div class="sr-val">\uc0\u1055 \u1086 \u1085 \u1077 \u1076 \u1077 \u1083 \u1100 \u1085 \u1080 \u1082  \'97 \u1055 \u1103 \u1090 \u1085 \u1080 \u1094 \u1072 </div>\
+            </div>\
+          </div>\
+          <div class="session-row">\
+            <div class="sr-icon" style="background:linear-gradient(135deg,var(--tiffany-soft),var(--sun-soft))">\
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>\
+            </div>\
+            <div>\
+              <div class="sr-label">\uc0\u1042 \u1088 \u1077 \u1084 \u1103 </div>\
+              <div class="sr-val">18:00 \'97 20:00</div>\
+            </div>\
+          </div>\
+          <div class="session-note" style="background:linear-gradient(135deg,var(--tiffany-soft),var(--sun-soft));color:var(--tiffany-deep)">\uc0\u1055 \u1088 \u1077 \u1076 \u1089 \u1090 \u1072 \u1088 \u1090 \u1086 \u1074 \u1072 \u1103  \'97 \u1087 \u1083 \u1072 \u1074 \u1085 \u1099 \u1081  \u1074 \u1093 \u1086 \u1076  \u1074 &nbsp;\u1096 \u1082 \u1086 \u1083 \u1100 \u1085 \u1099 \u1081  \u1088 \u1077 \u1078 \u1080 \u1084 !</div>\
+        </div>\
+      </div>\
+\
+    </div>\
+\
+    <div class="outfit-box reveal">\
+      <div class="outfit-icon">\uc0\u55357 \u56415 </div>\
+      <div class="outfit-body">\
+        <h3>\uc0\u1060 \u1086 \u1088 \u1084 \u1072  \u1086 \u1076 \u1077 \u1078 \u1076 \u1099 </h3>\
+        <p>\uc0\u1052 \u1072 \u1082 \u1089 \u1080 \u1084 \u1072 \u1083 \u1100 \u1085 \u1086  \u1091 \u1076 \u1086 \u1073 \u1085 \u1072 \u1103 , \u1076 \u1099 \u1096 \u1072 \u1097 \u1072 \u1103  \u1092 \u1086 \u1088 \u1084 \u1072 : \u1083 \u1086 \u1089 \u1080 \u1085 \u1099 /\u1096 \u1086 \u1088 \u1090 \u1099  + \u1090 \u1086 \u1087 /\u1092 \u1091 \u1090 \u1073 \u1086 \u1083 \u1082 \u1072 . \u1042 &nbsp;\u1087 \u1077 \u1088 \u1074 \u1086 \u1081  \u1095 \u1072 \u1089 \u1090 \u1080  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1103  (\u1088 \u1072 \u1079 \u1084 \u1080 \u1085 \u1082 \u1072  \u1080 &nbsp;\u1087 \u1077 \u1089 \u1086 \u1082 ) \'97 \u1085 \u1086 \u1089 \u1086 \u1095 \u1082 \u1080  \u1080 \u1083 \u1080  \u1073 \u1086 \u1089 \u1080 \u1082 \u1086 \u1084 . \u1042 \u1086 &nbsp;\u1074 \u1090 \u1086 \u1088 \u1086 \u1081  \u1095 \u1072 \u1089 \u1090 \u1080  (\u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1082 \u1072 ) \'97 \u1084 \u1103 \u1075 \u1082 \u1080 \u1077  \u1082 \u1088 \u1086 \u1089 \u1089 \u1086 \u1074 \u1082 \u1080  \u1080 \u1083 \u1080  \u1076 \u1078 \u1072 \u1079 \u1086 \u1074 \u1082 \u1080 .</p>\
+      </div>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- ===== WHY CHOOSE ===== -->\
+<section class="si-why" id="why">\
+  <div class="container text-center reveal">\
+    <span class="eyebrow center">\uc0\u1055 \u1088 \u1077 \u1080 \u1084 \u1091 \u1097 \u1077 \u1089 \u1090 \u1074 \u1072 </span>\
+    <h2>\uc0\u1055 \u1086 \u1095 \u1077 \u1084 \u1091  \u1089 \u1090 \u1086 \u1080 \u1090  \u1074 \u1099 \u1073 \u1088 \u1072 \u1090 \u1100  <em>\u1083 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074 </em></h2>\
+    <div class="why-grid">\
+      <article class="why-card">\
+        <div class="why-icon">\
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>\
+        </div>\
+        <h3>\uc0\u1041 \u1077 \u1079 \u1086 \u1087 \u1072 \u1089 \u1085 \u1072 \u1103  \u1085 \u1072 \u1075 \u1088 \u1091 \u1079 \u1082 \u1072 </h3>\
+        <p>\uc0\u1055 \u1077 \u1089 \u1086 \u1082  \u1072 \u1084 \u1086 \u1088 \u1090 \u1080 \u1079 \u1080 \u1088 \u1091 \u1077 \u1090  \u1087 \u1088 \u1099 \u1078 \u1082 \u1080 , \u1097 \u1072 \u1076 \u1080 \u1090  \u1089 \u1091 \u1089 \u1090 \u1072 \u1074 \u1099  \u1080 &nbsp;\u1082 \u1086 \u1083 \u1077 \u1085 \u1080 . \u1055 \u1088 \u1086 \u1092 \u1080 \u1083 \u1072 \u1082 \u1090 \u1080 \u1082 \u1072  \u1090 \u1088 \u1072 \u1074 \u1084  \'97 \u1074 \u1089 \u1090 \u1088 \u1086 \u1077 \u1085 \u1072  \u1074 &nbsp;\u1084 \u1077 \u1090 \u1086 \u1076 \u1080 \u1082 \u1091 </p>\
+      </article>\
+      <article class="why-card">\
+        <div class="why-icon">\
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>\
+        </div>\
+        <h3>\uc0\u1048 \u1085 \u1076 \u1080 \u1074 \u1080 \u1076 \u1091 \u1072 \u1083 \u1100 \u1085 \u1099 \u1081  \u1087 \u1086 \u1076 \u1093 \u1086 \u1076 </h3>\
+        <p>\uc0\u1052 \u1072 \u1083 \u1086 \u1077  \u1095 \u1080 \u1089 \u1083 \u1086  \u1084 \u1077 \u1089 \u1090  \u1074 &nbsp;\u1075 \u1088 \u1091 \u1087 \u1087 \u1077  \'97 \u1090 \u1088 \u1077 \u1085 \u1077 \u1088  \u1074 \u1080 \u1076 \u1080 \u1090  \u1082 \u1072 \u1078 \u1076 \u1086 \u1075 \u1086  \u1088 \u1077 \u1073 \u1105 \u1085 \u1082 \u1072  \u1080 &nbsp;\u1087 \u1086 \u1076 \u1073 \u1080 \u1088 \u1072 \u1077 \u1090  \u1085 \u1072 \u1075 \u1088 \u1091 \u1079 \u1082 \u1091  \u1087 \u1086 \u1076  \u1077 \u1075 \u1086  \u1091 \u1088 \u1086 \u1074 \u1077 \u1085 \u1100 </p>\
+      </article>\
+      <article class="why-card">\
+        <div class="why-icon">\
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>\
+        </div>\
+        <h3>\uc0\u1056 \u1086 \u1089 \u1090  \u1092 \u1086 \u1088 \u1084 \u1099  \u1082 &nbsp;\u1089 \u1077 \u1085 \u1090 \u1103 \u1073 \u1088 \u1102 </h3>\
+        <p>\uc0\u1044 \u1077 \u1090 \u1080  \u1087 \u1088 \u1080 \u1093 \u1086 \u1076 \u1103 \u1090  \u1074 &nbsp;\u1085 \u1086 \u1074 \u1099 \u1081  \u1091 \u1095 \u1077 \u1073 \u1085 \u1099 \u1081  \u1075 \u1086 \u1076  \u1089 \u1080 \u1083 \u1100 \u1085 \u1077 \u1077  \u1089 \u1074 \u1077 \u1088 \u1089 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074 : \u1089 &nbsp;\u1088 \u1072 \u1073 \u1086 \u1095 \u1077 \u1081  \u1089 \u1090 \u1086 \u1087 \u1086 \u1081 , \u1086 \u1089 \u1072 \u1085 \u1082 \u1086 \u1081  \u1080 &nbsp;\u1084 \u1099 \u1096 \u1077 \u1095 \u1085 \u1099 \u1084  \u1082 \u1086 \u1088 \u1089 \u1077 \u1090 \u1086 \u1084 </p>\
+      </article>\
+      <article class="why-card">\
+        <div class="why-icon">\
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>\
+        </div>\
+        <h3>\uc0\u1052 \u1086 \u1090 \u1080 \u1074 \u1072 \u1094 \u1080 \u1103  \u1095 \u1077 \u1088 \u1077 \u1079  \u1088 \u1072 \u1076 \u1086 \u1089 \u1090 \u1100 </h3>\
+        <p>\uc0\u1056 \u1077 \u1073 \u1105 \u1085 \u1086 \u1082  \u1076 \u1091 \u1084 \u1072 \u1077 \u1090 , \u1095 \u1090 \u1086  \u1080 \u1075 \u1088 \u1072 \u1077 \u1090  \'97 \u1072 &nbsp;\u1085 \u1072 &nbsp;\u1076 \u1077 \u1083 \u1077  \u1088 \u1072 \u1073 \u1086 \u1090 \u1072 \u1077 \u1090  \u1089 \u1083 \u1086 \u1078 \u1085 \u1077 \u1077 , \u1095 \u1077 \u1084  \u1074 &nbsp;\u1079 \u1072 \u1083 \u1077 . \u1040 \u1079 \u1072 \u1088 \u1090  \u1085 \u1077 &nbsp;\u1075 \u1072 \u1089 \u1085 \u1077 \u1090  \u1076 \u1074 \u1072  \u1084 \u1077 \u1089 \u1103 \u1094 \u1072 </p>\
+      </article>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- ===== CTA ===== -->\
+<section class="cta-block" id="cta">\
+  <div class="container reveal">\
+    <h2>\uc0\u1044 \u1072 \u1081 \u1090 \u1077  \u1088 \u1077 \u1073 \u1105 \u1085 \u1082 \u1091  <em>\u1083 \u1077 \u1090 \u1086  \u1089 \u1080 \u1083 \u1099 </em></h2>\
+    <p class="lead">\uc0\u1053 \u1077 &nbsp;\u1076 \u1072 \u1081 \u1090 \u1077  \u1075 \u1072 \u1076 \u1078 \u1077 \u1090 \u1072 \u1084  \u1080 &nbsp;\u1076 \u1080 \u1074 \u1072 \u1085 \u1091  \u1091 \u1082 \u1088 \u1072 \u1089 \u1090 \u1100  \u1083 \u1091 \u1095 \u1096 \u1077 \u1077  \u1083 \u1077 \u1090 \u1086 . \u1044 \u1074 \u1072  \u1084 \u1077 \u1089 \u1103 \u1094 \u1072  \u1085 \u1072 &nbsp;\u1089 \u1074 \u1077 \u1078 \u1077 \u1084  \u1074 \u1086 \u1079 \u1076 \u1091 \u1093 \u1077  \'97 \u1080 &nbsp;\u1074 \u1072 \u1096  \u1088 \u1077 \u1073 \u1105 \u1085 \u1086 \u1082  \u1087 \u1088 \u1080 \u1076 \u1105 \u1090  \u1074 &nbsp;\u1089 \u1077 \u1085 \u1090 \u1103 \u1073 \u1088 \u1100  \u1079 \u1072 \u1088 \u1103 \u1078 \u1077 \u1085 \u1085 \u1099 \u1084 , \u1079 \u1076 \u1086 \u1088 \u1086 \u1074 \u1099 \u1084  \u1080 &nbsp;\u1085 \u1072 &nbsp;\u1075 \u1086 \u1083 \u1086 \u1074 \u1091  \u1074 \u1099 \u1096 \u1077  \u1089 \u1074 \u1077 \u1088 \u1089 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074 . <strong>\u1055 \u1077 \u1088 \u1074 \u1086 \u1077  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1077  \'97 \u1073 \u1077 \u1089 \u1087 \u1083 \u1072 \u1090 \u1085 \u1086 .</strong></p>\
+    <div class="hero-cta">\
+      <a class="btn btn-primary btn-lg" href="#" onclick="openModal('intensiv');return false;" data-goal="cta_open_form_main">\uc0\u1047 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100 \u1089 \u1103  \u1073 \u1077 \u1089 \u1087 \u1083 \u1072 \u1090 \u1085 \u1086 </a>\
+      <a class="btn btn-ghost btn-lg" href="tel:+79636719983" style="border-color:rgba(255,255,255,.35);color:#fff" data-goal="cta_call_main">+7 (963) 671-99-83</a>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- ===== FAQ ===== -->\
+<section class="faq" id="faq">\
+  <div class="container">\
+    <div class="faq-grid">\
+      <div class="faq-side reveal">\
+        <span class="eyebrow">FAQ</span>\
+        <h2>\uc0\u1063 \u1072 \u1089 \u1090 \u1086  \u1079 \u1072 \u1076 \u1072 \u1074 \u1072 \u1077 \u1084 \u1099 \u1077  <em>\u1074 \u1086 \u1087 \u1088 \u1086 \u1089 \u1099 </em></h2>\
+        <p>\uc0\u1045 \u1089 \u1083 \u1080  \u1086 \u1089 \u1090 \u1072 \u1083 \u1080 \u1089 \u1100  \u1074 \u1086 \u1087 \u1088 \u1086 \u1089 \u1099  \'97 \u1085 \u1072 \u1087 \u1080 \u1096 \u1080 \u1090 \u1077  \u1085 \u1072 \u1084  \u1074 &nbsp;Telegram \u1080 \u1083 \u1080  \u1087 \u1086 \u1079 \u1074 \u1086 \u1085 \u1080 \u1090 \u1077 . \u1055 \u1086 \u1076 \u1073 \u1077 \u1088 \u1105 \u1084  \u1089 \u1084 \u1077 \u1085 \u1091  \u1080 &nbsp;\u1074 \u1088 \u1077 \u1084 \u1103  \u1076 \u1083 \u1103  \u1087 \u1088 \u1086 \u1073 \u1085 \u1086 \u1075 \u1086  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1103 .</p>\
+        <div class="msg-choice">\
+          <a class="btn btn-primary" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_faq">Telegram</a>\
+          <a class="btn btn-ghost" href="tel:+79636719983" data-goal="cta_call_faq">\uc0\u1055 \u1086 \u1079 \u1074 \u1086 \u1085 \u1080 \u1090 \u1100 </a>\
+        </div>\
+      </div>\
+      <div class="faq-list reveal">\
+        <details class="faq-item" open>\
+          <summary class="faq-q">\uc0\u1057  \u1082 \u1072 \u1082 \u1086 \u1075 \u1086  \u1074 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 \u1072  \u1084 \u1086 \u1078 \u1085 \u1086  \u1079 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100 \u1089 \u1103 ? <span class="faq-icon">+</span></summary>\
+          <div class="faq-a">\uc0\u1048 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \u1087 \u1086 \u1076 \u1093 \u1086 \u1076 \u1080 \u1090  \u1076 \u1077 \u1090 \u1103 \u1084  \u1086 \u1090 &nbsp;3&nbsp;\u1076 \u1086 &nbsp;15&nbsp;\u1083 \u1077 \u1090 . \u1055 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1072  \u1072 \u1076 \u1072 \u1087 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1072  \u1087 \u1086 \u1076  \u1082 \u1072 \u1078 \u1076 \u1091 \u1102  \u1074 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 \u1085 \u1091 \u1102  \u1075 \u1088 \u1091 \u1087 \u1087 \u1091 : \u1084 \u1072 \u1083 \u1099 \u1096 \u1080  \u1079 \u1072 \u1085 \u1080 \u1084 \u1072 \u1102 \u1090 \u1089 \u1103  \u1095 \u1077 \u1088 \u1077 \u1079  \u1086 \u1073 \u1088 \u1072 \u1079 \u1099  \u1080 &nbsp;\u1080 \u1075 \u1088 \u1099 , \u1087 \u1086 \u1076 \u1088 \u1086 \u1089 \u1090 \u1082 \u1080  \'97 \u1095 \u1077 \u1088 \u1077 \u1079  \u1089 \u1083 \u1086 \u1078 \u1085 \u1091 \u1102  \u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1082 \u1091  \u1080 &nbsp;\u1082 \u1086 \u1084 \u1073 \u1080 \u1085 \u1072 \u1094 \u1080 \u1080 .</div>\
+        </details>\
+        <details class="faq-item">\
+          <summary class="faq-q">\uc0\u1053 \u1091 \u1078 \u1077 \u1085  \u1083 \u1080  \u1087 \u1088 \u1077 \u1076 \u1074 \u1072 \u1088 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1099 \u1081  \u1086 \u1087 \u1099 \u1090  \u1074 &nbsp;\u1090 \u1072 \u1085 \u1094 \u1072 \u1093 ? <span class="faq-icon">+</span></summary>\
+          <div class="faq-a">\uc0\u1053 \u1077 \u1090 . \u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074  \u1087 \u1086 \u1076 \u1093 \u1086 \u1076 \u1080 \u1090  \u1076 \u1077 \u1090 \u1103 \u1084  \u1073 \u1077 \u1079  \u1086 \u1087 \u1099 \u1090 \u1072  \'97 \u1080 \u1084 \u1077 \u1085 \u1085 \u1086  \u1083 \u1077 \u1090 \u1086  \u1080 \u1076 \u1077 \u1072 \u1083 \u1100 \u1085 \u1086 \u1077  \u1074 \u1088 \u1077 \u1084 \u1103  \u1076 \u1083 \u1103  \u1089 \u1090 \u1072 \u1088 \u1090 \u1072 . \u1053 \u1072 \u1075 \u1088 \u1091 \u1079 \u1082 \u1072  \u1087 \u1086 \u1076 \u1073 \u1080 \u1088 \u1072 \u1077 \u1090 \u1089 \u1103  \u1080 \u1085 \u1076 \u1080 \u1074 \u1080 \u1076 \u1091 \u1072 \u1083 \u1100 \u1085 \u1086 .</div>\
+        </details>\
+        <details class="faq-item">\
+          <summary class="faq-q">\uc0\u1057 \u1082 \u1086 \u1083 \u1100 \u1082 \u1086  \u1089 \u1090 \u1086 \u1080 \u1090  \u1080 &nbsp;\u1077 \u1089 \u1090 \u1100  \u1083 \u1080  \u1087 \u1088 \u1086 \u1073 \u1085 \u1086 \u1077  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1077 ? <span class="faq-icon">+</span></summary>\
+          <div class="faq-a">\uc0\u1054 \u1076 \u1085 \u1072  \u1089 \u1084 \u1077 \u1085 \u1072  \'97 <strong>9&nbsp;000&nbsp;\u8381 </strong> \u1074 &nbsp;\u1084 \u1077 \u1089 \u1103 \u1094  (5&nbsp;\u1088 \u1072 \u1079  \u1074 &nbsp;\u1085 \u1077 \u1076 \u1077 \u1083 \u1102  \u1087 \u1086 &nbsp;120&nbsp;\u1084 \u1080 \u1085 \u1091 \u1090 ). \u1055 \u1077 \u1088 \u1074 \u1086 \u1077  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1077  \'97 <strong>\u1073 \u1077 \u1089 \u1087 \u1083 \u1072 \u1090 \u1085 \u1086 </strong>. <a href="prices.html" style="color:var(--pink-deep);font-weight:600">\u1057 \u1090 \u1088 \u1072 \u1085 \u1080 \u1094 \u1072  \u1094 \u1077 \u1085 &nbsp;\u8594 </a></div>\
+        </details>\
+        <details class="faq-item">\
+          <summary class="faq-q">\uc0\u1063 \u1090 \u1086  \u1076 \u1077 \u1083 \u1072 \u1090 \u1100 , \u1077 \u1089 \u1083 \u1080  \u1088 \u1077 \u1073 \u1105 \u1085 \u1086 \u1082  \u1087 \u1088 \u1086 \u1087 \u1091 \u1089 \u1090 \u1080 \u1083  \u1095 \u1072 \u1089 \u1090 \u1100  \u1089 \u1084 \u1077 \u1085 \u1099 ? <span class="faq-icon">+</span></summary>\
+          <div class="faq-a">\uc0\u1047 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100  \u1085 \u1072  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1091 \u1102  \u1089 \u1084 \u1077 \u1085 \u1091  \u1080 \u1083 \u1080  \u1087 \u1088 \u1080 \u1093 \u1086 \u1076 \u1080 \u1090 \u1100  \u1089 &nbsp;\u1085 \u1072 \u1095 \u1072 \u1083 \u1072  \u1073 \u1083 \u1080 \u1078 \u1072 \u1081 \u1096 \u1077 \u1075 \u1086  \u1084 \u1077 \u1089 \u1103 \u1094 \u1072 . \u1050 \u1072 \u1078 \u1076 \u1072 \u1103  \u1089 \u1084 \u1077 \u1085 \u1072  \'97 \u1089 \u1072 \u1084 \u1086 \u1089 \u1090 \u1086 \u1103 \u1090 \u1077 \u1083 \u1100 \u1085 \u1099 \u1081  \u1073 \u1083 \u1086 \u1082  \u1089 &nbsp;\u1087 \u1086 \u1083 \u1085 \u1086 \u1094 \u1077 \u1085 \u1085 \u1086 \u1081  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1086 \u1081 .</div>\
+        </details>\
+        <details class="faq-item">\
+          <summary class="faq-q">\uc0\u1063 \u1090 \u1086  \u1073 \u1088 \u1072 \u1090 \u1100  \u1089 &nbsp;\u1089 \u1086 \u1073 \u1086 \u1081  \u1085 \u1072 &nbsp;\u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1103 ? <span class="faq-icon">+</span></summary>\
+          <div class="faq-a">\uc0\u1059 \u1076 \u1086 \u1073 \u1085 \u1072 \u1103  \u1089 \u1087 \u1086 \u1088 \u1090 \u1080 \u1074 \u1085 \u1072 \u1103  \u1092 \u1086 \u1088 \u1084 \u1072  (\u1083 \u1086 \u1089 \u1080 \u1085 \u1099 /\u1096 \u1086 \u1088 \u1090 \u1099 , \u1090 \u1086 \u1087 /\u1092 \u1091 \u1090 \u1073 \u1086 \u1083 \u1082 \u1072 ), \u1085 \u1086 \u1089 \u1086 \u1095 \u1082 \u1080  \u1076 \u1083 \u1103  \u1087 \u1077 \u1089 \u1082 \u1072  \u1080 &nbsp;\u1084 \u1103 \u1075 \u1082 \u1080 \u1077  \u1082 \u1088 \u1086 \u1089 \u1089 \u1086 \u1074 \u1082 \u1080  \u1080 \u1083 \u1080  \u1076 \u1078 \u1072 \u1079 \u1086 \u1074 \u1082 \u1080  \u1076 \u1083 \u1103  \u1072 \u1082 \u1088 \u1086 \u1073 \u1072 \u1090 \u1080 \u1095 \u1077 \u1089 \u1082 \u1086 \u1081  \u1095 \u1072 \u1089 \u1090 \u1080 . \u1054 \u1073 \u1103 \u1079 \u1072 \u1090 \u1077 \u1083 \u1100 \u1085 \u1086  \'97 \u1074 \u1086 \u1076 \u1072 .</div>\
+        </details>\
+      </div>\
+    </div>\
+  </div>\
+</section>\
+\
+</main>\
+\
+<footer role="contentinfo">\
+  <div class="container foot-row">\
+    <div>\'a9 2014\'962026 \'b7 \uc0\u1044 \u1077 \u1090 \u1089 \u1082 \u1080 \u1081  \u1090 \u1077 \u1072 \u1090 \u1088  \u1090 \u1072 \u1085 \u1094 \u1072  \'ab\u1058 \u1072 \u1090 \u1100 \u1103 \u1085 \u1080 \u1085  \u1044 \u1077 \u1085 \u1100 \'bb \'b7 \u1042 \u1080 \u1076 \u1085 \u1086 \u1077 , \u1046 \u1050  \'ab\u1057 \u1091 \u1093 \u1072 \u1085 \u1086 \u1074 \u1086  \u1055 \u1072 \u1088 \u1082 \'bb</div>\
+    <div>\
+      <a href="index.html">\uc0\u1043 \u1083 \u1072 \u1074 \u1085 \u1072 \u1103 </a> \'b7\
+      <a href="prices.html">\uc0\u1062 \u1077 \u1085 \u1099 </a> \'b7\
+      <a href="smart-fitness.html">\uc0\u1059 \u1084 \u1085 \u1099 \u1081  \u1092 \u1080 \u1090 \u1085 \u1077 \u1089 </a> \'b7\
+      <a href="index.html#contacts">\uc0\u1050 \u1086 \u1085 \u1090 \u1072 \u1082 \u1090 \u1099 </a>\
+    </div>\
+  </div>\
+</footer>\
+\
+<a class="float-cta float-call" href="tel:+79636719983" aria-label="\uc0\u1055 \u1086 \u1079 \u1074 \u1086 \u1085 \u1080 \u1090 \u1100 " data-goal="cta_call_float">\
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>\
+</a>\
+<a class="float-cta" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" aria-label="Telegram" data-goal="cta_telegram_float">\
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>\
+</a>\
+\
+<div class="modal-bg" id="modal" onclick="if(event.target===this) closeModal()" role="dialog" aria-modal="true" aria-labelledby="modalTitle">\
+  <div class="modal">\
+    <button class="modal-close" onclick="closeModal()" aria-label="\uc0\u1047 \u1072 \u1082 \u1088 \u1099 \u1090 \u1100 ">\'d7</button>\
+    <span class="eyebrow" id="modalEyebrow" style="justify-content:center;margin-bottom:8px">\uc0\u1047 \u1072 \u1087 \u1080 \u1089 \u1100 </span>\
+    <h3 id="modalTitle">\uc0\u1055 \u1077 \u1088 \u1074 \u1086 \u1077  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1077  \'97 \u1073 \u1077 \u1089 \u1087 \u1083 \u1072 \u1090 \u1085 \u1086 </h3>\
+    <p class="small" id="modalSubtitle">\uc0\u1053 \u1072 \u1087 \u1080 \u1096 \u1080 \u1090 \u1077  \u1074  Telegram \u1080 \u1083 \u1080  \u1087 \u1086 \u1079 \u1074 \u1086 \u1085 \u1080 \u1090 \u1077  \'97 \u1087 \u1086 \u1076 \u1073 \u1077 \u1088 \u1105 \u1084  \u1089 \u1084 \u1077 \u1085 \u1091  \u1080  \u1074 \u1088 \u1077 \u1084 \u1103  \u1076 \u1083 \u1103  \u1087 \u1088 \u1086 \u1073 \u1085 \u1086 \u1075 \u1086  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1103 .</p>\
+    <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#2AABEE,#229ED9)" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_modal">\
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>\
+      \uc0\u1053 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100  \u1074  Telegram\
+    </a>\
+    <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,var(--ink),#2E2D45)" href="tel:+79636719983" data-goal="cta_call_modal">\
+      \uc0\u1055 \u1086 \u1079 \u1074 \u1086 \u1085 \u1080 \u1090 \u1100  +7 (963) 671-99-83\
+    </a>\
+  </div>\
+</div>\
+\
+<script>\
+const burger = document.getElementById('burger');\
+const menu = document.getElementById('menu');\
+burger?.addEventListener('click', () => \{\
+  const open = menu.classList.toggle('open');\
+  burger.setAttribute('aria-expanded', open ? 'true' : 'false');\
+\});\
+menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => \{\
+  menu.classList.remove('open');\
+  burger?.setAttribute('aria-expanded', 'false');\
+\}));\
+\
+const nav = document.getElementById('nav');\
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 30), \{passive:true\});\
+\
+const io = new IntersectionObserver(entries => \{\
+  entries.forEach(e => \{ if (e.isIntersecting) \{ e.target.classList.add('in'); io.unobserve(e.target); \} \});\
+\}, \{threshold: 0.1, rootMargin: '0px 0px -40px 0px'\});\
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));\
+\
+function openModal(preset) \{\
+  const data = \{\
+    intensiv: \{ eyebrow: '\uc0\u1051 \u1077 \u1090 \u1085 \u1080 \u1081  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074 ', title: '\u1055 \u1077 \u1088 \u1074 \u1086 \u1077  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1077  \'97 \u1073 \u1077 \u1089 \u1087 \u1083 \u1072 \u1090 \u1085 \u1086 ', sub: '\u1053 \u1072 \u1087 \u1080 \u1096 \u1080 \u1090 \u1077  \u1074  Telegram \u1080 \u1083 \u1080  \u1087 \u1086 \u1079 \u1074 \u1086 \u1085 \u1080 \u1090 \u1077  \'97 \u1079 \u1072 \u1087 \u1080 \u1096 \u1077 \u1084  \u1085 \u1072  \u1087 \u1088 \u1086 \u1073 \u1085 \u1086 \u1077  \u1079 \u1072 \u1085 \u1103 \u1090 \u1080 \u1077  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074 \u1072 .' \},\
+    default: \{ eyebrow: '\uc0\u1047 \u1072 \u1087 \u1080 \u1089 \u1100 ', title: '\u1047 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100 \u1089 \u1103  \u1085 \u1072  \u1080 \u1085 \u1090 \u1077 \u1085 \u1089 \u1080 \u1074 ', sub: '\u1053 \u1072 \u1087 \u1080 \u1096 \u1080 \u1090 \u1077  \u1074  Telegram \u1080 \u1083 \u1080  \u1087 \u1086 \u1079 \u1074 \u1086 \u1085 \u1080 \u1090 \u1077  \'97 \u1086 \u1090 \u1074 \u1077 \u1090 \u1080 \u1084  \u1080  \u1087 \u1086 \u1076 \u1073 \u1077 \u1088 \u1105 \u1084  \u1091 \u1076 \u1086 \u1073 \u1085 \u1086 \u1077  \u1074 \u1088 \u1077 \u1084 \u1103 .' \}\
+  \}[preset || 'default'];\
+  document.getElementById('modalEyebrow').textContent = data.eyebrow;\
+  document.getElementById('modalTitle').textContent = data.title;\
+  document.getElementById('modalSubtitle').textContent = data.sub;\
+  document.getElementById('modal').classList.add('open');\
+  document.body.style.overflow = 'hidden';\
+\}\
+function closeModal() \{\
+  document.getElementById('modal').classList.remove('open');\
+  document.body.style.overflow = '';\
+\}\
+</script>\
+</body>\
+</html>}
