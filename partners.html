@@ -2,602 +2,246 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8" />
-<link rel="dns-prefetch" href="https://mc.yandex.ru" />
-<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0ABAB5" />
-<meta http-equiv="X-Content-Type-Options" content="nosniff" />
-<meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
-<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-<meta name="robots" content="index, follow" />
-<title>Партнёры – Детский театр танца «Татьянин День»</title>
-<meta name="description" content="Наши партнёры и спонсоры – компании‑друзья, помогающие развитию детской танцевальной школы «Татьянин День» в ЖК Суханово Парк, Видное." />
-<link rel="canonical" href="https://tatianinden.ru/partners.html" />
+<title>Партнёры — Татьянин День · Видное</title>
+<meta name="description" content="Партнёры детского театра танца «Татьянин День» в ЖК Суханово Парк, Видное — организации, разделяющие нашу любовь к танцу и творческому развитию детей." />
+<link rel="canonical" href="https://tatianinden.ru/Partners.html" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
+<meta property="og:title" content="Партнёры — Татьянин День" />
+<meta property="og:description" content="Организации, с которыми мы сотрудничаем для творческого роста наших учеников." />
+<meta property="og:url" content="https://tatianinden.ru/Partners.html" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
-
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-<!-- JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Детский театр танца «Татьянин День»",
-  "url": "https://tatianinden.ru/",
-  "logo": "https://tatianinden.ru/logo.jpg",
-  "sameAs": [
-    "https://t.me/+79636719983",
-    "https://yandex.ru/profile/108175150878"
-  ],
-  "hasPart": [
-    {
-      "@type": "Organization",
-      "name": "Танцевальная академия «Грация»",
-      "url": "https://gracia-dance.ru",
-      "logo": "https://tatianinden.ru/partners/logos/gracia.svg"
-    },
-    {
-      "@type": "Organization",
-      "name": "Мастерская «Танцевая одежда»",
-      "url": "https://dancewear.ru",
-      "logo": "https://tatianinden.ru/partners/logos/dancewear.svg"
-    },
-    {
-      "@type": "Organization",
-      "name": "Фото‑студия «Светляк»",
-      "url": "https://svetljak-photo.ru",
-      "logo": "https://tatianinden.ru/partners/logos/svetlyak.svg"
-    }
-  ]
-}
-</script>
-
-<!-- BreadcrumbList -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://tatianinden.ru/"},
-    {"@type": "ListItem", "position": 2, "name": "Партнёры", "item": "https://tatianinden.ru/partners.html"}
-  ]
-}
-</script>
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
 <style>
-  :root{
-    --tiffany:        #0ABAB5;
-    --tiffany-light:  #7FE0DC;
-    --tiffany-soft:   #D7F5F3;
-    --tiffany-deep:   #06877F;
+:root{
+  --tiffany:#0ABAB5; --tiffany-light:#7FE0DC; --tiffany-soft:#D7F5F3; --tiffany-deep:#06877F;
+  --pink:#FF6FA9; --pink-cloud:#FFEAF3; --pink-deep:#D44A85;
+  --gold:#C9A961; --gold-light:#E8CF8E; --gold-deep:#9A7E3D;
+  --white:#FFFFFF; --cream:#FFFBF6;
+  --ink:#1B1B2E; --ink-soft:#4A4A5E; --ink-mute:#8A8A9C;
+  --display:"Cormorant Garamond","Times New Roman",serif;
+  --body:"Manrope",-apple-system,"Segoe UI",sans-serif;
+  --script:"Caveat","Brush Script MT",cursive;
+  --container:1440px; --radius:20px; --radius-lg:32px;
+  --shadow-soft:0 10px 30px -12px rgba(10,186,181,.18),0 6px 18px -10px rgba(255,111,169,.12);
+  --shadow-md:0 20px 50px -20px rgba(27,27,46,.18);
+  --shadow-gold:0 18px 40px -18px rgba(201,169,97,.45);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--cream);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.container{width:min(100% - 40px,var(--container));margin-inline:auto;position:relative;z-index:2}
+section{padding:100px 0}
+.text-center{text-align:center}
+.text-center .lead{margin-inline:auto}
 
-    --pink:           #FF6FA9;
-    --pink-soft:      #FFD6E8;
-    --pink-cloud:     #FFEAF3;
-    --pink-deep:      #D44A85;
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--tiffany-deep)}
+.eyebrow::before{content:"";width:32px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::after{content:"";width:32px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
 
-    --gold:           #C9A961;
-    --gold-light:     #E8CF8E;
-    --gold-deep:      #9A7E3D;
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.05;margin:0 0 20px;color:var(--ink)}
+h2{font-size:clamp(34px,4.5vw,56px)}
+h3{font-size:clamp(22px,2.4vw,28px);font-weight:600;line-height:1.2}
+h2 em,h3 em{font-style:italic;background:linear-gradient(120deg,var(--pink) 0%,var(--gold) 60%,var(--tiffany) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+p{line-height:1.65;color:var(--ink-soft);margin:0 0 16px;font-size:17px}
+.lead{font-size:19px;max-width:780px}
 
-    --white:          #FFFFFF;
-    --cream:          #FFFBF6;
-    --paper:          #FBF7F2;
+/* Header */
+header.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:10px 0;background:#fff;border-bottom:1px solid rgba(27,27,46,.06);box-shadow:0 2px 16px -10px rgba(27,27,46,.15);transition:padding .3s,box-shadow .3s}
+header.nav.scrolled{padding:8px 0;box-shadow:0 6px 24px -14px rgba(27,27,46,.2)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:88px}
+.logo{display:flex;align-items:center;gap:18px;line-height:1}
+.logo-img{width:88px;height:88px;object-fit:contain;border-radius:50%;transition:transform .4s}
+.logo:hover .logo-img{transform:rotate(-4deg) scale(1.05)}
+.logo-text strong{font-family:var(--display);font-size:28px;font-weight:600;color:#1B2A4E;display:block}
+.logo-text small{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);font-weight:500}
+nav.menu{display:flex;gap:28px;align-items:center;white-space:nowrap}
+nav.menu a{font-size:15.5px;font-weight:600;color:var(--ink-soft);padding:6px 2px;position:relative;transition:color .25s}
+nav.menu a:hover,nav.menu a.active{color:var(--tiffany-deep)}
+nav.menu a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--gold);border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav.menu a:hover::after,nav.menu a.active::after{transform:scaleX(1)}
+nav.menu a.nav-partners{color:var(--gold-deep);font-weight:700}
+nav.menu a.nav-partners::before{content:"✦";color:var(--gold);margin-right:5px;font-size:.85em}
+.nav-actions{display:flex;align-items:center;gap:18px}
+.nav-phone{font-weight:700;font-size:16px;white-space:nowrap}
+.burger{display:none;width:40px;height:40px;border-radius:50%;background:var(--white);box-shadow:var(--shadow-soft)}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);margin:4px auto;transition:all .3s}
 
-    --ink:            #1B1B2E;
-    --ink-soft:       #4A4A5E;
-    --ink-mute:       #8A8A9C;
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;min-height:48px;border-radius:999px;font-weight:600;font-size:15px;transition:all .35s cubic-bezier(.2,.7,.3,1);white-space:nowrap;position:relative;overflow:hidden}
+.btn-primary{background:linear-gradient(135deg,var(--tiffany) 0%,var(--pink) 110%);color:#fff;box-shadow:0 14px 30px -12px rgba(10,186,181,.55),0 8px 20px -10px rgba(255,111,169,.5)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(27,27,46,.18)}
+.btn-ghost:hover{border-color:var(--tiffany);color:var(--tiffany-deep);background:var(--tiffany-soft)}
+.btn-lg{padding:20px 36px;font-size:16px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
 
-    --display: "Cormorant Garamond", "Times New Roman", serif;
-    --body:    "Manrope", -apple-system, "Segoe UI", sans-serif;
-    --script:  "Caveat", "Brush Script MT", cursive;
+/* Page hero */
+.page-hero{padding:160px 0 80px;background:linear-gradient(135deg,#F0FCFB 0%,#FFF5F9 100%);position:relative;overflow:hidden;text-align:center}
+.page-hero::before{content:"";position:absolute;top:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,var(--tiffany-soft),transparent 70%);pointer-events:none}
+.page-hero::after{content:"";position:absolute;bottom:-120px;right:-80px;width:450px;height:450px;background:radial-gradient(circle,var(--pink-cloud),transparent 70%);pointer-events:none}
+.page-hero-inner{position:relative;z-index:1}
+.page-hero h1{font-family:var(--display);font-size:clamp(52px,9vw,110px);font-weight:700;letter-spacing:-.02em;line-height:.9;margin:16px 0 20px;text-transform:uppercase}
+.page-hero h1 em{font-style:italic;font-weight:600;background:linear-gradient(120deg,var(--tiffany) 0%,var(--pink) 55%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.page-hero .lead{color:var(--ink-soft);margin:0 auto}
 
-    --container: 1440px;
-    --radius-sm: 12px;
-    --radius:    20px;
-    --radius-lg: 32px;
+/* Partners section */
+.partners-section{background:#FFFBF6;padding:80px 0 120px}
+.section-intro{max-width:720px;margin:16px auto 60px;text-align:center}
 
-    --shadow-soft: 0 10px 30px -12px rgba(10,186,181,.18), 0 6px 18px -10px rgba(255,111,169,.12);
-    --shadow-md:   0 20px 50px -20px rgba(27,27,46,.18);
-    --shadow-gold: 0 18px 40px -18px rgba(201,169,97,.45);
-  }
+/* Partners grid */
+.partners-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:28px}
 
-  /* ==================== ACCESSIBILITY ==================== */
-  .skip-link {
-    position: absolute; top: -100px; left: 16px;
-    background: var(--tiffany); color: #fff;
-    padding: 10px 18px; border-radius: 0 0 8px 8px;
-    font-weight: 700; font-size: 15px; z-index: 9999;
-    transition: top 0.2s; text-decoration: none;
-  }
-  .skip-link:focus { top: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
-  :focus-visible { outline: 3px solid var(--tiffany); outline-offset: 3px; border-radius: 4px; }
+/* Partner card — MD PRIDE style preserved */
+.partner-card{
+  background:#fff;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  border:1px solid rgba(27,27,46,.06);
+  box-shadow:var(--shadow-soft);
+  transition:transform .35s cubic-bezier(.2,.7,.3,1),box-shadow .35s,border-color .35s;
+  text-decoration:none;
+  color:inherit;
+}
+.partner-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 24px 56px -20px rgba(10,186,181,.22),0 12px 24px -12px rgba(255,111,169,.18);
+  border-color:rgba(10,186,181,.25);
+}
+.partner-card:focus-visible{outline:2px solid var(--tiffany);outline-offset:3px}
 
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth; scroll-padding-top:110px}
-  @media (max-width:960px){html{scroll-padding-top:90px}}
-  body{
-    margin:0;
-    font-family:var(--body);
-    color:var(--ink);
-    background:var(--cream);
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-    overflow-x:hidden;
-  }
-  img{max-width:100%; display:block}
-  a{color:inherit; text-decoration:none}
-  button{font-family:inherit; cursor:pointer; border:none; background:none}
+/* Logo area */
+.card-logo-wrap{
+  background:#0a0a12;
+  padding:2.25rem 2.75rem 2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:148px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
 
-  .container{
-    width:min(100% - 40px, var(--container));
-    margin-inline:auto;
-    position:relative;
-    z-index:2;
-  }
+/* Card body */
+.card-body{padding:28px 30px 30px;display:flex;flex-direction:column;flex:1;gap:10px}
 
-  /* ==================== TYPOGRAPHY ==================== */
-  .eyebrow{
-    display:inline-flex; align-items:center; gap:10px;
-    font-family:var(--body); font-weight:600;
-    font-size:13px; letter-spacing:.18em; text-transform:uppercase;
-    color:var(--tiffany-deep);
-  }
-  .eyebrow::before{
-    content:""; width:32px; height:1px;
-    background:linear-gradient(90deg, transparent, var(--gold));
-  }
-  .eyebrow.center::before, .eyebrow.center::after{
-    content:""; width:32px; height:1px;
-    background:linear-gradient(90deg, transparent, var(--gold), transparent);
-  }
-  .eyebrow.center{justify-content:center}
+.card-category{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tiffany-deep);
+}
+.card-category::before{content:"";width:20px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
 
-  h1, h2, h3{
-    font-family:var(--display); font-weight:500; line-height:1.05;
-    letter-spacing:-.01em; margin:0 0 24px; color:var(--ink);
-  }
-  h1{font-size:clamp(48px, 7vw, 92px); font-weight:500}
-  h2{font-size:clamp(34px, 4.5vw, 56px); font-weight:500}
-  h3{font-size:clamp(22px, 2.4vw, 30px); font-weight:600; line-height:1.2}
-  h2 em, h1 em{
-    font-style:italic; font-family:var(--display);
-    background:linear-gradient(120deg, var(--pink) 0%, var(--gold) 60%, var(--tiffany) 100%);
-    -webkit-background-clip:text; background-clip:text; color:transparent; font-weight:500;
-  }
-  p{line-height:1.65; color:var(--ink-soft); margin:0 0 16px; font-size:17px}
-  .lead{font-size:19px; color:var(--ink-soft)}
+.card-name{font-family:var(--display);font-size:1.45rem;font-weight:600;color:var(--ink);line-height:1.25;margin:0}
 
-  /* ==================== BUTTONS ==================== */
-  .btn{
-    display:inline-flex; align-items:center; justify-content:center; gap:10px;
-    padding:16px 28px; min-height:48px; border-radius:999px;
-    font-weight:600; font-size:15px; letter-spacing:.01em;
-    transition:all .35s cubic-bezier(.2,.7,.3,1); white-space:nowrap;
-    position:relative; overflow:hidden;
-  }
-  .btn-primary{
-    background:linear-gradient(135deg, var(--tiffany) 0%, var(--pink) 110%);
-    color:#fff;
-    box-shadow:0 14px 30px -12px rgba(10,186,181,.55), 0 8px 20px -10px rgba(255,111,169,.5);
-  }
-  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 20px 40px -14px rgba(10,186,181,.7), 0 12px 24px -10px rgba(255,111,169,.6)}
-  .btn-primary::after{
-    content:""; position:absolute; inset:0;
-    background:linear-gradient(120deg, transparent 30%, rgba(255,255,255,.35) 50%, transparent 70%);
-    transform:translateX(-100%); transition:transform .8s cubic-bezier(.2,.7,.3,1);
-  }
-  .btn-primary:hover::after{transform:translateX(100%)}
+.card-desc{font-size:15px;color:var(--ink-soft);line-height:1.65;flex:1;margin:0}
 
-  .btn-ghost{
-    background:transparent; color:var(--ink);
-    border:1.5px solid rgba(27,27,46,.18); backdrop-filter:blur(8px);
-  }
-  .btn-ghost:hover{border-color:var(--tiffany); color:var(--tiffany-deep); background:var(--tiffany-soft)}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.tag{
+  background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));
+  border:1px solid rgba(10,186,181,.2);
+  color:var(--ink-soft);
+  font-size:11.5px;font-weight:600;
+  padding:.25rem .65rem;border-radius:999px;
+}
 
-  .btn-gold{
-    background:linear-gradient(135deg, #E8CF8E 0%, #C9A961 100%);
-    color:#fff; box-shadow:var(--shadow-gold);
-  }
-  .btn-gold:hover{transform:translateY(-2px)}
+.card-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:20px;padding-top:20px;
+  border-top:1px solid rgba(27,27,46,.06);
+}
+.card-url{font-size:13px;color:var(--ink-mute);font-weight:500}
 
-  .btn-lg{padding:20px 36px; font-size:16px}
+.card-arrow{
+  width:36px;height:36px;border-radius:50%;
+  background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));
+  border:1px solid rgba(10,186,181,.2);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .3s;flex-shrink:0;
+}
+.partner-card:hover .card-arrow{
+  background:linear-gradient(135deg,var(--tiffany),var(--pink));
+  border-color:transparent;
+  box-shadow:0 8px 20px -6px rgba(10,186,181,.5);
+}
+.card-arrow svg{transition:transform .3s}
+.partner-card:hover .card-arrow svg path{stroke:#fff}
+.partner-card:hover .card-arrow svg{transform:translate(2px,-2px)}
 
-  /* ==================== HEADER ==================== */
-  header.nav{
-    position:fixed; top:0; left:0; right:0; z-index:50;
-    padding:10px 0; background:#FFFFFF;
-    border-bottom:1px solid rgba(27,27,46,.06);
-    box-shadow:0 2px 16px -10px rgba(27,27,46,.15);
-    transition:padding .3s ease, box-shadow .3s ease;
-  }
-  header.nav.scrolled{ padding:8px 0; box-shadow:0 6px 24px -14px rgba(27,27,46,.2); }
-  .nav-row{
-    display:flex; align-items:center; justify-content:space-between; gap:24px;
-    min-height:88px;
-  }
-  .logo{display:flex; align-items:center; gap:18px; color:var(--ink); line-height:1.1;}
-  .logo-img{
-    width:88px; height:88px; object-fit:contain; object-position:center 38%;
-    border-radius:50%; transition:transform .4s ease;
-  }
-  .logo:hover .logo-img{transform:rotate(-4deg) scale(1.05)}
-  .logo-text{display:flex; flex-direction:column; gap:3px}
-  .logo-text strong{
-    font-family:var(--display); font-size:28px; font-weight:600;
-    color:#1B2A4E; line-height:1; letter-spacing:.005em;
-  }
-  .logo-text small{
-    font-family:var(--body); font-size:12px; letter-spacing:.16em;
-    text-transform:uppercase; color:var(--ink-mute); font-weight:500; margin-top:6px;
-  }
-  @media (max-width:960px){
-    .logo-img{width:64px; height:64px} .logo-text strong{font-size:22px}
-    .logo-text small{font-size:11px} .nav-row{min-height:72px}
-  }
-  @media (max-width:560px){
-    .logo-img{width:52px; height:52px} .logo-text strong{font-size:18px}
-  }
+/* CTA */
+.partners-cta{
+  margin-top:64px;
+  padding:clamp(2rem,5vw,3.5rem) clamp(2rem,6vw,4rem);
+  background:linear-gradient(135deg,var(--tiffany-soft) 0%,var(--pink-cloud) 100%);
+  border-radius:var(--radius-lg);
+  border:1px solid rgba(10,186,181,.15);
+  box-shadow:var(--shadow-soft);
+  text-align:center;
+}
+.partners-cta h2{font-size:clamp(28px,4vw,44px);margin-bottom:12px}
+.partners-cta .lead{color:var(--ink-soft);margin:0 auto 28px}
+.cta-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
 
-  nav.menu{display:flex; gap:28px; align-items:center; white-space:nowrap}
-  nav.menu a{
-    font-size:15.5px; font-weight:600; color:var(--ink-soft);
-    transition:color .25s; position:relative; padding:6px 2px; white-space:nowrap;
-  }
-  nav.menu a:hover{color:var(--tiffany-deep)}
-  nav.menu a::after{
-    content:""; position:absolute; left:0; right:0; bottom:-6px;
-    height:2px; background:var(--gold); border-radius:2px;
-    transform:scaleX(0); transform-origin:left; transition:transform .3s;
-  }
-  nav.menu a:hover::after{transform:scaleX(1)}
-  nav.menu a.nav-active{color:var(--tiffany-deep); font-weight:700;}
-  nav.menu a.nav-active::after{transform:scaleX(1)}
-  nav.menu a.nav-blog{color:var(--gold-deep); font-weight:700;}
-  nav.menu a.nav-blog::before{content:"✦"; color:var(--gold); margin-right:5px; font-size:.85em;}
+/* Footer */
+footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-size:13.5px}
+.foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.foot-row a{color:rgba(255,255,255,.75)}
+.foot-row a:hover{color:#fff}
 
-  .nav-actions{display:flex; align-items:center; gap:18px; white-space:nowrap}
-  .nav-phone{
-    font-weight:700; font-size:16px; color:var(--ink); letter-spacing:.01em;
-    white-space:nowrap; min-height:44px; display:inline-flex; align-items:center;
-    padding:4px 8px; border-radius:8px;
-  }
-  .nav-phone:hover{color:var(--tiffany-deep)}
+/* Float */
+.float-cta{position:fixed;right:24px;bottom:24px;z-index:40;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#2AABEE,#229ED9);display:grid;place-items:center;color:#fff;box-shadow:0 14px 30px -8px rgba(42,171,238,.55);animation:pulse 2.4s ease-out infinite}
+.float-call{right:96px;background:linear-gradient(135deg,var(--gold),var(--gold-light))}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(42,171,238,.5),0 14px 30px -8px rgba(42,171,238,.55)}70%{box-shadow:0 0 0 18px rgba(42,171,238,0),0 14px 30px -8px rgba(42,171,238,.55)}100%{box-shadow:0 0 0 0 rgba(42,171,238,0),0 14px 30px -8px rgba(42,171,238,.55)}}
 
-  .burger{display:none; width:40px; height:40px; border-radius:50%; background:var(--white); box-shadow:var(--shadow-soft)}
-  .burger span{display:block; width:18px; height:1.5px; background:var(--ink); margin:4px auto; transition:all .3s}
+/* Modal */
+.modal-bg{position:fixed;inset:0;background:rgba(27,27,46,.55);backdrop-filter:blur(8px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-bg.open{display:flex}
+.modal{background:#fff;border-radius:var(--radius-lg);padding:36px 32px;max-width:460px;width:100%;position:relative;text-align:center}
+.modal-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:var(--ink-mute)}
+.modal h3{font-size:28px;margin:12px 0}
+.modal .small{font-size:14px;color:var(--ink-soft);margin-bottom:20px}
+.modal .btn{width:100%;margin-bottom:10px}
 
-  @media (max-width:1300px){ nav.menu{gap:22px} nav.menu a{font-size:14px} }
-  @media (max-width:1100px){
-    nav.menu{display:none}
-    .nav-actions .nav-phone{display:none}
-    .burger{display:block}
-    nav.menu.open{
-      display:flex; flex-direction:column;
-      position:fixed; top:96px; left:16px; right:16px;
-      background:var(--white); padding:22px 24px; border-radius:22px;
-      box-shadow:var(--shadow-md); gap:16px; align-items:flex-start;
-      max-height:calc(100vh - 120px); overflow-y:auto;
-    }
-    nav.menu.open a{font-size:17px; padding:8px 0}
-  }
+/* Reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
 
-  /* ==================== PAGE HERO (partners) ==================== */
-  .page-hero{
-    padding:160px 0 80px;
-    background:
-      radial-gradient(ellipse at 70% 0%, var(--pink-cloud) 0%, transparent 45%),
-      radial-gradient(ellipse at 10% 80%, var(--tiffany-soft) 0%, transparent 50%),
-      linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
-    position:relative; overflow:hidden;
-  }
-  .page-hero::before{
-    content:""; position:absolute; inset:0; z-index:0;
-    background:linear-gradient(180deg, transparent 85%, var(--paper) 100%);
-    pointer-events:none;
-  }
-  .page-hero .container{position:relative; z-index:2; text-align:center}
-  .page-hero .eyebrow{margin-bottom:18px; display:inline-flex}
-  .page-hero h1{
-    font-family:var(--display); font-size:clamp(48px,7vw,88px);
-    font-weight:500; line-height:1.02; margin-bottom:20px; color:var(--ink);
-  }
-  .page-hero h1 em{
-    font-style:italic;
-    background:linear-gradient(120deg, var(--pink) 0%, var(--gold) 60%, var(--tiffany) 100%);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-  }
-  .page-hero .lead{font-size:19px; max-width:640px; margin:0 auto 36px; color:var(--ink-soft)}
-  .breadcrumb{
-    display:inline-flex; align-items:center; gap:8px;
-    font-size:13.5px; color:var(--ink-mute); margin-bottom:24px;
-  }
-  .breadcrumb a{color:var(--tiffany-deep); font-weight:600}
-  .breadcrumb a:hover{text-decoration:underline}
-  .breadcrumb span{color:var(--ink-mute)}
-
-  @media (max-width:960px){ .page-hero{padding:130px 0 60px} }
-  @media (max-width:560px){ .page-hero{padding:110px 0 50px} }
-
-  /* ==================== PARTNERS SECTION ==================== */
-  .partners-section{
-    padding:80px 0 110px;
-    background:
-      radial-gradient(ellipse at 100% 0%, rgba(10,186,181,.06) 0%, transparent 45%),
-      radial-gradient(ellipse at 0% 100%, rgba(201,169,97,.08) 0%, transparent 50%),
-      linear-gradient(180deg, var(--paper) 0%, #FFFFFF 40%, var(--cream) 100%);
-    position:relative; overflow:hidden;
-  }
-  .partners-section::before{
-    content:""; position:absolute; top:-200px; right:-150px;
-    width:500px; height:500px;
-    background:radial-gradient(circle, var(--pink-cloud), transparent 70%);
-    opacity:.55; pointer-events:none;
-  }
-  .partners-section::after{
-    content:""; position:absolute; bottom:-150px; left:-100px;
-    width:400px; height:400px;
-    background:radial-gradient(circle, var(--tiffany-soft), transparent 70%);
-    opacity:.5; pointer-events:none;
-  }
-
-  /* --- Partner cards grid --- */
-  .partners-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:24px;
-    margin-bottom:48px;
-    position:relative; z-index:1;
-  }
-  @media (max-width:1100px){ .partners-grid{grid-template-columns:repeat(3,1fr)} }
-  @media (max-width:760px)  { .partners-grid{grid-template-columns:repeat(2,1fr)} }
-  @media (max-width:480px)  { .partners-grid{grid-template-columns:1fr} }
-
-  .partner-card{
-    background:var(--white);
-    border-radius:var(--radius);
-    padding:36px 28px 32px;
-    box-shadow:var(--shadow-soft);
-    border:1px solid rgba(27,27,46,.04);
-    display:flex; flex-direction:column; align-items:center; text-align:center;
-    text-decoration:none; color:inherit;
-    transition:all .4s cubic-bezier(.2,.7,.3,1);
-    position:relative; overflow:hidden;
-  }
-  .partner-card::before{
-    content:""; position:absolute; top:0; left:0; width:100%; height:3px;
-    background:linear-gradient(90deg, var(--tiffany), var(--pink), var(--gold));
-    transform:scaleX(0); transform-origin:left; transition:transform .5s ease;
-  }
-  .partner-card:hover{ transform:translateY(-8px); box-shadow:var(--shadow-md); border-color:transparent }
-  .partner-card:hover::before{ transform:scaleX(1) }
-
-  .partner-logo-wrap{
-    width:120px; height:72px;
-    display:grid; place-items:center;
-    margin-bottom:20px;
-    background:linear-gradient(135deg, var(--tiffany-soft) 0%, var(--pink-cloud) 100%);
-    border-radius:14px;
-    overflow:hidden;
-    flex-shrink:0;
-  }
-  .partner-logo{
-    max-width:100px; max-height:56px;
-    object-fit:contain;
-    filter:grayscale(30%) opacity(.85);
-    transition:filter .3s, transform .4s;
-  }
-  .partner-card:hover .partner-logo{ filter:none; opacity:1; transform:scale(1.04) }
-
-  /* Placeholder logo when no image */
-  .partner-logo-placeholder{
-    font-family:var(--display); font-style:italic; font-size:28px; font-weight:600;
-    color:var(--tiffany-deep); letter-spacing:-.01em; line-height:1;
-  }
-
-  .partner-name{
-    font-family:var(--display); font-size:20px; font-weight:600;
-    color:var(--ink); line-height:1.2; margin-bottom:8px;
-  }
-  .partner-type{
-    display:inline-block; padding:5px 12px; border-radius:999px;
-    background:linear-gradient(135deg, var(--tiffany), var(--pink));
-    color:#fff; font-size:12px; font-weight:600;
-    letter-spacing:.04em; margin-bottom:14px;
-  }
-  .partner-desc{
-    font-size:14.5px; line-height:1.55; color:var(--ink-soft);
-    margin:0; flex:1;
-  }
-  .partner-link{
-    display:inline-flex; align-items:center; gap:6px;
-    margin-top:18px;
-    font-size:13.5px; font-weight:600; color:var(--tiffany-deep);
-    border-bottom:1px solid rgba(6,135,127,.3); padding-bottom:1px;
-    transition:.25s;
-  }
-  .partner-link:hover{ color:var(--pink-deep); border-color:var(--pink-deep) }
-
-  /* ==================== BECOME A PARTNER BLOCK ==================== */
-  .become-partner{
-    padding:80px 0;
-    background:linear-gradient(135deg, var(--ink) 0%, #252340 100%);
-    color:#fff; position:relative; overflow:hidden;
-  }
-  .become-partner::before, .become-partner::after{
-    content:""; position:absolute; pointer-events:none;
-    background:radial-gradient(circle, rgba(201,169,97,.2), transparent 70%);
-  }
-  .become-partner::before{top:-100px; left:-100px; width:400px; height:400px}
-  .become-partner::after{bottom:-150px; right:-50px; width:500px; height:500px;
-    background:radial-gradient(circle, rgba(255,111,169,.18), transparent 70%)}
-  .become-partner .container{position:relative; z-index:1}
-  .become-partner .eyebrow{color:var(--gold-light)}
-  .become-partner .eyebrow::before{background:linear-gradient(90deg, transparent, var(--gold-light))}
-  .become-partner h2{color:#fff; max-width:660px; margin-bottom:18px}
-  .become-partner h2 em{
-    background:linear-gradient(120deg, var(--gold-light), var(--pink-soft));
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-  }
-  .become-partner p{color:rgba(255,255,255,.8); font-size:18px; max-width:600px; margin-bottom:36px}
-  .bp-perks{
-    list-style:none; padding:0; margin:0 0 40px;
-    display:flex; flex-direction:column; gap:14px;
-  }
-  .bp-perks li{
-    display:flex; align-items:flex-start; gap:14px;
-    font-size:16px; color:rgba(255,255,255,.85);
-  }
-  .bp-perks li svg{flex:0 0 22px; color:var(--gold-light); margin-top:1px}
-  .bp-actions{display:flex; gap:14px; flex-wrap:wrap; align-items:center}
-
-  .btn-tg{
-    background:linear-gradient(135deg, #2AABEE 0%, #229ED9 100%);
-    color:#fff;
-    box-shadow:0 14px 30px -12px rgba(42,171,238,.65);
-  }
-  .btn-tg:hover{transform:translateY(-2px); box-shadow:0 20px 38px -12px rgba(42,171,238,.75)}
-
-  /* ==================== SECTION MARK ==================== */
-  .section-mark{
-    position:absolute; top:32px; right:32px;
-    width:180px; height:180px; z-index:1; pointer-events:none;
-    background:#FFFFFF; border-radius:18px; padding:5px;
-    box-shadow:0 8px 22px -10px rgba(27,27,46,.22), 0 0 0 1px rgba(201,169,97,.25);
-    opacity:.82; transition:opacity .4s ease, transform .5s cubic-bezier(.2,.7,.3,1);
-  }
-  .section-mark::after{
-    content:""; position:absolute; inset:-3px; border-radius:18px;
-    border:1px dashed rgba(201,169,97,.45); pointer-events:none;
-  }
-  .section-mark img{width:100%; height:100%; object-fit:contain; display:block}
-  section:hover > .section-mark{opacity:1; transform:rotate(-3deg) scale(1.04)}
-  .become-partner > .section-mark{
-    box-shadow:0 8px 22px -8px rgba(0,0,0,.4), 0 0 0 1px rgba(232,207,142,.5);
-  }
-  @media (max-width:960px){ .section-mark{width:120px; height:120px; padding:8px; top:20px; right:20px} }
-  @media (max-width:560px){ .section-mark{width:80px; height:80px; padding:6px; top:14px; right:14px} }
-
-  /* ==================== REVEAL ==================== */
-  .reveal{opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1)}
-  .reveal.in{opacity:1; transform:translateY(0)}
-
-  /* ==================== GEO STRIP ==================== */
-  .geo-strip{
-    background:linear-gradient(135deg, #15182a 0%, #1B1B2E 100%);
-    color:rgba(255,255,255,.78); padding:18px 0;
-    border-top:1px solid rgba(232,207,142,.18); font-size:14px; text-align:center;
-  }
-  .geo-strip-label{font-family:var(--display); font-style:italic; color:var(--gold-light); margin-right:12px; font-size:16px}
-  .geo-strip-list a{color:rgba(255,255,255,.85); margin:0 2px; text-decoration:none; border-bottom:1px dotted rgba(255,255,255,.25); transition:color .25s}
-  .geo-strip-list a:hover{color:var(--gold-light); border-color:var(--gold-light)}
-
-  /* ==================== FOOTER ==================== */
-  footer{background:var(--ink); color:rgba(255,255,255,.6); padding:30px 0; border-top:1px solid rgba(255,255,255,.08); font-size:13.5px}
-  .foot-row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px}
-  footer a:hover{color:var(--gold-light)}
-
-  /* ==================== FLOATING BUTTONS ==================== */
-  .float-cta{
-    position:fixed; right:24px; bottom:24px; z-index:40;
-    width:60px; height:60px; border-radius:50%;
-    background:linear-gradient(135deg, #2AABEE, #229ED9);
-    display:grid; place-items:center; color:#fff;
-    box-shadow:0 14px 30px -8px rgba(42,171,238,.55);
-    animation:pulse 2.4s ease-out infinite; transition:transform .25s ease;
-  }
-  .float-cta:hover{transform:scale(1.05)}
-  .float-call{
-    right:96px;
-    background:linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-    box-shadow:0 14px 30px -8px rgba(201,169,97,.55);
-    animation:pulseGold 2.6s ease-out infinite;
-  }
-  @keyframes pulse{
-    0%{box-shadow:0 0 0 0 rgba(42,171,238,.5), 0 14px 30px -8px rgba(42,171,238,.55)}
-    70%{box-shadow:0 0 0 18px rgba(42,171,238,0), 0 14px 30px -8px rgba(42,171,238,.55)}
-    100%{box-shadow:0 0 0 0 rgba(42,171,238,0), 0 14px 30px -8px rgba(42,171,238,.55)}
-  }
-  @keyframes pulseGold{
-    0%{box-shadow:0 0 0 0 rgba(201,169,97,.5), 0 14px 30px -8px rgba(201,169,97,.55)}
-    70%{box-shadow:0 0 0 18px rgba(201,169,97,0), 0 14px 30px -8px rgba(201,169,97,.55)}
-    100%{box-shadow:0 0 0 0 rgba(201,169,97,0), 0 14px 30px -8px rgba(201,169,97,.55)}
-  }
-  @media (max-width:760px){
-    .float-cta{width:54px; height:54px; right:16px; bottom:16px}
-    .float-call{right:80px}
-    .float-cta svg{width:24px; height:24px}
-  }
-
-  /* ==================== MODAL ==================== */
-  .modal-bg{
-    position:fixed; inset:0; z-index:100;
-    background:rgba(27,27,46,.55); backdrop-filter:blur(8px);
-    display:none; align-items:center; justify-content:center; padding:20px;
-    animation:fadeIn .3s ease;
-  }
-  .modal-bg.open{display:flex}
-  .modal{
-    background:var(--white); border-radius:var(--radius-lg); padding:44px 40px;
-    max-width:520px; width:100%; box-shadow:var(--shadow-md);
-    position:relative; animation:slideUp .4s cubic-bezier(.2,.7,.3,1);
-  }
-  .modal-close{
-    position:absolute; top:16px; right:16px;
-    width:36px; height:36px; border-radius:50%;
-    background:var(--paper); display:grid; place-items:center;
-    font-size:18px; color:var(--ink-soft);
-  }
-  .modal h3{font-family:var(--display); font-size:30px; margin-bottom:8px}
-  .modal p.small{font-size:14.5px; color:var(--ink-soft); margin-bottom:24px}
-  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-  @keyframes slideUp{from{transform:translateY(20px); opacity:0}to{transform:translateY(0); opacity:1}}
-
-  /* ==================== LOGO BREATHE ==================== */
-  .logo-mark{animation:breathe 5s ease-in-out infinite}
-  @keyframes breathe{
-    0%,100%{box-shadow:0 6px 18px -6px rgba(10,186,181,.5)}
-    50%{box-shadow:0 10px 28px -6px rgba(255,111,169,.7)}
-  }
-
-  /* ==================== MOBILE ==================== */
-  @media (max-width:760px){
-    .container{width:min(100% - 28px, var(--container))}
-    section{padding:64px 0}
-    .partners-section{padding:50px 0 64px}
-    .become-partner{padding:60px 0}
-    h2{font-size:32px !important; line-height:1.1}
-    .lead{font-size:16px}
-    p{font-size:15.5px}
-    .bp-actions{flex-direction:column; width:100%}
-    .bp-actions .btn{width:100%; justify-content:center}
-    footer{font-size:12.5px}
-    .foot-row{flex-direction:column; align-items:flex-start; gap:8px}
-    .modal{padding:32px 24px}
-    .modal h3{font-size:24px}
-  }
-  @media (max-width:480px){
-    .page-hero h1{font-size:40px !important}
-  }
+@media (max-width:1100px){
+  nav.menu{display:none}
+  .nav-actions .nav-phone{display:none}
+  .burger{display:block}
+  nav.menu.open{display:flex;flex-direction:column;position:fixed;top:96px;left:16px;right:16px;background:#fff;padding:22px 24px;border-radius:22px;box-shadow:var(--shadow-md);gap:16px;align-items:flex-start;z-index:60}
+}
+@media (max-width:960px){
+  .partners-grid{grid-template-columns:1fr}
+  .logo-img{width:64px;height:64px}
+  .logo-text strong{font-size:22px}
+}
+@media (max-width:640px){
+  section{padding:64px 0}
+  .page-hero{padding:130px 0 60px}
+  .container{width:min(100% - 28px,var(--container))}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
 
-<!-- Skip nav -->
-<a class="skip-link" href="#main-content">Перейти к основному содержанию</a>
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden">Перейти к содержимому</a>
 
-<!-- ============ HEADER ============ -->
 <header class="nav" id="nav" role="banner">
   <div class="container nav-row">
-    <a href="index.html" class="logo" aria-label="Татьянин День — Детский театр танца">
-      <img class="logo-img logo-mark" src="logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" fetchpriority="high" />
+    <a href="index.html" class="logo" aria-label="Татьянин День — на главную">
+      <img class="logo-img" src="logo.jpg" alt="Татьянин День" width="88" height="88" loading="eager" fetchpriority="high" />
       <span class="logo-text">
         <strong>Татьянин День</strong>
         <small>ЖК «Суханово Парк»</small>
@@ -606,154 +250,156 @@
     <nav class="menu" id="menu" aria-label="Основная навигация">
       <a href="index.html#about">О коллективе</a>
       <a href="index.html#programs">Группы</a>
-      <a href="index.html#teachers">Педагоги</a>
-      <a href="index.html#disciplines">Дисциплины</a>
-      <a href="index.html#summer">Интенсив</a>
-      <a href="index.html#fitness">Умный фитнес</a>
-      <a href="blog/" class="nav-blog">Блог</a>
+      <a href="smart-fitness.html">Умный фитнес</a>
       <a href="prices.html">Цены</a>
-      <a href="partners.html" class="nav-active">Партнёры</a>
+      <a href="blog/">Блог</a>
+      <a href="Partners.html" class="nav-partners active">Партнёры</a>
       <a href="index.html#contacts">Контакты</a>
     </nav>
     <div class="nav-actions">
-      <a href="tel:+79636719983" class="nav-phone">+7 (963) 671-99-83</a>
-      <a class="btn btn-primary" href="#" onclick="openModal();return false;">Записаться</a>
-      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671-99-83</a>
+      <a class="btn btn-primary" href="#" onclick="openModal();return false;" data-goal="cta_open_form_header">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<main id="main-content">
+<main id="main">
 
-<!-- ============ PAGE HERO ============ -->
+<!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="container">
-    <nav class="breadcrumb" aria-label="Хлебные крошки">
-      <a href="index.html">Главная</a>
-      <span aria-hidden="true">›</span>
-      <span aria-current="page">Партнёры</span>
-    </nav>
-    <span class="eyebrow center">Кому мы благодарны</span>
-    <h1>Наши партнёры <em>и спонсоры</em></h1>
-    <p class="lead">Благодаря компаниям‑друзьям наши занятия становятся ярче, безопаснее и доступнее для каждой семьи.</p>
+  <div class="container page-hero-inner reveal">
+    <span class="eyebrow center">Наша экосистема</span>
+    <h1><em>Партнёры</em></h1>
+    <p class="lead">Мы&nbsp;сотрудничаем с&nbsp;организациями, которые разделяют нашу любовь к&nbsp;танцу и&nbsp;творческому развитию детей и&nbsp;молодёжи.</p>
   </div>
 </section>
 
-<!-- ============ PARTNERS GRID ============ -->
-<section class="partners-section" id="partners" aria-labelledby="heading-partners">
-  <div class="section-mark" aria-hidden="true">
-    <img src="logo.jpg" alt="" loading="lazy" decoding="async" width="80" height="80" />
-  </div>
+<!-- PARTNERS -->
+<section class="partners-section">
   <div class="container">
-    <div class="section-head center reveal" style="margin-bottom:60px">
-      <span class="eyebrow center">Наше сообщество</span>
-      <h2 id="heading-partners">Компании, которые <em>верят в нас</em></h2>
-      <p class="lead">Каждый партнёр вносит свой вклад в развитие детского творчества. Мы гордимся этими отношениями.</p>
+
+    <div class="text-center section-intro reveal">
+      <span class="eyebrow center">Официальные партнёры</span>
+      <h2>Вместе мы&nbsp;<em>сильнее</em></h2>
+      <p class="lead">Каждое партнёрство расширяет возможности наших учеников — новые сцены, фестивали и&nbsp;профессиональный опыт.</p>
     </div>
 
-    <div class="partners-grid" id="partnersGrid">
-      <!-- Cards rendered by JS below -->
+    <div class="partners-grid">
+
+      <!-- ── MD PRIDE CARD ── -->
+      <a
+        class="partner-card reveal"
+        href="https://md-pride.ru"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="MD PRIDE — открыть сайт партнёра"
+      >
+        <div class="card-logo-wrap">
+          <!-- MD PRIDE logo as inline SVG -->
+          <svg viewBox="0 0 380 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:66px;width:auto;" aria-label="MD PRIDE">
+            <defs>
+              <linearGradient id="gM" x1="18" y1="42" x2="50" y2="82" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#d63a7a"/>
+                <stop offset="100%" stop-color="#a050b0"/>
+              </linearGradient>
+              <linearGradient id="gD" x1="58" y1="42" x2="96" y2="82" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#c0508a"/>
+                <stop offset="100%" stop-color="#8050a0"/>
+              </linearGradient>
+            </defs>
+            <!-- Star spark -->
+            <line x1="26" y1="4" x2="26" y2="34" stroke="#c8608a" stroke-width="3" stroke-linecap="round"/>
+            <line x1="11" y1="19" x2="41" y2="19" stroke="#c8608a" stroke-width="3" stroke-linecap="round"/>
+            <line x1="14" y1="7" x2="38" y2="31" stroke="#c8608a" stroke-width="2" stroke-linecap="round"/>
+            <line x1="38" y1="7" x2="14" y2="31" stroke="#c8608a" stroke-width="2" stroke-linecap="round"/>
+            <!-- M -->
+            <path d="M18 82 L18 42 L34 66 L50 42 L50 82" stroke="url(#gM)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <!-- D -->
+            <path d="M58 42 L58 82 L74 82 Q96 82 96 62 Q96 42 74 42 Z" stroke="url(#gD)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <!-- PRIDE text -->
+            <text x="110" y="80" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="46" fill="#3d3870" letter-spacing="1">PRIDE</text>
+            <!-- Tagline -->
+            <text x="110" y="98" font-family="Arial, sans-serif" font-weight="400" font-size="11" fill="#7070a0" letter-spacing="3.5">ТЕРРИТОРИЯ ТВОИХ ФЕСТИВАЛЕЙ</text>
+          </svg>
+        </div>
+
+        <div class="card-body">
+          <span class="card-category">Фестивали и конкурсы</span>
+          <p class="card-name">MD PRIDE Festival Company</p>
+          <p class="card-desc">
+            Ведущий организатор международных и всероссийских хореографических
+            фестивалей для детей и молодёжи. Проводит конкурсы, мастер-классы и
+            танцевальные лагеря по всей России — площадки, где рождаются
+            настоящие звёзды сцены.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag">Хореография</span>
+            <span class="tag">Вокал</span>
+            <span class="tag">Фольклор</span>
+            <span class="tag">Мастер-классы</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-url">md-pride.ru</span>
+            <span class="card-arrow">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M3 11L11 3M11 3H5M11 3V9" stroke="#06877F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Future partner slot placeholder (hidden, ready to uncomment) -->
+      <!--
+      <a class="partner-card" href="#" target="_blank" rel="noopener noreferrer">
+        <div class="card-logo-wrap">...</div>
+        <div class="card-body">...</div>
+      </a>
+      -->
+
     </div>
 
-    <!-- CTA to become partner -->
-    <div style="text-align:center; margin-top:16px" class="reveal">
-      <a class="btn btn-ghost" href="#become-partner">
-        Стать партнёром →
-      </a>
+    <!-- CTA block -->
+    <div class="partners-cta reveal">
+      <span class="eyebrow center" style="margin-bottom:16px">Сотрудничество</span>
+      <h2>Станьте нашим <em>партнёром</em></h2>
+      <p class="lead">Если вы развиваете детское творчество, образование или спорт&nbsp;— давайте делать это вместе. Напишите нам, и&nbsp;мы обсудим форматы партнёрства.</p>
+      <div class="cta-btns">
+        <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#2AABEE,#229ED9)" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_partners">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+          Написать в Telegram
+        </a>
+        <a class="btn btn-ghost btn-lg" href="tel:+79636719983" data-goal="cta_call_partners">
+          +7 (963) 671-99-83
+        </a>
+      </div>
     </div>
-  </div>
-</section>
 
-<!-- ============ BECOME A PARTNER ============ -->
-<section class="become-partner" id="become-partner">
-  <div class="section-mark" aria-hidden="true">
-    <img src="logo.jpg" alt="" loading="lazy" decoding="async" width="80" height="80" />
-  </div>
-  <div class="container">
-    <span class="eyebrow">Для партнёров</span>
-    <h2>Хотите <em>стать партнёром</em> «Татьянин День»?</h2>
-    <p>Мы открыты к сотрудничеству с компаниями, которые разделяют наши ценности: развитие детей, творчество и здоровый образ жизни. Расскажите нам о вашем предложении — ответим в течение дня.</p>
-
-    <ul class="bp-perks reveal">
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polyline points="20 6 9 17 4 12"/></svg>
-        Размещение логотипа и описания на сайте школы
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polyline points="20 6 9 17 4 12"/></svg>
-        Упоминания в социальных сетях и мессенджерах
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polyline points="20 6 9 17 4 12"/></svg>
-        Аудитория — родители детей 3–14 лет в Ленинском округе
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polyline points="20 6 9 17 4 12"/></svg>
-        Возможность участия в отчётных концертах и фестивалях
-      </li>
-    </ul>
-
-    <div class="bp-actions reveal">
-      <a class="btn btn-tg btn-lg" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
-        Написать в Telegram
-      </a>
-      <a class="btn btn-gold btn-lg" href="mailto:info@tatianinden.ru?subject=Стать%20партнёром%20Татьянин%20День">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Написать на email
-      </a>
-      <a class="btn btn-ghost btn-lg" style="color:#fff; border-color:rgba(255,255,255,.3)" href="tel:+79636719983">
-        +7 (963) 671-99-83
-      </a>
-    </div>
   </div>
 </section>
 
 </main>
 
-<!-- ==================== GEO STRIP ==================== -->
-<div class="geo-strip">
-  <div class="container">
-    <span class="geo-strip-label">Занятия для детей из:</span>
-    <span class="geo-strip-list">
-      <a href="index.html#contacts">Видное</a> ·
-      <a href="index.html#contacts">Развилка</a> ·
-      <a href="index.html#contacts">Расторгуево</a> ·
-      <a href="index.html#contacts">Бутово</a> ·
-      <a href="index.html#contacts">Дроздово</a> ·
-      <a href="index.html#contacts">Молоково</a> ·
-      <a href="index.html#contacts">Суханово</a> ·
-      <a href="index.html#contacts">Ленинский&nbsp;округ</a>
-    </span>
-  </div>
-</div>
-
-<!-- ==================== FOOTER ==================== -->
 <footer role="contentinfo">
   <div class="container foot-row">
-    <div>
-      © 2014–2026 Детский театр танца «Татьянин День»,
-      ЖК «Суханово&nbsp;Парк», Московская область. Все права защищены.
-    </div>
-    <div>
-      <a href="index.html#about">О коллективе</a> ·
-      <a href="index.html#programs">Группы</a> ·
-      <a href="prices.html">Цены</a> ·
-      <a href="blog/">Блог</a> ·
-      <a href="partners.html">Партнёры</a> ·
-      <a href="index.html#contacts">Контакты</a>
+    <div>© 2014–2026 · Детский театр танца «Татьянин День» · Видное, ЖК «Суханово Парк»</div>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <a href="index.html">Главная</a>
+      <a href="prices.html">Цены</a>
+      <a href="blog/">Блог</a>
+      <a href="Partners.html">Партнёры</a>
     </div>
   </div>
 </footer>
 
-<!-- Floating call -->
-<a class="float-cta float-call" href="tel:+79636719983" aria-label="Позвонить">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+<!-- Float buttons -->
+<a class="float-cta float-call" href="tel:+79636719983" aria-label="Позвонить" data-goal="cta_call_float">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
 </a>
-<!-- Floating Telegram -->
-<a class="float-cta" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+<a class="float-cta" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" aria-label="Telegram" data-goal="cta_telegram_float">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
 </a>
 
@@ -761,141 +407,47 @@
 <div class="modal-bg" id="modal" onclick="if(event.target===this) closeModal()" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()" aria-label="Закрыть">×</button>
-    <span class="eyebrow">Запись на первый урок</span>
-    <h3 id="modalTitle">Танцуй ярко. Сияй на&nbsp;сцене.</h3>
-    <p class="small">Напишите нам в Telegram или позвоните — ответим сразу и подберём время для пробного занятия.</p>
-    <div style="display:grid; gap:12px">
-      <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#2AABEE,#229ED9)" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
-        Написать в Telegram
-      </a>
-      <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg, var(--ink) 0%, #2E2D45 100%)" href="tel:+79636719983">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Позвонить +7 (963) 671-99-83
-      </a>
-    </div>
+    <span class="eyebrow center">Запись</span>
+    <h3 id="modalTitle">Первое занятие — бесплатно</h3>
+    <p class="small">Напишите в Telegram или позвоните — подберём время для пробного урока.</p>
+    <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#2AABEE,#229ED9)" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_modal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+      Написать в Telegram
+    </a>
+    <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,var(--ink),#2E2D45)" href="tel:+79636719983" data-goal="cta_call_modal">
+      Позвонить +7 (963) 671-99-83
+    </a>
   </div>
 </div>
 
-<!-- Partner data -->
-<script type="application/json" id="partners-data">
-[
-  {
-    "name": "Танцевальная академия «Грация»",
-    "url": "https://gracia-dance.ru",
-    "logo": "https://tatianinden.ru/partners/logos/gracia.svg",
-    "type": "Спонсор",
-    "desc": "Помогает с арендой зала и участвует в конкурсных проектах коллектива.",
-    "initial": "Г"
-  },
-  {
-    "name": "Мастерская «Танцевая одежда»",
-    "url": "https://dancewear.ru",
-    "logo": "https://tatianinden.ru/partners/logos/dancewear.svg",
-    "type": "Поставщик",
-    "desc": "Скидки до 30&nbsp;% на форму и обувь для наших учеников.",
-    "initial": "Т"
-  },
-  {
-    "name": "Фото‑студия «Светляк»",
-    "url": "https://svetljak-photo.ru",
-    "logo": "https://tatianinden.ru/partners/logos/svetlyak.svg",
-    "type": "Сервис",
-    "desc": "Профессиональные репортажи и фотографии наших выступлений и концертов.",
-    "initial": "С"
-  }
-]
-</script>
-
 <script>
-  // ---- Sticky nav ----
-  const nav = document.getElementById('nav');
-  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 30);
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+burger?.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  menu.classList.remove('open');
+  burger?.setAttribute('aria-expanded', 'false');
+}));
 
-  // ---- Burger ----
-  const burger = document.getElementById('burger');
-  const menu   = document.getElementById('menu');
-  burger?.addEventListener('click', () => {
-    const isOpen = menu.classList.toggle('open');
-    burger.setAttribute('aria-expanded', isOpen);
-    burger.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
-  });
-  menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    menu.classList.remove('open');
-    burger?.setAttribute('aria-expanded', 'false');
-    burger?.setAttribute('aria-label', 'Открыть меню');
-  }));
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 30), {passive:true});
 
-  // ---- Reveal ----
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold: 0.1, rootMargin: '0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // ---- Modal ----
-  function openModal() {
-    document.getElementById('modal').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeModal() {
-    document.getElementById('modal').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-  // ---- Render partner cards ----
-  const grid = document.getElementById('partnersGrid');
-  let partners = [];
-  try { partners = JSON.parse(document.getElementById('partners-data').textContent.trim()); } catch(e) {}
-
-  const typeColors = {
-    'Спонсор':   'linear-gradient(135deg, var(--gold), var(--gold-light))',
-    'Поставщик': 'linear-gradient(135deg, var(--tiffany), var(--tiffany-deep))',
-    'Сервис':    'linear-gradient(135deg, var(--pink-deep), var(--pink))',
-  };
-
-  partners.forEach((p, i) => {
-    const card = document.createElement('a');
-    card.className   = 'partner-card reveal';
-    card.href        = p.url;
-    card.target      = '_blank';
-    card.rel         = 'noopener noreferrer';
-    card.style.transitionDelay = (i * 0.08) + 's';
-    card.setAttribute('aria-label', p.name);
-
-    const typeBg = typeColors[p.type] || 'linear-gradient(135deg, var(--tiffany), var(--pink))';
-
-    card.innerHTML = `
-      <div class="partner-logo-wrap">
-        <img class="partner-logo"
-             src="${p.logo}"
-             alt="Логотип ${p.name}"
-             loading="lazy"
-             decoding="async"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-        />
-        <span class="partner-logo-placeholder" style="display:none">${p.initial || p.name[0]}</span>
-      </div>
-      <strong class="partner-name">${p.name}</strong>
-      ${p.type ? `<span class="partner-type" style="background:${typeBg}">${p.type}</span>` : ''}
-      <p class="partner-desc">${p.desc}</p>
-      <span class="partner-link">
-        Перейти на сайт
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-      </span>
-    `;
-    grid.appendChild(card);
-  });
-
-  // Re-observe newly added cards
-  document.querySelectorAll('.partner-card.reveal').forEach(el => io.observe(el));
-
-  if (!partners.length) {
-    grid.innerHTML = '<p style="color:var(--pink-deep); text-align:center; grid-column:1/-1;">Нет данных о партнёрах.</p>';
-  }
+function openModal() {
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
 </script>
-
 </body>
 </html>
