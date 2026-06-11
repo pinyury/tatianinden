@@ -285,7 +285,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
   nav.menu.open{display:flex;flex-direction:column;position:fixed;top:96px;left:16px;right:16px;background:#fff;padding:22px 24px;border-radius:22px;box-shadow:var(--shadow-md);gap:16px;align-items:flex-start;z-index:60}
 }
 @media (max-width:960px){
-  .hero-grid{grid-template-columns:1fr;gap:50px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
   .hero-visual{max-width:420px;margin-inline:auto;width:100%}
   .outdoor-grid,.letter-grid,.sessions-grid{grid-template-columns:1fr;gap:36px}
   .age-grid{grid-template-columns:repeat(2,1fr)}
@@ -298,13 +298,105 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
   .hero-badge.hb-place{right:-4px}
 }
 @media (max-width:640px){
-  section{padding:64px 0}
-  .si-hero{padding:120px 0 64px}
-  .age-grid,.why-grid{grid-template-columns:1fr}
-  .container{width:min(100% - 28px,var(--container))}
-  .logo-img{width:64px;height:64px}
-  .logo-text strong{font-size:22px}
-  .cta-block{padding:64px 0}
+  /* Base spacing */
+  section{padding:56px 0}
+  .si-hero{padding:108px 0 56px}
+  .container{width:min(100% - 24px,var(--container))}
+  html{scroll-padding-top:80px}
+
+  /* Nav — slimmer on mobile */
+  .nav-row{min-height:68px}
+  .logo-img{width:52px;height:52px}
+  .logo-text strong{font-size:19px}
+  .logo-text small{font-size:10px}
+  nav.menu.open{top:76px}
+  .nav-actions{gap:10px}
+  .nav-actions .btn{padding:10px 16px;font-size:13px}
+  .burger{width:36px;height:36px}
+
+  /* Hero heading */
+  .si-h1{font-size:clamp(44px,13vw,80px)!important}
+  .si-script{font-size:clamp(22px,6vw,34px)}
+
+  /* Hero badges — no overflow */
+  .hero-badge{padding:10px 14px;border-radius:14px}
+  .hero-badge.hb-age{top:-8px;right:-4px}
+  .hero-badge.hb-time{bottom:70px;left:-4px}
+  .hero-badge.hb-place{display:none}
+
+  /* Schedule tags */
+  .schedule-tags{gap:8px}
+  .stag{padding:8px 14px;font-size:13px}
+
+  /* Hero CTA — stack buttons full width */
+  .hero-cta{flex-direction:column;gap:10px}
+  .hero-cta .btn{width:100%;justify-content:center}
+
+  /* Price badge */
+  .si-price-badge{flex-direction:column;align-items:flex-start;gap:6px;padding:16px 20px}
+
+  /* Outdoor section */
+  .outdoor-grid{grid-template-columns:1fr;gap:28px}
+  .outdoor-card{padding:20px 18px}
+  .oc-icon{flex:0 0 42px;width:42px;height:42px}
+  .outdoor-quote{padding:18px 20px;font-size:clamp(17px,4vw,22px)}
+
+  /* Program/triad blocks */
+  .triad-block{padding:20px 18px;gap:8px}
+  .triad-num{font-size:38px}
+  .triad-closing{padding:24px 20px}
+  .triad{gap:16px}
+
+  /* Age groups — single column */
+  .age-grid{grid-template-columns:1fr}
+  .age-card{padding:24px 20px}
+
+  /* Letter to parents (dark section) */
+  .letter-grid{grid-template-columns:1fr;gap:36px}
+  .letter-intro{font-size:16px;max-width:100%}
+  .scenario{padding:20px}
+  .scenario-cards{gap:14px}
+
+  /* Schedule */
+  .sessions-grid{grid-template-columns:1fr;gap:20px;max-width:100%}
+  .session-head{padding:20px 20px 16px}
+  .session-body{padding:18px 20px}
+  .outfit-box{padding:20px;border-radius:14px}
+
+  /* Why grid */
+  .why-grid{grid-template-columns:1fr}
+  .why-card{padding:20px 18px;text-align:left;display:flex;align-items:flex-start;gap:16px}
+  .why-icon{margin:0;flex:0 0 48px}
+
+  /* CTA block */
+  .cta-block{padding:60px 0}
+  .cta-block .hero-cta{flex-direction:column;gap:10px}
+  .cta-block .hero-cta .btn{width:100%;max-width:360px}
+
+  /* FAQ */
+  .faq-grid{grid-template-columns:1fr;gap:32px}
+  .faq-item{border-radius:14px;padding:0 18px}
+  .faq-q{font-size:15px;padding:16px 0}
+  .msg-choice{flex-direction:column;gap:8px}
+  .msg-choice .btn{width:100%;justify-content:center}
+
+  /* Modal */
+  .modal{padding:28px 20px;border-radius:24px}
+  .modal h3{font-size:22px}
+
+  /* Float CTAs */
+  .float-cta{width:52px;height:52px;bottom:20px;right:18px}
+  .float-call{right:82px}
+
+  /* Footer */
+  .foot-row{flex-direction:column;gap:12px;text-align:center}
+
+  /* Hero: show text before image on mobile */
+  .hero-grid{display:flex;flex-direction:column}
+  .hero-visual{order:2}
+
+  /* Headings */
+  h2{font-size:clamp(28px,7.5vw,40px)}
 }
 </style>
 </head>
