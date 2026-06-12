@@ -2,85 +2,128 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>Реестр обработки персональных данных · Татьянин День</title>
-  <meta name="description" content="Таблица всех операций обработки персональных данных в детском театре танца «Татьянин День», их цели, правовые основания, сроки хранения и т.д." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, follow" />
+  <title>Реестр обработки персональных данных · Татьянин День</title>
+  <meta name="description" content="Реестр операций обработки персональных данных детского театра танца «Татьянин День» в соответствии с ФЗ-152." />
+  <link rel="canonical" href="https://tatianinden.ru/reestr.html" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    body{font-family:Arial,sans-serif;background:#FFFBF6;color:#1B1B2E;margin:0;padding:0}
-    .container{max-width:1200px;margin:auto;padding:2rem}
-    h1{font-size:2.4rem;margin-bottom:1rem}
-    table{width:100%;border-collapse:collapse;margin:1rem 0}
-    th,td{border:1px solid #ddd;padding:.5rem;vertical-align:top}
-    th{background:#D7F5F3}
-    caption{margin-bottom:.5rem;font-weight:600}
+    :root {
+      --tiffany: #0ABAB5; --tiffany-soft: #D7F5F3; --tiffany-deep: #06877F;
+      --ink: #1B1B2E; --ink-soft: #4A4A5E; --ink-mute: #8A8A9C;
+      --cream: #FFFBF6; --white: #FFFFFF; --gold: #C9A961;
+    }
+    * { box-sizing: border-box }
+    body { margin: 0; font-family: "Manrope", sans-serif; background: var(--cream); color: var(--ink); -webkit-font-smoothing: antialiased; }
+    .container { width: min(100% - 40px, 960px); margin-inline: auto; padding: 60px 0 80px; }
+    h1 { font-size: clamp(24px, 4vw, 40px); margin: 0 0 8px; }
+    .meta { font-size: 13px; color: var(--ink-mute); margin: 0 0 32px; }
+    .meta a { color: var(--tiffany-deep); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 16px; }
+    th { background: var(--tiffany-soft); color: var(--tiffany-deep); padding: 10px 14px; text-align: left; border: 1px solid rgba(10,186,181,.2); font-weight: 600; }
+    td { padding: 10px 14px; border: 1px solid rgba(27,27,46,.08); color: var(--ink-soft); vertical-align: top; line-height: 1.55; }
+    tr:nth-child(even) td { background: rgba(10,186,181,.03); }
+    .back { display: inline-block; margin-bottom: 28px; color: var(--tiffany-deep); text-decoration: underline; font-size: 14px; }
+    .note { background: #FFF9EC; border-left: 4px solid var(--gold); border-radius: 0 10px 10px 0; padding: 14px 18px; margin-top: 28px; font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+    footer { background: var(--ink); color: rgba(255,255,255,.5); padding: 24px 0; font-size: 13px; text-align: center; }
+    footer a { color: rgba(255,255,255,.5); }
+    footer a:hover { color: var(--gold); }
   </style>
 </head>
 <body>
-<div class="container">
-  <h1>Реестр обработки персональных данных</h1>
 
+<div class="container">
+  <a class="back" href="privacy.html">← Политика обработки персональных данных</a>
+
+  <h1>Реестр обработки персональных данных</h1>
+  <p class="meta">
+    Детский театр танца «Татьянин День» · ИНН: 550408296455 ·
+    Актуальная редакция: <strong>12 июня 2026&nbsp;г.</strong> ·
+    Составлен в&nbsp;соответствии с&nbsp;<strong>ч.&nbsp;6 п.&nbsp;5 ФЗ-152</strong>
+  </p>
+
+  <!-- BEGIN A – REESTR TABLE -->
   <table>
-    <caption>Перечень операций обработки в рамках деятельности «Татьянин День»</caption>
     <thead>
       <tr>
-        <th>Операция</th>
-        <th>Описание</th>
-        <th>Цель</th>
+        <th>#</th>
+        <th>Цель обработки</th>
+        <th>Категории субъектов</th>
+        <th>Категории ПД</th>
         <th>Правовое основание</th>
+        <th>Получатели / передача</th>
+        <th>Страна хранения</th>
         <th>Срок хранения</th>
-        <th>Категории данных</th>
-        <th>Получатели</th>
-        <th>Трансграничная передача</th>
+        <th>Способ уничтожения</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Запись на пробный урок</td>
-        <td>Получение имени, телефона, возраста ребёнка через форму.</td>
-        <td>Контакт с потенциальным клиентом, назначение пробного занятия.</td>
-        <td>п. 1 ч. 1 ст. 6 ФЗ‑152 (согласие), п. 5 ч. 1 ст. 6 ФЗ‑152 (договор).</td>
-        <td>12 мес. после последнего контакта.</td>
-        <td>ФИО родителя, телефон, возраст ребёнка.</td>
-        <td>Оператор (Татьянин День), мессенджеры Telegram/Max (по запросу).</td>
-        <td>Нет (данные передаются только в РФ). При использовании аналитики – см. таблицу в privacy.html.</td>
+        <td>1</td>
+        <td>Запись на пробное занятие, связь с заявителем</td>
+        <td>Родители / законные представители</td>
+        <td>ФИО, номер телефона</td>
+        <td>п.&nbsp;1 ч.&nbsp;1 ст.&nbsp;6 ФЗ-152 (согласие)</td>
+        <td>Не передаётся. Сообщение направляется через мессенджер (Telegram / Max) по инициативе пользователя.</td>
+        <td>РФ</td>
+        <td>12 месяцев с последнего взаимодействия</td>
+        <td>Удаление из переписки мессенджера</td>
       </tr>
       <tr>
-        <td>Ведение учёта обучающихся (офлайн)</td>
-        <td>ФИО ребёнка, дата рождения, телефон, успеваемость, посещаемость.</td>
-        <td>Оказание образовательных услуг, выпуск сертификатов.</td>
-        <td>п. 5 ч. 1 ст. 6 ФЗ‑152 (необходимо для исполнения договора).</td>
-        <td>До 3 лет после окончания обучения (бухгалтерия) плюс 5 лет по Налоговому кодексу.</td>
-        <td>Персональные данные ребёнка и законного представителя.</td>
-        <td>Оператор, учётный специалист.</td>
-        <td>Нет.</td>
+        <td>2</td>
+        <td>Исполнение договора об оказании образовательных услуг; учёт обучающихся</td>
+        <td>Несовершеннолетние обучающиеся; родители / законные представители</td>
+        <td>ФИО ребёнка и представителя, дата рождения, телефон, сведения об успеваемости и посещаемости</td>
+        <td>п.&nbsp;5 ч.&nbsp;1 ст.&nbsp;6; ч.&nbsp;4 ст.&nbsp;9 ФЗ-152</td>
+        <td>Не передаётся третьим лицам (кроме уполномоченных органов по закону)</td>
+        <td>РФ</td>
+        <td>До расторжения договора + 3 года</td>
+        <td>Уничтожение по акту</td>
       </tr>
       <tr>
-        <td>Веб‑аналитика (Google Analytics 4, Яндекс‑Метрика)</td>
-        <td>IP‑адрес (анонимизированный), тип браузера, страницы, время посещения.</td>
-        <td>Оптимизация сайта, улучшение пользовательского опыта.</td>
-        <td>п. 1 ч. 1 ст. 6 ФЗ‑152 (согласие) – только после нажатия «Принять».</td>
-        <td>24 мес. (Google) / 12 мес. (Яндекс) – согласно политике провайдера.</td>
-        <td>Технические данные о посещении сайта.</td>
-        <td>Google LLC (США), ООО «Яндекс» (Россия).</td>
-        <td>Да – Google Analytics 4 (SCC), Яндекс‑Метрика – без трансграничных передач (данные хранятся в РФ).</td>
+        <td>3</td>
+        <td>Веб-аналитика и улучшение сайта (только при согласии на cookies)</td>
+        <td>Посетители сайта tatianinden.ru</td>
+        <td>Анонимизированный IP, тип браузера, ОС, источник перехода, просматриваемые страницы, cookie-идентификаторы</td>
+        <td>п.&nbsp;1 ч.&nbsp;1 ст.&nbsp;6 ФЗ-152 (согласие на cookies)</td>
+        <td>ООО «Яндекс» (Яндекс.Метрика, РФ); Google LLC (Google Analytics 4, США — на основании SCC, ст.&nbsp;12 ФЗ-152)</td>
+        <td>РФ (Яндекс); США (Google)</td>
+        <td>До 24 мес. (Яндекс); до 14 мес. (Google)</td>
+        <td>Автоматически средствами платформ</td>
       </tr>
       <tr>
-        <td>Рассылка рекламных сообщений (SMS, Telegram, Max)</td>
-        <td>Отправка информации о новых группах, акциях, расписании.</td>
-        <td>Маркетинг, информирование.</td>
-        <td>ч. 1 ст. 18 ФЗ‑38 (отдельное согласие).</td>
-        <td>Пока действует согласие (может быть отозвано в любой момент).</td>
-        <td>Контактные данные (телефон, Telegram‑ид, Max‑ид).</td>
-        <td>Оператор, рекламные партнёры (по договору).</td>
-        <td>Telegram – РФ; Max – США.</td>
+        <td>4</td>
+        <td>Информирование о расписании, мероприятиях, акциях (рекламная рассылка)</td>
+        <td>Родители / законные представители (давшие отдельное рекламное согласие)</td>
+        <td>Номер телефона</td>
+        <td>п.&nbsp;1 ч.&nbsp;1 ст.&nbsp;6 ФЗ-152 + ч.&nbsp;1 ст.&nbsp;18 ФЗ-38</td>
+        <td>Не передаётся. Отправка через мессенджер.</td>
+        <td>РФ</td>
+        <td>До отзыва согласия + 7 рабочих дней</td>
+        <td>Удаление из переписки</td>
       </tr>
-      <!-- Добавьте остальные операции аналогично -->
     </tbody>
   </table>
+  <!-- END A -->
 
-  <p>Все операции соответствуют требованиям ФЗ‑152, ФЗ‑38 и международным стандартам защиты данных.</p>
-  <p style="margin-top:2rem"><a href="privacy.html">Вернуться к Политике обработки ПД</a></p>
+  <div class="note">
+    ⚠️ <strong>Примечание:</strong> настоящий реестр является внутренним документом Оператора, публикуемым в&nbsp;целях прозрачности в&nbsp;соответствии с&nbsp;ч.&nbsp;6 п.&nbsp;5 ФЗ-152. Реестр актуализируется при изменении условий обработки персональных данных.<br/>
+    Номер уведомления в&nbsp;реестре РКН: <strong>{{PLACEHOLDER: номер уведомления или указание на освобождение от уведомления}}</strong>
+  </div>
 </div>
+
+<footer>
+  <div>
+    © 2014–2026 Детский театр танца «Татьянин День» ·
+    <a href="privacy.html">Политика ПД</a> ·
+    <a href="terms.html">Пользовательское соглашение</a> ·
+    <a href="cookies.html">Политика куки</a> ·
+    <a href="/">На главную</a>
+  </div>
+</footer>
+
 </body>
 </html>
