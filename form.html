@@ -1,0 +1,36 @@
+<form class="cta-form" id="signupForm" onsubmit="return submitForm(event,'telegram')">
+  <h3>Записаться на пробное</h3>
+  <p class="small">Заполните форму — и откроется готовое сообщение в Telegram.</p>
+
+  <input class="input" type="text" name="name" id="field_name" placeholder="Ваше имя" required autocomplete="name" aria-label="Ваше имя" />
+  <input class="input" type="tel" name="phone" id="field_phone" placeholder="+7 (___) ___‑__‑__" required autocomplete="tel" inputmode="tel" aria-label="Номер телефона" />
+  <input class="input" type="number" name="age" id="field_age" min="3" max="18" placeholder="Возраст ребёнка" required autocomplete="off" inputmode="numeric" aria-label="Возраст ребёнка в годах" />
+
+  <label class="consent">
+    <input type="checkbox" name="consent" id="consentCheckbox" required />
+    <span class="consent-text">
+      Я даю согласие на обработку моих персональных данных в соответствии с <a href="privacy.html" target="_blank" rel="noopener noreferrer">Политикой обработки персональных данных</a> (обязательно)
+    </span>
+  </label>
+
+  <label class="consent">
+    <input type="checkbox" name="ads_consent" id="adsConsentCheckbox" />
+    <span class="consent-text">
+      Согласен(а) на получение информационных и рекламных сообщений (ч.&nbsp;1 ст.&nbsp;18 ФЗ‑38). Отозвать согласие можно в любой момент сообщением «СТОП».
+    </span>
+  </label>
+
+  <div class="msg-choice">
+    <button type="submit" class="btn btn-msg btn-tg" id="submitBtn" disabled>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+      Отправить в Telegram
+    </button>
+    <button type="button" class="btn btn-msg btn-mx" id="submitBtnMax" disabled onclick="return submitForm(event,'max')">
+      <svg width="20" height="20" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="mgf" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/><stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="url(#mgf)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z" fill="white"/></svg>
+      Отправить в Max
+    </button>
+    <a class="btn btn-msg btn-call" href="tel:+79636719983" data-goal="cta_call_form"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Позвонить</a>
+  </div>
+
+  <p class="form-hint">После отправки сообщение будет скопировано в буфер обмена. Вставьте его в открытый чат.</p>
+</form>
