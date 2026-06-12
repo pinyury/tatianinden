@@ -4035,7 +4035,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <label class="consent">
           <input type="checkbox" name="consent" id="consentCheckbox" required />
-          <span class="consent-text">Я даю согласие на&nbsp;обработку моих персональных данных в&nbsp;соответствии с&nbsp;<a href="privacy.html" target="_blank" rel="noopener noreferrer">Политикой обработки персональных данных</a> (обязательно)</span>
+          <span class="consent-text">Я даю согласие на&nbsp;обработку моих персональных данных в&nbsp;соответствии с&nbsp;<a href="#" onclick="openPrivacy();return false;">Политикой обработки персональных данных</a> (обязательно)</span>
         </label>
         <label class="consent">
           <input type="checkbox" name="ads_consent" id="adsConsentCheckbox" />
@@ -4210,6 +4210,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ============ FOOTER ============ -->
 </main>
+<!-- BEGIN M – PAYMENT DISCLAIMER (PCI-DSS / 152-ФЗ) -->
+<div style="background:var(--paper);border-top:1px solid rgba(27,27,46,.06);padding:10px 0;font-size:12px;color:var(--ink-mute);text-align:center">
+  <div class="container">
+    💳 Оплата производится через защищённый платёжный шлюз. Данные банковских карт не&nbsp;сохраняются у&nbsp;Оператора.
+  </div>
+</div>
+<!-- END M -->
 <div class="geo-strip">
   <div class="container">
     <span class="geo-strip-label">Возим детей из:</span>
@@ -4236,7 +4243,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span itemprop="addressRegion">Московская область</span>.
       </span> Все права защищены.
     </div>
-    <div><a href="#about">О коллективе</a> · <a href="#programs">Группы</a> · <a href="prices.html">Цены</a> · <a href="blog/">Блог</a> · <a href="partners.html">Партнёры</a> · <a href="#contacts">Контакты</a> · <a href="akciya/">Акции</a> · <a href="privacy.html">Политика обработки персональных данных</a></div>
+    <div>
+      <a href="#about">О коллективе</a> ·
+      <a href="#programs">Группы</a> ·
+      <a href="prices.html">Цены</a> ·
+      <a href="blog/">Блог</a> ·
+      <a href="partners.html">Партнёры</a> ·
+      <a href="#contacts">Контакты</a> ·
+      <a href="akciya/">Акции</a> ·
+      <a href="#" onclick="openPrivacy();return false;">Политика ПД</a> ·
+      <!-- BEGIN A – REESTR LINK -->
+      <a href="reestr.html" target="_blank" rel="noopener noreferrer">Реестр обработки ПД</a> ·
+      <!-- END A -->
+      <!-- BEGIN J – TERMS LINK -->
+      <a href="terms.html" target="_blank" rel="noopener noreferrer">Пользовательское соглашение</a> ·
+      <!-- END J -->
+      <!-- BEGIN O – COOKIES PAGE LINK -->
+      <a href="cookies.html" target="_blank" rel="noopener noreferrer">Политика куки-файлов</a>
+      <!-- END O -->
+    </div>
   </div>
 </footer>
 
@@ -4347,7 +4372,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Запретить сохранение куков в настройках браузера.</li>
         <li>Отозвать согласие на аналитику, очистив куки сайта — баннер появится снова.</li>
       </ul>
-      <p style="margin-top:18px;font-size:13px;color:#888">Если у вас есть вопросы — напишите нам в <a href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Telegram</a> или позвоните: +7&nbsp;(963)&nbsp;671-99-83.</p>
+      <!-- BEGIN K – COOKIE TABLE WITH NAMES/LIFETIME -->
+      <h4 style="margin:20px 0 8px;font-size:16px">📋 Таблица всех cookie-файлов сайта</h4>
+      <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:14px">
+        <thead>
+          <tr>
+            <th style="background:#D7F5F3;padding:8px 10px;text-align:left;border:1px solid rgba(10,186,181,.2)">Имя</th>
+            <th style="background:#D7F5F3;padding:8px 10px;text-align:left;border:1px solid rgba(10,186,181,.2)">Цель</th>
+            <th style="background:#D7F5F3;padding:8px 10px;text-align:left;border:1px solid rgba(10,186,181,.2)">Тип</th>
+            <th style="background:#D7F5F3;padding:8px 10px;text-align:left;border:1px solid rgba(10,186,181,.2)">Срок</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)"><code>cookieChoice</code></td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Фиксация выбора пользователя (принять/отклонить аналитику)</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Необходимый</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">1&nbsp;год</td></tr>
+          <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)"><code>cookieChoiceDate</code></td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Дата принятия решения о&nbsp;cookies</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Необходимый</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">1&nbsp;год</td></tr>
+          <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">_ym_* (Яндекс)</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Яндекс.Метрика — аналитика посещений</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Аналитический</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">До&nbsp;1&nbsp;года</td></tr>
+          <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">_ga, _ga_* (Google)</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Google Analytics 4 — статистика поведения</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Аналитический</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">До&nbsp;2&nbsp;лет</td></tr>
+        </tbody>
+      </table>
+      <!-- END K -->
+      <!-- BEGIN T – COOKIE FUNCTIONALITY WARNING -->
+      <p style="font-size:13px;color:#8A8A9C;margin-top:4px">⚠️ Без cookie-файлов сайт может работать ограниченно: некоторые функции (виджеты карт, запоминание выбора) могут быть недоступны.</p>
+      <!-- END T -->
+      <!-- BEGIN A – REESTR LINK IN MODAL -->
+      <p style="margin-top:14px;font-size:13px">📄 <a href="reestr.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Реестр обработки персональных данных</a> · <a href="terms.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Пользовательское соглашение</a></p>
+      <!-- END A -->
+      <p style="margin-top:6px;font-size:13px;color:#888">Если у вас есть вопросы — напишите нам в <a href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Telegram</a> или позвоните: +7&nbsp;(963)&nbsp;671-99-83.</p>
     </div>
     <button class="btn btn-primary btn-lg" style="width:100%;margin-top:20px" onclick="closeCookieInfo()">Понятно, закрыть</button>
   </div>
@@ -4359,7 +4409,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="cookie-icon" aria-hidden="true">🍪</span>
     <div class="cookie-text">
       <strong>Мы используем cookies</strong>
-      <p>Для работы виджетов Яндекс.Карт и&nbsp;Яндекс.Профиля, а&nbsp;также для&nbsp;аналитики посещений. <a href="#" onclick="openCookieInfo();return false;" style="color:inherit;text-decoration:underline;font-weight:600;">Подробнее о&nbsp;куках&nbsp;→</a> · <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;font-weight:600;">Политика ПД&nbsp;→</a></p>
+      <p>Для работы виджетов Яндекс.Карт и&nbsp;Яндекс.Профиля, а&nbsp;также для&nbsp;аналитики посещений. <a href="#" onclick="openCookieInfo();return false;" style="color:inherit;text-decoration:underline;font-weight:600;">Подробнее о&nbsp;куках&nbsp;→</a> · <a href="#" onclick="openPrivacy();return false;" style="color:inherit;text-decoration:underline;font-weight:600;">Политика ПД&nbsp;→</a> · <a href="terms.html" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;font-weight:600;">Соглашение&nbsp;→</a></p>
+      <!-- BEGIN T – COOKIE FUNCTIONALITY NOTE IN BANNER -->
+      <p style="font-size:12px;opacity:.8;margin:2px 0 0">⚠️ Без cookie-файлов сайт может работать ограниченно.</p>
+      <!-- END T -->
     </div>
     <div class="cookie-actions">
       <button type="button" onclick="acceptCookies()" class="cookie-btn cookie-btn-primary">Принять</button>
@@ -4551,8 +4604,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     if(choice === 'accepted') loadAnalytics();
   }
-  function acceptCookies(){ setCookieChoice('accepted'); }
-  function rejectCookies(){ setCookieChoice('rejected'); }
+  function acceptCookies(){
+    // BEGIN R – set data-cookie-consent attribute on html element
+    document.documentElement.setAttribute('data-cookie-consent', 'accepted');
+    // END R
+    setCookieChoice('accepted');
+  }
+  function rejectCookies(){
+    // BEGIN R – set data-cookie-consent attribute on html element
+    document.documentElement.setAttribute('data-cookie-consent', 'rejected');
+    // END R
+    setCookieChoice('rejected');
+  }
   // ============================================================
   // Аналитика грузится ТОЛЬКО после согласия (152-ФЗ + GDPR-like).
   // Чтобы активировать: замените YM_COUNTER_ID и CLARITY_ID на реальные.
@@ -4671,8 +4734,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     try { choice = localStorage.getItem('cookieChoice'); } catch(e) {}
 
     if (choice === 'accepted') {
-      // Already accepted — load analytics immediately, keep banner hidden
+      // Already accepted — set attribute and load analytics immediately, keep banner hidden
+      document.documentElement.setAttribute('data-cookie-consent', 'accepted'); // BEGIN R END R
       loadAnalytics();
+    } else if (choice === 'rejected') {
+      document.documentElement.setAttribute('data-cookie-consent', 'rejected'); // BEGIN R END R
     } else if (!choice) {
       // No choice yet — show the banner
       showCookieBanner();
@@ -4824,22 +4890,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 
   function fetchAndApply() {
+    // BEGIN P – Graceful fetch: /yandex-rating.json must exist at server root
+    // JSON format: {"rating":"4.5","reviewCount":"11"}
     fetch(JSON_URL + '?v=' + Date.now())
-      .then(function(res) { return res.json(); })
+      .then(function(res) {
+        if (!res.ok) { throw new Error('HTTP ' + res.status); }
+        return res.json();
+      })
       .then(function(data) {
-        localStorage.setItem(CACHE_KEY,  JSON.stringify(data));
-        localStorage.setItem(CACHE_DATE, new Date().toDateString());
+        try {
+          localStorage.setItem(CACHE_KEY,  JSON.stringify(data));
+          localStorage.setItem(CACHE_DATE, new Date().toDateString());
+        } catch(e) { /* localStorage unavailable */ }
         applyRating(data);
       })
       .catch(function() {
-        // Если fetch не удался — молча оставляем дефолтные значения из HTML
+        // Silent fail — default HTML values remain; no console error exposed
       });
+    // END P
   }
 
   // Запустить сразу из кэша (мгновенно), затем обновить если кэш устарел
   var cached = null;
   try { cached = JSON.parse(localStorage.getItem(CACHE_KEY)); } catch(e) {}
-  var cacheDate = localStorage.getItem(CACHE_DATE);
+  var cacheDate = null;
+  try { cacheDate = localStorage.getItem(CACHE_DATE); } catch(e) {}
 
   if (cached) applyRating(cached);  // моментально из кэша
 
