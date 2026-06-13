@@ -2,15 +2,10 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8" />
-<!-- Resource hints: DNS prefetch for all third-party origins -->
+<!-- Resource hints: DNS prefetch for Yandex only (Google Fonts removed — ФЗ-152 ст. 12) -->
 <link rel="dns-prefetch" href="https://mc.yandex.ru" />
 <link rel="dns-prefetch" href="https://yandex.ru" />
-<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-<link rel="dns-prefetch" href="https://www.google-analytics.com" />
-<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 <link rel="preconnect" href="https://mc.yandex.ru" crossorigin />
-<!-- Google Tag Manager: загружается после согласия на cookies (loadGTM) -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0ABAB5" />
 <!-- Security headers as meta equivalents -->
@@ -20,7 +15,18 @@
 <!-- Robots: index all, follow all links -->
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <!-- Preload critical font subset to improve LCP -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@400;600;700&display=swap" />
+<!-- ВАЖНО: Шрифты перенесены на самохостинг (ФЗ-152 ст. 12 — Google Fonts передаёт IP в США без согласия).
+     Действия:
+     1. Скачать шрифты с https://gwfh.mranftl.com/fonts:
+        - Cormorant Garamond (wght 400,500,600,700; italic 400,500)
+        - Manrope (wght 300,400,500,600,700,800)
+        - Caveat (wght 400,600,700)
+     2. Положить .woff2 файлы в папку /fonts/ на сервере
+     3. Раскомментировать <link rel="stylesheet" href="/fonts/fonts.css">
+     4. Создать /fonts/fonts.css с @font-face правилами и font-display:swap
+     Пока шрифты не загружены — используется системный стек (Manrope → Segoe UI → sans-serif).
+-->
+<!-- <link rel="stylesheet" href="/fonts/fonts.css" /> -->
 <link rel="preload" as="image" href="hero-bg.jpg" fetchpriority="high" />
 <title>Танцы для детей 3–14 лет · Суханово · Видное · Татьянин День — Топ-100 в России</title>
 <meta name="description" content="Детский театр танца «Татьянин День» в ЖК «Суханово Парк» (Ленинский округ, Видное). Эстрадные танцы, классика, акробатика, умный фитнес. Дети 3–14 лет. Топ-100 лучших хореографических коллективов России. Первый урок бесплатно — записывайтесь!" />
@@ -56,10 +62,7 @@
 <!-- Sitemap для краулеров -->
 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<!-- font-display:swap is set in the Google Fonts URL via &display=swap -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+<!-- Шрифты: см. комментарий выше — self-hosting инструкция -->
 
 <!-- Schema.org structured data: DanceSchool organization -->
 <script type="application/ld+json" id="schema-main-jsonld">
@@ -3138,10 +3141,6 @@
 </script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) — must be first element in body -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG4GMMWB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <!-- Skip navigation for keyboard/screen-reader users -->
 <a class="skip-link" href="#main-content">Перейти к основному содержанию</a>
@@ -3253,7 +3252,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="hero-badge b1 gold-rim hero-yandex-badge" href="https://yandex.ru/profile/108175150878" target="_blank" rel="noopener noreferrer" aria-label="Рейтинг на Яндекс Картах" data-goal="cta_yandex_badge">
           <iframe
             class="hero-yandex-iframe"
-            src="https://yandex.ru/sprav/widget/rating-badge/108175150878?type=rating"
+            data-src="https://yandex.ru/sprav/widget/rating-badge/108175150878?type=rating"
+            src="about:blank"
             width="140" height="50"
             frameborder="0"
             scrolling="no"
@@ -3882,7 +3882,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="yandex-widget-wrap">
         <iframe
           class="yandex-rating-iframe"
-          src="https://yandex.ru/sprav/widget/rating-badge/108175150878?type=rating"
+          data-src="https://yandex.ru/sprav/widget/rating-badge/108175150878?type=rating"
+          src="about:blank"
           width="150" height="50"
           frameborder="0"
           loading="lazy"
@@ -4030,9 +4031,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3>Записаться на пробное</h3>
         <p class="small">Заполните форму&nbsp;— и&nbsp;готовая заявка откроется в&nbsp;Telegram. Или просто позвоните по&nbsp;телефону.</p>
         <input class="input" type="text" name="name" id="field_name" placeholder="Ваше имя" required autocomplete="name" aria-label="Ваше имя" />
-        <input class="input" type="tel" name="phone" id="field_phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel" aria-label="Номер телефона" />
+        <input class="input" type="tel" name="phone" id="field_phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel" aria-label="Номер телефона" pattern="[\+78][\d\s\(\)\-]{9,14}" minlength="10" title="Введите номер телефона в формате +7 (xxx) xxx-xx-xx" />
         <input class="input" type="number" name="age" id="field_age" min="3" max="18" placeholder="Возраст ребёнка" required autocomplete="off" inputmode="numeric" aria-label="Возраст ребёнка в годах" />
 
+        <!-- BEGIN HONEYPOT – bot protection; humans never fill this -->
+        <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none" aria-hidden="true">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <!-- END HONEYPOT -->
         <label class="consent">
           <input type="checkbox" name="consent" id="consentCheckbox" required />
           <span class="consent-text">Я даю согласие на&nbsp;обработку моих персональных данных в&nbsp;соответствии с&nbsp;<a href="#" onclick="openPrivacy();return false;">Политикой обработки персональных данных</a> (обязательно)</span>
@@ -4185,12 +4191,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
       </div>
 
-      <div class="map-frame">
+      <div class="map-frame" id="map-frame-wrap">
+        <!-- Карта загружается по клику (ФЗ-152: iframe Яндекса устанавливает cookies) -->
+        <div id="map-placeholder" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--paper);border-radius:var(--radius);border:1px solid rgba(10,186,181,.15);cursor:pointer;gap:12px;min-height:380px" onclick="loadYandexMap()" role="button" tabindex="0" aria-label="Показать карту проезда" onkeydown="if(event.key==='Enter'||event.key===' ')loadYandexMap()">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--tiffany)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span style="font-size:15px;font-weight:600;color:var(--ink)">Показать карту проезда</span>
+          <span style="font-size:12px;color:var(--ink-mute);text-align:center;max-width:260px">Нажмите, чтобы загрузить карту Яндекса.<br/>Карта использует cookies Яндекса.</span>
+        </div>
         <iframe
-          src="https://yandex.ru/map-widget/v1/?oid=108175150878&ol=biz&z=16"
+          id="map-iframe"
+          data-src="https://yandex.ru/map-widget/v1/?oid=108175150878&ol=biz&z=16"
+          src="about:blank"
           allowfullscreen
           title="Карта проезда"
           loading="lazy"
+          style="display:none"
         ></iframe>
         <a
           class="btn-navigate"
@@ -4313,10 +4328,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <h4>7. Передача третьим лицам. Трансграничная передача</h4>
       <p>Оператор не&nbsp;передаёт персональные данные третьим лицам без&nbsp;согласия субъекта, за&nbsp;исключением случаев, прямо предусмотренных законодательством РФ (запросы уполномоченных государственных органов).</p>
-      <p>При наличии согласия пользователя на&nbsp;аналитические cookies (кнопка «Принять» в&nbsp;cookie-уведомлении) технические данные о&nbsp;посещении сайта (IP-адрес в&nbsp;анонимизированном виде, идентификаторы сессии, поведение на&nbsp;сайте) могут передаваться следующим операторам веб-аналитики:</p>
+      <p>При наличии согласия пользователя на&nbsp;аналитические cookies (кнопка «Принять» в&nbsp;cookie-уведомлении) технические данные о&nbsp;посещении сайта передаются следующему оператору:</p>
       <ul style="padding-left:20px;margin:6px 0 10px;font-size:14px;line-height:1.6;color:var(--ink-soft)">
-        <li><strong>ООО «Яндекс» (Россия)</strong> — сервис Яндекс.Метрика. Данные хранятся на&nbsp;серверах в&nbsp;РФ. <a href="https://yandex.ru/legal/metrika_termsofuse/" target="_blank" rel="noopener noreferrer">Условия сервиса&nbsp;→</a></li>
-        <li><strong>Google LLC (США)</strong> — сервис Google Analytics 4. Трансграничная передача осуществляется на&nbsp;основании согласия субъекта персональных данных (ст.&nbsp;12 ФЗ-152). IP-адрес анонимизируется до&nbsp;передачи. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Политика Google&nbsp;→</a></li>
+        <li><strong>ООО «Яндекс» (Россия)</strong> — сервис Яндекс.Метрика. Данные хранятся на&nbsp;серверах в&nbsp;РФ. Трансграничная передача отсутствует. <a href="https://yandex.ru/legal/metrika_termsofuse/" target="_blank" rel="noopener noreferrer">Условия сервиса&nbsp;→</a></li>
       </ul>
       <p>Если вы&nbsp;не&nbsp;желаете, чтобы данные передавались указанным сервисам, нажмите «Только необходимые» в&nbsp;cookie-уведомлении — аналитика не&nbsp;будет загружена.</p>
       <p>Сообщения, передаваемые через мессенджеры (Telegram, Max), обрабатываются Оператором после их&nbsp;получения; передача производится по&nbsp;добровольной инициативе пользователя.</p>
@@ -4360,8 +4374,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h4 style="margin:20px 0 8px;font-size:16px">📊 Аналитические куки</h4>
       <p>Устанавливаются только если вы нажали «Принять». Помогают нам понять, как посетители взаимодействуют с сайтом: какие страницы смотрят, откуда приходят, как долго остаются. Эти данные используются исключительно для улучшения сайта.</p>
       <ul style="padding-left:20px;margin:8px 0">
-        <li><strong>Яндекс.Метрика</strong> — анализ посещаемости, карта кликов, вебвизор. Данные хранятся на серверах Яндекса. <a href="https://yandex.ru/legal/metrika_termsofuse/" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Условия Яндекс.Метрики →</a></li>
-        <li><strong>Google Analytics (GA4)</strong> — статистика посещений и поведения пользователей. IP-адрес анонимизируется. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Политика Google →</a></li>
+        <li><strong>Яндекс.Метрика</strong> — анализ посещаемости, карта кликов, вебвизор. Данные хранятся на&nbsp;серверах Яндекса в&nbsp;РФ. Трансграничная передача отсутствует. <a href="https://yandex.ru/legal/metrika_termsofuse/" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Условия Яндекс.Метрики →</a></li>
       </ul>
       <h4 style="margin:20px 0 8px;font-size:16px">🗺 Куки сторонних сервисов</h4>
       <p>При отображении Яндекс.Карт и Яндекс.Профиля Яндекс может устанавливать собственные куки в соответствии со своей политикой конфиденциальности.</p>
@@ -4386,8 +4399,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <tbody>
           <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)"><code>cookieChoice</code></td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Фиксация выбора пользователя (принять/отклонить аналитику)</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Необходимый</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">1&nbsp;год</td></tr>
           <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)"><code>cookieChoiceDate</code></td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Дата принятия решения о&nbsp;cookies</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Необходимый</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">1&nbsp;год</td></tr>
-          <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">_ym_* (Яндекс)</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Яндекс.Метрика — аналитика посещений</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Аналитический</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">До&nbsp;1&nbsp;года</td></tr>
-          <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">_ga, _ga_* (Google)</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Google Analytics 4 — статистика поведения</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Аналитический</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">До&nbsp;2&nbsp;лет</td></tr>
+          <tr><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">_ym_* (Яндекс)</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Яндекс.Метрика — аналитика посещений. Данные хранятся в&nbsp;РФ.</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">Аналитический</td><td style="padding:7px 10px;border:1px solid rgba(27,27,46,.08)">До&nbsp;1&nbsp;года</td></tr>
         </tbody>
       </table>
       <!-- END K -->
@@ -4617,15 +4629,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     setCookieChoice('rejected');
   }
   // ============================================================
-  // Аналитика грузится ТОЛЬКО после согласия (152-ФЗ + GDPR-like).
-  // Чтобы активировать: замените YM_COUNTER_ID и CLARITY_ID на реальные.
-  // Инструкция: см. «Аналитика и SEO — чеклист подключения.md»
+  // Аналитика грузится ТОЛЬКО после согласия (152-ФЗ).
+  // Только Яндекс.Метрика — данные хранятся в РФ.
   // ============================================================
   var YM_COUNTER_ID  = 109457377;  // Татьянин День — metrika.yandex.ru/dashboard?id=109457377
-  var CLARITY_ID     = null;  // например: "abcd1234ef"  (получить на clarity.microsoft.com)
-  var GA4_ID         = 'G-31FPXBHXEV';
-  var GTM_ID         = 'GTM-NG4GMMWB';
-  // var VK_PIXEL_ID = null;  // например: "VK-RTRG-000000-XXXXX"  (для рекламы ВКонтакте)
+
+  // ============================================================
+  // BEGIN R2 – Яндекс iframes загружаются только после согласия
+  // или по клику пользователя (ФЗ-152 п. 6 ч. 1)
+  // ============================================================
+  function loadYandexMap() {
+    var ph = document.getElementById('map-placeholder');
+    var iframe = document.getElementById('map-iframe');
+    if (!iframe || iframe.src !== 'about:blank') return;
+    iframe.src = iframe.getAttribute('data-src');
+    iframe.style.display = '';
+    if (ph) ph.style.display = 'none';
+  }
+
+  function loadYandexWidgets() {
+    // Load rating badge iframes (hero + reviews section)
+    document.querySelectorAll('iframe[data-src]').forEach(function(f) {
+      if (f.id === 'map-iframe') return; // map stays click-only
+      if (f.src === 'about:blank') {
+        f.src = f.getAttribute('data-src');
+      }
+    });
+  }
+  // END R2
 
   function loadYandexMetrika(){
     if(!YM_COUNTER_ID) return;
@@ -4641,51 +4672,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       webvisor: true,
       ecommerce: "dataLayer"
     });
-    // <noscript> fallback
     var ns = document.createElement('noscript');
     ns.innerHTML = '<div><img src="https://mc.yandex.ru/watch/' + YM_COUNTER_ID + '" style="position:absolute; left:-9999px;" alt="" /></div>';
     if (document.body) { document.body.appendChild(ns); }
   }
 
-  function loadMicrosoftClarity(){
-    if(!CLARITY_ID) return;
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", CLARITY_ID);
-  }
-
-  function loadGTM(){
-    if(!GTM_ID || window.__gtmLoaded) return;
-    window.__gtmLoaded = true;
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID;
-    document.head.appendChild(s);
-  }
-
-  function loadGA4(){
-    if(!GA4_ID || window.__ga4Loaded) return;
-    window.__ga4Loaded = true;
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', GA4_ID, { anonymize_ip: true });
-  }
-
   function loadAnalytics(){
-    try { loadGTM(); } catch(e) { console.warn('GTM load failed', e); }
-    try { loadGA4(); } catch(e) { console.warn('GA4 load failed', e); }
-    try { loadYandexMetrika(); } catch(e) { console.warn('YM load failed', e); }
-    try { loadMicrosoftClarity(); } catch(e) { console.warn('Clarity load failed', e); }
+    try { loadYandexMetrika(); } catch(e) { /* silent fail */ }
+    try { loadYandexWidgets(); } catch(e) { /* silent fail */ }
   }
 
   // ============================================================
@@ -4695,9 +4689,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   function reachGoal(goalId, params){
     try {
       if (window.ym && YM_COUNTER_ID) ym(YM_COUNTER_ID, 'reachGoal', goalId, params || {});
-      if (window.clarity) clarity('set', 'goal', goalId);
-      if (window.gtag) gtag('event', goalId, params || {});
-      if (window.dataLayer) dataLayer.push({ event: goalId, goalParams: params || {} });
     } catch(e) { /* analytics not loaded yet */ }
   }
 
@@ -4767,6 +4758,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if (e && e.preventDefault) e.preventDefault();
     const form = document.getElementById('signupForm');
     if (!form) return false;
+    // BEGIN HONEYPOT CHECK – bots fill hidden field, humans don't
+    const hp = form.querySelector('input[name="website"]');
+    if (hp && hp.value.length > 0) { return false; }
+    // END HONEYPOT CHECK
     if (!form.reportValidity()) return false;
     // 152-ФЗ: hard-block submit if consent not given
     const cb = document.getElementById('consentCheckbox');
