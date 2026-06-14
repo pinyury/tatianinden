@@ -84,6 +84,8 @@ nav.menu a{font-size:15.5px;font-weight:600;color:var(--ink-soft);padding:6px 2p
 nav.menu a:hover{color:var(--pink-deep)}
 nav.menu a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--gold);border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform .3s}
 nav.menu a:hover::after{transform:scaleX(1)}
+nav.menu a.nav-blog{color:var(--gold-deep);font-weight:700;position:relative}
+nav.menu a.nav-blog::before{content:"✦";color:var(--gold);margin-right:5px;font-size:.85em}
 nav.menu a.nav-active{color:var(--pink-deep);font-weight:700}
 nav.menu a.nav-active::before{content:"☀";color:var(--sun);margin-right:5px;font-size:.85em}
 .nav-actions{display:flex;align-items:center;gap:18px}
@@ -418,10 +420,10 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
       <a href="index.html#programs">Группы</a>
       <a href="index.html#teachers">Педагоги</a>
       <a href="index.html#disciplines">Дисциплины</a>
-      <a href="summer-intensiv.html" class="nav-active">Интенсив</a>
-      <a href="https://www.tatianinden.ru/smart%E2%80%91fitness.html" class="nav-blog">Умный фитнес</a>
+      <a href="summer-intensiv.html" class="nav-blog nav-active">Интенсив</a>
+      <a href="smart-fitness.html" class="nav-blog">Умный фитнес</a>
       <a href="blog/" class="nav-blog">Блог</a>
-      <a href="prices.html">Цены</a>
+      <a href="prices.html" class="nav-blog">Цены</a>
       <a href="partners.html">Партнёры</a>
       <a href="index.html#contacts">Контакты</a>
     </nav>
