@@ -221,7 +221,8 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
   nav.menu{display:none}
   .nav-actions .nav-phone{display:none}
   .burger{display:block}
-  nav.menu.open{display:flex;flex-direction:column;position:fixed;top:96px;left:16px;right:16px;background:#fff;padding:22px 24px;border-radius:22px;box-shadow:var(--shadow-md);gap:16px;align-items:flex-start;z-index:60}
+  nav.menu.open{display:flex;flex-direction:column;position:fixed;top:96px;left:16px;right:16px;background:#fff;padding:22px 24px;border-radius:22px;box-shadow:var(--shadow-md);gap:16px;align-items:flex-start;z-index:60;max-height:calc(100vh - 120px);overflow-y:auto}
+  nav.menu.open a{font-size:17px;padding:8px 0}
 }
 @media (max-width:960px){
   .fitness-grid{grid-template-columns:1fr;gap:40px}
