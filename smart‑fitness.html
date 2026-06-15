@@ -346,6 +346,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
       <a href="index.html#disciplines">Дисциплины</a>
       <a href="summer-intensiv.html" class="nav-blog">Интенсив</a>
       <a href="smart-fitness.html" class="nav-blog nav-active">Умный фитнес</a>
+      <a href="online-fitness.html" class="nav-blog">Онлайн-фитнес</a>
       <a href="blog/" class="nav-blog">Блог</a>
       <a href="prices.html" class="nav-blog">Цены</a>
       <a href="partners.html">Партнёры</a>
@@ -544,7 +545,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
   <div class="container">
     <div class="fitness-online reveal" id="fitness-online">
       <div class="fo-header">
-        <span class="fo-badge"><span class="online-pill">NEW</span> Онлайн-формат</span>
+        <a class="fo-badge" href="online-fitness.html" data-goal="cta_online_fitness_badge"><span class="online-pill">NEW</span> Онлайн-формат</a>
         <h2>Умный&nbsp;фитнес&nbsp;— <em>и&nbsp;онлайн</em></h2>
         <p class="lead">Занимайтесь в&nbsp;зале или дома&nbsp;— в&nbsp;то&nbsp;же&nbsp;время, что и&nbsp;офлайн-группа. Педагог видит вас и&nbsp;контролирует технику, чтобы каждое упражнение было эффективным и&nbsp;безопасным.</p>
       </div>
@@ -570,7 +571,11 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
           <p>Не&nbsp;нужно тратить часы на&nbsp;дорогу&nbsp;— занимайтесь дома без&nbsp;потери качества тренировки.</p>
         </div>
       </div>
-      <div class="fo-cta">
+      <div class="fo-cta" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
+        <a class="btn btn-ghost btn-lg" href="online-fitness.html" data-goal="cta_online_fitness_page">
+          Подробнее об&nbsp;онлайн-занятиях
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
         <a class="btn btn-primary btn-lg" href="#" onclick="openModal('online');return false;" data-goal="cta_open_form_online">
           Записаться на&nbsp;онлайн-занятие
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
