@@ -110,7 +110,11 @@ nav.menu a.nav-active{color:var(--tiffany-deep)}
 .fitness-photo img{width:100%;height:100%;object-fit:cover;transition:transform 6s}
 .fitness-photo:hover img{transform:scale(1.06)}
 .fitness-badge{position:absolute;background:#fff;padding:18px 22px;border-radius:18px;box-shadow:var(--shadow-md);z-index:2}
-.fitness-badge.fb-online{top:-16px;right:-24px;border:1px solid var(--tiffany-light);animation:floatBadge 5s ease-in-out infinite}
+.fitness-badge.fb-online{top:-16px;right:-24px;border:1px solid var(--tiffany-light);animation:floatBadge 5s ease-in-out infinite;display:flex;align-items:center;gap:10px;cursor:pointer;transition:transform .3s,box-shadow .3s;text-decoration:none}
+.fitness-badge.fb-online:hover{transform:translateY(-4px) scale(1.04);box-shadow:var(--shadow-gold)}
+.fitness-badge.fb-online svg{color:var(--tiffany-deep);flex:0 0 22px}
+.fitness-badge.fb-online strong{display:block}
+.fitness-badge.fb-online .fb-arrow{font-family:var(--display);font-style:italic;color:var(--pink-deep);font-size:18px}
 .fitness-badge.fb-care{bottom:30px;left:-26px;border:1px solid var(--gold-light);flex-direction:column;align-items:flex-start;gap:2px;animation:floatBadge 6s ease-in-out infinite reverse}
 .fitness-badge.fb-method{bottom:30px;right:-26px;border:1px solid var(--tiffany-light);display:flex;align-items:center;gap:14px;animation:floatBadge 6.5s ease-in-out infinite}
 .fitness-badge.fb-care strong{font-family:var(--display);font-style:italic;font-size:22px;color:var(--gold-deep)}
@@ -370,9 +374,10 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
         <div class="fitness-photo">
           <img src="umniy_fitness.jpg" alt="Умный фитнес для взрослых — театр танца Татьянин День" width="480" height="600" loading="eager" fetchpriority="high" />
         </div>
-        <div class="fitness-badge fb-online">
-          <strong>Онлайн</strong><strong> и офлайн</strong>
-        </div>
+        <a class="fitness-badge fb-online" href="online-fitness.html" data-goal="cta_online_fitness_herobadge" aria-label="Перейти на страницу онлайн-занятий «Умный фитнес»">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <span><strong>Доступно онлайн</strong><span class="fb-arrow">→</span></span>
+        </a>
         <div class="fitness-badge fb-care">
           <strong>Бережно</strong>
           <strong>к&nbsp;спине и&nbsp;суставам</strong>
@@ -643,6 +648,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:32px 0;font-siz
     <div>© 2014–2026 · Детский театр танца «Татьянин День» · Видное, ЖК «Суханово Парк»</div>
     <div>
       <a href="index.html">Главная</a> ·
+      <a href="online-fitness.html">Онлайн-фитнес</a> ·
       <a href="prices.html">Цены</a> ·
       <a href="index.html#contacts">Контакты</a>
     </div>
