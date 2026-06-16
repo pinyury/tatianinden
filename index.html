@@ -3192,6 +3192,15 @@
 
 <main id="main-content">
 <!-- ============ HERO ============ -->
+<!-- ================================================================ -->
+<!-- ИТЕРАЦИЯ 2 · ЗАМЕНА СЕКЦИИ HERO В index.html                    -->
+<!--                                                                  -->
+<!-- ИНСТРУКЦИЯ: Заменить блок от строки                             -->
+<!--   <section class="hero" id="hero">                              -->
+<!-- до закрывающего </section> первой секции hero                   -->
+<!-- ================================================================ -->
+
+<!-- ============ HERO (новая версия) ============ -->
 <section class="hero" id="hero">
   <div class="hero-bg-img" aria-hidden="true"></div>
   <div class="hero-bg-overlay" aria-hidden="true"></div>
@@ -3203,7 +3212,7 @@
     <div class="hero-grid">
       <div class="hero-text reveal">
         <div class="hero-tags">
-          <span class="tag"><span class="tag-dot"></span> Топ-100 лучших коллективов России</span>
+          <span class="tag"><span class="tag-dot"></span> Топ-100 коллективов России</span>
           <span class="tag"><span class="tag-dot" style="background:var(--tiffany)"></span> 10 лет на сцене</span>
           <span class="tag"><span class="tag-dot" style="background:var(--pink)"></span> <span id="ya-tag-rating">4,5</span> на Яндексе</span>
           <a class="tag tag-online" href="online-fitness.html" data-goal="cta_online_fitness_herotag">
@@ -3212,42 +3221,44 @@
           </a>
         </div>
 
-        <span class="hero-kicker">Детский театр танца</span>
+        <span class="hero-kicker">Детский театр танца · ЖК Суханово Парк</span>
         <h1 class="hero-brand">
           <em>Татьянин<br/>День</em>
         </h1>
-        <span class="hero-loc">в&nbsp;ЖК «Суханово&nbsp;Парк»</span>
 
-        <span class="hero-slogan">Танцуй ярко.<br /><span class="gold">Сияй на сцене.</span></span>
+        <!-- НОВЫЙ СЛОГАН: бьёт в боли, а не в фичи -->
+        <span class="hero-slogan">Ваша дочь<br/><span class="gold">расцветёт на сцене.</span></span>
 
+        <!-- НОВЫЙ ПОДЗАГОЛОВОК: выгоды, боли ЦА -->
         <p class="hero-sub">
-          Детский театр танца «Татьянин День» — творческий коллектив, где детство превращается в&nbsp;яркие выступления, конкурсные победы и&nbsp;дружбу на&nbsp;всю жизнь. Группы для детей <strong>3–14&nbsp;лет</strong>, умный фитнес для&nbsp;взрослых и&nbsp;летний танцевальный интенсив.
+          Пришла стеснительной — уходит звездой. Мы помогаем девочкам <strong>3–14&nbsp;лет</strong> обрести уверенность, красивую осанку и&nbsp;настоящих друзей через танец. 60+&nbsp;наград, Топ-100&nbsp;России.
         </p>
 
         <div class="hero-cta">
           <a class="btn btn-primary btn-lg" href="#" onclick="openModal();return false;" data-goal="cta_open_form_hero">
-            Записаться на первый урок
+            Записаться на бесплатный урок
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a class="btn btn-ghost btn-lg" href="#programs">Смотреть программы</a>
+          <a class="btn btn-ghost btn-lg" href="#programs">Выбрать группу по возрасту</a>
         </div>
 
+        <!-- TRUST BAR: переформатирован на выгоды, не на фичи -->
         <div class="hero-trust">
           <div class="trust-item">
             <span class="trust-num" data-count="10">0</span>
-            <span class="trust-label">лет творчества</span>
+            <span class="trust-label">лет растим звёзд</span>
           </div>
           <div class="trust-item">
-            <span class="trust-num" data-count="100" data-suffix="+">0</span>
-            <span class="trust-label">воспитанников</span>
+            <span class="trust-num" data-count="60" data-suffix="+">0</span>
+            <span class="trust-label">наград и&nbsp;Гран-при</span>
           </div>
           <div class="trust-item">
             <span class="trust-num" id="ya-trust-rating">4,5</span>
             <span class="trust-label">★ на Яндексе</span>
           </div>
           <div class="trust-item">
-            <span class="trust-num">Топ-100</span>
-            <span class="trust-label">коллектив России</span>
+            <span class="trust-num">1-й</span>
+            <span class="trust-label">урок бесплатно</span>
           </div>
         </div>
       </div>
@@ -3279,6 +3290,72 @@
           <div class="num">60+</div>
           <div class="lbl">наград и&nbsp;Гран-при<br/>на конкурсах</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================ -->
+<!-- ЗАМЕНА СЕКЦИИ ADVANTAGES (Почему мы)                             -->
+<!-- Заменить весь блок <section class="advantages" id="advantages">  -->
+<!-- ================================================================ -->
+
+<section class="advantages" id="advantages" aria-labelledby="heading-advantages">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Почему выбирают нас</span>
+      <h2 id="heading-advantages">Что меняется в&nbsp;вашем ребёнке <em>за&nbsp;3 месяца</em></h2>
+      <p class="lead">Родители замечают изменения раньше, чем ожидают. Вот что чаще всего говорят мамы после первого квартала.</p>
+    </div>
+
+    <div class="adv-grid">
+      <div class="adv-card reveal">
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>«Дочка перестала бояться выступать»</h3>
+        <p>Сцена, зрители, микрофон — мы превращаем стеснительных девочек в&nbsp;уверенных маленьких артисток. Постепенно, с&nbsp;заботой и&nbsp;без&nbsp;давления.</p>
+      </div>
+
+      <div class="adv-card reveal" style="transition-delay:.05s">
+        <div class="adv-icon" style="background:linear-gradient(135deg, var(--pink-cloud), #FAF1DC); color:var(--pink-deep)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <h3>«Осанка стала заметно лучше»</h3>
+        <p>Классическая база, растяжка и&nbsp;партерная гимнастика каждую тренировку. Тело учится держаться ровно — и&nbsp;это остаётся с&nbsp;ребёнком навсегда.</p>
+      </div>
+
+      <div class="adv-card reveal" style="transition-delay:.1s">
+        <div class="adv-icon" style="background:linear-gradient(135deg, #FAF1DC, var(--tiffany-soft)); color:var(--gold-deep)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>«Нашла лучших подруг»</h3>
+        <p>Коллектив, в&nbsp;котором ребёнок идёт на&nbsp;занятие как&nbsp;к&nbsp;друзьям. Совместные выступления, летний интенсив, поездки на&nbsp;конкурсы сближают на&nbsp;годы.</p>
+      </div>
+
+      <div class="adv-card reveal">
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg>
+        </div>
+        <h3>«Первый Гран-при в&nbsp;9 лет»</h3>
+        <p>Конкурсная подготовка — для тех, кто хочет. Никаких принудиловок: мы растим уверенность, а&nbsp;не&nbsp;давим результатом. Призовые места приходят сами.</p>
+      </div>
+
+      <div class="adv-card reveal" style="transition-delay:.05s">
+        <div class="adv-icon" style="background:linear-gradient(135deg, var(--pink-cloud), var(--tiffany-soft)); color:var(--pink-deep)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>«Всегда знаю, что происходит»</h3>
+        <p>Фото и&nbsp;видео с&nbsp;каждого занятия в&nbsp;родительском чате. Открытые уроки, отчётные концерты. Вы&nbsp;видите прогресс — и&nbsp;гордитесь вместе с&nbsp;ребёнком.</p>
+      </div>
+
+      <div class="adv-card reveal" style="transition-delay:.1s">
+        <div class="adv-icon" style="background:linear-gradient(135deg, var(--tiffany-soft), #FAF1DC); color:var(--tiffany-deep)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Первый урок — бесплатно</h3>
+        <p>Приходите познакомиться без&nbsp;обязательств. Ребёнок попробует, педагог познакомится, вы&nbsp;увидите атмосферу — и&nbsp;только потом решите.</p>
       </div>
     </div>
   </div>
