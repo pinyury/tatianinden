@@ -1,18 +1,18 @@
 User-agent: *
-# --- БЛОКИРОВКИ ---
-# Закрываем папку разработчика (нужна только тебе)
+Allow: /
 Disallow: /deploy-ready/
-# Закрываем служебные файлы от атак и спама (стандарт безопасности)
-Disallow: /xmlrpc.php
-Disallow: /search/
 
-# --- НАСТРОЙКИ ДЛЯ ЯНДЕКСА ---
+# Страницы-лид-магниты: скрыты от индексации, но доступны по прямой ссылке
+Disallow: /invite-jpeg.html
+Disallow: /invite-pdf.html
+Disallow: /invite-print.html
+Disallow: /invite-screen.html
+
 User-agent: Yandex
-# Очищаем URL от мусорных параметров (аналитика, метки, клики)
-# Это склеивает ссылки типа site.ru и site.ru?utm_source=google в одну
-Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid&_ga&_gl&openstat&from&bitrix_include_areas&clear_cache&sphrase_id&etext
-# Указываем главное зеркало
-Host: https://tatianinden.ru
+Allow: /
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid
 
-# --- КАРТА САЙТА ---
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://tatianinden.ru/sitemap.xml
