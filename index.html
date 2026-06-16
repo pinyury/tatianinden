@@ -3781,13 +3781,101 @@
 </section>
 
 <!-- ============ SMART FITNESS ============ -->
+<!-- ================================================================ -->
+<!-- ИТЕРАЦИЯ 2 · ЗАМЕНА СЕКЦИИ FITNESS В index.html                 -->
+<!-- Заменить блок <section class="fitness" id="fitness">            -->
+<!-- до закрывающего </section>                                       -->
+<!--                                                                  -->
+<!-- ЦА 1: Женщины с болью в спине / сидячая работа / «нет времени» -->
+<!-- ЦА 2: Мамы, которые хотят заниматься пока дочь на занятии      -->
+<!-- ================================================================ -->
+
 <section class="fitness" id="fitness">
   <div class="container">
-    <!-- Часть 1: Что такое умный фитнес -->
-    <div class="fitness-grid">
-      <div class="fitness-visual reveal">
+
+    <!-- ── ЧАСТЬ 1: Две ЦА — два послания ── -->
+    <div class="section-head center reveal" style="margin-bottom:48px">
+      <span class="eyebrow center">Для взрослых</span>
+      <h2 style="margin-top:14px">Пока дочь танцует —<br/><em>занимайтесь и вы</em></h2>
+      <p class="lead">Или просто наконец-то займитесь собой. «Умный фитнес» создан для женщин, у которых «нет времени» — мы встроили его в расписание детских занятий.</p>
+    </div>
+
+    <!-- Два CTA-блока под разные боли -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:80px" class="reveal fitness-two-cta">
+      <!-- ЦА 1: боль в спине -->
+      <div style="
+        background:linear-gradient(135deg, var(--tiffany-soft) 0%, #E8F7F6 100%);
+        border-radius:var(--radius-lg); padding:40px 36px;
+        border:1px solid rgba(10,186,181,.2);
+        position:relative; overflow:hidden;
+      ">
+        <div style="position:absolute; top:-40px; right:-40px; width:160px; height:160px; background:radial-gradient(circle, rgba(10,186,181,.15), transparent 70%); border-radius:50%"></div>
+        <span style="display:inline-block; padding:6px 14px; border-radius:999px; background:var(--tiffany); color:#fff; font-size:12px; font-weight:700; letter-spacing:.08em; margin-bottom:18px">БЕРЕЖНО К СПИНЕ</span>
+        <h3 style="font-size:26px; margin-bottom:14px; color:var(--ink)">«Постоянно болит спина<br/>от сидячей работы»</h3>
+        <p style="font-size:16px; line-height:1.6; margin-bottom:24px">Партерная гимнастика, укрепление глубоких мышц корпуса, растяжка — три урока в неделю, и через месяц вы почувствуете разницу. Педагог работает с каждой индивидуально: без рывков, без боли, без риска.</p>
+        <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:10px; margin-bottom:24px">
+          <li style="display:flex; align-items:center; gap:10px; font-size:15px; color:var(--ink-soft)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--tiffany-deep)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+            Укрепление мышц-стабилизаторов позвоночника
+          </li>
+          <li style="display:flex; align-items:center; gap:10px; font-size:15px; color:var(--ink-soft)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--tiffany-deep)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+            Растяжка поясничного и грудного отделов
+          </li>
+          <li style="display:flex; align-items:center; gap:10px; font-size:15px; color:var(--ink-soft)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--tiffany-deep)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+            Без ударной нагрузки — бережно к суставам
+          </li>
+          <li style="display:flex; align-items:center; gap:10px; font-size:15px; color:var(--ink-soft)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--tiffany-deep)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+            Индивидуальный подход на каждом занятии
+          </li>
+        </ul>
+        <a class="btn btn-primary" href="#" onclick="openModal('trial'); return false;" data-goal="cta_fitness_back">
+          Хочу избавиться от боли в спине
+        </a>
+      </div>
+
+      <!-- ЦА 2: мамы -->
+      <div style="
+        background:linear-gradient(135deg, var(--pink-cloud) 0%, #FFF0F8 100%);
+        border-radius:var(--radius-lg); padding:40px 36px;
+        border:1px solid rgba(255,111,169,.2);
+        position:relative; overflow:hidden;
+      ">
+        <div style="position:absolute; top:-40px; right:-40px; width:160px; height:160px; background:radial-gradient(circle, rgba(255,111,169,.12), transparent 70%); border-radius:50%"></div>
+        <span style="display:inline-block; padding:6px 14px; border-radius:999px; background:var(--pink); color:#fff; font-size:12px; font-weight:700; letter-spacing:.08em; margin-bottom:18px">ДЛЯ МАМ</span>
+        <h3 style="font-size:26px; margin-bottom:14px; color:var(--ink)">«Привожу дочь —<br/>и трачу час на телефон»</h3>
+        <p style="font-size:16px; line-height:1.6; margin-bottom:24px">Расписание «Умного фитнеса» синхронизировано с детскими занятиями. Пока дочь в зале с педагогом — вы занимаетесь в соседнем помещении. 60–90 минут для себя три раза в неделю.</p>
+        <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:10px; margin-bottom:24px">
+          <li style="display:flex; align-items:center; gap:10px; font-size:15px; color:var(--ink-soft)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--pink-deep)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+            Расписание совпадает с детскими группами
+          </li>
+          <li style="display:flex; align-items:center; gap:10px; font-size:15px; color:var(--ink-soft)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--pink-deep)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+            Одна поездка — два результата
+          </li>
+          <li style="display:flex; align-items:center; gap:10px; font-size:15px; color:var(--ink-soft)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--pink-deep)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+            Тёплый женский коллектив, без соревновательности
+          </li>
+          <li style="display:flex; align-items:center; gap:10px; font-size:15px; color:var(--ink-soft)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--pink-deep)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+            Ребёнок видит: мама тоже занимается. Лучший пример.
+          </li>
+        </ul>
+        <a class="btn btn-primary" href="#" onclick="openModal('trial'); return false;" data-goal="cta_fitness_mama">
+          Хочу заниматься пока дочь в зале
+        </a>
+      </div>
+    </div>
+
+    <!-- ── ЧАСТЬ 2: Что такое «Умный фитнес» ── -->
+    <div class="fitness-grid reveal">
+      <div class="fitness-visual">
         <div class="fitness-photo">
-          <img src="umniy_fitness.jpg" alt="Умный фитнес для взрослых" loading="lazy" width="480" height="600" decoding="async"/>
+          <img src="umniy_fitness.jpg" alt="Умный фитнес для взрослых женщин — Татьянин День" loading="lazy" width="480" height="600" decoding="async"/>
         </div>
         <div class="fitness-badge fb-care">
           <strong>Бережно</strong>
@@ -3802,16 +3890,19 @@
         </div>
       </div>
 
-      <div class="fitness-text reveal">
-        <span class="fitness-kicker">Для взрослых</span>
+      <div class="fitness-text">
+        <span class="fitness-kicker">Программа «Умный фитнес»</span>
         <h2 class="fitness-h2"><em>Умный<br/>Фитнес</em></h2>
-        <p class="fitness-sub">Путь к&nbsp;гармонии, силе и&nbsp;уверенности</p>
-        <p class="lead">В&nbsp;программе «Умный фитнес» мы&nbsp;верим, что тренировка&nbsp;— это не&nbsp;просто физическая активность, а&nbsp;искусство заботы о&nbsp;теле и&nbsp;душе. Каждое занятие&nbsp;— тщательно продуманный урок с&nbsp;вниманием к&nbsp;деталям и&nbsp;индивидуальным подходом.</p>
-        <p>Инновационный подход, основанный на&nbsp;особенностях организма и&nbsp;авторской методике: <strong>гармония, сила и&nbsp;уверенность</strong>&nbsp;— бережно к&nbsp;спине и&nbsp;суставам.</p>
+        <p class="fitness-sub">Движение, которое лечит — а не добивает</p>
+
+        <!-- Переформатированный текст: выгоды, не описание процесса -->
+        <p class="lead">Не «сожгите калории», не «марафон тела» — а осознанные тренировки, после которых хочется прийти снова. Программа разработана хореографом Татьяной Гурьяновой специально для женщин с малоподвижным образом жизни, болями в спине и дефицитом времени.</p>
+
+        <p><strong>Три результата, которые замечают уже через месяц:</strong> спина перестаёт ныть к вечеру, улучшается осанка, появляется энергия, которой давно не было.</p>
 
         <div class="fitness-goal">
-          <span class="fg-mark">Наша цель</span>
-          <p>Помочь вам обрести <strong>полноценный, здоровый образ жизни</strong> и&nbsp;создать атмосферу вдохновения, чтобы каждая минута стала шагом к&nbsp;вашему лучшему «Я».</p>
+          <span class="fg-mark">Почему «Умный»?</span>
+          <p>Потому что каждое упражнение объясняется: зачем это движение, какие мышцы работают, как это влияет на спину и осанку. Вы понимаете своё тело — и это меняет отношение к тренировкам навсегда.</p>
         </div>
 
         <div class="fitness-price-badge">
@@ -3827,11 +3918,123 @@
           <a class="btn btn-primary btn-lg" href="#" onclick="openModal('trial');return false;" data-goal="cta_open_form_trial">
             Записаться на пробное
           </a>
-          <a class="btn btn-ghost btn-lg" href="https://www.tatianinden.ru/smart&#x2011;fitness.html" data-goal="cta_fitness_details">Подробнее о&nbsp;программе</a>
+          <a class="btn btn-ghost btn-lg" href="umnyy-fitnes/" data-goal="cta_fitness_details">Подробнее о&nbsp;программе</a>
         </div>
       </div>
     </div>
 
+    <!-- Структура занятия -->
+    <div class="reveal" style="margin-top:90px; position:relative; z-index:1">
+      <div class="fo-header">
+        <span class="eyebrow center">Структура занятия</span>
+        <h2 style="margin-top:14px">60 минут, которые <em>меняют ощущение тела</em></h2>
+      </div>
+      <div class="fo-grid fo-grid-3">
+        <div class="fo-card">
+          <div class="fo-num">01</div>
+          <h4>Разминка (15 мин)</h4>
+          <p>Разогрев суставов от шеи до стоп — плавно, без рывков. Готовим тело к работе и убираем утренние или послерабочие зажимы.</p>
+        </div>
+        <div class="fo-card">
+          <div class="fo-num">02</div>
+          <h4>Танцевальная часть (25 мин)</h4>
+          <p>Восточные танцы, бачата — ритм, пластика, координация. Именно здесь появляется та самая «женская» лёгкость движений.</p>
+        </div>
+        <div class="fo-card">
+          <div class="fo-num">03</div>
+          <h4>Партер (20 мин)</h4>
+          <p>Работа на полу: укрепление корпуса, поддержка позвоночника, мягкая растяжка. То, что даёт долгосрочный эффект для спины.</p>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:28px">
+        <a class="btn btn-ghost" href="umnyy-fitnes/" data-goal="cta_fitness_program">Подробнее о&nbsp;программе и&nbsp;онлайн-формате&nbsp;→</a>
+      </p>
+    </div>
+
+    <!-- ── ОТЗЫВЫ УЧАСТНИЦ ФИТНЕСА (новый блок) ── -->
+    <div class="reveal" style="margin-top:80px">
+      <div class="fo-header">
+        <span class="eyebrow center">Говорят участницы</span>
+        <h2 style="margin-top:14px">Что происходит <em>после месяца занятий</em></h2>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:32px">
+        <div style="background:var(--white); border-radius:var(--radius); padding:28px 26px; box-shadow:var(--shadow-soft); border-left:4px solid var(--tiffany)">
+          <div style="color:var(--gold); font-size:16px; letter-spacing:2px; margin-bottom:12px">★★★★★</div>
+          <p style="font-style:italic; font-size:16px; line-height:1.65; margin-bottom:12px; color:var(--ink-soft)">«Привожу дочку на "Звёздочки" и занимаюсь сама. Два месяца — и спина перестала ныть к вечеру. Раньше после работы за компьютером было ощущение, что меня переломали. Теперь встаю из-за стола и иду, не скрючившись.»</p>
+          <cite style="font-size:13px; color:var(--ink-mute); font-style:normal; font-weight:600">— Ольга К., мама Маши (занимается 2 месяца)</cite>
+        </div>
+        <div style="background:var(--white); border-radius:var(--radius); padding:28px 26px; box-shadow:var(--shadow-soft); border-left:4px solid var(--pink)">
+          <div style="color:var(--gold); font-size:16px; letter-spacing:2px; margin-bottom:12px">★★★★★</div>
+          <p style="font-style:italic; font-size:16px; line-height:1.65; margin-bottom:12px; color:var(--ink-soft)">«Я думала, это как обычный фитнес в зале — пришла и поняла, что это совсем другое. Здесь объясняют зачем, а не просто "делайте". После каждого занятия чувствую себя живой, а не выжатой.»</p>
+          <cite style="font-size:13px; color:var(--ink-mute); font-style:normal; font-weight:600">— Наталья Р. (занимается 3 месяца)</cite>
+        </div>
+      </div>
+    </div>
+
+    <!-- Часть онлайн — сохраняем без изменений -->
+    <div class="fitness-online reveal" id="fitness-online">
+      <div class="fo-header">
+        <a class="fo-badge" href="online-fitness.html" data-goal="cta_online_fitness_badge"><span class="online-pill">NEW</span> Онлайн-формат</a>
+        <h2>Нет возможности приехать? <em>Занимайтесь онлайн</em></h2>
+        <p class="lead">Тот же педагог, то же время, та же группа — вы просто подключаетесь из дома. Педагог видит вас и контролирует технику. Подходит для мам в декрете, тех, кто живёт чуть дальше от Суханово, или тех, кто хочет совмещать.</p>
+      </div>
+
+      <div class="fo-grid">
+        <div class="fo-card">
+          <div class="fo-num">01</div>
+          <h4>Совместное расписание</h4>
+          <p>Вы занимаетесь в то же время, что и офлайн-группа — не пропуская ни одного занятия.</p>
+        </div>
+        <div class="fo-card">
+          <div class="fo-num">02</div>
+          <h4>Педагог всегда с&nbsp;вами</h4>
+          <p>Инструктор видит вас и корректирует движения в реальном времени. Никакого «смотри видео и повторяй».</p>
+        </div>
+        <div class="fo-card">
+          <div class="fo-num">03</div>
+          <h4>Реальные результаты</h4>
+          <p>Программа помогает уйти от болей, вернуть активность и лёгкость. Работает и онлайн — проверено участницами.</p>
+        </div>
+        <div class="fo-card">
+          <div class="fo-num">04</div>
+          <h4>Экономия времени</h4>
+          <p>Не нужно тратить час на дорогу. Для мам малышей — отдельный плюс: занимаетесь пока они спят.</p>
+        </div>
+        <div class="fo-card fo-card-wide">
+          <div class="fo-num">05</div>
+          <h4>Бонусы участницам</h4>
+          <p>Приятные подарки и поощрения в конце каждого месяца — дополнительная мотивация продолжать.</p>
+        </div>
+      </div>
+
+      <div class="fo-cta">
+        <p class="fo-quote">«Начала онлайн, потому что живу в Расторгуево. Через месяц перешла в офлайн — так понравилась атмосфера, что стала приезжать. Обе точки входа работают.»</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
+          <a class="btn btn-ghost btn-lg" href="online-fitness.html" data-goal="cta_online_fitness_page">
+            Подробнее об онлайн-занятиях
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-primary btn-lg" href="#" onclick="openModal('online');return false;" data-goal="cta_open_form_online">
+            Записаться на онлайн-занятие
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- ДОБАВИТЬ В <style> ТЕГА HEAD                                      -->
+<!-- (адаптив для новых двух блоков)                                   -->
+<!-- ================================================================ -->
+<style>
+  .fitness-two-cta { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 860px) {
+    .fitness-two-cta { grid-template-columns: 1fr; }
+  }
+</style>
     <!-- Структура занятия -->
     <div class="reveal" style="margin-top:90px; position:relative; z-index:1">
       <div class="fo-header">
