@@ -1,32 +1,18 @@
-# robots.txt — tatianinden.ru
-# Детский театр танца «Татьянин День», Видное
-
 User-agent: *
-Allow: /
+# --- БЛОКИРОВКИ ---
+# Закрываем папку разработчика (нужна только тебе)
+Disallow: /deploy-ready/
+# Закрываем служебные файлы от атак и спама (стандарт безопасности)
+Disallow: /xmlrpc.php
+Disallow: /search/
 
-# Не индексировать служебные файлы
-Disallow: /cgi-bin/
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /*.json$
-Disallow: /404.html
+# --- НАСТРОЙКИ ДЛЯ ЯНДЕКСА ---
+User-agent: Yandex
+# Очищаем URL от мусорных параметров (аналитика, метки, клики)
+# Это склеивает ссылки типа site.ru и site.ru?utm_source=google в одну
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid&_ga&_gl&openstat&from&bitrix_include_areas&clear_cache&sphrase_id&etext
+# Указываем главное зеркало
+Host: https://tatianinden.ru
 
-# Разрешить Яндексу и Гугл картинки
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: YandexImages
-Allow: /
-
-# Crawl-delay для агрессивных ботов
-User-agent: AhrefsBot
-Crawl-delay: 10
-
-User-agent: SemrushBot
-Crawl-delay: 10
-
-User-agent: MJ12bot
-Disallow: /
-
-# Sitemap
+# --- КАРТА САЙТА ---
 Sitemap: https://tatianinden.ru/sitemap.xml
