@@ -1,0 +1,738 @@
+<!-- ================================================================ -->
+<!-- ИТЕРАЦИЯ 3 · БЛОГ + ВОРОНКА ЛИД-МАГНИТА                        -->
+<!-- Файл содержит:                                                   -->
+<!--  A) Концепция раздела блога                                      -->
+<!--  B) Статья 1: HTML-заготовка для блога                          -->
+<!--  C) Статья 2: HTML-заготовка для блога                          -->
+<!--  D) Воронка лид-магнита: механика + invite-страницы             -->
+<!-- ================================================================ -->
+
+
+<!-- ================================================================ -->
+<!--  A) КОНЦЕПЦИЯ РАЗДЕЛА «БЛОГ»                                     -->
+<!-- ================================================================ -->
+<!--
+
+ПОЗИЦИОНИРОВАНИЕ БЛОГА:
+«Родителям о танцах» — не контент-маркетинг, а живая экспертиза педагога
+с 30-летним опытом. Единственный в Ленинском округе блог, где можно
+получить честный ответ на вопросы: «Не рано ли в 3 года?»,
+«Танцы или гимнастика?», «Как понять, что студия плохая?»
+
+КЛАСТЕРЫ СТАТЕЙ:
+
+Кластер 1 — ВЫБОР (помогают принять решение):
+  ✅ Уже есть: «Какие танцы выбрать для дочки», «Как выбрать студию», «Танцы или гимнастика»
+  📝 Нужны ещё: «Как понять, что ребёнок перегружён», «Частная студия vs государственная школа»
+
+Кластер 2 — ВОЗРАСТ (перехватывают трафик по возрасту):
+  ✅ Уже есть: «Во сколько лет отдавать на танцы»
+  📝 Нужны ещё:
+     → СТАТЬЯ 1 (ниже): «Танцы в 3 года — рано или в самый раз?»
+     → «Что умеет тело ребёнка в 6–9 лет: почему это золотое время для хореографии»
+
+Кластер 3 — РЕЗУЛЬТАТЫ (убеждают нерешившихся):
+  ✅ Уже есть: «Польза танцев», «Танцы для застенчивого ребёнка», «Пластика и осанка»
+  📝 Нужны ещё:
+     → СТАТЬЯ 2 (ниже): «Как понять, что студия танцев подходит именно вашему ребёнку»
+
+Кластер 4 — ПРАКТИКА (снижают барьер входа):
+  ✅ Уже есть: «Что надеть на первое занятие»
+  📝 Нужны ещё: «Как подготовить ребёнка к конкурсу», «Летний интенсив: зачем нужен и что брать»
+
+SEO-МЕХАНИКА:
+- Каждая статья: 1500–2500 слов, Title 55–65 символов, Description 150–160 символов
+- Вверх страницы: Breadcrumb (Главная → Блог → Статья)
+- Внутри статьи: 2–3 ссылки на коммерческие страницы (посадочные по возрасту, страница педагогов)
+- В конце статьи: CTA + форма записи или кнопка → лид-магнит
+- Автор: Гурьянова Татьяна Ивановна (Person schema)
+- В каждой статье: FAQPage JSON-LD из 3–5 вопросов (попадают в расширенные сниппеты)
+
+-->
+
+
+<!-- ================================================================ -->
+<!--  B) СТАТЬЯ 1 — ПОЛНАЯ ЗАГОТОВКА ДЛЯ БЛОГА                      -->
+<!-- ================================================================ -->
+
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<title>Танцы в 3 года: рано или в самый раз? Отвечает педагог с 30-летним опытом</title>
+<meta name="description" content="Стоит ли отдавать ребёнка на танцы в 3 года? Разбираем страхи родителей, физиологию дошкольника и 5 признаков того, что малышка готова. Мнение хореографа Татьяны Гурьяновой."/>
+<link rel="canonical" href="https://tatianinden.ru/blog/tantsy-v-3-goda/"/>
+<meta property="og:title" content="Танцы в 3 года: рано или в самый раз? Мнение педагога"/>
+<meta property="og:description" content="Педагог с 30-летним опытом разбирает, когда и зачем отдавать девочку на танцы в 3 года."/>
+<meta property="og:image" content="https://tatianinden.ru/zvezdochki.jpg"/>
+<meta property="og:url" content="https://tatianinden.ru/blog/tantsy-v-3-goda/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="article:published_time" content="2026-06-17"/>
+<meta property="article:author" content="Гурьянова Татьяна Ивановна"/>
+<link rel="icon" href="/favicon.ico"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Главная","item":"https://tatianinden.ru/"},
+    {"@type":"ListItem","position":2,"name":"Блог","item":"https://tatianinden.ru/blog/"},
+    {"@type":"ListItem","position":3,"name":"Танцы в 3 года: рано или в самый раз?","item":"https://tatianinden.ru/blog/tantsy-v-3-goda/"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Танцы в 3 года: рано или в самый раз? Отвечает педагог с 30-летним опытом",
+  "description": "Стоит ли отдавать ребёнка на танцы в 3 года? Разбираем страхи родителей и физиологию дошкольника.",
+  "image": "https://tatianinden.ru/zvezdochki.jpg",
+  "datePublished": "2026-06-17",
+  "dateModified": "2026-06-17",
+  "author": {
+    "@type": "Person",
+    "name": "Гурьянова Татьяна Ивановна",
+    "jobTitle": "Художественный руководитель",
+    "worksFor": {"@type":"DanceSchool","name":"Детский театр танца «Татьянин День»","url":"https://tatianinden.ru/"}
+  },
+  "publisher": {
+    "@type": "DanceSchool",
+    "name": "Детский театр танца «Татьянин День»",
+    "logo": {"@type":"ImageObject","url":"https://tatianinden.ru/logo.jpg"}
+  },
+  "mainEntityOfPage": {"@type":"WebPage","@id":"https://tatianinden.ru/blog/tantsy-v-3-goda/"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Можно ли отдать ребёнка на танцы в 3 года?",
+      "acceptedAnswer": {"@type":"Answer","text":"Да. 3 года — идеальный возраст для начала ритмики и игровой хореографии. Тело ещё гибкое, восприимчивость к музыке максимальная, а психика открыта к новому опыту. Главное — выбрать студию, где программа адаптирована именно под дошкольников, а не просто уменьшена взрослая нагрузка."}
+    },
+    {
+      "@type": "Question",
+      "name": "Что могут делать дети 3 лет на занятиях танцами?",
+      "acceptedAnswer": {"@type":"Answer","text":"В 3 года дети занимаются ритмикой, музыкально-ритмическими играми, простой партерной гимнастикой (растяжка через игру) и элементами детского танца. Никаких сложных технических элементов или жёстких позиций — только игра, движение и радость."}
+    },
+    {
+      "@type": "Question",
+      "name": "Сколько времени длится занятие для детей 3–5 лет?",
+      "acceptedAnswer": {"@type":"Answer","text":"Оптимальная длительность занятия для детей 3–5 лет — 45–60 минут. Больше — уже сверх нормы внимания для этого возраста. В студии «Татьянин День» группа «Звёздочки» занимается 60 минут три раза в неделю."}
+    },
+    {
+      "@type": "Question",
+      "name": "Что если ребёнок в 3 года плачет на занятии и не хочет заниматься?",
+      "acceptedAnswer": {"@type":"Answer","text":"Это абсолютно нормально для первых 1–3 занятий. Новое пространство, незнакомые люди, другой режим — стресс для малыша. Профессиональный педагог знает, как мягко ввести ребёнка в группу. Обычно через 2–4 занятия дети уже сами тянут маму в зал."}
+    },
+    {
+      "@type": "Question",
+      "name": "Какие танцы лучше для девочки 3–5 лет?",
+      "acceptedAnswer": {"@type":"Answer","text":"В этом возрасте оптимальны детский танец (ритмика, азбука движений), балетная гимнастика (развитие осанки и гибкости) и музыкально-ритмические игры. Специализация по стилям (классика, эстрада, народный) начинается позже — обычно с 5–6 лет."}
+    }
+  ]
+}
+</script>
+
+<!-- Стили такие же, как в основном сайте (подключить через link к основному CSS) -->
+<link rel="stylesheet" href="/fonts/fonts.css"/>
+<style>
+/* Базовые переменные — дублируем для standalone, в продакшене убрать и использовать основной CSS */
+:root{
+  --tiffany:#0ABAB5;--tiffany-soft:#D7F5F3;--tiffany-deep:#06877F;
+  --pink:#FF6FA9;--pink-soft:#FFD6E8;--pink-cloud:#FFEAF3;--pink-deep:#D44A85;
+  --gold:#C9A961;--gold-light:#E8CF8E;--gold-deep:#9A7E3D;
+  --white:#FFFFFF;--cream:#FFFBF6;
+  --ink:#1B1B2E;--ink-soft:#4A4A5E;--ink-mute:#8A8A9C;
+  --display:"Cormorant Garamond","Times New Roman",serif;
+  --body:"Manrope",-apple-system,"Segoe UI",sans-serif;
+  --radius:20px;--radius-lg:32px;
+  --shadow-soft:0 10px 30px -12px rgba(10,186,181,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;max-width:100%;overflow-x:hidden}
+img{max-width:100%;display:block;border-radius:16px}
+a{color:var(--tiffany-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(100% - 40px,800px);margin-inline:auto;position:relative}
+.container-wide{width:min(100% - 40px,1100px);margin-inline:auto}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;line-height:1.15;color:var(--ink)}
+h1{font-size:clamp(32px,5vw,56px);margin:0 0 24px}
+h2{font-size:clamp(24px,3.5vw,38px);margin:48px 0 18px;padding-top:8px}
+h3{font-size:clamp(20px,2.5vw,26px);margin:36px 0 14px}
+h4{font-size:18px;margin:24px 0 10px}
+p{line-height:1.8;color:var(--ink-soft);margin:0 0 18px;font-size:17px}
+ul,ol{padding-left:24px;margin:0 0 18px}
+li{line-height:1.7;color:var(--ink-soft);font-size:16.5px;margin-bottom:8px}
+strong{color:var(--ink)}
+blockquote{
+  border-left:4px solid var(--gold);padding:20px 24px;
+  background:linear-gradient(90deg,rgba(201,169,97,.06),transparent);
+  border-radius:0 var(--radius) var(--radius) 0;margin:28px 0;
+  font-family:var(--display);font-style:italic;font-size:20px;line-height:1.5;color:var(--gold-deep);
+}
+
+.mini-nav{background:rgba(255,251,246,.96);backdrop-filter:blur(12px);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(27,27,46,.08);padding:14px 0}
+.mini-nav-inner{width:min(100% - 40px,1100px);margin:auto;display:flex;justify-content:space-between;align-items:center}
+.mini-nav-logo{font-family:var(--display);font-size:20px;font-weight:600;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:14px;transition:all .3s;white-space:nowrap}
+.btn-primary{background:linear-gradient(135deg,var(--tiffany),var(--pink));color:#fff}
+.btn-primary:hover{transform:translateY(-2px);text-decoration:none}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(27,27,46,.18)}
+
+/* ARTICLE LAYOUT */
+.article-header{padding:60px 0 48px;background:linear-gradient(180deg,#FFF8F5,var(--cream))}
+.breadcrumb{font-size:13px;color:var(--ink-mute);margin-bottom:24px}
+.breadcrumb a{color:var(--tiffany-deep);font-weight:600}
+.breadcrumb span{margin:0 8px;opacity:.5}
+.article-meta{display:flex;align-items:center;gap:20px;margin-bottom:24px;flex-wrap:wrap}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-author img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:top}
+.meta-author strong{font-size:14px;display:block;color:var(--ink)}
+.meta-author span{font-size:12px;color:var(--ink-mute)}
+.meta-date{font-size:13px;color:var(--ink-mute)}
+.meta-read{font-size:13px;color:var(--ink-mute);background:var(--tiffany-soft);padding:4px 12px;border-radius:999px;color:var(--tiffany-deep);font-weight:600}
+.article-cover{margin:32px 0;border-radius:var(--radius-lg);overflow:hidden;max-height:480px}
+.article-cover img{width:100%;height:480px;object-fit:cover;border-radius:0}
+.article-body{padding-bottom:80px}
+
+/* INFOBOX */
+.infobox{
+  background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));
+  border-radius:var(--radius);padding:24px 28px;margin:28px 0;
+  border:1px solid rgba(201,169,97,.15);
+}
+.infobox strong{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tiffany-deep);margin-bottom:10px}
+.infobox p{margin:0;font-size:16px}
+.infobox ul{margin:8px 0 0;padding-left:20px}
+
+/* WARNING BOX */
+.warnbox{
+  background:#FFF8E7;border-radius:var(--radius);padding:20px 24px;margin:24px 0;
+  border-left:4px solid var(--gold);
+}
+.warnbox p{margin:0;font-size:16px}
+
+/* CTA INLINE */
+.cta-inline{
+  background:linear-gradient(135deg,var(--ink),#2A1B3E);
+  border-radius:var(--radius-lg);padding:40px 44px;margin:48px 0;color:#fff;text-align:center;
+}
+.cta-inline h3{color:#fff;font-size:28px;margin-bottom:12px}
+.cta-inline p{color:rgba(255,255,255,.7);margin:0 auto 24px;max-width:480px}
+.cta-inline .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* LEAD MAGNET */
+.leadmag{
+  background:linear-gradient(135deg,var(--gold-light),var(--pink-soft));
+  border-radius:var(--radius-lg);padding:36px 40px;margin:40px 0;
+  display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;
+  border:1px solid rgba(201,169,97,.3);
+}
+.lm-text h3{font-size:22px;margin-bottom:8px;color:var(--ink)}
+.lm-text p{font-size:15.5px;color:var(--ink-soft);margin:0}
+.lm-gift{font-size:56px;line-height:1}
+
+/* RELATED */
+.related{padding:48px 0;border-top:1px solid rgba(27,27,46,.08)}
+.related h3{margin-bottom:24px}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.related-card{background:var(--white);border-radius:var(--radius);padding:20px 18px;box-shadow:var(--shadow-soft);border:1px solid rgba(27,27,46,.04)}
+.related-card a{color:var(--ink);font-weight:600;font-size:15px;line-height:1.4}
+.related-card a:hover{color:var(--tiffany-deep);text-decoration:none}
+.related-card p{font-size:13.5px;color:var(--ink-mute);margin:8px 0 0}
+
+@media(max-width:720px){
+  .leadmag{grid-template-columns:1fr}
+  .lm-gift{display:none}
+  .related-grid{grid-template-columns:1fr}
+  .article-cover img{height:240px}
+}
+</style>
+</head>
+<body>
+
+<nav class="mini-nav">
+  <div class="mini-nav-inner">
+    <a class="mini-nav-logo" href="/">Татьянин День</a>
+    <a class="btn btn-primary" href="/#contacts">Записаться бесплатно</a>
+  </div>
+</nav>
+
+<main>
+<article itemscope itemtype="https://schema.org/Article">
+
+<!-- HEADER -->
+<header class="article-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span>›</span>
+      <a href="/blog/">Блог</a><span>›</span>
+      Танцы в 3 года
+    </nav>
+
+    <div class="article-meta">
+      <div class="meta-author">
+        <img src="/TatianaIvanovna.jpg" alt="Гурьянова Татьяна Ивановна" width="80" height="80"/>
+        <div>
+          <strong itemprop="author">Татьяна Ивановна Гурьянова</strong>
+          <span>Художественный руководитель · 30 лет опыта</span>
+        </div>
+      </div>
+      <span class="meta-date" itemprop="datePublished" content="2026-06-17">17 июня 2026</span>
+      <span class="meta-read">7 минут чтения</span>
+    </div>
+
+    <h1 itemprop="headline">Танцы в 3 года: рано или&nbsp;в&nbsp;самый раз?</h1>
+    <p style="font-size:19px;color:var(--ink-soft);line-height:1.65;margin:0">
+      Этот вопрос мне задают чаще всего. Причём задают мамы, которые уже хотят записать дочку — и сами же себя останавливают: «А вдруг рано? А вдруг не поймёт? А вдруг будет плакать?» Давайте разберёмся честно, без маркетинга.
+    </p>
+  </div>
+</header>
+
+<div class="article-cover">
+  <div class="container-wide">
+    <img src="/zvezdochki.jpg" alt="Малышки на занятии группы «Звёздочки» — танцы для детей 3–5 лет" width="1100" height="480" fetchpriority="high" itemprop="image"/>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="article-body">
+  <div class="container">
+
+    <h2>Что говорит физиология: тело 3-летнего ребёнка</h2>
+
+    <p>Прежде чем говорить о танцах — нужно понять, что происходит с телом в 3 года. Это не маленький взрослый. Это совершенно другой организм с другими возможностями.</p>
+
+    <p><strong>Хорошие новости:</strong> в 3 года тело максимально гибкое. Связки и суставы обладают природной пластичностью, которая с каждым годом постепенно снижается. Нейронные связи, отвечающие за координацию и моторику, формируются именно сейчас — с невероятной скоростью.</p>
+
+    <p><strong>Важная оговорка:</strong> внимание ребёнка 3–4 лет удерживается 10–15 минут на одном виде деятельности. После этого нужна смена. Это не «проблема» — это физиология. Правильная программа для малышей строится именно с учётом этого: чередование видов деятельности, игра как основной инструмент, никакого насилия над детской природой.</p>
+
+    <div class="infobox">
+      <strong>Что умеет тело в 3 года</strong>
+      <ul>
+        <li>Легко осваивает простые ритмические паттерны через игру</li>
+        <li>Природная гибкость — шпагат «с нуля» в этом возрасте реален при правильной работе</li>
+        <li>Быстро запоминает движения через повторение в игровом формате</li>
+        <li>Музыкальный слух формируется именно в 3–5 лет — это критический период</li>
+        <li>Пространственное мышление активно развивается через движение</li>
+      </ul>
+    </div>
+
+    <h2>Пять страхов родителей — и честные ответы</h2>
+
+    <h3>«Она ещё слишком маленькая, не поймёт»</h3>
+    <p>Поймёт — но по-своему. Не «понять» в академическом смысле, а телом. Дети 3 лет учатся через подражание, через игру, через эмоцию. Именно так работает игровая хореография: педагог показывает — ребёнок копирует — движение запоминается. Без объяснений «теории».</p>
+
+    <h3>«Она будет плакать и не захочет идти»</h3>
+    <p>Первые 1–3 занятия — нередко со слезами. Это нормально: новое место, незнакомые люди, другой режим. Профессиональный педагог, который работает именно с малышами, знает этот сценарий наизусть. Через 3–5 занятий большинство детей уже сами тянут маму на урок.</p>
+
+    <div class="warnbox">
+      <p><strong>⚠️ Важно:</strong> если ребёнок плачет всё занятие три недели подряд — это сигнал не «рано», а «не та студия». Хороший педагог для малышей умеет выстроить доверие. Если этого не происходит — ищите другую студию.</p>
+    </div>
+
+    <h3>«Не хочу форсировать — пусть сама выберет»</h3>
+    <p>Прекрасная позиция. Но есть нюанс: 3-летний ребёнок не выбирает секции — он реагирует на то, что видит и пробует. Пробное занятие — это и есть «дать выбрать». Если после первого урока сама говорит «хочу ещё» — вот вам выбор ребёнка.</p>
+
+    <h3>«Вдруг она устанет и потеряет интерес»</h3>
+    <p>Усталость от правильно построенных занятий — это физическая, приятная усталость. Потеря интереса обычно сигнализирует об одном из трёх: занятия слишком сложные для возраста, педагог не умеет работать с этим возрастом, или ребёнку просто нужна пауза (болезнь, стресс дома). Это решается корректировкой, а не отменой занятий.</p>
+
+    <h3>«А вдруг она потом захочет другое?»</h3>
+    <p>Замечательно. Опыт ритмики и двигательной культуры в 3–5 лет усиливает способности в любом другом направлении: спорте, музыке, театре. Это не «специализация» — это фундамент тела и координации, который нужен везде.</p>
+
+    <blockquote>
+      «За 30 лет работы я ни разу не слышала от мамы: "Жаль, что мы начали в 3 года". Зато много раз слышала: "Жаль, что не начали раньше" — от тех, кто пришёл в 7 или 9 лет».
+    </blockquote>
+
+    <h2>Что происходит на занятиях для 3–5 лет: честное описание</h2>
+
+    <p>Не «балет» и не «хореография» в классическом понимании. Вот что реально делают малыши на занятии:</p>
+
+    <ul>
+      <li><strong>Ритмика и движение под музыку</strong> — ходим, прыгаем, кружимся в такт. Это формирует музыкальный слух и чувство ритма на всю жизнь.</li>
+      <li><strong>Игровые упражнения на гибкость</strong> — «стать кошкой», «вырасти деревом», «свернуться в клубок». Партерная гимнастика через образы, а не через команды.</li>
+      <li><strong>Простые танцевальные связки</strong> — 3–5 движений, которые складываются в маленький танец. Именно эти связки через несколько месяцев превращаются в номер на первом концерте.</li>
+      <li><strong>Актёрские этюды</strong> — показать радость, грусть, удивление через тело. Именно отсюда вырастает умение «держать» зрителя на сцене.</li>
+      <li><strong>Взаимодействие с другими детьми</strong> — парные и групповые упражнения. Социализация через движение, без давления «будь вежлив».</li>
+    </ul>
+
+    <!-- CTA INLINE -->
+    <div class="cta-inline">
+      <h3>Хотите увидеть всё это своими глазами?</h3>
+      <p>Приходите на бесплатное пробное занятие в группу «Звёздочки» — малышки 3–5 лет в ЖК Суханово Парк.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="/detskie-tantsy/3-5-let/" style="font-size:15px;padding:15px 26px">Подробнее о группе «Звёздочки»</a>
+        <a class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.3)" href="tel:+79636719983">Позвонить</a>
+      </div>
+    </div>
+
+    <h2>5 признаков того, что ваша трёхлетка готова</h2>
+
+    <p>Не «рано» или «поздно» — вопрос в готовности. Вот признаки, что время пришло:</p>
+
+    <ol>
+      <li><strong>Реагирует на музыку телом</strong> — непроизвольно начинает двигаться, когда слышит ритмичную музыку.</li>
+      <li><strong>Любит повторять движения</strong> — копирует танцевальные движения из мультиков, от взрослых, из видео.</li>
+      <li><strong>Комфортно в незнакомой группе</strong> — не пугается новых детей, через 10–15 минут начинает контактировать.</li>
+      <li><strong>Держит внимание 10–15 минут</strong> — может сосредоточиться на одном занятии столько времени.</li>
+      <li><strong>Просит «ещё»</strong> — после любого двигательного занятия, игры, танца говорит «ещё раз».</li>
+    </ol>
+
+    <p>Если три из пяти пунктов — ваш ребёнок. Если только один — подождите пару месяцев и попробуйте снова.</p>
+
+    <h2>Что даёт начало в 3 года по сравнению с 5 или 7</h2>
+
+    <p>Конкретные, измеримые преимущества:</p>
+
+    <ul>
+      <li><strong>Гибкость</strong>: шпагат, мост и другие элементы в 3 года осваиваются легче и быстрее. В 7 лет те же элементы — уже работа «против» закрепившихся мышц.</li>
+      <li><strong>Музыкальность</strong>: критический период формирования музыкального слуха — 3–6 лет. Начав в 3, к школе ребёнок слышит музыку иначе, чем сверстники.</li>
+      <li><strong>Уверенность</strong>: 4–5 лет выступлений на сцене к 8 годам — это уже привычка, а не стресс. Ребёнок не боится аудитории.</li>
+      <li><strong>Осанка</strong>: правильные привычки тела, заложенные до школы, значительно легче сохранить, чем исправлять школьную «позу сутулости» в 10 лет.</li>
+    </ul>
+
+    <h2>Итог: когда точно стоит начать</h2>
+
+    <p>Начинайте в 3 года, если:</p>
+    <ul>
+      <li>ребёнок любит двигаться и реагирует на музыку</li>
+      <li>вы найдёте студию, где программа адаптирована именно под дошкольников</li>
+      <li>педагог специализируется на работе с малышами (это отдельная профессия внутри хореографии)</li>
+      <li>первое занятие — пробное и бесплатное (так вы оцените без риска)</li>
+    </ul>
+
+    <p>Подождите до 4–5 лет, если:</p>
+    <ul>
+      <li>ребёнок ещё не комфортен в группе незнакомых детей</li>
+      <li>есть серьёзная тревожность разлучения с мамой (не обычное «не хочу уходить», а настоящая тревога)</li>
+      <li>ближайшие доступные студии не имеют специализированных групп для 3-леток</li>
+    </ul>
+
+    <!-- ЛИД-МАГНИТ -->
+    <div class="leadmag" id="leadmag">
+      <div class="lm-text">
+        <h3>🎁 Бесплатно: Чек-лист «Готов ли ребёнок к танцам»</h3>
+        <p>PDF на 2 страницы: 12 вопросов о готовности + советы по первому занятию + что взять с собой. Получите на email — и приходите подготовленными.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+          <a class="btn btn-primary" href="/invite-pdf.html" style="font-size:14px;padding:13px 22px" data-goal="leadmag_blog_article1">Получить чек-лист бесплатно →</a>
+        </div>
+      </div>
+      <div class="lm-gift" aria-hidden="true">🎁</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- RELATED ARTICLES -->
+<section class="related">
+  <div class="container">
+    <h3>Читайте также</h3>
+    <div class="related-grid">
+      <div class="related-card">
+        <a href="/blog/zastenchivyj-rebenok-na-tancah.html">Танцы для застенчивого ребёнка: как помочь дочке раскрыться</a>
+        <p>10 июня 2026 · 7 мин</p>
+      </div>
+      <div class="related-card">
+        <a href="/blog/chto-nadet-na-pervoe-zanyatie.html">Что надеть на первое занятие танцами?</a>
+        <p>23 мая 2026 · 5 мин</p>
+      </div>
+      <div class="related-card">
+        <a href="/detskie-tantsy/3-5-let/">Группа «Звёздочки» 3–5 лет →</a>
+        <p>Посадочная страница с расписанием и ценами</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</article>
+</main>
+
+<footer style="background:#1B1B2E;color:rgba(255,255,255,.6);padding:32px 0;font-size:13px">
+  <div class="container-wide" style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
+    <a href="/" style="color:rgba(255,255,255,.9);font-weight:600;font-family:var(--display);font-size:18px">Татьянин День</a>
+    <nav style="display:flex;gap:16px;flex-wrap:wrap">
+      <a href="/blog/" style="color:rgba(255,255,255,.7)">Все статьи</a>
+      <a href="/detskie-tantsy/" style="color:rgba(255,255,255,.7)">Детские танцы</a>
+      <a href="/prices.html" style="color:rgba(255,255,255,.7)">Цены</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+<!-- ================================================================ -->
+<!--  C) СТАТЬЯ 2 — ЗАГОЛОВКИ, СТРУКТУРА И ТЕКСТЫ (HTML ниже)        -->
+<!--  Тема: «Как понять, что студия танцев подойдёт вашему ребёнку»  -->
+<!--  Этот файл сокращён до структуры — соберите по шаблону статьи 1 -->
+<!-- ================================================================ -->
+
+<!--
+HEAD:
+<title>Как понять, что студия танцев подходит вашему ребёнку: 7 критериев педагога</title>
+<meta name="description" content="Не все детские танцевальные студии одинаковы. Педагог с 30-летним опытом называет 7 признаков хорошей студии и 3 красных флага, которые сигнализируют: уходите."/>
+<link rel="canonical" href="https://tatianinden.ru/blog/kak-vybrat-studiyu-tancov/"/>
+<meta property="article:published_time" content="2026-06-20"/>
+
+JSON-LD FAQPage:
+Q1: На что смотреть при выборе студии танцев для ребёнка?
+A1: Ключевые критерии: возраст специализации педагога (не каждый хореограф умеет работать с малышами), наличие пробного занятия, прозрачность общения с родителями, сертификаты и достижения коллектива. Важен «вайб» зала — что ребёнок чувствует, войдя в помещение.
+
+Q2: Как понять, что педагог хорошо работает с детьми?
+A2: Педагог обращается к ребёнку по имени, объясняет движения через образы и игру (а не через команды), реагирует на слёзы или усталость с пониманием, не форсирует элементы через боль.
+
+Q3: Что такое «красный флаг» в детской танцевальной студии?
+A3: Три главных: педагог кричит или использует давление, на первом занятии просят сразу заплатить за месяц без пробного, нет возможности наблюдать за занятием хотя бы в первые разы.
+-->
+
+<!--
+СТРУКТУРА СТАТЬИ 2:
+
+H1: Как понять, что студия танцев подходит вашему ребёнку: 7 критериев от педагога
+
+ВСТУПЛЕНИЕ (~150 слов):
+  Сейчас в каждом районе десятки студий танцев. Все обещают «индивидуальный подход», «профессиональных педагогов» и «результат». Как отличить хорошую студию от красивого сайта? Я работаю в хореографии 30 лет и скажу честно: разница огромная. И она видна уже на первом занятии.
+
+H2: Критерий 1. Педагог специализируется на нужном возрасте
+  Работа с 3-летними и с 12-летними — это разные профессии. Педагог, который умеет с малышами, знает: как удержать внимание 3 минуты, как объяснить «вытяни носочек» через образ, как не напугать. Спросите прямо: сколько лет педагог работает именно с этим возрастом?
+
+H2: Критерий 2. Есть пробное занятие — и оно бесплатное
+  Серьёзная студия не боится показать себя. Пробное занятие — это и ваша возможность оценить атмосферу, и ребёнка познакомить с педагогом без стресса «теперь нужно ходить». Если за «пробное» просят деньги — задумайтесь.
+
+H2: Критерий 3. Вы знаете, что происходит на каждом занятии
+  Фото в родительском чате, открытые уроки раз в квартал, доступность педагога для вопросов — это норма. Закрытость («мы не пускаем родителей, это мешает детям»), за которой не следует никакой обратной связи — повод насторожиться.
+
+H2: Критерий 4. Программа соответствует возрасту, а не «уменьшена взрослая»
+  В 4 года не нужен «профессиональный экзерсис у станка». Нужны ритмика, игровая хореография, партерная гимнастика в игровой форме. Если в студии детей 4 лет ставят к станку на 20 минут — это красный флаг.
+
+H2: Критерий 5. Конкурсы — по желанию, не по умолчанию
+  Хорошая студия участвует в конкурсах. Но не принуждает. Расходы на конкурсы (костюмы, взносы) должны быть названы заранее — а не «выясниться» перед фестивалем.
+
+H2: Критерий 6. Достижения реальные и проверяемые
+  Попросите показать дипломы, сертификаты, видео с конкурсов. Реальные достижения студия показывает с гордостью. «Победители многих конкурсов» без подробностей — пустые слова.
+
+H2: Критерий 7. Ребёнок хочет возвращаться
+  Самый важный критерий. После второго-третьего занятия (когда прошёл стресс новизны): ребёнок с охотой идёт на урок? Говорит дома что-то про занятие? Показывает движения? Если да — студия подходит.
+
+H2: 3 красных флага — уходите немедленно
+  1. Педагог кричит, давит, унижает ребёнка за ошибки.
+  2. Вас просят сразу заплатить за квартал «со скидкой» без пробного.
+  3. Ребёнок не хочет идти на занятие три недели подряд, а педагог говорит «он просто ленится».
+
+INLINE CTA:
+  «Хотите убедиться лично? Приходите на пробное занятие в «Татьянин День» — бесплатно и без обязательств.»
+  → Ссылки на группы по возрасту
+
+ЛИД-МАГНИТ В КОНЦЕ:
+  «Скачайте список вопросов для первого звонка в студию» → /invite-pdf.html
+
+RELATED:
+  → «Как выбрать танцевальную школу для ребёнка: 10 критериев»
+  → «Танцы в 3 года: рано или в самый раз?»
+  → Педагоги «Татьянин День»
+-->
+
+
+<!-- ================================================================ -->
+<!--  D) ВОРОНКА ЛИД-МАГНИТА: МЕХАНИКА И СОДЕРЖАНИЕ INVITE-СТРАНИЦ  -->
+<!-- ================================================================ -->
+
+<!--
+═══════════════════════════════════════════════════════════
+КОНЦЕПЦИЯ ЛИД-МАГНИТА «Татьянин День»
+═══════════════════════════════════════════════════════════
+
+НАЗВАНИЕ: «Подарочный сертификат на пробный урок + Чек-лист подготовки»
+
+СУТЬ: Пользователь оставляет имя и телефон (или email) → получает:
+  1. Красивый сертификат на бесплатный пробный урок (invite-jpeg.html / invite-pdf.html)
+  2. Чек-лист «Как подготовить ребёнка к первому занятию» (PDF, 2 стр.)
+
+ГДЕ РАЗМЕЩАЕМ ТОЧКИ ВХОДА:
+  a) Pop-up на главной (через 40 секунд или при попытке закрыть вкладку)
+  b) В конце каждой статьи блога (inline блок)
+  c) В конце посадочных страниц по возрастам — кнопка «Получить сертификат»
+  d) В подписи в Telegram-боте (если будет)
+  e) Кнопка в шапке: «🎁 Сертификат» рядом с «Записаться»
+
+═══════════════════════════════════════════════════════════
+СОДЕРЖАНИЕ INVITE-JPEG.HTML (отображается в браузере)
+═══════════════════════════════════════════════════════════
+
+СТРУКТУРА СТРАНИЦЫ:
+
+<section> — Поздравляем! Вы получили сертификат
+
+  СЕРТИФИКАТ (красивый блок, можно сделать скриншот):
+  ┌─────────────────────────────────────────────────────┐
+  │        ✦  Детский театр танца «Татьянин День»  ✦   │
+  │                                                     │
+  │              ПОДАРОЧНЫЙ СЕРТИФИКАТ                  │
+  │                                                     │
+  │   на БЕСПЛАТНОЕ пробное занятие для вашей дочки    │
+  │           в группе по возрасту:                     │
+  │     🌟 «Звёздочки» (3–5 лет)                       │
+  │     🌸 «Премьера» (6–9 лет)                        │
+  │     ✨ «Бенефис» (10–14 лет)                       │
+  │                                                     │
+  │   Позвоните, чтобы выбрать удобное время:          │
+  │   +7 (963) 671-99-83 или Telegram                  │
+  │                                                     │
+  │   Сертификат действителен до: [ДАТА + 60 дней]     │
+  └─────────────────────────────────────────────────────┘
+
+  Кнопки:
+  [📥 Скачать как PDF]  → /invite-pdf.html
+  [📱 Написать в Telegram]  → https://t.me/+79636719983
+  [📞 Позвонить сейчас]
+
+<section> — Чек-лист «Как подготовить ребёнка к первому занятию»
+
+  12 пунктов в 3 блоках:
+
+  ДО ЗАНЯТИЯ:
+  ✅ Расскажите ребёнку, куда едете — не «на урок», а «знакомиться с девочками, которые танцуют»
+  ✅ Посмотрите вместе видео выступлений с канала RuTube — создайте «хотелку»
+  ✅ Не говорите «будешь там заниматься» — только «посмотрим, понравится ли»
+  ✅ Приготовьте одежду заранее — пусть ребёнок видит: это особое событие
+
+  В ДЕНЬ ЗАНЯТИЯ:
+  ✅ Удобные спортивные штаны или лосины + свободная футболка
+  ✅ Чешки или носки с нескользящей подошвой (можно купить в тот же день в танцевальном магазине)
+  ✅ Бутылка воды и лёгкий перекус — после занятия дети голодные
+  ✅ Хорошее настроение у мамы — дети считывают тревогу моментально
+
+  НА ЗАНЯТИИ:
+  ✅ Дайте педагогу работать — ваше присутствие «за стеклом» лучше, чем в зале
+  ✅ Не комментируйте ошибки сразу после урока — только «как тебе понравилось?»
+  ✅ Если ребёнок плакал — не делайте трагедии, спросите педагога спокойно
+  ✅ После занятия — маленький праздник: «Ты сегодня была такой смелой!»
+
+═══════════════════════════════════════════════════════════
+СОДЕРЖАНИЕ INVITE-PDF.HTML → загружается/печатается
+═══════════════════════════════════════════════════════════
+
+Та же страница, но с дополнительной кнопкой «Печать» и CSS @media print.
+Стили скрывают навигацию и кнопки — печатается только сертификат + чек-лист.
+
+CSS для печати:
+@media print {
+  .mini-nav, .btn, footer { display: none !important; }
+  body { background: white; }
+  .cert-block { box-shadow: none; border: 2px solid #C9A961; }
+}
+
+═══════════════════════════════════════════════════════════
+POP-UP МЕХАНИКА ДЛЯ INDEX.HTML
+═══════════════════════════════════════════════════════════
+
+Триггеры появления (выбрать один или оба):
+  a) После 40 секунд на сайте
+  b) При движении мыши к верхнему краю (exit intent)
+
+Показывается: один раз за сессию (localStorage: 'popup_shown')
+
+HTML вставить перед </body>:
+-->
+
+<!-- POPUP HTML (вставить в index.html перед </body>) -->
+<div id="gift-popup" style="
+  display:none; position:fixed; inset:0; z-index:9999;
+  background:rgba(27,27,46,.6); backdrop-filter:blur(4px);
+  align-items:center; justify-content:center; padding:20px;
+" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+  <div style="
+    background:var(--cream); border-radius:var(--radius-lg);
+    padding:48px 44px; max-width:520px; width:100%;
+    box-shadow:0 40px 80px -20px rgba(27,27,46,.4);
+    position:relative; text-align:center;
+  ">
+    <button onclick="closePopup()" style="
+      position:absolute; top:16px; right:20px;
+      font-size:22px; color:var(--ink-mute); cursor:pointer;
+      background:none; border:none; line-height:1;
+    " aria-label="Закрыть">×</button>
+
+    <div style="font-size:52px; margin-bottom:16px">🎁</div>
+    <h2 id="popup-title" style="font-family:var(--display); font-size:32px; margin-bottom:12px; color:var(--ink)">
+      Подарок для вашей дочки
+    </h2>
+    <p style="font-size:16.5px; color:var(--ink-soft); margin-bottom:24px">
+      Получите <strong>сертификат на бесплатный пробный урок</strong> + чек-лист «Как подготовить ребёнка к первому занятию»
+    </p>
+
+    <!-- Форма: имя + телефон -->
+    <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:20px">
+      <input type="text" placeholder="Имя мамы" id="popup-name" style="
+        width:100%; padding:14px 18px; border:1.5px solid rgba(27,27,46,.14);
+        border-radius:999px; font-size:15px; font-family:var(--body);
+        outline:none; background:var(--white);
+      "/>
+      <input type="tel" placeholder="+7 (___) ___-__-__" id="popup-phone" style="
+        width:100%; padding:14px 18px; border:1.5px solid rgba(27,27,46,.14);
+        border-radius:999px; font-size:15px; font-family:var(--body);
+        outline:none; background:var(--white);
+      "/>
+      <button onclick="submitPopup()" style="
+        width:100%; padding:16px; border-radius:999px;
+        background:linear-gradient(135deg,var(--tiffany),var(--pink));
+        color:#fff; font-size:16px; font-weight:700; font-family:var(--body);
+        cursor:pointer; border:none;
+        box-shadow:0 14px 30px -12px rgba(10,186,181,.55);
+      ">
+        🎁 Получить сертификат
+      </button>
+    </div>
+
+    <p style="font-size:12px; color:var(--ink-mute); line-height:1.5; margin:0">
+      Нажимая кнопку, вы соглашаетесь с
+      <a href="/privacy.html" style="color:var(--tiffany-deep)">политикой конфиденциальности</a>.
+      Мы не передаём данные третьим лицам.
+    </p>
+  </div>
+</div>
+
+<script>
+// Показать popup через 40 сек, один раз за сессию
+(function(){
+  if (localStorage.getItem('td_popup_shown')) return;
+  setTimeout(function(){
+    var el = document.getElementById('gift-popup');
+    if (el) { el.style.display = 'flex'; }
+  }, 40000);
+})();
+
+function closePopup() {
+  document.getElementById('gift-popup').style.display = 'none';
+  localStorage.setItem('td_popup_shown', '1');
+}
+
+function submitPopup() {
+  var name = document.getElementById('popup-name').value.trim();
+  var phone = document.getElementById('popup-phone').value.trim();
+  if (!name || !phone) { alert('Пожалуйста, заполните имя и телефон'); return; }
+  // Отправка в Яндекс.Метрику
+  if (window.ym) { ym(109457377, 'reachGoal', 'leadmag_popup_submit'); }
+  // Редирект на страницу сертификата
+  localStorage.setItem('td_popup_shown', '1');
+  window.location.href = '/invite-jpeg.html?name=' + encodeURIComponent(name);
+}
+
+// Закрытие по клику вне блока
+document.addEventListener('click', function(e){
+  var popup = document.getElementById('gift-popup');
+  if (popup && popup.style.display === 'flex' && e.target === popup) closePopup();
+});
+</script>
