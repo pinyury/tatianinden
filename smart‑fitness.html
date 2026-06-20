@@ -49,8 +49,8 @@
   --shadow-md:0 20px 50px -20px rgba(27,27,46,.18);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:var(--body);color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-top:108px}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .container{width:min(100% - 40px,1200px);margin-inline:auto}
@@ -74,13 +74,147 @@ section{padding:80px 0}
 .btn-lg{padding:19px 34px;font-size:16px}
 
 /* NAV */
-.mini-nav{background:rgba(255,251,246,.96);backdrop-filter:blur(12px);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(27,27,46,.08);padding:14px 0}
-.mini-nav-row{display:flex;justify-content:space-between;align-items:center;gap:16px}
-.mini-nav-logo{font-family:var(--display);font-size:20px;font-weight:600;color:var(--ink)}
-.mini-nav-logo small{display:block;font-size:11px;color:var(--ink-mute);font-style:italic}
-.mini-nav-links{display:flex;gap:20px;align-items:center}
-.mini-nav-links a{font-size:14px;color:var(--ink-soft);font-weight:500;transition:color .2s}
-.mini-nav-links a:hover{color:var(--tiffany-deep)}
+header.nav{
+  position:fixed; top:0; left:0; right:0; z-index:50;
+  padding:10px 0;
+  background:#FFFFFF;
+  border-bottom:1px solid rgba(27,27,46,.06);
+  box-shadow:0 2px 16px -10px rgba(27,27,46,.15);
+  transition:padding .3s ease, box-shadow .3s ease;
+}
+header.nav.scrolled{
+  padding:8px 0;
+  box-shadow:0 6px 24px -14px rgba(27,27,46,.2);
+}
+.nav-row{
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+  min-height:88px;
+}
+.logo{
+  display:flex; align-items:center; gap:18px;
+  color:var(--ink);
+  line-height:1.1;
+}
+.logo-img{
+  width:88px; height:88px;
+  object-fit:contain;
+  object-position:center 38%;
+  border-radius:50%;
+  transition:transform .4s ease;
+}
+.logo:hover .logo-img{transform:rotate(-4deg) scale(1.05)}
+.logo-text{display:flex; flex-direction:column; gap:3px}
+.logo-text strong{
+  font-family:var(--display);
+  font-size:28px;
+  font-weight:600;
+  color:#1B2A4E;
+  line-height:1;
+  letter-spacing:.005em;
+}
+.logo-text small{
+  font-family:var(--body);
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  font-weight:500;
+  margin-top:6px;
+}
+@media (max-width:960px){
+  .logo-img{width:64px; height:64px}
+  .logo-text strong{font-size:22px}
+  .logo-text small{font-size:11px}
+  .nav-row{min-height:72px}
+}
+@media (max-width:560px){
+  .logo-img{width:52px; height:52px}
+  .logo-text strong{font-size:18px}
+  .logo-text small{font-size:10px}
+}
+nav.menu{display:flex; gap:28px; align-items:center; white-space:nowrap}
+nav.menu a{
+  font-size:15.5px;
+  font-weight:600;
+  color:var(--ink-soft);
+  transition:color .25s;
+  position:relative;
+  padding:6px 2px;
+  white-space:nowrap;
+}
+nav.menu a:hover{color:var(--tiffany-deep)}
+nav.menu a::after{
+  content:""; position:absolute; left:0; right:0; bottom:-6px;
+  height:2px; background:var(--gold); border-radius:2px;
+  transform:scaleX(0); transform-origin:left;
+  transition:transform .3s;
+}
+nav.menu a:hover::after{transform:scaleX(1)}
+nav.menu a.nav-highlight{
+  color:var(--gold-deep);
+  font-weight:700;
+}
+nav.menu a.nav-highlight::before{
+  content:"✦";
+  color:var(--gold);
+  margin-right:5px;
+  font-size:.85em;
+}
+nav.menu a.nav-active{
+  color:var(--tiffany-deep);
+}
+nav.menu a.nav-active::after{transform:scaleX(1)}
+.nav-actions{display:flex; align-items:center; gap:18px; white-space:nowrap}
+.nav-phone{font-weight:700; font-size:16px; color:var(--ink); letter-spacing:.01em; white-space:nowrap; min-height:44px; display:inline-flex; align-items:center; padding:4px 8px; border-radius:8px;}
+.nav-phone:hover{color:var(--tiffany-deep)}
+.burger{display:none; width:40px; height:40px; border-radius:50%; background:var(--white); box-shadow:var(--shadow-soft); border:none; cursor:pointer; flex-shrink:0}
+.burger span{display:block; width:18px; height:1.5px; background:var(--ink); margin:4px auto; transition:all .3s}
+@media (max-width:1300px){
+  nav.menu{gap:22px}
+  nav.menu a{font-size:14px}
+}
+@media (max-width:1100px){
+  nav.menu{display:none}
+  .nav-actions .nav-phone{display:none}
+  .burger{display:block}
+  nav.menu.open{
+    display:flex; flex-direction:column;
+    position:fixed; top:96px; left:16px; right:16px;
+    background:var(--white);
+    padding:22px 24px;
+    border-radius:22px;
+    box-shadow:var(--shadow-md);
+    gap:16px; align-items:flex-start;
+    max-height:calc(100vh - 120px);
+    overflow-y:auto;
+  }
+  nav.menu.open a{font-size:17px; padding:8px 0}
+}
+/* Modal */
+.modal-bg{
+  display:none; position:fixed; inset:0; z-index:200;
+  background:rgba(27,27,46,.6); backdrop-filter:blur(6px);
+  align-items:center; justify-content:center; padding:20px;
+}
+.modal-bg.open{display:flex}
+.modal{
+  background:var(--white); border-radius:28px;
+  padding:40px 36px; max-width:480px; width:100%;
+  position:relative; box-shadow:0 32px 80px -20px rgba(27,27,46,.35);
+}
+.modal-close{
+  position:absolute; top:16px; right:16px;
+  width:36px; height:36px; border-radius:50%; border:none;
+  background:rgba(27,27,46,.06); font-size:20px; line-height:1;
+  cursor:pointer; color:var(--ink-soft); transition:background .2s;
+}
+.modal-close:hover{background:rgba(27,27,46,.12)}
+.modal h3{font-family:var(--display); font-size:30px; margin-bottom:8px}
+.modal p.small{font-size:14.5px; color:var(--ink-soft); margin-bottom:24px}
+@media (max-width:560px){
+  .modal{padding:32px 24px}
+  .modal h3{font-size:24px}
+}
 .breadcrumb{padding:18px 0 0;font-size:13px;color:var(--ink-mute)}
 .breadcrumb a{color:var(--tiffany-deep);font-weight:600}
 .breadcrumb span{margin:0 8px;opacity:.5}
@@ -199,26 +333,46 @@ section{padding:80px 0}
   .prog-steps,.results-grid{grid-template-columns:1fr}
   section{padding:56px 0}
   .hero-photo{max-height:320px}
-  .mini-nav-links{display:none}
+  /* nav handled by header.nav styles above */
 }
 </style>
 </head>
 <body>
 
-<nav class="mini-nav">
-  <div class="container mini-nav-row">
-    <div class="mini-nav-logo">
-      <a href="/">Татьянин День</a>
-      <small>ЖК Суханово Парк · Видное · 127/2</small>
-    </div>
-    <div class="mini-nav-links">
-      <a href="/detskie-tantsy/3-5-let/">Детские танцы</a>
+<!-- Skip navigation -->
+<a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:4px;z-index:999;background:var(--tiffany);color:#fff;padding:8px 16px;border-radius:8px;font-weight:600">Перейти к основному содержанию</a>
+
+<!-- ============ HEADER ============ -->
+<header class="nav" id="nav" role="banner">
+  <div class="container nav-row">
+    <a href="/" class="logo" aria-label="Татьянин День — Детский театр танца">
+      <img class="logo-img" src="/logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" fetchpriority="high" />
+      <span class="logo-text">
+        <strong>Татьянин День</strong>
+        <small>ЖК «Суханово Парк»</small>
+      </span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="/o-nas.html">О коллективе</a>
+      <a href="/#programs">Группы</a>
+      <a href="/pedagogi.html">Педагоги</a>
+      <a href="/summer-intensiv.html" class="nav-highlight">Интенсив</a>
+      <a href="/smart-fitness.html" class="nav-active nav-highlight">Умный фитнес</a>
+      <a href="/online-fitness.html" class="nav-highlight">Онлайн-фитнес</a>
+      <a href="/blog/">Блог</a>
       <a href="/prices.html">Цены</a>
-      <a href="/online-fitness.html">Онлайн-формат</a>
+      <a href="/partners.html">Партнёры</a>
+      <a href="/#contacts">Контакты</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671-99-83</a>
+      <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" data-goal="cta_open_form_header">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <a class="btn btn-primary" href="tel:+79636719983">Записаться бесплатно</a>
   </div>
-</nav>
+</header>
 
 <main>
 <div class="breadcrumb"><div class="container"><a href="/">Главная</a><span>›</span>Умный фитнес</div></div>
@@ -232,7 +386,7 @@ section{padding:80px 0}
         <h1>Умный<br/><em>фитнес</em></h1>
         <p class="hero-sub">Не «сжечь калории», а почувствовать своё тело. Групповые тренировки для женщин — бережно к спине, без ударной нагрузки, с результатом уже через месяц.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" href="tel:+79636719983">Первая тренировка — бесплатно</a>
+          <a class="btn btn-primary btn-lg" href="#" onclick="openModal('fitness');return false;" data-goal="cta_open_form_hero">Первая тренировка — бесплатно</a>
           <a class="btn btn-ghost btn-lg" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">Telegram</a>
         </div>
         <div class="hero-trust">
@@ -259,11 +413,11 @@ section{padding:80px 0}
           <li>Без ударной нагрузки — бережно к суставам</li>
           <li>Индивидуальный подбор нагрузки</li>
         </ul>
-        <a class="btn btn-primary" href="tel:+79636719983" style="font-size:14px;padding:13px 22px">Хочу здоровую спину →</a>
+        <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" style="font-size:14px;padding:13px 22px" data-goal="cta_back">Хочу здоровую спину →</a>
       </div>
       <div class="cta-card mama">
         <span class="cta-card-pill">Я мама</span>
-        <h3>«Привожу дочку на танцы»</h3>
+        <h3>«Привожу дочку на танцы — и трачу час на телефон»</h3>
         <p>Расписание «Умного фитнеса» совмещено с детскими группами. Пока дочь танцует в зале — вы занимаетесь рядом. Одна поездка, два результата.</p>
         <ul class="check-list">
           <li>Расписание совпадает с детскими занятиями</li>
@@ -271,7 +425,7 @@ section{padding:80px 0}
           <li>Дочь видит: мама тоже занимается — лучший пример</li>
           <li>Не нужна отдельная поездка в фитнес-клуб</li>
         </ul>
-        <a class="btn btn-primary" href="tel:+79636719983" style="font-size:14px;padding:13px 22px;background:linear-gradient(135deg,var(--pink),var(--pink-deep))">Хочу заниматься пока дочь в зале →</a>
+        <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" style="font-size:14px;padding:13px 22px;background:linear-gradient(135deg,var(--pink),var(--pink-deep))" data-goal="cta_mama">Хочу заниматься пока дочь в зале →</a>
       </div>
     </div>
   </div>
@@ -358,7 +512,7 @@ section{padding:80px 0}
         <div class="price-per">3 занятия в неделю · 12 тренировок</div>
         <span class="price-free">🎁 Первая тренировка — бесплатно</span>
         <p style="font-size:13px;color:var(--ink-mute);margin-top:12px">Есть разовые посещения. Онлайн-формат — та же цена.</p>
-        <a class="btn btn-primary" href="tel:+79636719983" style="width:100%;justify-content:center;margin-top:16px">Записаться на пробную →</a>
+        <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" style="width:100%;justify-content:center;margin-top:16px" data-goal="cta_trial">Записаться на пробную →</a>
         <a class="btn btn-ghost" href="/prices.html" style="width:100%;justify-content:center;margin-top:10px">Все тарифы →</a>
       </div>
     </div>
@@ -450,7 +604,7 @@ section{padding:80px 0}
             <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.8);font-size:15px"><span style="font-size:20px">🏠</span>Свободное место 2×2 метра</li>
             <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.8);font-size:15px"><span style="font-size:20px">👟</span>Удобная одежда и носки</li>
           </ul>
-          <a class="btn btn-primary btn-lg" href="tel:+79636719983" style="width:100%;justify-content:center;margin-top:24px">Записаться на пробное онлайн</a>
+          <a class="btn btn-primary btn-lg" href="#" onclick="openModal('online');return false;" style="width:100%;justify-content:center;margin-top:24px" data-goal="cta_online">Записаться на пробное онлайн</a>
         </div>
       </div>
     </div>
@@ -495,7 +649,7 @@ section{padding:80px 0}
     <h2>Приходите на <em>первую бесплатную</em> тренировку</h2>
     <p>Познакомитесь с педагогом, попробуете формат — и решите. Без обязательств.</p>
     <div class="cta-btns">
-      <a class="btn btn-gold btn-lg" href="tel:+79636719983">
+      <a class="btn btn-gold btn-lg" href="tel:+79636719983" data-goal="cta_call_final">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.26h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         +7 (963) 671-99-83
       </a>
@@ -523,9 +677,90 @@ section{padding:80px 0}
   </div>
 </footer>
 
+<!-- ============ MODAL ============ -->
+<div class="modal-bg" id="modal" onclick="if(event.target===this) closeModal()" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Закрыть">×</button>
+    <span class="eyebrow" id="modalEyebrow">Запись на тренировку</span>
+    <h3 id="modalTitle">Первая тренировка&nbsp;— бесплатно</h3>
+    <p class="small" id="modalSubtitle">Напишите нам в&nbsp;Telegram или Max, или позвоните&nbsp;— ответим сразу и&nbsp;подберём время.</p>
+    <div style="display:grid; gap:12px">
+      <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#2AABEE,#229ED9)" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+        Написать в Telegram
+      </a>
+      <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#4F7FFF,#7B4FFF); box-shadow:0 14px 30px -12px rgba(127,79,255,.55)" href="https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y" target="_blank" rel="noopener noreferrer" data-goal="cta_max_modal">
+        <svg width="22" height="22" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="mg_modal" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/><stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.25)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z" fill="white"/></svg>
+        Написать в Max
+      </a>
+      <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg, #1B1B2E 0%, #2E2D45 100%)" href="tel:+79636719983" data-goal="cta_call_modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Позвонить +7 (963) 671-99-83
+      </a>
+    </div>
+  </div>
+</div>
+
 <script>
+// FAQ accordion
 document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+});
+
+// Sticky nav scroll class
+const navEl = document.getElementById('nav');
+if (navEl) {
+  const onScroll = () => navEl.classList.toggle('scrolled', window.scrollY > 30);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+// Burger menu
+const burger = document.getElementById('burger');
+const menuEl = document.getElementById('menu');
+burger?.addEventListener('click', () => {
+  const isOpen = menuEl.classList.toggle('open');
+  burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  burger.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+});
+menuEl?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  menuEl.classList.remove('open');
+  burger?.setAttribute('aria-expanded', 'false');
+  burger?.setAttribute('aria-label', 'Открыть меню');
+}));
+
+// Modal
+function openModal(topic) {
+  var titles = {
+    fitness: {
+      eyebrow: 'Умный фитнес',
+      title: 'Первая тренировка&nbsp;— бесплатно',
+      sub: 'Напишите нам в&nbsp;Telegram или Max, или позвоните&nbsp;— ответим сразу и&nbsp;подберём удобное время.'
+    },
+    online: {
+      eyebrow: 'Онлайн-тренировка',
+      title: 'Умный фитнес онлайн',
+      sub: 'Напишите нам в&nbsp;Telegram или Max, или позвоните&nbsp;— расскажем расписание и&nbsp;запишем на&nbsp;первое занятие.'
+    },
+    default: {
+      eyebrow: 'Запись на тренировку',
+      title: 'Первая тренировка&nbsp;— бесплатно',
+      sub: 'Напишите нам в&nbsp;Telegram или Max, или позвоните&nbsp;— ответим сразу.'
+    }
+  };
+  var t = titles[topic] || titles.default;
+  document.getElementById('modalEyebrow').textContent = t.eyebrow;
+  document.getElementById('modalTitle').innerHTML = t.title;
+  document.getElementById('modalSubtitle').innerHTML = t.sub;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
 });
 </script>
 </body>
