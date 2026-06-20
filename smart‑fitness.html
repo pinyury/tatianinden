@@ -621,24 +621,24 @@ nav.menu a.nav-active::after{transform:scaleX(1)}
       <h2 style="margin-top:14px">Спрашивают <em>чаще всего</em></h2>
     </div>
     <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Можно ли заниматься при болях в спине?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+      <div class="faq-item open">
+        <div class="faq-q">Можно ли заниматься при болях в спине?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
         <div class="faq-a">Да, именно для этого и создан «Умный фитнес». Программа разработана с учётом проблем с позвоночником: никакой ударной нагрузки, акцент на укрепление глубоких мышц-стабилизаторов спины. Многие участницы пришли именно с болями в пояснице и шее — и замечают результат уже через 3–4 недели. При острой боли или после операций — проконсультируйтесь с врачом перед записью.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Нужна ли физическая подготовка?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-q">Нужна ли физическая подготовка?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
         <div class="faq-a">Нет. Программа подходит для любого уровня — можно приходить с нуля. Педагог на первом же занятии оценивает уровень каждой участницы и адаптирует нагрузку. Никто не будет чувствовать себя отстающей.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Совпадает ли расписание с детскими занятиями?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-q">Совпадает ли расписание с детскими занятиями?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
         <div class="faq-a">Да, специально. Группа «Умный фитнес» занимается в те же дни и примерно в то же время, что группы «Звёздочки» и «Премьера». Пока дочь на занятии — вы тренируетесь в соседнем зале. Одна поездка — два результата.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Есть ли онлайн-формат?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-q">Есть ли онлайн-формат?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
         <div class="faq-a">Да. Можно заниматься онлайн в то же время, что офлайн-группа. Педагог видит вас через камеру и корректирует технику в реальном времени. Цена такая же. Нужны: устройство с камерой, интернет, свободное место 2×2 метра.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Что надеть на первое занятие?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-q">Что надеть на первое занятие?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
         <div class="faq-a">Любая удобная спортивная одежда — леггинсы или спортивные штаны и футболка. Чешки или носки с нескользящей подошвой. Возьмите бутылку воды и небольшое полотенце.</div>
       </div>
     </div>
@@ -705,9 +705,24 @@ nav.menu a.nav-active::after{transform:scaleX(1)}
 
 <script>
 // FAQ accordion
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
-});
+(function() {
+  var items = document.querySelectorAll('.faq-item');
+  for (var i = 0; i < items.length; i++) {
+    (function(item) {
+      var q = item.querySelector('.faq-q');
+      if (!q) return;
+      q.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        // Close all
+        for (var j = 0; j < items.length; j++) {
+          items[j].classList.remove('open');
+        }
+        // Toggle this one
+        if (!isOpen) item.classList.add('open');
+      });
+    })(items[i]);
+  }
+})();
 
 // Sticky nav scroll class
 const navEl = document.getElementById('nav');
