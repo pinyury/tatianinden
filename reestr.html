@@ -2,128 +2,355 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0ABAB5" />
   <title>Реестр обработки персональных данных · Татьянин День</title>
-  <meta name="description" content="Реестр операций обработки персональных данных детского театра танца «Татьянин День» в соответствии с ФЗ-152." />
+  <meta name="description" content="Реестр деятельности по обработке персональных данных детского театра танца «Татьянин День». Оператор: Гурьянова Татьяна Ивановна, ИНН 550408296455." />
+  <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="https://tatianinden.ru/reestr.html" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Татьянин День","item":"https://tatianinden.ru/"},
+      {"@type":"ListItem","position":2,"name":"Политика обработки ПД","item":"https://tatianinden.ru/privacy.html"},
+      {"@type":"ListItem","position":3,"name":"Реестр обработки ПД","item":"https://tatianinden.ru/reestr.html"}
+    ]
+  }
+  </script>
+
   <style>
     :root {
-      --tiffany: #0ABAB5; --tiffany-soft: #D7F5F3; --tiffany-deep: #06877F;
-      --ink: #1B1B2E; --ink-soft: #4A4A5E; --ink-mute: #8A8A9C;
-      --cream: #FFFBF6; --white: #FFFFFF; --gold: #C9A961;
+      --tiffany:       #0ABAB5;
+      --tiffany-light: #7FE0DC;
+      --tiffany-soft:  #D7F5F3;
+      --tiffany-deep:  #06877F;
+      --pink:          #FF6FA9;
+      --pink-cloud:    #FFEAF3;
+      --gold:          #C9A961;
+      --gold-deep:     #9A7E3D;
+      --white:         #FFFFFF;
+      --cream:         #FFFBF6;
+      --ink:           #1B1B2E;
+      --ink-soft:      #4A4A5E;
+      --ink-mute:      #8A8A9C;
+      --display: "Cormorant Garamond", "Times New Roman", serif;
+      --body:    "Manrope", -apple-system, "Segoe UI", sans-serif;
+      --radius:    20px;
+      --shadow-soft: 0 10px 30px -12px rgba(10,186,181,.18), 0 6px 18px -10px rgba(255,111,169,.12);
+      --shadow-md:   0 20px 50px -20px rgba(27,27,46,.18);
     }
     * { box-sizing: border-box }
-    body { margin: 0; font-family: "Manrope", sans-serif; background: var(--cream); color: var(--ink); -webkit-font-smoothing: antialiased; }
-    .container { width: min(100% - 40px, 960px); margin-inline: auto; padding: 60px 0 80px; }
-    h1 { font-size: clamp(24px, 4vw, 40px); margin: 0 0 8px; }
-    .meta { font-size: 13px; color: var(--ink-mute); margin: 0 0 32px; }
-    .meta a { color: var(--tiffany-deep); }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 16px; }
-    th { background: var(--tiffany-soft); color: var(--tiffany-deep); padding: 10px 14px; text-align: left; border: 1px solid rgba(10,186,181,.2); font-weight: 600; }
-    td { padding: 10px 14px; border: 1px solid rgba(27,27,46,.08); color: var(--ink-soft); vertical-align: top; line-height: 1.55; }
-    tr:nth-child(even) td { background: rgba(10,186,181,.03); }
-    .back { display: inline-block; margin-bottom: 28px; color: var(--tiffany-deep); text-decoration: underline; font-size: 14px; }
-    .note { background: #FFF9EC; border-left: 4px solid var(--gold); border-radius: 0 10px 10px 0; padding: 14px 18px; margin-top: 28px; font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
-    footer { background: var(--ink); color: rgba(255,255,255,.5); padding: 24px 0; font-size: 13px; text-align: center; }
-    footer a { color: rgba(255,255,255,.5); }
-    footer a:hover { color: var(--gold); }
+    html { scroll-behavior: smooth; scroll-padding-top: 110px }
+    body { margin: 0; font-family: var(--body); color: var(--ink); background: var(--cream); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none }
+    button { font-family: inherit; cursor: pointer; border: none; background: none }
+    img { max-width: 100%; display: block }
+    .container { width: min(100% - 40px, 1440px); margin-inline: auto; position: relative; }
+
+    .skip-link { position: absolute; top: -100px; left: 16px; background: var(--tiffany); color: #fff; padding: 10px 18px; border-radius: 0 0 8px 8px; font-weight: 700; font-size: 15px; z-index: 9999; transition: top .2s; }
+    .skip-link:focus { top: 0 }
+
+    header.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 10px 0; background: #fff; border-bottom: 1px solid rgba(27,27,46,.06); box-shadow: 0 2px 16px -10px rgba(27,27,46,.15); transition: padding .3s, box-shadow .3s; }
+    header.nav.scrolled { padding: 8px 0; box-shadow: 0 6px 24px -14px rgba(27,27,46,.2) }
+    .nav-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 88px; }
+    .logo { display: flex; align-items: center; gap: 18px; color: var(--ink); line-height: 1.1 }
+    .logo-img { width: 88px; height: 88px; object-fit: contain; object-position: center 38%; border-radius: 50%; transition: transform .4s; }
+    .logo:hover .logo-img { transform: rotate(-4deg) scale(1.05) }
+    .logo-text { display: flex; flex-direction: column; gap: 3px }
+    .logo-text strong { font-family: var(--display); font-size: 28px; font-weight: 600; color: #1B2A4E; line-height: 1 }
+    .logo-text small { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-mute); font-weight: 500; margin-top: 6px }
+    nav.menu { display: flex; gap: 28px; align-items: center; white-space: nowrap }
+    nav.menu a { font-size: 15.5px; font-weight: 600; color: var(--ink-soft); transition: color .25s; position: relative; padding: 6px 2px; }
+    nav.menu a:hover { color: var(--tiffany-deep) }
+    nav.menu a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--gold); border-radius: 2px; transform: scaleX(0); transform-origin: left; transition: transform .3s; }
+    nav.menu a:hover::after { transform: scaleX(1) }
+    nav.menu a.nav-highlight { color: var(--gold-deep); font-weight: 700 }
+    nav.menu a.nav-highlight::before { content: "✦"; color: var(--gold); margin-right: 5px; font-size: .85em }
+    .nav-actions { display: flex; align-items: center; gap: 18px; white-space: nowrap }
+    .nav-phone { font-weight: 700; font-size: 16px; color: var(--ink); letter-spacing: .01em; min-height: 44px; display: inline-flex; align-items: center; padding: 4px 8px; border-radius: 8px; }
+    .nav-phone:hover { color: var(--tiffany-deep) }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; min-height: 48px; border-radius: 999px; font-weight: 600; font-size: 15px; transition: all .35s cubic-bezier(.2,.7,.3,1); white-space: nowrap; }
+    .btn-primary { background: linear-gradient(135deg, var(--tiffany) 0%, var(--pink) 110%); color: #fff; box-shadow: 0 14px 30px -12px rgba(10,186,181,.55), 0 8px 20px -10px rgba(255,111,169,.5); }
+    .btn-primary:hover { transform: translateY(-2px) }
+    .burger { display: none; width: 40px; height: 40px; border-radius: 50%; background: var(--white); box-shadow: var(--shadow-soft); }
+    .burger span { display: block; width: 18px; height: 1.5px; background: var(--ink); margin: 4px auto; transition: all .3s }
+    @media (max-width: 960px) { .logo-img { width: 64px; height: 64px } .logo-text strong { font-size: 22px } .logo-text small { font-size: 11px } .nav-row { min-height: 72px } }
+    @media (max-width: 1100px) {
+      nav.menu { display: none } .nav-actions .nav-phone { display: none } .burger { display: block }
+      nav.menu.open { display: flex; flex-direction: column; position: fixed; top: 96px; left: 16px; right: 16px; background: var(--white); padding: 22px 24px; border-radius: 22px; box-shadow: var(--shadow-md); gap: 16px; align-items: flex-start; max-height: calc(100vh - 120px); overflow-y: auto; }
+      nav.menu.open a { font-size: 17px; padding: 8px 0 }
+    }
+
+    .page-hero { padding: 148px 0 56px; background: linear-gradient(135deg, var(--cream) 0%, var(--tiffany-soft) 60%, var(--pink-cloud) 100%); border-bottom: 1px solid rgba(10,186,181,.12); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--tiffany-deep); }
+    .eyebrow::before { content: ""; width: 32px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
+    .page-hero h1 { font-family: var(--display); font-weight: 500; font-size: clamp(34px, 5vw, 60px); line-height: 1.05; margin: 12px 0 16px; color: var(--ink); }
+    .page-hero .meta { font-size: 14px; color: var(--ink-mute); margin: 0; display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .meta-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--white); border: 1px solid rgba(10,186,181,.2); border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 500; color: var(--tiffany-deep); }
+    .breadcrumb { padding: 0; margin: 0 0 20px; font-size: 13px; color: var(--ink-mute); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--tiffany-deep); text-decoration: underline; text-underline-offset: 3px }
+    .breadcrumb a:hover { color: var(--tiffany) }
+    .breadcrumb span { opacity: .5 }
+
+    .reestr-layout { padding: 64px 0 80px }
+    .reestr-article { max-width: 900px }
+
+    /* operator card */
+    .operator-card { background: linear-gradient(135deg, var(--tiffany-soft), var(--pink-cloud)); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 40px; border: 1px solid rgba(10,186,181,.2); }
+    .operator-card p { margin: 0 0 6px; font-size: 16px; color: var(--ink-soft); }
+    .operator-card p:last-child { margin: 0 }
+    .operator-card strong { color: var(--ink) }
+    .operator-card a { color: var(--tiffany-deep); text-decoration: underline; text-underline-offset: 3px }
+
+    /* rkn number block */
+    .rkn-number { background: var(--white); border: 2px dashed rgba(10,186,181,.4); border-radius: 16px; padding: 20px 28px; margin-bottom: 40px; display: flex; align-items: center; gap: 16px; }
+    .rkn-number-icon { font-size: 32px; flex-shrink: 0 }
+    .rkn-number p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+    .rkn-number strong { display: block; font-size: 18px; color: var(--ink); margin-bottom: 4px }
+
+    /* section title */
+    .sec-title { font-family: var(--display); font-weight: 600; font-size: clamp(20px, 2.2vw, 26px); margin: 0 0 8px; color: var(--ink); padding-bottom: 10px; border-bottom: 1px solid rgba(10,186,181,.2); }
+    .sec-wrap { margin-bottom: 48px }
+
+    /* activity table */
+    .act-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 16px }
+    .act-table th { background: var(--tiffany-soft); color: var(--tiffany-deep); padding: 10px 14px; text-align: left; font-weight: 600; border: 1px solid rgba(10,186,181,.2); font-size: 13px; }
+    .act-table td { padding: 10px 14px; border: 1px solid rgba(27,27,46,.08); color: var(--ink-soft); vertical-align: top; line-height: 1.6; }
+    .act-table tr:nth-child(even) td { background: rgba(10,186,181,.03) }
+    .act-label { display: inline-block; background: var(--tiffany-soft); color: var(--tiffany-deep); border-radius: 6px; padding: 2px 10px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+
+    /* highlight / warning */
+    .highlight-box { background: linear-gradient(135deg, rgba(10,186,181,.08), rgba(255,111,169,.06)); border-left: 4px solid var(--tiffany); border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 16px 0; font-size: 14px; color: var(--ink-soft); line-height: 1.7; }
+
+    /* footer */
+    footer { background: var(--ink); color: rgba(255,255,255,.6); padding: 30px 0; border-top: 1px solid rgba(255,255,255,.08); font-size: 13.5px; }
+    .foot-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px }
+    footer a { color: rgba(255,255,255,.6); }
+    footer a:hover { color: var(--gold-light, #E8CF8E) }
+    @media (max-width: 760px) { .foot-row { flex-direction: column; gap: 8px } }
+
+    /* float */
+    .float-cta { position: fixed; right: 24px; bottom: 24px; z-index: 40; width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #2AABEE, #229ED9); display: grid; place-items: center; color: #fff; box-shadow: 0 8px 24px -8px rgba(34,158,217,.6); transition: transform .3s, box-shadow .3s; }
+    .float-cta:hover { transform: translateY(-3px) }
+    .float-call { bottom: 100px; background: linear-gradient(135deg, var(--tiffany), var(--tiffany-deep)); box-shadow: 0 8px 24px -8px rgba(10,186,181,.6); }
+    .float-max { bottom: 176px; background: none; box-shadow: 0 8px 24px -8px rgba(79,127,255,.5); }
+    @media (max-width: 560px) { .float-cta { right: 16px; width: 52px; height: 52px } }
   </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
 
-<div class="container">
-  <a class="back" href="privacy.html">← Политика обработки персональных данных</a>
+<header class="nav" id="nav" role="banner">
+  <div class="container nav-row">
+    <a href="/" class="logo" aria-label="Татьянин День — Детский театр танца">
+      <img class="logo-img" src="logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" />
+      <span class="logo-text">
+        <strong>Татьянин День</strong>
+        <small>ЖК «Суханово Парк»</small>
+      </span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="/#about">О коллективе</a>
+      <a href="/#programs">Группы</a>
+      <a href="/#teachers">Педагоги</a>
+      <a href="/#disciplines">Дисциплины</a>
+      <a href="https://www.tatianinden.ru/summer-intensiv.html" class="nav-highlight">Интенсив</a>
+      <a href="https://www.tatianinden.ru/smart%E2%80%91fitness.html" class="nav-highlight">Умный фитнес</a>
+      <a href="blog/" class="nav-highlight">Блог</a>
+      <a href="prices.html" class="nav-highlight">Цены</a>
+      <a href="partners.html">Партнёры</a>
+      <a href="/#contacts">Контакты</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone">+7 (963) 671-99-83</a>
+      <a class="btn btn-primary" href="/">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-  <h1>Реестр обработки персональных данных</h1>
-  <p class="meta">
-    Детский театр танца «Татьянин День» · ИНН: 550408296455 ·
-    Актуальная редакция: <strong>12 июня 2026&nbsp;г.</strong> ·
-    Составлен в&nbsp;соответствии с&nbsp;<strong>ч.&nbsp;6 п.&nbsp;5 ФЗ-152</strong>
-  </p>
-
-  <!-- BEGIN A – REESTR TABLE -->
-  <table>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Цель обработки</th>
-        <th>Категории субъектов</th>
-        <th>Категории ПД</th>
-        <th>Правовое основание</th>
-        <th>Получатели / передача</th>
-        <th>Страна хранения</th>
-        <th>Срок хранения</th>
-        <th>Способ уничтожения</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Запись на пробное занятие, связь с заявителем</td>
-        <td>Родители / законные представители</td>
-        <td>ФИО, номер телефона</td>
-        <td>п.&nbsp;1 ч.&nbsp;1 ст.&nbsp;6 ФЗ-152 (согласие)</td>
-        <td>Не передаётся. Сообщение направляется через мессенджер (Telegram / Max) по инициативе пользователя.</td>
-        <td>РФ</td>
-        <td>12 месяцев с последнего взаимодействия</td>
-        <td>Удаление из переписки мессенджера</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Исполнение договора об оказании образовательных услуг; учёт обучающихся</td>
-        <td>Несовершеннолетние обучающиеся; родители / законные представители</td>
-        <td>ФИО ребёнка и представителя, дата рождения, телефон, сведения об успеваемости и посещаемости</td>
-        <td>п.&nbsp;5 ч.&nbsp;1 ст.&nbsp;6; ч.&nbsp;4 ст.&nbsp;9 ФЗ-152</td>
-        <td>Не передаётся третьим лицам (кроме уполномоченных органов по закону)</td>
-        <td>РФ</td>
-        <td>До расторжения договора + 3 года</td>
-        <td>Уничтожение по акту</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Веб-аналитика и улучшение сайта (только при согласии на cookies)</td>
-        <td>Посетители сайта tatianinden.ru</td>
-        <td>Анонимизированный IP, тип браузера, ОС, источник перехода, просматриваемые страницы, cookie-идентификаторы</td>
-        <td>п.&nbsp;1 ч.&nbsp;1 ст.&nbsp;6 ФЗ-152 (согласие на cookies)</td>
-        <td>ООО «Яндекс» (Яндекс.Метрика, РФ). Трансграничная передача отсутствует.</td>
-        <td>РФ</td>
-        <td>До 12 мес. (Яндекс)</td>
-        <td>Автоматически средствами платформы</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Информирование о расписании, мероприятиях, акциях (рекламная рассылка)</td>
-        <td>Родители / законные представители (давшие отдельное рекламное согласие)</td>
-        <td>Номер телефона</td>
-        <td>п.&nbsp;1 ч.&nbsp;1 ст.&nbsp;6 ФЗ-152 + ч.&nbsp;1 ст.&nbsp;18 ФЗ-38</td>
-        <td>Не передаётся. Отправка через мессенджер.</td>
-        <td>РФ</td>
-        <td>До отзыва согласия + 7 рабочих дней</td>
-        <td>Удаление из переписки</td>
-      </tr>
-    </tbody>
-  </table>
-  <!-- END A -->
-
-  <div class="note">
-    ⚠️ <strong>Примечание:</strong> настоящий реестр является внутренним документом Оператора, публикуемым в&nbsp;целях прозрачности в&nbsp;соответствии с&nbsp;ч.&nbsp;6 п.&nbsp;5 ФЗ-152. Реестр актуализируется при изменении условий обработки персональных данных.<br/>
-    Статус уведомления РКН: <strong>Оператор освобождён от&nbsp;обязанности уведомления на&nbsp;основании п.&nbsp;2 ч.&nbsp;2 ст.&nbsp;22 ФЗ-152</strong> (обработка в&nbsp;целях исполнения договора). При необходимости уведомление подаётся через <a href="https://pd.rkn.gov.ru" target="_blank" rel="noopener noreferrer">pd.rkn.gov.ru</a>.
+<div class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <a href="/">Татьянин День</a>
+      <span aria-hidden="true">›</span>
+      <a href="privacy.html">Политика обработки ПД</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Реестр обработки ПД</span>
+    </nav>
+    <span class="eyebrow">Юридический документ</span>
+    <h1>Реестр деятельности<br>по&nbsp;обработке персональных данных</h1>
+    <p class="meta">
+      <span class="meta-badge">📅 Актуален: 22 июня 2026 г.</span>
+      <span class="meta-badge">⚖️ ст. 22.1 ФЗ-152</span>
+      <span class="meta-badge">📄 <a href="privacy.html" style="color:var(--tiffany-deep);text-decoration:underline">Политика конфиденциальности</a></span>
+    </p>
   </div>
 </div>
 
-<footer>
-  <div>
-    © 2014–2026 Детский театр танца «Татьянин День» ·
-    <a href="privacy.html">Политика ПД</a> ·
-    <a href="terms.html">Пользовательское соглашение</a> ·
-    <a href="cookies.html">Политика куки</a> ·
-    <a href="/">На главную</a>
+<main id="main-content">
+  <div class="container reestr-layout">
+    <article class="reestr-article">
+
+      <!-- Оператор -->
+      <div class="operator-card">
+        <p><strong>Оператор персональных данных:</strong> Гурьянова Татьяна Ивановна</p>
+        <p><strong>Статус:</strong> физическое лицо, применяющее специальный налоговый режим «Налог на профессиональный доход» (самозанятая)</p>
+        <p><strong>ИНН:</strong> 550408296455</p>
+        <p><strong>Адрес:</strong> Московская область, Ленинский г.о., ЖК «Суханово Парк»</p>
+        <p><strong>Телефон:</strong> <a href="tel:+79636719983">+7&nbsp;(963)&nbsp;671-99-83</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:artestet@mail.ru">artestet@mail.ru</a></p>
+        <p><strong>Сайт:</strong> <a href="https://tatianinden.ru/" target="_blank" rel="noopener">tatianinden.ru</a></p>
+      </div>
+
+      <!-- Номер уведомления РКН -->
+      <div class="rkn-number">
+        <div class="rkn-number-icon">📋</div>
+        <div>
+          <strong id="rkn-reg-number">№ уведомления РКН: — (ожидается регистрация)</strong>
+          <p>После получения номера от Роскомнадзора замените этот текст на присвоенный номер и дату включения в реестр. Реестр РКН доступен на <a href="https://pd.rkn.gov.ru/operators-registry/" target="_blank" rel="noopener noreferrer" style="color:var(--tiffany-deep);text-decoration:underline">pd.rkn.gov.ru</a>.</p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        Настоящий реестр ведётся в соответствии со ст.&nbsp;22.1 Федерального закона от&nbsp;27.07.2006 №&nbsp;152-ФЗ «О&nbsp;персональных данных» и содержит сведения о деятельности оператора по обработке персональных данных в отношении каждой из выделенных категорий субъектов.
+      </div>
+
+      <!-- Деятельность 1 -->
+      <div class="sec-wrap">
+        <h2 class="sec-title">Деятельность 1 — Запись и обслуживание клиентов</h2>
+        <table class="act-table">
+          <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
+          <tr><th>Параметр</th><th>Значение</th></tr>
+          <tr><td><strong>Цель обработки</strong></td><td>Организация записи на занятия; исполнение договора об оказании услуг в сфере дополнительного развития детей (хореография, танцы, акробатика); связь с родителями по вопросам занятий.</td></tr>
+          <tr><td><strong>Правовые основания</strong></td><td>п. 1 ч. 1 ст. 6 (согласие); п. 5 ч. 1 ст. 6 (исполнение договора); ч. 4 ст. 9 ФЗ-152 (согласие законного представителя несовершеннолетнего).</td></tr>
+          <tr><td><strong>Категории субъектов</strong></td><td>Родители / законные представители несовершеннолетних; несовершеннолетние обучающиеся 3–14 лет.</td></tr>
+          <tr><td><strong>Состав данных</strong></td><td>ФИО родителя; ФИО ребёнка; дата рождения ребёнка; номер телефона; адрес e-mail (при наличии); возраст ребёнка; сведения о посещаемости и успеваемости.</td></tr>
+          <tr><td><strong>Способ сбора</strong></td><td>Форма записи на сайте (передача через мессенджер Telegram / Max); офлайн при заключении договора.</td></tr>
+          <tr><td><strong>Срок хранения</strong></td><td>Контактные данные — 12 месяцев с последнего взаимодействия; данные по договору — до расторжения + 3 года.</td></tr>
+          <tr><td><strong>Передача третьим лицам</strong></td><td>Не передаётся. Данные из форм сайта не хранятся на сторонних серверах.</td></tr>
+          <tr><td><strong>Трансграничная передача</strong></td><td>Не осуществляется.</td></tr>
+          <tr><td><strong>Меры защиты</strong></td><td>Ограниченный доступ (только педагоги); передача по HTTPS; организационные меры.</td></tr>
+        </table>
+      </div>
+
+      <!-- Деятельность 2 -->
+      <div class="sec-wrap">
+        <h2 class="sec-title">Деятельность 2 — Информирование и маркетинг</h2>
+        <table class="act-table">
+          <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
+          <tr><th>Параметр</th><th>Значение</th></tr>
+          <tr><td><strong>Цель обработки</strong></td><td>Информирование клиентов о расписании, мероприятиях, акциях и специальных предложениях.</td></tr>
+          <tr><td><strong>Правовые основания</strong></td><td>п. 1 ч. 1 ст. 6 ФЗ-152 (согласие); ч. 1 ст. 18 ФЗ-38 «О рекламе» (отдельное согласие на рекламные сообщения).</td></tr>
+          <tr><td><strong>Категории субъектов</strong></td><td>Родители / законные представители обучающихся; взрослые участники программ.</td></tr>
+          <tr><td><strong>Состав данных</strong></td><td>Имя; номер телефона; аккаунт в мессенджере (Telegram / Max).</td></tr>
+          <tr><td><strong>Способ сбора</strong></td><td>Чекбокс в форме записи на сайте (отдельное необязательное согласие); устное согласие при заключении договора.</td></tr>
+          <tr><td><strong>Срок хранения</strong></td><td>До отзыва согласия или прекращения отношений + 30 дней.</td></tr>
+          <tr><td><strong>Передача третьим лицам</strong></td><td>Не передаётся.</td></tr>
+          <tr><td><strong>Трансграничная передача</strong></td><td>Не осуществляется.</td></tr>
+          <tr><td><strong>Меры защиты</strong></td><td>Данные хранятся только в мессенджере оператора; доступ ограничен.</td></tr>
+        </table>
+      </div>
+
+      <!-- Деятельность 3 -->
+      <div class="sec-wrap">
+        <h2 class="sec-title">Деятельность 3 — Веб-аналитика (Яндекс.Метрика)</h2>
+        <table class="act-table">
+          <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
+          <tr><th>Параметр</th><th>Значение</th></tr>
+          <tr><td><strong>Цель обработки</strong></td><td>Анализ посещаемости сайта tatianinden.ru, улучшение пользовательского опыта.</td></tr>
+          <tr><td><strong>Правовые основания</strong></td><td>п. 1 ч. 1 ст. 6 ФЗ-152 (согласие на cookies — только после нажатия «Принять» в cookie-баннере).</td></tr>
+          <tr><td><strong>Категории субъектов</strong></td><td>Посетители сайта tatianinden.ru.</td></tr>
+          <tr><td><strong>Состав данных</strong></td><td>IP-адрес (анонимизируется); тип браузера, ОС, разрешение экрана; источник перехода; просмотренные страницы; время и длительность посещения; идентификатор сессии (cookie _ym_uid, _ym_d, _ym_isad, _ym_visorc).</td></tr>
+          <tr><td><strong>Способ сбора</strong></td><td>Автоматически через счётчик Яндекс.Метрики после явного согласия пользователя.</td></tr>
+          <tr><td><strong>Срок хранения</strong></td><td>До 24 месяцев (в соответствии с политикой Яндекс.Метрики). Cookies на стороне браузера — до 1 года.</td></tr>
+          <tr><td><strong>Передача третьим лицам</strong></td><td>ООО «Яндекс» (Россия) — в рамках сервиса Яндекс.Метрика. Серверы расположены на территории РФ.</td></tr>
+          <tr><td><strong>Трансграничная передача</strong></td><td>Не осуществляется.</td></tr>
+          <tr><td><strong>Меры защиты</strong></td><td>Скрипт активируется только после согласия; IP анонимизируется до передачи; пользователь может отказаться в любой момент, очистив cookies.</td></tr>
+        </table>
+      </div>
+
+      <!-- Деятельность 4 -->
+      <div class="sec-wrap">
+        <h2 class="sec-title">Деятельность 4 — Обеспечение безопасности сайта</h2>
+        <table class="act-table">
+          <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
+          <tr><th>Параметр</th><th>Значение</th></tr>
+          <tr><td><strong>Цель обработки</strong></td><td>Предотвращение несанкционированного доступа, защита инфраструктуры сайта.</td></tr>
+          <tr><td><strong>Правовые основания</strong></td><td>ч. 4 ст. 6 ФЗ-152 (защита законных интересов оператора).</td></tr>
+          <tr><td><strong>Категории субъектов</strong></td><td>Все посетители сайта.</td></tr>
+          <tr><td><strong>Состав данных</strong></td><td>IP-адрес; дата и время обращения; запрашиваемый URL; HTTP-заголовки.</td></tr>
+          <tr><td><strong>Способ сбора</strong></td><td>Автоматически — серверные журналы доступа (access log) хостинга GitHub Pages.</td></tr>
+          <tr><td><strong>Срок хранения</strong></td><td>30 дней.</td></tr>
+          <tr><td><strong>Передача третьим лицам</strong></td><td>GitHub, Inc. (США) — в рамках хостинга GitHub Pages. Передача осуществляется на основании условий сервиса GitHub; данные защищены политикой конфиденциальности GitHub.</td></tr>
+          <tr><td><strong>Трансграничная передача</strong></td><td>Да — на серверы GitHub Inc. (США). Основание: необходимость для обеспечения работы сайта; иные способы хостинга не применяются на текущем этапе.</td></tr>
+          <tr><td><strong>Меры защиты</strong></td><td>HTTPS (TLS 1.2+), HSTS; минимальный объём данных в логах.</td></tr>
+        </table>
+        <div class="highlight-box" style="margin-top:12px">
+          <strong>Примечание по трансграничной передаче (GitHub Pages):</strong> GitHub Inc. является участником соглашений о защите данных (Data Processing Agreement с GitHub). Персональные данные в журналах доступа обрабатываются GitHub как хостинг-провайдером и не используются для идентификации посетителей. Оператор уведомляет РКН о факте трансграничной передачи в рамках данного уведомления.
+        </div>
+      </div>
+
+      <!-- Дата обновления -->
+      <div style="margin-top:40px; padding-top:24px; border-top: 1px solid rgba(10,186,181,.2); font-size:14px; color: var(--ink-mute)">
+        <p>Реестр введён в действие: <strong>22 июня 2026 г.</strong></p>
+        <p>Следующий плановый пересмотр: <strong>июнь 2027 г.</strong> или при изменении состава обработки данных.</p>
+        <p>По вопросам реестра: <a href="mailto:artestet@mail.ru" style="color:var(--tiffany-deep);text-decoration:underline">artestet@mail.ru</a> · <a href="tel:+79636719983" style="color:var(--tiffany-deep);text-decoration:underline">+7 (963) 671-99-83</a></p>
+      </div>
+
+    </article>
+  </div>
+</main>
+
+<footer role="contentinfo">
+  <div class="container foot-row">
+    <div>
+      © 2014–2026 Детский театр танца «Татьянин День», ЖК «Суханово&nbsp;Парк», Московская область. Все права защищены.
+    </div>
+    <div>
+      <a href="/#about">О коллективе</a> ·
+      <a href="/#programs">Группы</a> ·
+      <a href="prices.html">Цены</a> ·
+      <a href="blog/">Блог</a> ·
+      <a href="partners.html">Партнёры</a> ·
+      <a href="/#contacts">Контакты</a> ·
+      <a href="privacy.html">Политика ПД</a> ·
+      <a href="reestr.html" aria-current="page" style="color:rgba(255,255,255,.9);font-weight:600;">Реестр обработки ПД</a> ·
+      <a href="terms.html">Соглашение</a> ·
+      <a href="cookies.html">Политика куки</a>
+    </div>
   </div>
 </footer>
 
+<a class="float-cta float-call" href="tel:+79636719983" aria-label="Позвонить в Татьянин День">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+<a class="float-cta" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+</a>
+<a class="float-max float-cta" href="https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y" target="_blank" rel="noopener noreferrer" aria-label="Написать в Max">
+  <svg width="34" height="34" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="mg-r" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/><stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="url(#mg-r)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z" fill="white"/></svg>
+</a>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+  const burger = document.getElementById('burger');
+  const menu   = document.getElementById('menu');
+  burger?.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    burger.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+  });
+</script>
 </body>
 </html>
