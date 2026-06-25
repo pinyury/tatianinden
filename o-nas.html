@@ -220,15 +220,37 @@ section{padding:80px 0}
 </head>
 <body>
 
-<nav class="mini-nav">
-  <div class="container mini-nav-row">
-    <div class="mini-nav-logo">
-      <a href="/">Татьянин День</a>
-      <small>ЖК Суханово Парк · Видное</small>
+<header class="nav" id="nav" role="banner">
+  <div class="container nav-row">
+    <a href="#" class="logo" aria-label="Татьянин День — Детский театр танца">
+      <img class="logo-img" src="logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" fetchpriority="high" />
+      <span class="logo-text">
+        <strong>Татьянин День</strong>
+        <small>ЖК «Суханово Парк»</small>
+      </span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="/o-nas.html">О коллективе</a>
+      <a href="#programs">Группы</a>
+      <a href="/pedagogi.html">Педагоги</a>
+      <a href="#disciplines">Дисциплины</a>
+      <a href="/summer-intensiv.html" class="nav-blog">Интенсив</a>
+      <a href="/smart%E2%80%91fitness.html" class="nav-blog">Умный фитнес</a>
+      <a href="/online-fitness.html" class="nav-blog">Онлайн-фитнес</a>
+      <a href="/blog/" class="nav-blog">Блог</a>
+      <a href="/prices.html" class="nav-blog">Цены</a>
+      <a href="/partners.html">Партнёры</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671-99-83</a>
+      <a class="btn btn-primary" href="#" onclick="openModal();return false;" data-goal="cta_open_form_header">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <a class="btn btn-primary" href="/#contacts">Первый урок бесплатно</a>
   </div>
-</nav>
+</header>
 
 <main>
 <div class="breadcrumb">
