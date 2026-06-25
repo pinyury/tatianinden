@@ -663,20 +663,36 @@ nav.menu a.nav-active::after{transform:scaleX(1)}
 
 </main>
 
-<footer style="background:#1B1B2E;color:rgba(255,255,255,.6);padding:32px 0;font-size:13px">
-  <div class="container" style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
-    <div>
-      <a href="/" style="color:rgba(255,255,255,.9);font-weight:600;font-family:var(--display);font-size:18px">Татьянин День</a>
-      <p style="margin:4px 0 0;color:rgba(255,255,255,.5);font-size:12px">ЖК Суханово Парк, 127/2 · Ленинский округ · 142702</p>
+<footer role="contentinfo">
+  <div class="container foot-row">
+    <div itemscope itemtype="https://schema.org/DanceSchool">
+      <meta itemprop="name" content="Детский театр танца «Татьянин День»" />
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        © 2014–2026 Детский театр танца «Татьянин День»,
+        <span itemprop="addressLocality">ЖК «Суханово&nbsp;Парк»</span>,
+        <span itemprop="addressRegion">Московская область</span>.
+      </span> Все права защищены.
     </div>
-    <nav style="display:flex;gap:16px;flex-wrap:wrap">
-      <a href="/detskie-tantsy/3-5-let/" style="color:rgba(255,255,255,.7)">Детские танцы</a>
-      <a href="/privacy.html" style="color:rgba(255,255,255,.7)">Политика ПД</a>
-      <a href="/online-fitness.html" style="color:rgba(255,255,255,.7)">Онлайн-фитнес</a>
-      <a href="/prices.html" style="color:rgba(255,255,255,.7)">Цены</a>
-      <a href="/pedagogi.html" style="color:rgba(255,255,255,.7)">Педагоги</a>
-      <a href="/o-nas.html" style="color:rgba(255,255,255,.7)">О нас</a>
-    </nav>
+    <div>
+      <a href="/o-nas.html">О коллективе</a> ·
+      <a href="#programs">Группы</a> ·
+      <a href="/online-fitness.html">Онлайн-фитнес</a> ·
+      <a href="/prices.html">Цены</a> ·
+      <a href="/blog/">Блог</a> ·
+      <a href="/partners.html">Партнёры</a> ·
+      <a href="#contacts">Контакты</a> ·
+      <a href="akciya/">Акции</a> ·
+      <a href="#" onclick="openPrivacy();return false;">Политика ПД</a> ·
+      <!-- BEGIN A – REESTR LINK -->
+      <a href="reestr.html" target="_blank" rel="noopener noreferrer">Реестр обработки ПД</a> ·
+      <!-- END A -->
+      <!-- BEGIN J – TERMS LINK -->
+      <a href="terms.html" target="_blank" rel="noopener noreferrer">Пользовательское соглашение</a> ·
+      <!-- END J -->
+      <!-- BEGIN O – COOKIES PAGE LINK -->
+      <a href="cookies.html" target="_blank" rel="noopener noreferrer">Политика куки-файлов</a>
+      <!-- END O -->
+    </div>
   </div>
 </footer>
 
