@@ -3223,6 +3223,12 @@
     .fitness-online { padding: 32px 22px; margin-top: 56px }
     .fitness-badge { display: none } /* float badges overlap on mobile */
 
+    /* «Бережно к спине» + «Для мам» — стак вертикально */
+    #fitness-two-cta {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+
     /* ── Blog teaser ── */
     .blog-teaser { padding: 72px 0 }
 
@@ -4090,7 +4096,7 @@
     </div>
 
     <!-- Два CTA-блока под разные боли -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:80px" class="reveal fitness-two-cta">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:80px" class="reveal fitness-two-cta" id="fitness-two-cta">
       <!-- ЦА 1: боль в спине -->
       <div style="
         background:linear-gradient(135deg, var(--tiffany-soft) 0%, #E8F7F6 100%);
