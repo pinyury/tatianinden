@@ -673,26 +673,35 @@
 <body>
 
 <!-- ============ NAV ============ -->
-<header class="nav" id="nav">
+<header class="nav" id="nav" role="banner">
   <div class="container nav-row">
-    <a href="../index.html" class="logo" aria-label="Татьянин День">
-      <img src="../logo.jpg" alt="Татьянин День — детский театр танца" width="72" height="72" />
+    <a href="index.html" class="logo" aria-label="Татьянин День — на главную">
+      <img class="logo-img" src="logo.jpg" alt="Татьянин День" width="88" height="88" loading="eager" fetchpriority="high" />
       <span class="logo-text">
         <strong>Татьянин День</strong>
-        <small>Блог · Полезные статьи</small>
+        <small>ЖК «Суханово Парк»</small>
       </span>
     </a>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="index.html#about">О коллективе</a>
+      <a href="index.html#programs">Группы</a>
+      <a href="pedagogi.html">Педагоги</a>
+      <a href="index.html#disciplines">Дисциплины</a>
+      <a href="summer-intensiv.html" class="nav-blog nav-active">Интенсив</a>
+      <a href="https://www.tatianinden.ru/smart%E2%80%91fitness.html" class="nav-blog">Умный фитнес</a>
+      <a href="blog/" class="nav-blog">Блог</a>
+      <a href="prices.html" class="nav-blog">Цены</a>
+      <a href="partners.html">Партнёры</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
     <div class="nav-actions">
-      <!-- Текст номера — только десктоп -->
-      <a href="tel:+79636719983" class="nav-phone nav-phone-text" aria-label="Позвонить">+7 (963) 671-99-83</a>
-      <!-- Иконка телефона — только мобильный -->
-      <a href="tel:+79636719983" class="nav-phone nav-phone-icon" aria-label="Позвонить в Татьянин День">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 5.5 13a19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.4 2h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.4 2.1L8.9 9.9a16 16 0 0 0 6 6l1.3-.8a2 2 0 0 1 2.1-.5 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 22 17z"/></svg>
-      </a>
-      <a href="../index.html" class="btn-back">← На главную</a>
+      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671-99-83</a>
+      <a class="btn btn-primary" href="#" onclick="openModal();return false;" data-goal="cta_open_form_header">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
+
 
 <!-- ============ BREADCRUMBS ============ -->
 <nav aria-label="Путь по сайту" style="padding:84px 0 0; background:#fff; border-bottom:1px solid rgba(27,27,46,.05);">
