@@ -362,10 +362,20 @@ nav.menu a.nav-active::after{transform:scaleX(1)}
 </head>
 <body>
 
+ /* nav handled by header.nav styles above */
+}
+</style>
+</head>
+<body>
+
+<!-- Skip navigation -->
+<a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:4px;z-index:999;background:var(--tiffany);color:#fff;padding:8px 16px;border-radius:8px;font-weight:600">Перейти к основному содержанию</a>
+
+<!-- ============ HEADER ============ -->
 <header class="nav" id="nav" role="banner">
   <div class="container nav-row">
-    <a href="#" class="logo" aria-label="Татьянин День — Детский театр танца">
-      <img class="logo-img" src="logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" fetchpriority="high" />
+    <a href="/" class="logo" aria-label="Татьянин День — Детский театр танца">
+      <img class="logo-img" src="/logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" fetchpriority="high" />
       <span class="logo-text">
         <strong>Татьянин День</strong>
         <small>ЖК «Суханово Парк»</small>
@@ -373,26 +383,26 @@ nav.menu a.nav-active::after{transform:scaleX(1)}
     </a>
     <nav class="menu" id="menu" aria-label="Основная навигация">
       <a href="/o-nas.html">О коллективе</a>
-      <a href="#programs">Группы</a>
+      <a href="/#programs">Группы</a>
       <a href="/pedagogi.html">Педагоги</a>
-      <a href="#disciplines">Дисциплины</a>
-      <a href="/summer-intensiv.html" class="nav-blog">Интенсив</a>
-      <a href="/smart%E2%80%91fitness.html" class="nav-blog">Умный фитнес</a>
-      <a href="/online-fitness.html" class="nav-blog">Онлайн-фитнес</a>
-      <a href="/blog/" class="nav-blog">Блог</a>
-      <a href="/prices.html" class="nav-blog">Цены</a>
+      <a href="/summer-intensiv.html" class="nav-highlight">Интенсив</a>
+      <a href="/smart-fitness.html" class="nav-active nav-highlight">Умный фитнес</a>
+      <a href="/online-fitness.html" class="nav-highlight">Онлайн-фитнес</a>
+      <a href="/blog/">Блог</a>
+      <a href="/prices.html">Цены</a>
       <a href="/partners.html">Партнёры</a>
-      <a href="#contacts">Контакты</a>
+      <a href="/#contacts">Контакты</a>
     </nav>
     <div class="nav-actions">
       <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671-99-83</a>
-      <a class="btn btn-primary" href="#" onclick="openModal();return false;" data-goal="cta_open_form_header">Записаться</a>
+      <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" data-goal="cta_open_form_header">Записаться</a>
       <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
+
 <main>
 
 <div class="breadcrumb">
