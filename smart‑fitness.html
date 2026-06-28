@@ -26,7 +26,7 @@
   "@type":"Course",
   "name":"Умный фитнес для женщин",
   "description":"Групповые тренировки для женщин в ЖК Суханово Парк, Видное. Пилатес, растяжка, укрепление кора. Бережно к спине и суставам.",
-  "provider":{"@type":"DanceSchool","name":"Детский театр танца «Татьянин День»","url":"https://tatianinden.ru/"},
+  "provider":{"@type":"Organization","name":"Детский театр танца «Татьянин День»","url":"https://tatianinden.ru/"},
   "audience":{"@type":"Audience","audienceType":"Женщины 25–55 лет"},
   "offers":{"@type":"Offer","url":"https://tatianinden.ru/prices.html","priceCurrency":"RUB","price":"8500","description":"Абонемент 8 500 рублей в месяц. Первая тренировка — бесплатно."}
 }
@@ -63,6 +63,792 @@ p{line-height:1.75;color:var(--ink-soft);margin:0 0 16px;font-size:17px}
 .lead{font-size:19px}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--tiffany-deep)}
 .eyebrow::before{content:"";width:32px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+section{padding:80px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;min-height:48px;border-radius:999px;font-weight:600;font-size:15px;transition:all .3s;white-space:nowrap;text-decoration:none}
+.btn-primary{background:linear-gradient(135deg,var(--tiffany),var(--pink));color:#fff;box-shadow:0 14px 30px -12px rgba(10,186,181,.5)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(27,27,46,.18)}
+.btn-ghost:hover{border-color:var(--tiffany);color:var(--tiffany-deep);background:var(--tiffany-soft)}
+.btn-gold{background:linear-gradient(135deg,#E8CF8E,#C9A961);color:#fff;box-shadow:0 14px 30px -12px rgba(201,169,97,.4)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-lg{padding:19px 34px;font-size:16px}
+
+/* NAV */
+header.nav{
+  position:fixed; top:0; left:0; right:0; z-index:50;
+  padding:10px 0;
+  background:#FFFFFF;
+  border-bottom:1px solid rgba(27,27,46,.06);
+  box-shadow:0 2px 16px -10px rgba(27,27,46,.15);
+  transition:padding .3s ease, box-shadow .3s ease;
+}
+header.nav.scrolled{
+  padding:8px 0;
+  box-shadow:0 6px 24px -14px rgba(27,27,46,.2);
+}
+.nav-row{
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+  min-height:88px;
+}
+.logo{
+  display:flex; align-items:center; gap:18px;
+  color:var(--ink);
+  line-height:1.1;
+}
+.logo-img{
+  width:88px; height:88px;
+  object-fit:contain;
+  object-position:center 38%;
+  border-radius:50%;
+  transition:transform .4s ease;
+}
+.logo:hover .logo-img{transform:rotate(-4deg) scale(1.05)}
+.logo-text{display:flex; flex-direction:column; gap:3px}
+.logo-text strong{
+  font-family:var(--display);
+  font-size:28px;
+  font-weight:600;
+  color:#1B2A4E;
+  line-height:1;
+  letter-spacing:.005em;
+}
+.logo-text small{
+  font-family:var(--body);
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  font-weight:500;
+  margin-top:6px;
+}
+@media (max-width:960px){
+  .logo-img{width:64px; height:64px}
+  .logo-text strong{font-size:22px}
+  .logo-text small{font-size:11px}
+  .nav-row{min-height:72px}
+}
+@media (max-width:560px){
+  .logo-img{width:52px; height:52px}
+  .logo-text strong{font-size:18px}
+  .logo-text small{font-size:10px}
+}
+nav.menu{display:flex; gap:28px; align-items:center; white-space:nowrap}
+nav.menu a{
+  font-size:15.5px;
+  font-weight:600;
+  color:var(--ink-soft);
+  transition:color .25s;
+  position:relative;
+  padding:6px 2px;
+  white-space:nowrap;
+}
+nav.menu a:hover{color:var(--tiffany-deep)}
+nav.menu a::after{
+  content:""; position:absolute; left:0; right:0; bottom:-6px;
+  height:2px; background:var(--gold); border-radius:2px;
+  transform:scaleX(0); transform-origin:left;
+  transition:transform .3s;
+}
+nav.menu a:hover::after{transform:scaleX(1)}
+nav.menu a.nav-highlight{
+  color:var(--gold-deep);
+  font-weight:700;
+}
+nav.menu a.nav-highlight::before{
+  content:"✦";
+  color:var(--gold);
+  margin-right:5px;
+  font-size:.85em;
+}
+nav.menu a.nav-active{
+  color:var(--tiffany-deep);
+}
+nav.menu a.nav-active::after{transform:scaleX(1)}
+.nav-actions{display:flex; align-items:center; gap:18px; white-space:nowrap}
+.nav-phone{font-weight:700; font-size:16px; color:var(--ink); letter-spacing:.01em; white-space:nowrap; min-height:44px; display:inline-flex; align-items:center; padding:4px 8px; border-radius:8px;}
+.nav-phone:hover{color:var(--tiffany-deep)}
+.burger{display:none; width:40px; height:40px; border-radius:50%; background:var(--white); box-shadow:var(--shadow-soft); border:none; cursor:pointer; flex-shrink:0}
+.burger span{display:block; width:18px; height:1.5px; background:var(--ink); margin:4px auto; transition:all .3s}
+@media (max-width:1300px){
+  nav.menu{gap:22px}
+  nav.menu a{font-size:14px}
+}
+@media (max-width:1100px){
+  nav.menu{display:none}
+  .nav-actions .nav-phone{display:none}
+  .burger{display:block}
+  nav.menu.open{
+    display:flex; flex-direction:column;
+    position:fixed; top:96px; left:16px; right:16px;
+    background:var(--white);
+    padding:22px 24px;
+    border-radius:22px;
+    box-shadow:var(--shadow-md);
+    gap:16px; align-items:flex-start;
+    max-height:calc(100vh - 120px);
+    overflow-y:auto;
+  }
+  nav.menu.open a{font-size:17px; padding:8px 0}
+}
+/* Modal */
+.modal-bg{
+  display:none; position:fixed; inset:0; z-index:200;
+  background:rgba(27,27,46,.6); backdrop-filter:blur(6px);
+  align-items:center; justify-content:center; padding:20px;
+}
+.modal-bg.open{display:flex}
+.modal{
+  background:var(--white); border-radius:28px;
+  padding:40px 36px; max-width:480px; width:100%;
+  position:relative; box-shadow:0 32px 80px -20px rgba(27,27,46,.35);
+}
+.modal-close{
+  position:absolute; top:16px; right:16px;
+  width:36px; height:36px; border-radius:50%; border:none;
+  background:rgba(27,27,46,.06); font-size:20px; line-height:1;
+  cursor:pointer; color:var(--ink-soft); transition:background .2s;
+}
+.modal-close:hover{background:rgba(27,27,46,.12)}
+.modal h3{font-family:var(--display); font-size:30px; margin-bottom:8px}
+.modal p.small{font-size:14.5px; color:var(--ink-soft); margin-bottom:24px}
+@media (max-width:560px){
+  .modal{padding:32px 24px}
+  .modal h3{font-size:24px}
+}
+.breadcrumb{padding:18px 0 0;font-size:13px;color:var(--ink-mute)}
+.breadcrumb a{color:var(--tiffany-deep);font-weight:600}
+.breadcrumb span{margin:0 8px;opacity:.5}
+
+/* HERO */
+.hero{
+  padding:64px 0 88px;
+  background:
+    radial-gradient(ellipse at 95% 5%,rgba(10,186,181,.14) 0%,transparent 50%),
+    radial-gradient(ellipse at 5% 95%,rgba(255,111,169,.1) 0%,transparent 50%),
+    linear-gradient(180deg,#F2FDFC 0%,var(--cream) 100%);
+}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.hero-kicker{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--tiffany-deep);display:block;margin-bottom:12px}
+.hero-sub{font-size:19px;color:var(--ink-soft);line-height:1.65;margin:0 0 36px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-trust{display:flex;gap:28px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(27,27,46,.08);flex-wrap:wrap}
+.ht-item{display:flex;flex-direction:column;gap:3px}
+.ht-num{font-family:var(--display);font-size:30px;font-weight:700;line-height:1;color:var(--ink)}
+.ht-lbl{font-size:12px;color:var(--ink-mute);font-weight:500}
+.hero-photo{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);aspect-ratio:4/5;background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud))}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+
+/* ДВЕ ЦА */
+.two-cta{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.cta-card{border-radius:var(--radius-lg);padding:40px 36px;position:relative;overflow:hidden}
+.cta-card.back{background:linear-gradient(135deg,var(--tiffany-soft),#E0F8F6);border:1px solid rgba(10,186,181,.25)}
+.cta-card.mama{background:linear-gradient(135deg,var(--pink-cloud),#FFF0F8);border:1px solid rgba(255,111,169,.2)}
+.cta-card-pill{display:inline-block;padding:5px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:16px}
+.cta-card.back .cta-card-pill{background:var(--tiffany);color:#fff}
+.cta-card.mama .cta-card-pill{background:var(--pink);color:#fff}
+.cta-card h3{font-size:clamp(20px,2.2vw,26px);margin-bottom:12px;color:var(--ink)}
+.cta-card p{font-size:16px;line-height:1.65;margin-bottom:20px}
+.check-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:9px;margin-bottom:24px}
+.check-list li{display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--ink-soft);line-height:1.5}
+.check-list li::before{content:"✓";color:var(--tiffany-deep);font-weight:700;flex-shrink:0;margin-top:1px}
+.cta-card.mama .check-list li::before{color:var(--pink-deep)}
+
+/* ПРОГРАММА */
+.prog-section{background:var(--white)}
+.prog-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.step{background:var(--cream);border-radius:var(--radius);padding:28px 24px;border:1px solid rgba(27,27,46,.05);position:relative}
+.step-num{font-family:var(--display);font-style:italic;font-size:48px;font-weight:600;line-height:1;color:var(--tiffany);opacity:.25;position:absolute;top:16px;right:20px}
+.step h3{font-size:19px;margin-bottom:10px;position:relative}
+.step p{font-size:15px;margin:0;color:var(--ink-soft);position:relative}
+.step-time{display:inline-block;margin-top:12px;padding:4px 12px;border-radius:999px;background:var(--tiffany-soft);color:var(--tiffany-deep);font-size:12px;font-weight:700}
+
+/* РЕЗУЛЬТАТЫ */
+.results-section{background:linear-gradient(180deg,#F2FDFC,var(--cream))}
+.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.result-num-card{background:var(--white);border-radius:var(--radius);padding:28px 22px;box-shadow:var(--shadow-soft);text-align:center}
+.result-big{font-family:var(--display);font-size:52px;font-weight:700;line-height:1;color:var(--ink);margin-bottom:8px}
+.result-big span{font-size:32px;color:var(--tiffany)}
+.result-lbl{font-size:14px;color:var(--ink-soft);line-height:1.4}
+
+/* РАСПИСАНИЕ */
+.schedule-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}
+.sch-card{background:var(--white);border-radius:var(--radius-lg);padding:36px 32px;box-shadow:var(--shadow-soft);border:1px solid rgba(27,27,46,.05)}
+.sch-card h3{font-size:20px;margin-bottom:20px;color:var(--tiffany-deep)}
+.sch-row{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid rgba(27,27,46,.06)}
+.sch-row:last-child{border-bottom:none}
+.sch-icon{width:40px;height:40px;border-radius:12px;background:var(--tiffany-soft);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.sch-label{font-size:12px;color:var(--ink-mute);font-weight:600;letter-spacing:.04em;text-transform:uppercase;display:block;margin-bottom:2px}
+.sch-value{font-family:var(--display);font-size:20px;font-weight:600;color:var(--ink)}
+.price-card{background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));border-radius:var(--radius-lg);padding:36px 32px;border:1px solid rgba(201,169,97,.2);text-align:center}
+.price-big{font-family:var(--display);font-size:64px;font-weight:700;color:var(--ink);line-height:1}
+.price-per{font-size:15px;color:var(--ink-soft);margin-top:6px}
+.price-free{display:inline-block;margin:16px 0;padding:10px 22px;border-radius:999px;background:var(--tiffany);color:#fff;font-weight:700;font-size:14px}
+
+/* ПЕДАГОГ */
+.teacher-strip{background:var(--white)}
+.teacher-grid{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:start;max-width:760px}
+.teacher-photo{border-radius:var(--radius);overflow:hidden;aspect-ratio:2/3;box-shadow:var(--shadow-soft);background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud))}
+.teacher-photo img{width:100%;height:100%;object-fit:cover;object-position:top}
+.teacher-role{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tiffany-deep);display:block;margin-bottom:10px}
+.teacher-quote{font-family:var(--display);font-style:italic;font-size:clamp(18px,2vw,23px);line-height:1.5;color:var(--gold-deep);margin:14px 0 18px;border-left:3px solid var(--gold);padding-left:18px}
+
+/* ОТЗЫВЫ */
+.reviews-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
+.review-card{background:var(--white);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow-soft)}
+.review-card.tiffany-border{border-left:4px solid var(--tiffany)}
+.review-card.pink-border{border-left:4px solid var(--pink)}
+.stars{color:var(--gold);font-size:15px;letter-spacing:2px;margin-bottom:10px;display:block}
+.review-card blockquote{font-size:15.5px;line-height:1.7;color:var(--ink-soft);font-style:italic;margin:0 0 10px}
+.review-card cite{font-size:13px;color:var(--ink-mute);font-style:normal;font-weight:600}
+
+/* ОНЛАЙН */
+.online-section{background:linear-gradient(135deg,var(--ink),#2A1B3E);color:#fff;padding:80px 0}
+.online-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.online-section h2{color:#fff}
+.online-section h2 em{background:linear-gradient(120deg,var(--tiffany-soft),var(--pink-soft));-webkit-background-clip:text;background-clip:text;color:transparent}
+.online-section p{color:rgba(255,255,255,.7)}
+.online-perks{display:flex;flex-direction:column;gap:14px;margin-top:28px}
+.perk{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;background:rgba(255,255,255,.07);border-radius:var(--radius);border:1px solid rgba(255,255,255,.1)}
+.perk-icon{font-size:22px;flex-shrink:0}
+.perk-title{font-size:15px;font-weight:600;color:#fff;margin-bottom:3px}
+.perk-desc{font-size:13.5px;color:rgba(255,255,255,.6)}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:40px auto 0;display:flex;flex-direction:column;gap:14px}
+.faq-item{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-soft)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;font-size:16.5px;font-weight:600;color:var(--ink);cursor:pointer;transition:background .2s;user-select:none;border-radius:var(--radius);list-style:none}
+.faq-q svg{flex-shrink:0;transition:transform .3s ease}
+.faq-q:hover{background:var(--tiffany-soft);border-radius:var(--radius) var(--radius) 0 0}
+.faq-a{padding:0 24px;font-size:15px;line-height:1.7;color:var(--ink-soft);max-height:0;overflow:hidden;transition:max-height .35s ease, padding .35s ease}
+.faq-item.open .faq-a{max-height:600px;padding:0 24px 20px}
+.faq-item.open .faq-q{background:var(--tiffany-soft);border-radius:var(--radius) var(--radius) 0 0}
+.faq-item.open .faq-q svg{transform:rotate(180deg)}
+
+/* CTA ФИНАЛЬНЫЙ */
+.cta-final{background:linear-gradient(135deg,#0D7A76,var(--tiffany-deep));color:#fff;text-align:center;padding:88px 0}
+.cta-final h2{color:#fff;margin-bottom:14px}
+.cta-final p{color:rgba(255,255,255,.8);max-width:520px;margin:0 auto 36px;font-size:18px}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+@media(max-width:900px){
+  .hero-grid,.two-cta,.schedule-grid,.online-grid,.teacher-grid,.reviews-grid{grid-template-columns:1fr;gap:32px}
+  .prog-steps,.results-grid{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .hero-photo{max-height:320px}
+  /* nav handled by header.nav styles above */
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Умный фитнес · Татьянин День",
+  "url": "https://tatianinden.ru/smart-fitness.html",
+  "telephone": "+79636719983",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "reviewCount": "4"
+  },
+  "review": [
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Ольга К."},"reviewBody":"Два месяца — и спина перестала ныть к вечеру. Раньше после работы за компьютером было ощущение, что меня переломали. Теперь встаю из-за стола и иду не скрючившись."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Наталья Р."},"reviewBody":"Думала, это как обычный фитнес — пришла и поняла, что совсем другое. После каждого занятия чувствую себя живой, а не выжатой."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Светлана Б."},"reviewBody":"Растяжка за месяц улучшилась так, что я сама удивилась. Анжелика объясняет каждое движение через анатомию — это совсем другой уровень."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Татьяна М."},"reviewBody":"Сначала думала — съезжу пока дочка занимается. Осталась на полгода. Теперь мы обе ждём своих занятий с одинаковым нетерпением."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Умный фитнес для женщин · Татьянин День",
+  "description": "Групповые тренировки для женщин в Видном. Пилатес, растяжка, укрепление кора. Бережно к спине и суставам. Первая тренировка бесплатно.",
+  "url": "https://tatianinden.ru/smart-fitness.html",
+  "telephone": "+79636719983",
+  "priceRange": "8500 ₽/мес",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ЖК Суханово Парк, 127/2",
+    "addressLocality": "Видное",
+    "addressRegion": "Московская область",
+    "postalCode": "142703",
+    "addressCountry": "RU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "55.551",
+    "longitude": "37.722"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"21:00"}
+  ],
+  "sameAs": ["https://t.me/+79636719983"]
+}
+</script>
+</head>
+<body>
+
+<!-- Skip navigation -->
+<a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:4px;z-index:999;background:var(--tiffany);color:#fff;padding:8px 16px;border-radius:8px;font-weight:600">Перейти к основному содержанию</a>
+
+<!-- ============ HEADER ============ -->
+<header class="nav" id="nav" role="banner">
+  <div class="container nav-row">
+    <a href="/" class="logo" aria-label="Татьянин День — Детский театр танца">
+      <img class="logo-img" src="/logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" fetchpriority="high" />
+      <span class="logo-text">
+        <strong>Татьянин День</strong>
+        <small>ЖК «Суханово Парк»</small>
+      </span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="/o-nas.html">О коллективе</a>
+      <a href="/#programs">Группы</a>
+      <a href="/pedagogi.html">Педагоги</a>
+      <a href="/summer-intensiv.html" class="nav-highlight">Интенсив</a>
+      <a href="/smart-fitness.html" class="nav-active nav-highlight">Умный фитнес</a>
+      <a href="/online-fitness.html" class="nav-highlight">Онлайн-фитнес</a>
+      <a href="/blog/">Блог</a>
+      <a href="/prices.html">Цены</a>
+      <a href="/partners.html">Партнёры</a>
+      <a href="/#contacts">Контакты</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone" data-goal="cta_call_header">+7 (963) 671-99-83</a>
+      <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" data-goal="cta_open_form_header">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="breadcrumb"><div class="container"><a href="/">Главная</a><span>›</span>Умный фитнес</div></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-kicker">Видное · ЖК Суханово Парк · Для женщин</span>
+        <h1>Умный фитнес<br/>для женщин<br/>в <em>Видном</em></h1>
+        <p class="hero-sub">Групповые тренировки для женщин в ЖК Суханово Парк — бережно к спине, без ударной нагрузки. Для мам, для тех кто за компьютером, для тех кто устал от боли. Первая тренировка бесплатно.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#" onclick="openModal('fitness');return false;" data-goal="cta_open_form_hero">Первая тренировка — бесплатно</a>
+          <a class="btn btn-ghost btn-lg" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">Telegram</a>
+        </div>
+        <div class="hero-trust">
+          <div class="ht-item"><span class="ht-num">3</span><span class="ht-lbl">раза в неделю</span></div>
+          <div class="ht-item"><span class="ht-num">120</span><span class="ht-lbl">минут занятие</span></div>
+          <div class="ht-item"><span class="ht-num">8 500 ₽</span><span class="ht-lbl">в месяц</span></div>
+          <div class="ht-item"><span class="ht-num">0 ₽</span><span class="ht-lbl">первая тренировка</span></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="/umniy_fitness.jpg" alt="Умный фитнес для женщин — занятие в студии «Татьянин День»" width="600" height="750" fetchpriority="high"/>
+      </div>
+    </div>
+
+    <!-- ДВЕ ЦА -->
+    <div class="two-cta">
+      <div class="cta-card back">
+        <span class="cta-card-pill">Болит спина</span>
+        <h3>«К вечеру спина ноет от сидячей работы»</h3>
+        <p>Именно для вас создана основа нашей программы — укрепление мышц-стабилизаторов позвоночника и мягкая растяжка. Без рывков, без боли, с долгосрочным эффектом.</p>
+        <ul class="check-list">
+          <li>Укрепление глубоких мышц спины и кора</li>
+          <li>Растяжка поясничного и грудного отделов</li>
+          <li>Без ударной нагрузки — бережно к суставам</li>
+          <li>Индивидуальный подбор нагрузки</li>
+        </ul>
+        <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" style="font-size:14px;padding:13px 22px" data-goal="cta_back">Хочу здоровую спину →</a>
+      </div>
+      <div class="cta-card mama">
+        <span class="cta-card-pill">Я мама</span>
+        <h3>«Привожу дочку на танцы — и трачу час на телефон»</h3>
+        <p>Расписание «Умного фитнеса» совмещено с детскими группами. Пока дочь танцует в зале — вы занимаетесь рядом. Одна поездка, два результата.</p>
+        <ul class="check-list">
+          <li>Расписание совпадает с детскими занятиями</li>
+          <li>Тёплый женский коллектив, без соревновательности</li>
+          <li>Дочь видит: мама тоже занимается — лучший пример</li>
+          <li>Не нужна отдельная поездка в фитнес-клуб</li>
+        </ul>
+        <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" style="font-size:14px;padding:13px 22px;background:linear-gradient(135deg,var(--pink),var(--pink-deep))" data-goal="cta_mama">Хочу заниматься пока дочь в зале →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОГРАММА -->
+<section class="prog-section" id="programma">
+  <div class="container">
+    <span class="eyebrow">Структура занятия</span>
+    <h2 style="margin-top:14px">120 минут, которые <em>меняют ощущение тела</em></h2>
+    <p class="lead" style="max-width:620px">Ни одной бесполезной минуты. Каждая часть занятия — со смыслом и объяснением, зачем именно это упражнение.</p>
+    <div class="prog-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Разминка суставов</h3>
+        <p>Мягкий разогрев от шеи до стоп. Уходят утренние и послерабочие зажимы, тело готовится к нагрузке без риска травм.</p>
+        <span class="step-time"></span>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Танцевальная пластика</h3>
+        <p>Восточные танцы, бачата, лирика — ритм, пластика, координация. Именно здесь появляется та самая женская лёгкость движений.</p>
+        <span class="step-time"></span>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Партерная гимнастика</h3>
+        <p>Работа на полу: укрепление кора, поддержка позвоночника, глубокая растяжка. Именно отсюда эффект для спины, который замечают через месяц.</p>
+        <span class="step-time"></span>
+      </div>
+    </div>
+
+    <!-- Почему "умный" -->
+    <div style="margin-top:40px;padding:36px 40px;background:linear-gradient(135deg,var(--tiffany-soft),var(--pink-cloud));border-radius:var(--radius-lg);border:1px solid rgba(201,169,97,.2)">
+      <h3 style="color:var(--tiffany-deep);margin-bottom:12px">Почему «Умный» — а не просто фитнес?</h3>
+      <p style="font-size:16.5px;margin:0">Потому что каждое упражнение объясняется: зачем это движение, какие мышцы работают, как это влияет на спину и осанку. Вы понимаете своё тело — и это меняет отношение к тренировкам навсегда. Не «отбыть урок», а осознанно работать с телом.</p>
+    </div>
+  </div>
+</section>
+
+<!-- РЕЗУЛЬТАТЫ -->
+<section class="results-section">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Что меняется</span>
+      <h2 style="margin-top:14px">Результаты, которые замечают <em>через месяц</em></h2>
+    </div>
+    <div class="results-grid">
+      <div class="result-num-card">
+        <div class="result-big">1<span>мес</span></div>
+        <div class="result-lbl">до первого заметного результата — спина перестаёт ныть к вечеру</div>
+      </div>
+      <div class="result-num-card">
+        <div class="result-big">3<span>мес</span></div>
+        <div class="result-lbl">до устойчивого улучшения осанки и гибкости — замечают окружающие</div>
+      </div>
+      <div class="result-num-card">
+        <div class="result-big">Без<span></span></div>
+        <div class="result-lbl">ударной нагрузки — бережно к коленям, тазобедренным суставам и позвоночнику</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- РАСПИСАНИЕ И ЦЕНА -->
+<section style="background:var(--white)" id="raspisanie">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Расписание и стоимость</span>
+      <h2 style="margin-top:14px">Прозрачно и <em>просто</em></h2>
+    </div>
+    <div class="schedule-grid">
+      <div class="sch-card">
+        <h3>Офлайн · Суханово Парк 127/2</h3>
+        <div class="sch-row"><div class="sch-icon">📅</div><div><span class="sch-label">Дни</span><span class="sch-value">Пн · Ср · Пт</span></div></div>
+        <div class="sch-row"><div class="sch-icon">⏰</div><div><span class="sch-label">Время</span><span class="sch-value">18:00 — 20:00</span></div></div>
+        <div class="sch-row"><div class="sch-icon">⏱️</div><div><span class="sch-label">Длительность</span><span class="sch-value">120 минут</span></div></div>
+        <div class="sch-row"><div class="sch-icon">📍</div><div><span class="sch-label">Адрес</span><span class="sch-value">ЖК Суханово Парк, 127/2</span></div></div>
+        <p style="margin-top:14px;font-size:13.5px;color:var(--ink-mute)">Расписание совпадает с группами «Звёздочки» и «Премьера» — удобно для мам.</p>
+      </div>
+      <div class="price-card">
+        <div style="font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--tiffany-deep);margin-bottom:8px">Абонемент в месяц</div>
+        <div class="price-big">8 500 ₽</div>
+        <div class="price-per">3 занятия в неделю · 12 тренировок</div>
+        <span class="price-free">🎁 Первая тренировка — бесплатно</span>
+        <p style="font-size:13px;color:var(--ink-mute);margin-top:12px">Есть разовые посещения. Онлайн-формат — та же цена.</p>
+        <a class="btn btn-primary" href="#" onclick="openModal('fitness');return false;" style="width:100%;justify-content:center;margin-top:16px" data-goal="cta_trial">Записаться на пробную →</a>
+        <a class="btn btn-ghost" href="/prices.html" style="width:100%;justify-content:center;margin-top:10px">Все тарифы →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПЕДАГОГ -->
+<section class="teacher-strip">
+  <div class="container">
+    <span class="eyebrow">Ваш педагог</span>
+    <h2 style="margin-top:14px">Кто ведёт <em>«Умный фитнес»</em></h2>
+    <div class="teacher-grid" style="margin-top:36px">
+      <div class="teacher-photo">
+        <img src="/Angelika.PNG" alt="Гурьянова Анжелика Вадимовна — педагог «Умного фитнеса»" loading="lazy" width="400" height="600"/>
+      </div>
+      <div>
+        <span class="teacher-role">Хореограф · «Умный фитнес»</span>
+        <h3>Гурьянова<br/>Анжелика Вадимовна</h3>
+        <p class="teacher-quote">«Умный фитнес — это не про красивые фото в зеркале. Это про то, чтобы вечером не болела спина, чтобы хотелось двигаться, чтобы тело снова стало вашим союзником, а не источником боли.»</p>
+        <p>Преподаёт хореографию и фитнес. Специализируется на работе с телом через движение — классика, акробатика, танцевальная пластика. Знает анатомию: объясняет каждое упражнение через то, что происходит внутри тела.</p>
+        <a class="btn btn-ghost" href="/pedagogi.html">Все педагоги студии →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section style="background:linear-gradient(180deg,#F2FDFC,var(--cream))">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Говорят участницы</span>
+      <h2 style="margin-top:14px">Что происходит <em>после месяца занятий</em></h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card tiffany-border">
+        <span class="stars">★★★★★</span>
+        <blockquote>«Привожу дочку на "Звёздочки" и занимаюсь сама. Два месяца — и спина перестала ныть к вечеру. Раньше после работы за компьютером было ощущение, что меня переломали. Теперь встаю из-за стола и иду не скрючившись.»</blockquote>
+        <cite>— Ольга К., мама Маши · 2 месяца</cite>
+      </div>
+      <div class="review-card pink-border">
+        <span class="stars">★★★★★</span>
+        <blockquote>«Думала, это как обычный фитнес — пришла и поняла, что совсем другое. Здесь объясняют зачем, а не просто "делайте". После каждого занятия чувствую себя живой, а не выжатой.»</blockquote>
+        <cite>— Наталья Р. · 3 месяца</cite>
+      </div>
+      <div class="review-card tiffany-border">
+        <span class="stars">★★★★★</span>
+        <blockquote>«Шпагат — не моя цель, но растяжка за месяц улучшилась так, что я сама удивилась. Анжелика объясняет каждое движение через анатомию — это совсем другой уровень понимания своего тела.»</blockquote>
+        <cite>— Светлана Б. · 5 месяцев</cite>
+      </div>
+      <div class="review-card pink-border">
+        <span class="stars">★★★★★</span>
+        <blockquote>«Сначала думала — съезжу пока дочка занимается, чтобы время не терять. Осталась на полгода. Теперь мы обе ждём своих занятий с одинаковым нетерпением.»</blockquote>
+        <cite>— Татьяна М., мама Кати · 6 месяцев</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОНЛАЙН -->
+<section class="online-section" id="online">
+  <div class="container">
+    <div class="online-grid">
+      <div>
+        <span style="display:inline-block;padding:5px 14px;border-radius:999px;background:var(--tiffany);color:#fff;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:16px">Онлайн-формат</span>
+        <h2>Не можете приехать? <em>Занимайтесь из дома</em></h2>
+        <p>Тот же педагог, то же время, та же группа — вы просто подключаетесь через экран. Педагог видит вас и корректирует технику в реальном времени.</p>
+        <div class="online-perks">
+          <div class="perk">
+            <div class="perk-icon">📹</div>
+            <div><div class="perk-title">Педагог видит вас</div><div class="perk-desc">Не «смотрите запись», а живое занятие с обратной связью</div></div>
+          </div>
+          <div class="perk">
+            <div class="perk-icon">🏠</div>
+            <div><div class="perk-title">Без поездки</div><div class="perk-desc">Идеально для декрета, удалённой работы, плохой погоды</div></div>
+          </div>
+          <div class="perk">
+            <div class="perk-icon">💰</div>
+            <div><div class="perk-title">Та же цена</div><div class="perk-desc">Онлайн-абонемент стоит столько же — 8 500 ₽/мес</div></div>
+          </div>
+        </div>
+        <a class="btn btn-gold btn-lg" href="/online-fitness.html" style="margin-top:28px">Подробнее об онлайн →</a>
+      </div>
+      <div>
+        <div style="background:rgba(255,255,255,.07);border-radius:var(--radius-lg);padding:36px;border:1px solid rgba(255,255,255,.12)">
+          <h3 style="color:#fff;font-size:22px;margin-bottom:20px">Нужно для онлайн-занятия:</h3>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:12px">
+            <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.8);font-size:15px"><span style="font-size:20px">📱</span>Телефон или ноутбук с камерой</li>
+            <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.8);font-size:15px"><span style="font-size:20px">🌐</span>Стабильный интернет</li>
+            <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.8);font-size:15px"><span style="font-size:20px">🏠</span>Свободное место 2×2 метра</li>
+            <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.8);font-size:15px"><span style="font-size:20px">👟</span>Удобная одежда и носки</li>
+          </ul>
+          <a class="btn btn-primary btn-lg" href="#" onclick="openModal('online');return false;" style="width:100%;justify-content:center;margin-top:24px" data-goal="cta_online">Записаться на пробное онлайн</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--white)">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Вопросы и ответы</span>
+      <h2 style="margin-top:14px">Спрашивают <em>чаще всего</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q">Можно ли заниматься при болях в спине?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-a">Да, именно для этого и создан «Умный фитнес». Программа разработана с учётом проблем с позвоночником: никакой ударной нагрузки, акцент на укрепление глубоких мышц-стабилизаторов спины. Многие участницы пришли именно с болями в пояснице и шее — и замечают результат уже через 3–4 недели. При острой боли или после операций — проконсультируйтесь с врачом перед записью.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Нужна ли физическая подготовка?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-a">Нет. Программа подходит для любого уровня — можно приходить с нуля. Педагог на первом же занятии оценивает уровень каждой участницы и адаптирует нагрузку. Никто не будет чувствовать себя отстающей.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Совпадает ли расписание с детскими занятиями?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-a">Да, специально. Группа «Умный фитнес» занимается в те же дни и примерно в то же время, что группы «Звёздочки» и «Премьера». Пока дочь на занятии — вы тренируетесь в соседнем зале. Одна поездка — два результата.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Есть ли онлайн-формат?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-a">Да. Можно заниматься онлайн в то же время, что офлайн-группа. Педагог видит вас через камеру и корректирует технику в реальном времени. Цена такая же. Нужны: устройство с камерой, интернет, свободное место 2×2 метра.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Что надеть на первое занятие?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div class="faq-a">Любая удобная спортивная одежда — леггинсы или спортивные штаны и футболка. Чешки или носки с нескользящей подошвой. Возьмите бутылку воды и небольшое полотенце.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA ФИНАЛЬНЫЙ -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Приходите на <em>первую бесплатную</em> тренировку</h2>
+    <p>Познакомитесь с педагогом, попробуете формат — и решите. Без обязательств.</p>
+    <div class="cta-btns">
+      <a class="btn btn-gold btn-lg" href="tel:+79636719983" data-goal="cta_call_final">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.26h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +7 (963) 671-99-83
+      </a>
+      <a class="btn btn-primary btn-lg" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+    </div>
+    <p style="margin-top:20px;font-size:13px;opacity:.7">Пн–Сб 10:00–21:00 · ЖК Суханово Парк 127/2 · Видное</p>
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container foot-row">
+    <div itemscope itemtype="https://schema.org/Organization">
+      <meta itemprop="name" content="Детский театр танца «Татьянин День»" />
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        © 2014–2026 Детский театр танца «Татьянин День»,
+        <span itemprop="addressLocality">ЖК «Суханово&nbsp;Парк»</span>,
+        <span itemprop="addressRegion">Московская область</span>.
+      </span> Все права защищены.
+    </div>
+    <div>
+      <a href="/o-nas.html">О коллективе</a> ·
+      <a href="#programs">Группы</a> ·
+      <a href="/online-fitness.html">Онлайн-фитнес</a> ·
+      <a href="/prices.html">Цены</a> ·
+      <a href="/blog/">Блог</a> ·
+      <a href="/partners.html">Партнёры</a> ·
+      <a href="#contacts">Контакты</a> ·
+      <a href="akciya/">Акции</a> ·
+      <a href="#" onclick="openPrivacy();return false;">Политика ПД</a> ·
+      <!-- BEGIN A – REESTR LINK -->
+      <a href="reestr.html" target="_blank" rel="noopener noreferrer">Реестр обработки ПД</a> ·
+      <!-- END A -->
+      <!-- BEGIN J – TERMS LINK -->
+      <a href="terms.html" target="_blank" rel="noopener noreferrer">Пользовательское соглашение</a> ·
+      <!-- END J -->
+      <!-- BEGIN O – COOKIES PAGE LINK -->
+      <a href="cookies.html" target="_blank" rel="noopener noreferrer">Политика куки-файлов</a>
+      <!-- END O -->
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODAL ============ -->
+<div class="modal-bg" id="modal" onclick="if(event.target===this) closeModal()" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Закрыть">×</button>
+    <span class="eyebrow" id="modalEyebrow">Запись на тренировку</span>
+    <h3 id="modalTitle">Первая тренировка&nbsp;— бесплатно</h3>
+    <p class="small" id="modalSubtitle">Напишите нам в&nbsp;Telegram или Max, или позвоните&nbsp;— ответим сразу и&nbsp;подберём время.</p>
+    <div style="display:grid; gap:12px">
+      <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#2AABEE,#229ED9)" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+        Написать в Telegram
+      </a>
+      <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#4F7FFF,#7B4FFF); box-shadow:0 14px 30px -12px rgba(127,79,255,.55)" href="https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y" target="_blank" rel="noopener noreferrer" data-goal="cta_max_modal">
+        <svg width="22" height="22" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="mg_modal" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/><stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.25)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z" fill="white"/></svg>
+        Написать в Max
+      </a>
+      <a class="btn btn-primary btn-lg" style="background:linear-gradient(135deg, #1B1B2E 0%, #2E2D45 100%)" href="tel:+79636719983" data-goal="cta_call_modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Позвонить +7 (963) 671-99-83
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+// FAQ accordion
+(function() {
+  var items = document.querySelectorAll('.faq-item');
+  for (var i = 0; i < items.length; i++) {
+    (function(item) {
+      var q = item.querySelector('.faq-q');
+      if (!q) return;
+      q.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        // Close all
+        for (var j = 0; j < items.length; j++) {
+          items[j].classList.remove('open');
+        }
+        // Toggle this one
+        if (!isOpen) item.classList.add('open');
+      });
+    })(items[i]);
+  }
+})();
+
+// Sticky nav scroll class
+const navEl = document.getElementById('nav');
+if (navEl) {
+  const onScroll = () => navEl.classList.toggle('scrolled', window.scrollY > 30);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+// Burger menu
+const burger = document.getElementById('burger');
+const menuEl = document.getElementById('menu');
+burger?.addEventListener('click', () => {
+  const isOpen = menuEl.classList.toggle('open');
+  burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  burger.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+});
+menuEl?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  menuEl.classList.remove('open');
+  burger?.setAttribute('aria-expanded', 'false');
+  burger?.setAttribute('aria-label', 'Открыть меню');
+}));
+
+// Modal
+function openModal(topic) {
+  var titles = {
+    fitness: {
+      eyebrow: 'Умный фитнес',
+      title: 'Первая тренировка&nbsp;— бесплатно',
+      sub: 'Напишите нам в&nbsp;Telegram или Max, или позвоните&nbsp;— ответим сразу и&nbsp;подберём удобное время.'
+    },
+    online: {
+      eyebrow: 'Онлайн-тренировка',
+      title: 'Умный фитнес онлайн',
+      sub: 'Напишите нам в&nbsp;Telegram или Max, или позвоните&nbsp;— расскажем расписание и&nbsp;запишем на&nbsp;первое занятие.'
+    },
+    default: {
+      eyebrow: 'Запись на тренировку',
+      title: 'Первая тренировка&nbsp;— бесплатно',
+      sub: 'Напишите нам в&nbsp;Telegram или Max, или позвоните&nbsp;— ответим сразу.'
+    }
+  };
+  var t = titles[topic] || titles.default;
+  document.getElementById('modalEyebrow').textContent = t.eyebrow;
+  document.getElementById('modalTitle').innerHTML = t.title;
+  document.getElementById('modalSubtitle').innerHTML = t.sub;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+</script>
+</body>
+</html>.eyebrow::before{content:"";width:32px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
 section{padding:80px 0}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;min-height:48px;border-radius:999px;font-weight:600;font-size:15px;transition:all .3s;white-space:nowrap;text-decoration:none}
 .btn-primary{background:linear-gradient(135deg,var(--tiffany),var(--pink));color:#fff;box-shadow:0 14px 30px -12px rgba(10,186,181,.5)}
