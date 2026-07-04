@@ -1,246 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ============================================================ -->
-  <!--  SILO 1: Главная                                             -->
-  <!-- ============================================================ -->
+  <!-- ГЛАВНЫЕ КОММЕРЧЕСКИЕ СТРАНИЦЫ -->
   <url>
     <loc>https://tatianinden.ru/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://tatianinden.ru/hero-bg.jpg</image:loc>
-      <image:title>Детский театр танца «Татьянин День» — Суханово Парк, Видное</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tatianinden.ru/logo.jpg</image:loc>
-      <image:title>Логотип «Татьянин День»</image:title>
-    </image:image>
   </url>
-
-  <!-- ============================================================ -->
-  <!--  SILO 2: Коммерческие — группы по возрасту                  -->
-  <!-- ============================================================ -->
-
-  <!-- Звёздочки 3–5 лет -->
-  <url>
-    <loc>https://tatianinden.ru/detskie-tantsy/3-5-let/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://tatianinden.ru/zvezdochki.jpg</image:loc>
-      <image:title>Группа «Звёздочки» — танцы для детей 3–5 лет</image:title>
-    </image:image>
-  </url>
-
-  <!-- Премьера 6–9 лет -->
-  <url>
-    <loc>https://tatianinden.ru/detskie-tantsy/6-9-let/premiera.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://tatianinden.ru/premier.jpg</image:loc>
-      <image:title>Группа «Премьера» — хореография для детей 6–9 лет</image:title>
-    </image:image>
-  </url>
-
-  <!-- Бенефис 10–14 лет -->
-  <url>
-    <loc>https://tatianinden.ru/detskie-tantsy/10-14-let/benefis.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://tatianinden.ru/benifis.jpg</image:loc>
-      <image:title>Группа «Бенефис» — конкурсная хореография 10–14 лет</image:title>
-    </image:image>
-  </url>
-
-  <!-- ============================================================ -->
-  <!--  SILO 3: Умный фитнес для взрослых                          -->
-  <!-- ============================================================ -->
   <url>
     <loc>https://tatianinden.ru/smart-fitness.html</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://tatianinden.ru/umniy_fitness.jpg</image:loc>
-      <image:title>Умный фитнес для взрослых женщин — Татьянин День</image:title>
-    </image:image>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://tatianinden.ru/online-fitness.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
-  <!-- ============================================================ -->
-  <!--  SILO 4: Цены и запись                                      -->
-  <!-- ============================================================ -->
   <url>
     <loc>https://tatianinden.ru/prices.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ============================================================ -->
-  <!--  SILO 5: Гео-страницы (районы присутствия)                 -->
-  <!-- ============================================================ -->
-  <url>
-    <loc>https://tatianinden.ru/tantsy-vidnoe/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/tantsy-razvitka/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/tantsy-butovo/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/tantsy-rastorguevo/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ============================================================ -->
-  <!--  SILO 6: О нас / Педагоги / Партнёры                        -->
-  <!-- ============================================================ -->
-  <url>
-    <loc>https://tatianinden.ru/o-nas.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://tatianinden.ru/zvezda1.jpeg</image:loc>
-      <image:title>О коллективе «Татьянин День» — история и достижения</image:title>
-    </image:image>
-  </url>
-
   <url>
     <loc>https://tatianinden.ru/pedagogi.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://tatianinden.ru/TatianaIvanovna.jpg</image:loc>
-      <image:title>Педагоги студии «Татьянин День»</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/partners.html</loc>
     <lastmod>2026-06-01</lastmod>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/Partners.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-
   <url>
     <loc>https://tatianinden.ru/summer-intensiv.html</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/august-letter.html</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://tatianinden.ru/intensiv0.jpg</image:loc>
-      <image:title>Летний танцевальный интенсив «Татьянин День»</image:title>
-    </image:image>
+    <priority>0.6</priority>
   </url>
 
-  <!-- ============================================================ -->
-  <!--  SILO 7: Блог                                               -->
-  <!-- ============================================================ -->
+  <!-- ЮРИДИЧЕСКИЕ СТРАНИЦЫ (низкий приоритет, но должны быть в индексе) -->
+  <url>
+    <loc>https://tatianinden.ru/privacy.html</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/reestr.html</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <!-- ГЕО-ЛЕНДИНГИ — ПРОВЕРИТЬ ТОЧНЫЕ ИМЕНА ФАЙЛОВ И РАСКОММЕНТИРОВАТЬ -->
+  <!--
+  <url><loc>https://tatianinden.ru/ЗАМЕНИТЬ-vidnoe.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatianinden.ru/ЗАМЕНИТЬ-razvilka.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatianinden.ru/ЗАМЕНИТЬ-butovo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatianinden.ru/ЗАМЕНИТЬ-rastorguevo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  -->
+
+  <!-- ВОЗРАСТНЫЕ ГРУППЫ — ПРОВЕРИТЬ ТОЧНЫЕ ИМЕНА ФАЙЛОВ И РАСКОММЕНТИРОВАТЬ -->
+  <!--
+  <url><loc>https://tatianinden.ru/ЗАМЕНИТЬ-zvezdochki.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tatianinden.ru/ЗАМЕНИТЬ-premera.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tatianinden.ru/ЗАМЕНИТЬ-benefis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  -->
+
+  <!-- БЛОГ -->
   <url>
     <loc>https://tatianinden.ru/blog/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/blog/umnyj-fitnes-dlya-mam.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://tatianinden.ru/blog/tantsy-v-3-goda/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <url>
-    <loc>https://tatianinden.ru/blog/vo-skolko-let-otdavat-rebenka-na-tancy.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://tatianinden.ru/blog/kak-ocenit-uspekhi-rebenka-v-tancah.html</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://tatianinden.ru/blog/kakie-tancy-vybrat-dlja-dochki.html</loc>
-    <lastmod>2026-05-16</lastmod>
+    <loc>https://tatianinden.ru/blog/rebenok-ne-hochet-na-tancy.html</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://tatianinden.ru/blog/polza-tantsev-dlya-detej.html</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://tatianinden.ru/blog/estradnye-tantsy-dlya-devochek.html</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <loc>https://tatianinden.ru/blog/kak-tancy-pomogayut-podgotovitsya-k-shkole.html</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://tatianinden.ru/blog/kak-vybrat-tantsevalnyuyu-shkolu.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://tatianinden.ru/blog/detskie-tancy-letom-v-vidnom.html</loc>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://tatianinden.ru/blog/tantsy-ili-gimnastika.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://tatianinden.ru/blog/zastenchivyj-rebenok-na-tancah.html</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://tatianinden.ru/blog/kak-razvit-plastiku-i-osanku.html</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://tatianinden.ru/blog/zastenchivyj-rebenok-na-tancah.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <loc>https://tatianinden.ru/blog/tantsy-ili-gimnastika.html</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://tatianinden.ru/blog/detskie-tancy-letom-v-vidnom.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <loc>https://tatianinden.ru/blog/kak-vybrat-tantsevalnyuyu-shkolu.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/blog/chto-nadet-na-pervoe-zanyatie.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/blog/polza-tantsev-dlya-detej.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/blog/kakie-tancy-vybrat-dlja-dochki.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/blog/vo-skolko-let-otdavat-rebenka-na-tancy.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
