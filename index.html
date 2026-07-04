@@ -3594,6 +3594,139 @@
   </div>
 </section>
 
+<!-- ============ ENROLLMENT DEADLINE BANNER ============ -->
+<section class="enroll-banner reveal" id="enroll-deadline" aria-labelledby="heading-enroll">
+  <div class="container enroll-banner__inner">
+    <div class="enroll-banner__text">
+      <span class="eyebrow" style="color:var(--white); opacity:.85">Открыт набор на новый сезон</span>
+      <h2 id="heading-enroll">3&nbsp;августа&nbsp;— день, когда ваша дочь&nbsp;<em>впервые выйдет на сцену</em></h2>
+      <p>Набор в&nbsp;группы «Звёздочки», «Премьера» и&nbsp;«Бенефис» уже открыт, но&nbsp;мест в&nbsp;каждой группе&nbsp;— строго ограниченное количество: занятия идут в&nbsp;небольших составах, чтобы у&nbsp;каждой девочки было время педагога. Студия находится прямо в&nbsp;ЖК&nbsp;Суханово Парк&nbsp;— никуда возить ребёнка не&nbsp;нужно.</p>
+      <div class="enroll-banner__countdown" id="enrollCountdown" aria-live="polite">
+        <div class="ec-unit"><span class="ec-num" id="ecDays">00</span><span class="ec-lbl">дней</span></div>
+        <div class="ec-sep">:</div>
+        <div class="ec-unit"><span class="ec-num" id="ecHours">00</span><span class="ec-lbl">часов</span></div>
+        <div class="ec-sep">:</div>
+        <div class="ec-unit"><span class="ec-num" id="ecMinutes">00</span><span class="ec-lbl">минут</span></div>
+        <div class="ec-sep">:</div>
+        <div class="ec-unit"><span class="ec-num" id="ecSeconds">00</span><span class="ec-lbl">секунд</span></div>
+      </div>
+      <div class="enroll-banner__cta">
+        <a class="btn btn-primary btn-lg" href="#signup" data-goal="cta_enroll_banner_signup">Записать дочку сейчас</a>
+        <a class="btn btn-ghost-light btn-lg" href="tel:+79636719983" data-goal="cta_enroll_banner_call">Позвонить: +7&nbsp;(963)&nbsp;671-99-83</a>
+      </div>
+      <p class="enroll-banner__note">Первое пробное занятие&nbsp;— бесплатно, вне&nbsp;зависимости от&nbsp;группы.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var target = new Date('2026-08-03T00:00:00+03:00').getTime();
+  var elDays = document.getElementById('ecDays');
+  var elHours = document.getElementById('ecHours');
+  var elMinutes = document.getElementById('ecMinutes');
+  var elSeconds = document.getElementById('ecSeconds');
+  if(!elDays) return;
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  function tick(){
+    var now = new Date().getTime();
+    var diff = target - now;
+    if(diff <= 0){
+      elDays.textContent = '00'; elHours.textContent = '00';
+      elMinutes.textContent = '00'; elSeconds.textContent = '00';
+      return;
+    }
+    var days = Math.floor(diff / (1000*60*60*24));
+    var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    var minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+    var seconds = Math.floor((diff % (1000*60)) / 1000);
+    elDays.textContent = pad(days);
+    elHours.textContent = pad(hours);
+    elMinutes.textContent = pad(minutes);
+    elSeconds.textContent = pad(seconds);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+
+<style>
+  .enroll-banner{
+    position:relative;
+    padding:56px 0;
+    background:linear-gradient(120deg, var(--tiffany-deep) 0%, var(--pink-deep) 130%);
+    overflow:hidden;
+  }
+  .enroll-banner::after{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(ellipse at 85% 20%, rgba(255,255,255,.12) 0%, transparent 45%);
+    pointer-events:none;
+  }
+  .enroll-banner__inner{ position:relative; z-index:1; max-width:760px; }
+  .enroll-banner__text h2{
+    font-family:var(--display);
+    color:var(--white);
+    font-size:clamp(28px, 4vw, 42px);
+    line-height:1.2;
+    margin:10px 0 18px;
+  }
+  .enroll-banner__text h2 em{ font-style:italic; color:#FFF3DA; }
+  .enroll-banner__text p{
+    color:rgba(255,255,255,.92);
+    font-size:16.5px;
+    line-height:1.6;
+    max-width:640px;
+  }
+  .enroll-banner__countdown{
+    display:flex; align-items:center; gap:10px;
+    margin:28px 0 26px;
+    flex-wrap:wrap;
+  }
+  .ec-unit{
+    display:flex; flex-direction:column; align-items:center;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.28);
+    border-radius:14px;
+    padding:10px 16px;
+    min-width:72px;
+  }
+  .ec-num{
+    font-family:var(--display);
+    font-size:30px; font-weight:600;
+    color:var(--white);
+    line-height:1;
+  }
+  .ec-lbl{
+    font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+    color:rgba(255,255,255,.75);
+    margin-top:4px;
+  }
+  .ec-sep{ color:rgba(255,255,255,.6); font-size:24px; font-weight:600; }
+  .enroll-banner__cta{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn-ghost-light{
+    display:inline-flex; align-items:center; justify-content:center;
+    border:1.5px solid rgba(255,255,255,.6);
+    color:var(--white);
+    background:transparent;
+    border-radius:999px;
+    transition:all .3s ease;
+  }
+  .btn-ghost-light:hover{ background:rgba(255,255,255,.14); border-color:var(--white); }
+  .enroll-banner__note{
+    margin-top:16px !important;
+    font-size:13.5px !important;
+    color:rgba(255,255,255,.75) !important;
+  }
+  @media (max-width: 640px){
+    .enroll-banner{ padding:40px 0; }
+    .ec-unit{ min-width:60px; padding:8px 10px; }
+    .ec-num{ font-size:24px; }
+    .enroll-banner__cta{ flex-direction:column; }
+    .enroll-banner__cta .btn{ width:100%; }
+  }
+</style>
+
 
 <!-- ================================================================ -->
 <!-- ЗАМЕНА СЕКЦИИ ADVANTAGES (Почему мы)                             -->
