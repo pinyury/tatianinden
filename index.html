@@ -989,6 +989,10 @@
     position:relative;
   }
   .prog-card:hover{transform:translateY(-8px); box-shadow:var(--shadow-md); border-color:transparent}
+  .prog-card-link{display:block; color:inherit; text-decoration:none}
+  .prog-card-link:hover{color:inherit}
+  .prog-more{display:inline-flex; align-items:center; gap:6px; margin-top:16px; font-weight:600; color:var(--tiffany-deep); font-size:15px}
+  .prog-card:hover .prog-more{text-decoration:underline}
   .prog-img{
     aspect-ratio:5/4;
     overflow:hidden;
@@ -3801,6 +3805,7 @@
 
     <div class="programs-grid">
       <article class="prog-card reveal" itemscope itemtype="https://schema.org/Course">
+        <a class="prog-card-link" href="/zvezdochki.html" data-goal="cta_group_zvezdochki" aria-label="Подробнее о группе «Звёздочки»">
         <div class="prog-img">
           <span class="prog-age">3–5 лет</span>
           <img src="zvezdochki.jpg" alt="Младшая группа «Звёздочки»" loading="lazy" width="600" height="450" decoding="async"/>
@@ -3822,10 +3827,13 @@
             <strong>Пн · Ср · Пт</strong>
             <span>17:00&nbsp;— 18:00</span>
           </div>
+          <span class="prog-more">Подробнее о группе «Звёздочки» →</span>
         </div>
+        </a>
       </article>
 
       <article class="prog-card reveal" style="transition-delay:.08s">
+        <a class="prog-card-link" href="/premiera.html" data-goal="cta_group_premiera" aria-label="Подробнее о группе «Премьера»">
         <div class="prog-img">
           <span class="prog-age">6–9 лет</span>
           <img src="premier.jpg" alt="Средняя группа «Премьера»" loading="lazy" width="600" height="450" decoding="async"/>
@@ -3847,10 +3855,13 @@
             <strong>Пн · Чт · Сб</strong>
             <span>18:00&nbsp;— 20:00</span>
           </div>
+          <span class="prog-more">Подробнее о группе «Премьера» →</span>
         </div>
+        </a>
       </article>
 
       <article class="prog-card reveal" style="transition-delay:.16s">
+        <a class="prog-card-link" href="/benefis.html" data-goal="cta_group_benefis" aria-label="Подробнее о группе «Бенефис»">
         <div class="prog-img">
           <span class="prog-age">10–14 лет</span>
           <img src="benifis.jpg" alt="Старшая группа «Бенефис»" loading="lazy" width="600" height="450" decoding="async"/>
@@ -3872,7 +3883,9 @@
             <strong>Вт · Пт · Сб</strong>
             <span>18:00&nbsp;— 20:30</span>
           </div>
+          <span class="prog-more">Подробнее о группе «Бенефис» →</span>
         </div>
+        </a>
       </article>
     </div>
     <p class="prog-schedule-note">⏱ <a href="/prices.html">Тарифы и абонементы</a> · уточнить расписание и&nbsp;записаться: <a href="tel:+79636719983" data-goal="cta_call_programs">+7&nbsp;(963)&nbsp;671-99-83</a> или&nbsp;<a href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" data-goal="cta_telegram_programs">Telegram</a></p>
