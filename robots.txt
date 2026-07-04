@@ -1,18 +1,19 @@
-User-agent: *
-Allow: /
-Disallow: /deploy-ready/
-
-# Страницы-лид-магниты: скрыты от индексации, но доступны по прямой ссылке
-Disallow: /invite-jpeg.html
-Disallow: /invite-pdf.html
-Disallow: /invite-print.html
-Disallow: /invite-screen.html
-
 User-agent: Yandex
 Allow: /
-Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid
+Disallow: /admin/
+Disallow: /*?utm_*
+Disallow: /*?yclid=*
+Disallow: /*?_openstat=*
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content /
+Clean-param: yclid /
+Clean-param: _openstat /
 
 User-agent: Googlebot
 Allow: /
+Disallow: /admin/
+
+User-agent: *
+Allow: /
+Disallow: /admin/
 
 Sitemap: https://tatianinden.ru/sitemap.xml
