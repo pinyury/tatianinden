@@ -1,146 +1,589 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0ABAB5" />
+  <title>Политика cookie-файлов · Татьянин День</title>
+  <meta name="description" content="Политика использования cookie-файлов сайта tatianinden.ru детского театра танца «Татьянин День». Актуальная редакция — 12 июня 2026 г." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://tatianinden.ru/cookies.html" />
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Шрифты: self-hosting (см. инструкцию в index.html). Пока — системный стек. -->
+  <!-- <link rel="stylesheet" href="/fonts/fonts.css" /> -->
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Татьянин День","item":"https://tatianinden.ru/"},
+      {"@type":"ListItem","position":2,"name":"Политика cookie-файлов","item":"https://tatianinden.ru/cookies.html"}
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --tiffany:       #0ABAB5;
+      --tiffany-light: #7FE0DC;
+      --tiffany-soft:  #D7F5F3;
+      --tiffany-deep:  #06877F;
+      --pink:          #FF6FA9;
+      --pink-soft:     #FFD6E8;
+      --pink-cloud:    #FFEAF3;
+      --gold:          #C9A961;
+      --gold-light:    #E8CF8E;
+      --gold-deep:     #9A7E3D;
+      --white:         #FFFFFF;
+      --cream:         #FFFBF6;
+      --paper:         #FBF7F2;
+      --ink:           #1B1B2E;
+      --ink-soft:      #4A4A5E;
+      --ink-mute:      #8A8A9C;
+      --display: "Cormorant Garamond", "Times New Roman", serif;
+      --body:    "Manrope", -apple-system, "Segoe UI", sans-serif;
+      --container: 1440px;
+      --radius:    20px;
+      --shadow-soft: 0 10px 30px -12px rgba(10,186,181,.18), 0 6px 18px -10px rgba(255,111,169,.12);
+      --shadow-md:   0 20px 50px -20px rgba(27,27,46,.18);
+    }
+
+    * { box-sizing: border-box }
+    html { scroll-behavior: smooth; scroll-padding-top: 110px }
+    body {
+      margin: 0;
+      font-family: var(--body);
+      color: var(--ink);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none }
+    button { font-family: inherit; cursor: pointer; border: none; background: none }
+    img { max-width: 100%; display: block }
+
+    .container {
+      width: min(100% - 40px, var(--container));
+      margin-inline: auto;
+      position: relative;
+    }
+
+    /* ===== SKIP LINK ===== */
+    .skip-link {
+      position: absolute; top: -100px; left: 16px;
+      background: var(--tiffany); color: #fff;
+      padding: 10px 18px; border-radius: 0 0 8px 8px;
+      font-weight: 700; font-size: 15px; z-index: 9999;
+      transition: top .2s; text-decoration: none;
+    }
+    .skip-link:focus { top: 0 }
+
+    /* ===== HEADER ===== */
+    header.nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      padding: 10px 0;
+      background: #fff;
+      border-bottom: 1px solid rgba(27,27,46,.06);
+      box-shadow: 0 2px 16px -10px rgba(27,27,46,.15);
+      transition: padding .3s, box-shadow .3s;
+    }
+    header.nav.scrolled { padding: 8px 0; box-shadow: 0 6px 24px -14px rgba(27,27,46,.2) }
+    .nav-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+      min-height: 88px;
+    }
+    .logo { display: flex; align-items: center; gap: 18px; color: var(--ink); line-height: 1.1 }
+    .logo-img {
+      width: 88px; height: 88px; object-fit: contain; object-position: center 38%;
+      border-radius: 50%; transition: transform .4s;
+    }
+    .logo:hover .logo-img { transform: rotate(-4deg) scale(1.05) }
+    .logo-text { display: flex; flex-direction: column; gap: 3px }
+    .logo-text strong { font-family: var(--display); font-size: 28px; font-weight: 600; color: #1B2A4E; line-height: 1 }
+    .logo-text small { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-mute); font-weight: 500; margin-top: 6px }
+    nav.menu { display: flex; gap: 28px; align-items: center; white-space: nowrap }
+    nav.menu a {
+      font-size: 15.5px; font-weight: 600; color: var(--ink-soft);
+      transition: color .25s; position: relative; padding: 6px 2px;
+    }
+    nav.menu a:hover { color: var(--tiffany-deep) }
+    nav.menu a::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: -6px;
+      height: 2px; background: var(--gold); border-radius: 2px;
+      transform: scaleX(0); transform-origin: left; transition: transform .3s;
+    }
+    nav.menu a:hover::after { transform: scaleX(1) }
+    nav.menu a.nav-highlight { color: var(--gold-deep); font-weight: 700 }
+    nav.menu a.nav-highlight::before { content: "✦"; color: var(--gold); margin-right: 5px; font-size: .85em }
+    .nav-actions { display: flex; align-items: center; gap: 18px; white-space: nowrap }
+    .nav-phone {
+      font-weight: 700; font-size: 16px; color: var(--ink); letter-spacing: .01em;
+      min-height: 44px; display: inline-flex; align-items: center; padding: 4px 8px; border-radius: 8px;
+    }
+    .nav-phone:hover { color: var(--tiffany-deep) }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 16px 28px; min-height: 48px; border-radius: 999px;
+      font-weight: 600; font-size: 15px; transition: all .35s cubic-bezier(.2,.7,.3,1);
+      white-space: nowrap; position: relative; overflow: hidden;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--tiffany) 0%, var(--pink) 110%);
+      color: #fff;
+      box-shadow: 0 14px 30px -12px rgba(10,186,181,.55), 0 8px 20px -10px rgba(255,111,169,.5);
+    }
+    .btn-primary:hover { transform: translateY(-2px) }
+    .burger {
+      display: none; width: 40px; height: 40px; border-radius: 50%;
+      background: var(--white); box-shadow: var(--shadow-soft);
+    }
+    .burger span { display: block; width: 18px; height: 1.5px; background: var(--ink); margin: 4px auto; transition: all .3s }
+    @media (max-width: 960px) {
+      .logo-img { width: 64px; height: 64px }
+      .logo-text strong { font-size: 22px }
+      .logo-text small { font-size: 11px }
+      .nav-row { min-height: 72px }
+    }
+    @media (max-width: 1100px) {
+      nav.menu { display: none }
+      .nav-actions .nav-phone { display: none }
+      .burger { display: block }
+      nav.menu.open {
+        display: flex; flex-direction: column;
+        position: fixed; top: 96px; left: 16px; right: 16px;
+        background: var(--white); padding: 22px 24px; border-radius: 22px;
+        box-shadow: var(--shadow-md); gap: 16px; align-items: flex-start;
+        max-height: calc(100vh - 120px); overflow-y: auto;
+      }
+      nav.menu.open a { font-size: 17px; padding: 8px 0 }
+    }
+
+    /* ===== HERO BANNER ===== */
+    .page-hero {
+      padding: 148px 0 56px;
+      background: linear-gradient(135deg, var(--cream) 0%, var(--tiffany-soft) 60%, var(--pink-cloud) 100%);
+      border-bottom: 1px solid rgba(10,186,181,.12);
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-weight: 600; font-size: 13px; letter-spacing: .18em;
+      text-transform: uppercase; color: var(--tiffany-deep);
+    }
+    .eyebrow::before {
+      content: ""; width: 32px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold));
+    }
+    .page-hero h1 {
+      font-family: var(--display); font-weight: 500;
+      font-size: clamp(34px, 5vw, 60px); line-height: 1.05;
+      margin: 12px 0 16px; color: var(--ink);
+    }
+    .page-hero .meta {
+      font-size: 14px; color: var(--ink-mute); margin: 0;
+      display: flex; gap: 24px; flex-wrap: wrap; align-items: center;
+    }
+    .meta-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--white); border: 1px solid rgba(10,186,181,.2);
+      border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 500;
+      color: var(--tiffany-deep);
+    }
+
+    /* ===== BREADCRUMB ===== */
+    .breadcrumb {
+      padding: 0; margin: 0 0 20px;
+      font-size: 13px; color: var(--ink-mute);
+      display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--tiffany-deep); text-decoration: underline; text-underline-offset: 3px }
+    .breadcrumb a:hover { color: var(--tiffany) }
+    .breadcrumb span { opacity: .5 }
+
+    /* ===== CONTENT LAYOUT ===== */
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 48px;
+      padding: 64px 0 80px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .privacy-layout { grid-template-columns: 1fr; gap: 32px }
+      .privacy-toc { display: none }
+    }
+
+    /* ===== TOC SIDEBAR ===== */
+    .privacy-toc {
+      position: sticky; top: 120px;
+      background: var(--white); border-radius: var(--radius);
+      padding: 24px 20px; box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(10,186,181,.1);
+    }
+    .toc-title {
+      font-size: 11px; font-weight: 700; letter-spacing: .15em;
+      text-transform: uppercase; color: var(--ink-mute); margin: 0 0 16px;
+    }
+    .toc-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px }
+    .toc-list a {
+      display: block; font-size: 13px; font-weight: 500; color: var(--ink-soft);
+      padding: 6px 10px; border-radius: 8px; transition: all .2s;
+      border-left: 2px solid transparent;
+    }
+    .toc-list a:hover {
+      color: var(--tiffany-deep); background: var(--tiffany-soft);
+      border-left-color: var(--tiffany);
+    }
+    .toc-list a.active {
+      color: var(--tiffany-deep); background: var(--tiffany-soft);
+      border-left-color: var(--tiffany);
+    }
+
+    /* ===== ARTICLE ===== */
+    .privacy-article { max-width: 760px }
+    .privacy-article section { margin-bottom: 48px; scroll-margin-top: 120px }
+    .section-num {
+      display: inline-block; width: 32px; height: 32px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--tiffany), var(--pink));
+      color: #fff; font-size: 13px; font-weight: 700;
+      text-align: center; line-height: 32px; margin-right: 12px; flex-shrink: 0;
+    }
+    .section-head {
+      display: flex; align-items: center; margin-bottom: 20px;
+      padding-bottom: 12px; border-bottom: 1px solid rgba(10,186,181,.15);
+    }
+    .section-head h2 {
+      font-family: var(--display); font-weight: 600;
+      font-size: clamp(20px, 2.2vw, 26px); margin: 0; color: var(--ink); line-height: 1.2;
+    }
+    .privacy-article p {
+      font-size: 16px; line-height: 1.75; color: var(--ink-soft); margin: 0 0 14px;
+    }
+    .privacy-article ul, .privacy-article ol {
+      padding-left: 22px; margin: 0 0 16px; color: var(--ink-soft);
+    }
+    .privacy-article li { font-size: 16px; line-height: 1.7; margin-bottom: 8px }
+    .privacy-article a { color: var(--tiffany-deep); text-decoration: underline; text-underline-offset: 3px }
+    .privacy-article a:hover { color: var(--tiffany) }
+    .privacy-article strong { color: var(--ink); font-weight: 600 }
+    .privacy-article code { background: rgba(10,186,181,.1); padding: 1px 6px; border-radius: 4px; font-family: monospace; font-size: .9em; color: var(--tiffany-deep) }
+
+    /* operator block */
+    .operator-block {
+      background: linear-gradient(135deg, var(--tiffany-soft), var(--pink-cloud));
+      border-radius: var(--radius); padding: 28px 32px; margin-bottom: 16px;
+      border: 1px solid rgba(10,186,181,.2);
+    }
+    .operator-block p { margin: 0 0 6px; font-size: 16px }
+    .operator-block p:last-child { margin: 0 }
+
+    /* transfer table */
+    .transfer-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px }
+    .transfer-table th {
+      background: var(--tiffany-soft); color: var(--tiffany-deep);
+      padding: 10px 14px; text-align: left; font-weight: 600;
+      border: 1px solid rgba(10,186,181,.2);
+    }
+    .transfer-table td {
+      padding: 10px 14px; border: 1px solid rgba(27,27,46,.08);
+      color: var(--ink-soft); vertical-align: top; line-height: 1.55;
+    }
+    .transfer-table tr:nth-child(even) td { background: rgba(10,186,181,.03) }
+    .transfer-table a { color: var(--tiffany-deep) }
+
+    /* highlight box */
+    .highlight-box {
+      background: var(--tiffany-soft); border-left: 4px solid var(--tiffany);
+      border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 16px 0; font-size: 15px;
+      color: var(--tiffany-deep); line-height: 1.6;
+    }
+
+    /* warning box */
+    .warning-box {
+      background: #FFF9EC; border-left: 4px solid var(--gold);
+      border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 16px 0; font-size: 14px;
+      color: var(--ink-soft); line-height: 1.6;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--ink); color: rgba(255,255,255,.6);
+      padding: 30px 0; border-top: 1px solid rgba(255,255,255,.08); font-size: 13.5px;
+    }
+    .foot-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px }
+    footer a { color: rgba(255,255,255,.6); text-decoration: none }
+    footer a:hover { color: var(--gold-light) }
+    @media (max-width: 760px) { .foot-row { flex-direction: column; gap: 8px } }
+
+    /* ===== FLOAT BTNS ===== */
+    .float-cta {
+      position: fixed; right: 24px; bottom: 24px; z-index: 40;
+      width: 60px; height: 60px; border-radius: 50%;
+      background: linear-gradient(135deg, #2AABEE, #229ED9);
+      display: grid; place-items: center; color: #fff;
+      box-shadow: 0 8px 24px -8px rgba(34,158,217,.6);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .float-cta:hover { transform: translateY(-3px); box-shadow: 0 14px 32px -8px rgba(34,158,217,.7) }
+    .float-call {
+      bottom: 100px;
+      background: linear-gradient(135deg, var(--tiffany), var(--tiffany-deep));
+      box-shadow: 0 8px 24px -8px rgba(10,186,181,.6);
+    }
+    .float-max {
+      bottom: 176px;
+      background: none;
+      box-shadow: 0 8px 24px -8px rgba(79,127,255,.5);
+    }
+    @media (max-width: 560px) { .float-cta { right: 16px; width: 52px; height: 52px } }
   </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="ru"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="robots" content="noindex, follow" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Политика cookie-файлов · Татьянин День&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Политика использования cookie-файлов сайта tatianinden.ru. Доступна без JavaScript." /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="canonical" href="https://tatianinden.ru/cookies.html" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="icon" type="image/x-icon" href="/favicon.ico" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Minimal styles — no external fonts, works without JS --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--tiffany: #0ABAB5; --tiffany-soft: #D7F5F3; --tiffany-deep: #06877F;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--ink: #1B1B2E; --ink-soft: #4A4A5E; --ink-mute: #8A8A9C;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--cream: #FFFBF6; --gold: #C9A961;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>* { box-sizing: border-box }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body { margin: 0; font-family: -apple-system, "Segoe UI", Arial, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.container { width: min(100% - 40px, 800px); margin-inline: auto; padding: 60px 0 80px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 { font-size: clamp(22px, 4vw, 36px); margin: 0 0 8px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h2 { font-size: 18px; margin: 28px 0 8px; color: var(--tiffany-deep); border-bottom: 1px solid rgba(10,186,181,.2); padding-bottom: 6px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>p, li { font-size: 15px; color: var(--ink-soft); margin: 0 0 10px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>ul { padding-left: 22px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.meta { font-size: 13px; color: var(--ink-mute); margin: 0 0 28px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.back { display: inline-block; margin-bottom: 24px; color: var(--tiffany-deep); font-size: 14px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>th { background: var(--tiffany-soft); color: var(--tiffany-deep); padding: 9px 12px; text-align: left; border: 1px solid rgba(10,186,181,.2); font-weight: 600; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>td { padding: 9px 12px; border: 1px solid rgba(27,27,46,.08); color: var(--ink-soft); vertical-align: top; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>code { background: rgba(10,186,181,.1); padding: 1px 5px; border-radius: 4px; font-family: monospace; font-size: 13px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.note { background: #FFF9EC; border-left: 4px solid var(--gold); border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 16px 0; font-size: 14px; color: var(--ink-soft); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer { background: var(--ink); color: rgba(255,255,255,.5); padding: 20px 0; font-size: 13px; text-align: center; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer a { color: rgba(255,255,255,.5); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer a:hover { color: var(--gold); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>a { color: var(--tiffany-deep); }</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- BEGIN O – PLAIN-TEXT COOKIE POLICY PAGE (ФЗ-152 п. 6 ч. 1) --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;a class="back" href="/"&gt;← На главную&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Политика cookie-файлов&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="meta"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>Сайт tatianinden.ru · Детский театр танца «Татьянин День» ·</p>
-<p class="p1"><span class="Apple-converted-space">    </span>Актуальная редакция: &lt;strong&gt;12 июня 2026&amp;nbsp;г.&lt;/strong&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Настоящая страница доступна без&amp;nbsp;JavaScript и&amp;nbsp;описывает все cookie-файлы, которые сайт tatianinden.ru может сохранять в&amp;nbsp;браузере пользователя. Документ разработан в&amp;nbsp;соответствии с&amp;nbsp;&lt;strong&gt;п.&amp;nbsp;6 ч.&amp;nbsp;1 ст.&amp;nbsp;6 ФЗ-152&lt;/strong&gt; «О&amp;nbsp;персональных данных».&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Что такое cookies?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Cookies (куки, cookie-файлы) — небольшие текстовые файлы, которые веб-сайт сохраняет в&amp;nbsp;браузере пользователя при посещении. Они позволяют сайту «запомнить» определённые действия или&amp;nbsp;предпочтения пользователя.&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="note"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>⚠️ &lt;strong&gt;Важно:&lt;/strong&gt; без cookie-файлов сайт может работать ограниченно. Некоторые функции, в&amp;nbsp;частности виджеты Яндекс.Карт и&amp;nbsp;запоминание вашего выбора о&amp;nbsp;cookies, могут быть недоступны при полной блокировке cookies в&amp;nbsp;браузере.</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Необходимые cookies (устанавливаются без согласия)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Эти cookies необходимы для&amp;nbsp;работы сайта. Они не&amp;nbsp;используются для&amp;nbsp;сбора персональных данных или&amp;nbsp;рекламы.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;&lt;th&gt;Имя&lt;/th&gt;&lt;th&gt;Цель&lt;/th&gt;&lt;th&gt;Срок хранения&lt;/th&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;&lt;code&gt;cookieChoice&lt;/code&gt;&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Запоминает выбор пользователя: принять или отклонить аналитические cookies. Предотвращает повторное отображение баннера.&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;1&amp;nbsp;год&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;&lt;code&gt;cookieChoiceDate&lt;/code&gt;&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Фиксирует дату, когда пользователь сделал выбор о&amp;nbsp;cookies.&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;1&amp;nbsp;год&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/table&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Аналитические cookies (только после нажатия «Принять»)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Эти cookies устанавливаются &lt;strong&gt;исключительно&lt;/strong&gt; после того, как пользователь нажимает «Принять» в&amp;nbsp;cookie-баннере. Они помогают Оператору понять, как посетители используют сайт.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;&lt;th&gt;Имя&lt;/th&gt;&lt;th&gt;Сервис&lt;/th&gt;&lt;th&gt;Цель&lt;/th&gt;&lt;th&gt;Срок&lt;/th&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;&lt;code&gt;_ym_uid&lt;/code&gt;, &lt;code&gt;_ym_d&lt;/code&gt;, &lt;code&gt;_ym_isad&lt;/code&gt;, &lt;code&gt;_ym_visorc&lt;/code&gt;&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Яндекс.Метрика (ООО «Яндекс», Россия)&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Анализ посещаемости, карта кликов, вебвизор. Данные хранятся в&amp;nbsp;РФ.&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;До&amp;nbsp;1&amp;nbsp;года&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;&lt;code&gt;_ga&lt;/code&gt;, &lt;code&gt;_ga_XXXXXXX&lt;/code&gt;&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Google Analytics 4 (Google LLC, США)&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Статистика поведения пользователей. IP-адрес анонимизируется до&amp;nbsp;передачи. Данные хранятся в&amp;nbsp;США на&amp;nbsp;основании Standard Contractual Clauses.&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;До&amp;nbsp;2&amp;nbsp;лет&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/table&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Cookies сторонних сервисов&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;При отображении виджета Яндекс.Карт сервис Яндекса может устанавливать собственные cookies в&amp;nbsp;соответствии с&amp;nbsp;&lt;a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener noreferrer"&gt;политикой конфиденциальности Яндекса&lt;/a&gt;.&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Как управлять cookies&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;strong&gt;Отозвать согласие на аналитику:&lt;/strong&gt; очистите cookies сайта в&amp;nbsp;настройках браузера — при следующем посещении снова появится баннер с&amp;nbsp;выбором.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;strong&gt;Заблокировать все cookies:&lt;/strong&gt; воспользуйтесь настройками браузера (см. справку вашего браузера). Обратите внимание, что это может ограничить функциональность сайта.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;strong&gt;Отключить конкретные сервисы:&lt;/strong&gt; установите расширение для&amp;nbsp;браузера, например uBlock Origin или&amp;nbsp;Privacy Badger.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/ul&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Контакты&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;По&amp;nbsp;вопросам использования cookies обращайтесь:&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;strong&gt;E-mail:&lt;/strong&gt; &lt;a href="mailto:artestet@mail.ru"&gt;artestet@mail.ru&lt;/a&gt;&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;strong&gt;Телефон:&lt;/strong&gt; &lt;a href="tel:+79636719983"&gt;+7&amp;nbsp;(963)&amp;nbsp;671-99-83&lt;/a&gt;&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>Или&amp;nbsp;ознакомьтесь с&amp;nbsp;полной &lt;a href="privacy.html"&gt;Политикой обработки персональных данных&lt;/a&gt;.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- END O --&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>© 2014–2026 Детский театр танца «Татьянин День» ·</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="privacy.html"&gt;Политика ПД&lt;/a&gt; ·</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="reestr.html"&gt;Реестр ПД&lt;/a&gt; ·</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="terms.html"&gt;Соглашение&lt;/a&gt; ·</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="/"&gt;На главную&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+
+<!-- ===== HEADER ===== -->
+<header class="nav" id="nav" role="banner">
+  <div class="container nav-row">
+    <a href="/" class="logo" aria-label="Татьянин День — Детский театр танца">
+      <img class="logo-img" src="logo.jpg" alt="Татьянин День — детский театр танца" width="88" height="88" loading="eager" />
+      <span class="logo-text">
+        <strong>Татьянин День</strong>
+        <small>ЖК «Суханово Парк»</small>
+      </span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="/#about">О коллективе</a>
+      <a href="/#programs">Группы</a>
+      <a href="/#teachers">Педагоги</a>
+      <a href="/#disciplines">Дисциплины</a>
+      <a href="https://www.tatianinden.ru/summer-intensiv.html" class="nav-highlight">Интенсив</a>
+      <a href="https://www.tatianinden.ru/smart%E2%80%91fitness.html" class="nav-highlight">Умный фитнес</a>
+      <a href="blog/" class="nav-highlight">Блог</a>
+      <a href="prices.html" class="nav-highlight">Цены</a>
+      <a href="partners.html">Партнёры</a>
+      <a href="/#contacts">Контакты</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+79636719983" class="nav-phone">+7 (963) 671-99-83</a>
+      <a class="btn btn-primary" href="/">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<div class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <a href="/">Татьянин День</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Политика cookie-файлов</span>
+    </nav>
+    <span class="eyebrow">Юридический документ</span>
+    <h1>Политика<br>cookie-файлов</h1>
+    <p class="meta">
+      <span class="meta-badge">📅 Редакция: 12 июня 2026 г.</span>
+      <span class="meta-badge">⚖️ 152-ФЗ п. 6 ч. 1 ст. 6</span>
+      <span class="meta-badge">🍪 Доступна без JavaScript</span>
+    </p>
+  </div>
+</div>
+
+<!-- ===== MAIN ===== -->
+<main id="main-content">
+  <div class="container privacy-layout">
+
+    <!-- TOC -->
+    <aside class="privacy-toc" aria-label="Содержание документа">
+      <p class="toc-title">Содержание</p>
+      <ol class="toc-list">
+        <li><a href="#s1">1. Что такое cookies</a></li>
+        <li><a href="#s2">2. Необходимые cookies</a></li>
+        <li><a href="#s3">3. Аналитические cookies</a></li>
+        <li><a href="#s4">4. Сторонние сервисы</a></li>
+        <li><a href="#s5">5. Как управлять cookies</a></li>
+        <li><a href="#s6">6. Контакты</a></li>
+      </ol>
+    </aside>
+
+    <!-- Article -->
+    <article class="privacy-article">
+
+      <section id="s1">
+        <div class="section-head">
+          <span class="section-num">1</span>
+          <h2>Что такое cookies?</h2>
+        </div>
+        <p>Cookies (куки, cookie-файлы) — небольшие текстовые файлы, которые сайт <a href="https://tatianinden.ru/">tatianinden.ru</a> сохраняет в&nbsp;браузере пользователя при посещении. Они позволяют сайту «запомнить» определённые действия или&nbsp;предпочтения пользователя между визитами.</p>
+        <p>Настоящая страница разработана в&nbsp;соответствии с&nbsp;<strong>п.&nbsp;6 ч.&nbsp;1 ст.&nbsp;6 Федерального закона №&nbsp;152-ФЗ</strong> «О&nbsp;персональных данных» и&nbsp;доступна для&nbsp;чтения без&nbsp;JavaScript.</p>
+        <div class="warning-box">
+          ⚠️ <strong>Важно:</strong> без&nbsp;cookie-файлов сайт может работать ограниченно. Некоторые функции — в&nbsp;частности виджеты Яндекс.Карт и&nbsp;запоминание вашего выбора о&nbsp;cookies — могут быть недоступны при&nbsp;полной блокировке cookies в&nbsp;браузере.
+        </div>
+      </section>
+
+      <section id="s2">
+        <div class="section-head">
+          <span class="section-num">2</span>
+          <h2>Необходимые cookies</h2>
+        </div>
+        <p>Устанавливаются <strong>без&nbsp;согласия</strong> пользователя, поскольку необходимы для&nbsp;базовой работы сайта. Они не&nbsp;используются для&nbsp;сбора персональных данных или&nbsp;рекламы.</p>
+        <table class="transfer-table">
+          <thead>
+            <tr><th>Имя</th><th>Цель</th><th>Срок хранения</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>cookieChoice</code></td>
+              <td>Запоминает выбор пользователя: принять или&nbsp;отклонить аналитические cookies. Предотвращает повторное отображение баннера.</td>
+              <td>1 год</td>
+            </tr>
+            <tr>
+              <td><code>cookieChoiceDate</code></td>
+              <td>Фиксирует дату, когда пользователь сделал выбор о&nbsp;cookies.</td>
+              <td>1 год</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="s3">
+        <div class="section-head">
+          <span class="section-num">3</span>
+          <h2>Аналитические cookies</h2>
+        </div>
+        <p>Устанавливаются <strong>исключительно</strong> после того, как пользователь нажимает «Принять» в&nbsp;cookie-баннере. Они помогают Оператору понять, как посетители используют сайт.</p>
+        <table class="transfer-table">
+          <thead>
+            <tr><th>Имя</th><th>Сервис</th><th>Цель</th><th>Срок</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>_ym_uid</code>, <code>_ym_d</code>, <code>_ym_isad</code>, <code>_ym_visorc</code></td>
+              <td>Яндекс.Метрика (ООО «Яндекс», Россия)</td>
+              <td>Анализ посещаемости, карта кликов, вебвизор. Данные хранятся в&nbsp;РФ, трансграничная передача отсутствует.</td>
+              <td>До&nbsp;1 года</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="highlight-box">
+          Сайт использует исключительно <strong>Яндекс.Метрику</strong>. Все аналитические данные обрабатываются и&nbsp;хранятся на&nbsp;серверах в&nbsp;Российской Федерации. Подробнее — <a href="https://yandex.ru/legal/metrika_termsofuse/" target="_blank" rel="noopener noreferrer">условия сервиса Яндекс.Метрика →</a>
+        </div>
+      </section>
+
+      <section id="s4">
+        <div class="section-head">
+          <span class="section-num">4</span>
+          <h2>Cookies сторонних сервисов</h2>
+        </div>
+        <p>При&nbsp;отображении виджета Яндекс.Карт сервис Яндекса может устанавливать собственные cookies в&nbsp;соответствии с&nbsp;<a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности Яндекса</a>.</p>
+      </section>
+
+      <section id="s5">
+        <div class="section-head">
+          <span class="section-num">5</span>
+          <h2>Как управлять cookies</h2>
+        </div>
+        <ul>
+          <li><strong>Отозвать согласие на&nbsp;аналитику:</strong> очистите cookies сайта в&nbsp;настройках браузера — при&nbsp;следующем посещении снова появится баннер с&nbsp;выбором.</li>
+          <li><strong>Заблокировать все cookies:</strong> воспользуйтесь настройками браузера (см. справку вашего браузера). Обратите внимание, что&nbsp;это может ограничить функциональность сайта.</li>
+          <li><strong>Отключить конкретные сервисы:</strong> установите расширение для&nbsp;браузера, например uBlock Origin или&nbsp;Privacy Badger.</li>
+        </ul>
+      </section>
+
+      <section id="s6">
+        <div class="section-head">
+          <span class="section-num">6</span>
+          <h2>Контакты</h2>
+        </div>
+        <p>По&nbsp;вопросам использования cookies обращайтесь:</p>
+        <div class="operator-block">
+          <p><strong>Телефон:</strong> <a href="tel:+79636719983">+7&nbsp;(963)&nbsp;671-99-83</a></p>
+          <p><strong>E-mail:</strong> <a href="mailto:artestet@mail.ru">artestet@mail.ru</a></p>
+          <p><strong>Telegram:</strong> <a href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">t.me/+79636719983</a></p>
+        </div>
+        <p>Или ознакомьтесь с&nbsp;полной <a href="privacy.html">Политикой обработки персональных данных</a>.</p>
+      </section>
+
+    </article>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer role="contentinfo">
+  <div class="container foot-row">
+    <div itemscope itemtype="https://schema.org/DanceSchool">
+      <meta itemprop="name" content="Детский театр танца «Татьянин День»" />
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        © 2014–2026 Детский театр танца «Татьянин День»,
+        <span itemprop="addressLocality">ЖК «Суханово&nbsp;Парк»</span>,
+        <span itemprop="addressRegion">Московская область</span>.
+      </span> Все права защищены.
+    </div>
+    <div>
+      <a href="/#about">О коллективе</a> ·
+      <a href="/#programs">Группы</a> ·
+      <a href="prices.html">Цены</a> ·
+      <a href="blog/">Блог</a> ·
+      <a href="partners.html">Партнёры</a> ·
+      <a href="/#contacts">Контакты</a> ·
+      <a href="akciya/">Акции</a> ·
+      <a href="privacy.html" target="_blank" rel="noopener noreferrer">Политика ПД</a> ·
+      <a href="reestr.html" target="_blank" rel="noopener noreferrer">Реестр обработки ПД</a> ·
+      <a href="terms.html" target="_blank" rel="noopener noreferrer">Соглашение</a> ·
+      <a href="cookies.html" aria-current="page" style="color:rgba(255,255,255,.9);font-weight:600;">Политика куки</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating call -->
+<a class="float-cta float-call" href="tel:+79636719983" aria-label="Позвонить в Татьянин День">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+<!-- Floating Telegram -->
+<a class="float-cta" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+</a>
+<!-- Floating Max -->
+<a class="float-max float-cta" href="https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y" target="_blank" rel="noopener noreferrer" aria-label="Написать в Max">
+  <svg width="34" height="34" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="mg-cookies" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/><stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="url(#mg-cookies)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z" fill="white"/></svg>
+</a>
+
+<script>
+  // Header scroll effect
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // Burger menu
+  const burger = document.getElementById('burger');
+  const menu   = document.getElementById('menu');
+  burger?.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    burger.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+  });
+
+  // TOC active highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const tocLinks = document.querySelectorAll('.toc-list a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
 </body>
 </html>
