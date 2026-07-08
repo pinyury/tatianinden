@@ -14,6 +14,10 @@
   - <turbo:content> — это содержимое статьи в упрощённом HTML (только то, что внутри <div class="article-content">),
     без вашей навигации/шапки/скриптов — Турбо сам оборачивает контент в свой быстрый шаблон
   - Разрешённые теги внутри turbo:content: h1-h6, p, ul, ol, li, strong, em, a, img, table, blockquote
+
+  ВАЖНО: сохраняйте этот файл только как Plain Text (UTF-8), НЕ как Rich Text/Word/Pages —
+  иначе внутрь попадут скрытые RTF-команды форматирования и Яндекс не сможет прочитать фид.
+  В TextEdit на Mac: Формат → Сделать обычным текстом (Shift+Cmd+T) перед сохранением.
 -->
 <rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
 <channel>
