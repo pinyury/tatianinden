@@ -174,6 +174,84 @@ section{padding:80px 0}
     .cookie-btn{flex:1; max-width:160px; text-align:center}
   }
 
+
+  /* ============ Форма записи (та же вёрстка, что на index.html) ============ */
+  .cta-block{
+    padding:90px 0;
+    background:
+      radial-gradient(circle at 80% 10%, var(--pink-cloud), transparent 50%),
+      radial-gradient(circle at 10% 90%, var(--tiffany-soft), transparent 50%),
+      var(--cream);
+  }
+  .cta-card{
+    background:var(--white);
+    border-radius:var(--radius-lg);
+    padding:60px;
+    display:grid;
+    grid-template-columns:1fr 1.1fr;
+    gap:60px;
+    align-items:center;
+    box-shadow:var(--shadow-md);
+    border:1px solid var(--gold-light);
+    position:relative;
+    overflow:hidden;
+  }
+  .cta-card::before{
+    content:""; position:absolute; top:-50%; right:-30%;
+    width:500px; height:500px;
+    background:radial-gradient(circle, var(--pink-cloud), transparent 60%);
+    pointer-events:none;
+  }
+  .cta-card h2{margin-bottom:18px}
+  .cta-perks{list-style:none; padding:0; margin:24px 0 0; display:flex; flex-direction:column; gap:12px}
+  .cta-perks li{display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--ink-soft)}
+  .cta-perks svg{flex:0 0 22px; color:var(--tiffany)}
+  .cta-form{
+    background:linear-gradient(135deg, var(--tiffany-soft) 0%, var(--pink-cloud) 100%);
+    border-radius:var(--radius);
+    padding:36px;
+    position:relative; z-index:2;
+    border:1px solid rgba(255,255,255,.6);
+  }
+  .cta-form h3{font-family:var(--display); font-size:26px; margin-bottom:6px}
+  .cta-form p.small{font-size:14px; margin-bottom:24px; color:var(--ink-soft)}
+  .input{
+    width:100%; padding:15px 20px; border-radius:14px;
+    border:1.5px solid rgba(27,27,46,.08); background:var(--white);
+    font-family:var(--body); font-size:15px; color:var(--ink);
+    margin-bottom:14px; transition:all .25s;
+  }
+  .input:focus{outline:none; border-color:var(--tiffany); box-shadow:0 0 0 4px rgba(10,186,181,.15)}
+  .cta-form .btn{width:100%; margin-top:6px}
+  .form-hint{font-size:12px; color:var(--ink-mute); margin-top:14px; line-height:1.5; text-align:center}
+  .form-hint a{color:var(--tiffany-deep); text-decoration:underline}
+  .consent{display:flex; align-items:flex-start; gap:11px; margin:6px 0 14px; cursor:pointer; user-select:none}
+  .consent input[type="checkbox"]{flex:0 0 20px; width:20px; height:20px; margin:1px 0 0; accent-color:var(--tiffany-deep); cursor:pointer}
+  .consent-text{font-size:13px; line-height:1.45; color:var(--ink-soft)}
+  .consent-text a{color:var(--tiffany-deep); text-decoration:underline; font-weight:600}
+  .btn-msg:disabled, .btn-msg[disabled]{opacity:.45; cursor:not-allowed; filter:grayscale(.3); pointer-events:none}
+  .msg-choice{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:8px}
+  .btn-msg{width:100%; padding:14px 10px; color:#fff; font-weight:600; font-size:13px; border-radius:14px; transition:transform .25s ease, box-shadow .3s ease, filter .25s; overflow:hidden; position:relative}
+  .btn-msg svg{flex:0 0 20px}
+  .btn-msg::after{content:""; position:absolute; inset:0; background:linear-gradient(120deg, transparent 30%, rgba(255,255,255,.3) 50%, transparent 70%); transform:translateX(-100%); transition:transform .8s cubic-bezier(.2,.7,.3,1)}
+  .btn-msg:hover{transform:translateY(-2px); filter:brightness(1.05)}
+  .btn-msg:hover::after{transform:translateX(100%)}
+  .btn-tg{background:linear-gradient(135deg, #2AABEE 0%, #229ED9 100%); box-shadow:0 12px 28px -12px rgba(42,171,238,.65)}
+  .btn-call{background:linear-gradient(135deg, var(--ink) 0%, #2E2D45 100%); box-shadow:0 12px 28px -12px rgba(27,27,46,.55); text-decoration:none}
+  .btn-mx{background:linear-gradient(135deg, #4F7FFF 0%, #7B4FFF 100%); box-shadow:0 12px 28px -12px rgba(127,79,255,.65)}
+  @media (max-width:480px){ .msg-choice{grid-template-columns:1fr} }
+  @media (max-width:900px){ .cta-card{grid-template-columns:1fr; padding:36px 28px; gap:40px} }
+  @media (max-width:640px){
+    .cta-card{padding:28px 20px; gap:32px; border-radius:var(--radius)}
+    .cta-form{padding:26px 20px; border-radius:var(--radius)}
+    .cta-form h3{font-size:22px}
+    .msg-choice{grid-template-columns:1fr; gap:10px}
+    .btn-msg{padding:15px 12px; font-size:14px}
+    .cta-form .btn{padding:17px 20px; font-size:15px}
+    .cta-perks{gap:10px}
+    .cta-perks li{font-size:14.5px}
+  }
+
 </style>
 </head>
 <body>
@@ -452,7 +530,127 @@ section{padding:80px 0}
 </section>
 
 <!-- CTA -->
-<section class="cta-final" id="zapis">
+
+<section class="cta-block" id="zapis">
+  <div class="container">
+    <div class="cta-card reveal">
+      <div>
+        <span class="eyebrow">Запись на первый урок</span>
+        <h2>Подарите ребёнку <em>сцену</em> — приходите на&nbsp;первое занятие бесплатно</h2>
+        <p class="lead">Мы свяжемся с вами в течение рабочего дня, подберём удобное время в группе «Бенефис».</p>
+        <ul class="cta-perks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Первое занятие&nbsp;— бесплатно, без&nbsp;обязательств</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Подберём удобное время в&nbsp;группе «Бенефис» (10–14 лет)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Опытные педагоги, призёры конкурсов</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Светлый просторный зал в&nbsp;Суханово</li>
+        </ul>
+      </div>
+
+      <form class="cta-form" id="signupForm" onsubmit="return submitForm(event, 'telegram')">
+        <h3>Записаться на пробное</h3>
+        <p class="small">Заполните форму&nbsp;— и&nbsp;готовая заявка откроется в&nbsp;Telegram. Или просто позвоните по&nbsp;телефону.</p>
+        <input class="input" type="text" name="name" id="field_name" placeholder="Ваше имя" required autocomplete="name" aria-label="Ваше имя" />
+        <input class="input" type="tel" name="phone" id="field_phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel" aria-label="Номер телефона" pattern="[\+78][\d\s\(\)\-]{9,14}" minlength="10" title="Введите номер телефона в формате +7 (xxx) xxx-xx-xx" />
+        <input class="input" type="number" name="age" id="field_age" min="3" max="18" placeholder="Возраст ребёнка" required autocomplete="off" inputmode="numeric" aria-label="Возраст ребёнка в годах" />
+        <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none" aria-hidden="true">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <label class="consent">
+          <input type="checkbox" name="consent" id="consentCheckbox" required />
+          <span class="consent-text">Я даю согласие на&nbsp;обработку моих персональных данных в&nbsp;соответствии с&nbsp;<a href="/privacy.html" target="_blank" rel="noopener noreferrer">Политикой обработки персональных данных</a> (обязательно)</span>
+        </label>
+        <label class="consent">
+          <input type="checkbox" name="ads_consent" id="adsConsentCheckbox" />
+          <span class="consent-text">Согласен(-на) на&nbsp;получение информационных и&nbsp;рекламных сообщений о&nbsp;занятиях, концертах и&nbsp;акциях школы по&nbsp;телефону, SMS&nbsp;и&nbsp;в&nbsp;мессенджерах (ч.&nbsp;1 ст.&nbsp;18 ФЗ-38 «О&nbsp;рекламе»). Отозвать согласие можно в&nbsp;любой момент сообщением «СТОП».</span>
+        </label>
+        <div class="msg-choice">
+          <button type="submit" class="btn btn-msg btn-tg" id="submitBtn" disabled>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 2.5L2.5 9.7c-1.4.5-1.3 1.3-.2 1.7l5 1.5 1.9 5.7c.2.7.6.9 1.3.5l3-2.2 4.5 3.3c.8.5 1.4.2 1.6-.7l3-14c.3-1.1-.4-1.6-1.6-1z"/></svg>
+            Отправить в Telegram
+          </button>
+          <button type="button" class="btn btn-msg btn-mx" id="submitBtnMax" disabled onclick="return submitForm(event, 'max')">
+            <svg width="20" height="20" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="mg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4F7FFF"/><stop offset="100%" stop-color="#7B4FFF"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="url(#mg1)"/><path d="M9 12.5C9 10.6 10.6 9 12.5 9h15C29.4 9 31 10.6 31 12.5v10C31 24.4 29.4 26 27.5 26H22l-5 5v-5h-4.5C10.6 26 9 24.4 9 22.5v-10z" fill="white"/></svg>
+            Написать в Max
+          </button>
+          <a class="btn btn-msg btn-call" href="tel:+79636719983" data-goal="cta_call_form">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Позвонить
+          </a>
+        </div>
+        <p class="form-hint">Поставьте галочку и&nbsp;нажмите «Отправить» — заявка откроется в&nbsp;Telegram или Max с&nbsp;готовым сообщением.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  // 152-ФЗ: enable submit button only when consent is checked
+  (function(){
+    var consentBox = document.getElementById('consentCheckbox');
+    var submitBtn = document.getElementById('submitBtn');
+    var submitBtnMax = document.getElementById('submitBtnMax');
+    if (consentBox && submitBtn){
+      var sync = function(){
+        submitBtn.disabled = !consentBox.checked;
+        if (submitBtnMax) submitBtnMax.disabled = !consentBox.checked;
+      };
+      consentBox.addEventListener('change', sync);
+      sync();
+    }
+  })();
+
+  function submitForm(e, target) {
+    if (e && e.preventDefault) e.preventDefault();
+    var form = document.getElementById('signupForm');
+    if (!form) return false;
+    var hp = form.querySelector('input[name="website"]');
+    if (hp && hp.value.length > 0) { return false; }
+    if (!form.reportValidity()) return false;
+    var cb = document.getElementById('consentCheckbox');
+    if (cb && !cb.checked){
+      showFormToast('Поставьте галочку согласия на обработку данных');
+      return false;
+    }
+    var fd = new FormData(form);
+    var name  = (fd.get('name')  || '').toString().trim();
+    var phone = (fd.get('phone') || '').toString().trim();
+    var age   = (fd.get('age')   || '').toString().trim();
+    var message =
+      'Здравствуйте! Хочу записать ребёнка на пробный урок в группу «Бенефис» (10–14 лет) детского театра танцев «Татьянин День».\n\n' +
+      'Имя родителя: ' + name + '\n' +
+      'Телефон: ' + phone + '\n' +
+      'Возраст ребёнка: ' + age + ' лет';
+    try { navigator.clipboard && navigator.clipboard.writeText(message); } catch (_) {}
+    if (target === 'max') {
+      showFormToast('Сообщение скопировано — вставьте его в Max');
+      reachGoal('form_submit_max', { age: age });
+      window.open('https://max.ru/u/f9LHodD0cOICny7_4ueVCXgFmHiWYBfMGbfaAM8uDY3EgFRawpyVXuzBn3Y', '_blank', 'noopener');
+    } else {
+      showFormToast('Сообщение скопировано — вставьте его в Telegram');
+      reachGoal('trial_form_submit', { age: age });
+      reachGoal('form_submit', { age: age });
+      window.open('https://t.me/+79636719983', '_blank', 'noopener');
+    }
+    return false;
+  }
+
+  function showFormToast(text){
+    var t = document.getElementById('formToast');
+    if (!t){
+      t = document.createElement('div');
+      t.id = 'formToast';
+      t.style.cssText = 'position:fixed;left:50%;bottom:32px;transform:translateX(-50%);background:#1B1B2E;color:#fff;padding:14px 22px;border-radius:14px;font-size:14px;font-weight:500;box-shadow:0 16px 40px -12px rgba(0,0,0,.4);z-index:200;opacity:0;transition:opacity .3s, transform .3s;pointer-events:none;max-width:90vw;text-align:center';
+      document.body.appendChild(t);
+    }
+    t.textContent = text;
+    requestAnimationFrame(function(){ t.style.opacity = '1'; t.style.transform = 'translateX(-50%) translateY(0)'; });
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(function(){ t.style.opacity = '0'; }, 3200);
+  }
+</script>
+
+
+<section class="cta-final">
   <div class="container">
     <h2>Приходите на <em>бесплатный урок</em></h2>
     <p>Первое занятие — без обязательств. Познакомитесь с Татьяной Ивановной и группой — и решите.</p>
