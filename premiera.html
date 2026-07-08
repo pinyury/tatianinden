@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<link rel="dns-prefetch" href="https://mc.yandex.ru" />
+<link rel="preconnect" href="https://mc.yandex.ru" crossorigin />
+
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
 <title>Танцы для девочек 6–9 лет в Видном · Группа «Премьера» · Татьянин День</title>
 <meta name="description" content="Группа «Премьера» для девочек 6–9 лет в ЖК Суханово Парк — классика, эстрадный танец, акробатика. Первые конкурсы, красивая осанка, уверенность. Первый урок бесплатно!"/>
@@ -134,6 +137,47 @@ section{padding:80px 0}
   section{padding:60px 0}
   .schedule-card{padding:28px 20px}
 }
+
+  /* ============ Cookie banner (152-ФЗ) — синхронизировано с index.html ============ */
+  .cookie-banner{
+    position:fixed; left:16px; right:16px; bottom:16px;
+    z-index:80;
+    background:rgba(255,255,255,.98);
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    backdrop-filter:saturate(180%) blur(20px);
+    border:1px solid rgba(201,169,97,.25);
+    border-radius:18px;
+    box-shadow:0 20px 50px -12px rgba(27,27,46,.25), 0 8px 22px -10px rgba(10,186,181,.18);
+    padding:18px 22px;
+    max-width:680px;
+    margin-inline:auto;
+    transform:translateY(calc(100% + 32px));
+    opacity:0;
+    transition:transform .6s cubic-bezier(.2,.7,.3,1), opacity .5s ease;
+    pointer-events:none;
+  }
+  .cookie-banner.show{transform:translateY(0); opacity:1; pointer-events:auto}
+  .cookie-content{display:grid; grid-template-columns:auto 1fr auto; gap:18px; align-items:center}
+  .cookie-icon{font-size:30px; line-height:1; flex-shrink:0}
+  .cookie-text{font-family:var(--body); font-size:13.5px; line-height:1.5; color:var(--ink-soft)}
+  .cookie-text strong{display:block; font-family:var(--display); font-size:18px; color:#1B2A4E; margin-bottom:4px; font-weight:600}
+  .cookie-text p{margin:0}
+  .cookie-text a{color:var(--tiffany-deep); font-weight:600; text-decoration:underline}
+  .cookie-actions{display:flex; flex-direction:column; gap:8px; flex-shrink:0}
+  .cookie-btn{padding:10px 18px; border-radius:999px; font-family:var(--body); font-size:13px; font-weight:600; cursor:pointer; border:none; transition:transform .25s ease, box-shadow .25s ease; white-space:nowrap}
+  .cookie-btn:hover{transform:translateY(-2px)}
+  .cookie-btn-primary{background:linear-gradient(135deg, var(--tiffany), var(--pink)); color:#fff; box-shadow:0 6px 18px -6px rgba(10,186,181,.55)}
+  .cookie-btn-primary:hover{box-shadow:0 10px 24px -6px rgba(10,186,181,.65)}
+  .cookie-btn-ghost{background:transparent; color:var(--ink-soft); border:1px solid rgba(27,27,46,.15)}
+  .cookie-btn-ghost:hover{background:rgba(27,27,46,.04)}
+  @media (max-width:640px){
+    .cookie-banner{left:10px; right:10px; bottom:10px; padding:14px 16px}
+    .cookie-content{grid-template-columns:1fr; gap:12px}
+    .cookie-icon{display:none}
+    .cookie-actions{flex-direction:row; justify-content:flex-end}
+    .cookie-btn{flex:1; max-width:160px; text-align:center}
+  }
+
 </style>
 </head>
 <body>
@@ -141,7 +185,7 @@ section{padding:80px 0}
 <nav class="mini-nav">
   <div class="container mini-nav-row">
     <div class="mini-nav-logo"><a href="/">Татьянин День</a><small>ЖК Суханово Парк · Видное</small></div>
-    <a class="btn btn-primary" href="tel:+79636719983">Записаться бесплатно</a>
+    <a class="btn btn-primary" href="tel:+79636719983" data-goal="cta_call_premiera_1">Записаться бесплатно</a>
   </div>
 </nav>
 
@@ -161,8 +205,8 @@ section{padding:80px 0}
         <h1>Здесь девочки<br/><em>становятся артистками</em></h1>
         <p class="page-hero-sub">В 6–9 лет тело учится всему: растяжке, ритму, пластике, выражению эмоций через движение. В «Премьере» мы закладываем фундамент, с которым девочки выходят на сцену уверенно — и возвращаются домой с первыми наградами.</p>
         <div class="page-hero-cta">
-          <a class="btn btn-primary btn-lg" href="tel:+79636719983">Первый урок — бесплатно</a>
-          <a class="btn btn-ghost btn-lg" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+          <a class="btn btn-primary btn-lg" href="tel:+79636719983" data-goal="cta_call_premiera_2">Первый урок — бесплатно</a>
+          <a class="btn btn-ghost btn-lg" href="https://t.me/+79636719983" data-goal="cta_telegram_premiera_1" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
         </div>
         <div class="trust-strip">
           <div class="ts-item"><span class="ts-num">3</span><span class="ts-lbl">раза в неделю</span></div>
@@ -178,6 +222,139 @@ section{padding:80px 0}
     </div>
   </div>
 </section>
+
+<section class="enroll-banner reveal" id="enroll-deadline" aria-labelledby="heading-enroll-premiera">
+  <div class="container enroll-banner__inner">
+    <div class="enroll-banner__text">
+      <span class="eyebrow" style="color:var(--white); opacity:.85">Открыт набор в «Премьера» — новый сезон</span>
+      <h2 id="heading-enroll-premiera">3&nbsp;августа&nbsp; откроется дверь.&nbsp;<em> За ней танец, гармония, вдохновение.</em></h2>
+      <p>Набор детей 6–9&nbsp;лет в&nbsp;группу «Премьера» уже открыт, но&nbsp;мест&nbsp;— строго ограниченное количество: занятия идут в&nbsp;небольших составах, чтобы у&nbsp;каждой девочки было время педагога. Также открыт набор в&nbsp;группы <a href="/zvezdochki.html" style="color:#fff; text-decoration:underline" data-goal="cta_enroll_banner_premiera_zvezdochki">«Звёздочки»</a> (3–5&nbsp;лет) и&nbsp;<a href="/benefis.html" style="color:#fff; text-decoration:underline" data-goal="cta_enroll_banner_premiera_benefis">«Бенефис»</a> (10–14&nbsp;лет).</p>
+      <div class="enroll-banner__countdown" id="enrollCountdown" aria-live="polite">
+        <div class="ec-unit"><span class="ec-num" id="ecDays">00</span><span class="ec-lbl">дней</span></div>
+        <div class="ec-sep">:</div>
+        <div class="ec-unit"><span class="ec-num" id="ecHours">00</span><span class="ec-lbl">часов</span></div>
+        <div class="ec-sep">:</div>
+        <div class="ec-unit"><span class="ec-num" id="ecMinutes">00</span><span class="ec-lbl">минут</span></div>
+        <div class="ec-sep">:</div>
+        <div class="ec-unit"><span class="ec-num" id="ecSeconds">00</span><span class="ec-lbl">секунд</span></div>
+      </div>
+      <div class="enroll-banner__cta">
+        <a class="btn btn-primary btn-lg" href="#zapis" data-goal="cta_enroll_banner_premiera_signup">Записать дочку сейчас</a>
+        <a class="btn btn-ghost-light btn-lg" href="tel:+79636719983" data-goal="cta_enroll_banner_premiera_call">Позвонить: +7&nbsp;(963)&nbsp;671-99-83</a>
+      </div>
+      <p class="enroll-banner__note">Первое пробное занятие&nbsp;— бесплатно, вне&nbsp;зависимости от&nbsp;группы.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var target = new Date('2026-08-03T00:00:00+03:00').getTime();
+  var elDays = document.getElementById('ecDays');
+  var elHours = document.getElementById('ecHours');
+  var elMinutes = document.getElementById('ecMinutes');
+  var elSeconds = document.getElementById('ecSeconds');
+  if(!elDays) return;
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  function tick(){
+    var now = new Date().getTime();
+    var diff = target - now;
+    if(diff <= 0){
+      elDays.textContent = '00'; elHours.textContent = '00';
+      elMinutes.textContent = '00'; elSeconds.textContent = '00';
+      return;
+    }
+    var days = Math.floor(diff / (1000*60*60*24));
+    var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    var minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+    var seconds = Math.floor((diff % (1000*60)) / 1000);
+    elDays.textContent = pad(days);
+    elHours.textContent = pad(hours);
+    elMinutes.textContent = pad(minutes);
+    elSeconds.textContent = pad(seconds);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+
+<style>
+  .enroll-banner{
+    position:relative;
+    padding:56px 0;
+    background:linear-gradient(120deg, var(--tiffany-deep) 0%, var(--pink-deep) 130%);
+    overflow:hidden;
+  }
+  .enroll-banner::after{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(ellipse at 85% 20%, rgba(255,255,255,.12) 0%, transparent 45%);
+    pointer-events:none;
+  }
+  .enroll-banner__inner{ position:relative; z-index:1; max-width:760px; }
+  .enroll-banner__text h2{
+    font-family:var(--display);
+    color:var(--white);
+    font-size:clamp(28px, 4vw, 42px);
+    line-height:1.2;
+    margin:10px 0 18px;
+  }
+  .enroll-banner__text h2 em{ font-style:italic; color:#FFF3DA; }
+  .enroll-banner__text p{
+    color:rgba(255,255,255,.92);
+    font-size:16.5px;
+    line-height:1.6;
+    max-width:640px;
+  }
+  .enroll-banner__countdown{
+    display:flex; align-items:center; gap:10px;
+    margin:28px 0 26px;
+    flex-wrap:wrap;
+  }
+  .ec-unit{
+    display:flex; flex-direction:column; align-items:center;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.28);
+    border-radius:14px;
+    padding:10px 16px;
+    min-width:72px;
+  }
+  .ec-num{
+    font-family:var(--display);
+    font-size:30px; font-weight:600;
+    color:var(--white);
+    line-height:1;
+  }
+  .ec-lbl{
+    font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+    color:rgba(255,255,255,.75);
+    margin-top:4px;
+  }
+  .ec-sep{ color:rgba(255,255,255,.6); font-size:24px; font-weight:600; }
+  .enroll-banner__cta{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn-ghost-light{
+    display:inline-flex; align-items:center; justify-content:center;
+    border:1.5px solid rgba(255,255,255,.6);
+    color:var(--white);
+    background:transparent;
+    border-radius:999px;
+    transition:all .3s ease;
+  }
+  .btn-ghost-light:hover{ background:rgba(255,255,255,.14); border-color:var(--white); }
+  .enroll-banner__note{
+    margin-top:16px !important;
+    font-size:13.5px !important;
+    color:rgba(255,255,255,.75) !important;
+  }
+  @media (max-width: 640px){
+    .enroll-banner{ padding:40px 0; }
+    .ec-unit{ min-width:60px; padding:8px 10px; }
+    .ec-num{ font-size:24px; }
+    .enroll-banner__cta{ flex-direction:column; }
+    .enroll-banner__cta .btn{ width:100%; }
+  }
+</style>
+
 
 <!-- БОЛИ -->
 <section class="pain-block">
@@ -295,13 +472,13 @@ section{padding:80px 0}
 </section>
 
 <!-- CTA -->
-<section class="cta-final">
+<section class="cta-final" id="zapis">
   <div class="container">
     <h2>Приходите на <em>бесплатный урок</em></h2>
     <p>Первое занятие — без обязательств. Дочь познакомится с педагогом, вы увидите атмосферу — и решите.</p>
     <div class="cta-btns">
-      <a class="btn btn-gold btn-lg" href="tel:+79636719983">📞 +7 (963) 671-99-83</a>
-      <a class="btn btn-primary btn-lg" href="https://t.me/+79636719983" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+      <a class="btn btn-gold btn-lg" href="tel:+79636719983" data-goal="cta_call_premiera_3">📞 +7 (963) 671-99-83</a>
+      <a class="btn btn-primary btn-lg" href="https://t.me/+79636719983" data-goal="cta_telegram_premiera_2" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
     </div>
   </div>
 </section>
@@ -318,5 +495,101 @@ section{padding:80px 0}
     </nav>
   </div>
 </footer>
+
+<!-- ============ Cookie banner + Яндекс.Метрика (152-ФЗ) — согласовано с index.html ============ -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Cookie-уведомление">
+  <div class="cookie-content">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div class="cookie-text">
+      <strong>Мы используем cookies</strong>
+      <p>Для аналитики посещений и&nbsp;корректной работы сайта. <a href="/cookies.html" target="_blank" rel="noopener noreferrer">Подробнее о&nbsp;куках&nbsp;→</a> · <a href="/privacy.html" target="_blank" rel="noopener noreferrer">Политика ПД&nbsp;→</a></p>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" onclick="acceptCookies()" class="cookie-btn cookie-btn-primary">Принять</button>
+      <button type="button" onclick="rejectCookies()" class="cookie-btn cookie-btn-ghost">Только необходимые</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ============================================================
+  // Аналитика грузится ТОЛЬКО после согласия (152-ФЗ).
+  // Только Яндекс.Метрика — данные хранятся в РФ.
+  // Синхронизировано с index.html — тот же счётчик и те же цели.
+  // ============================================================
+  var YM_COUNTER_ID = 109457377; // Татьянин День — metrika.yandex.ru/dashboard?id=109457377
+
+  function loadYandexMetrika(){
+    if(!YM_COUNTER_ID) return;
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(YM_COUNTER_ID, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      ecommerce: "dataLayer"
+    });
+    var ns = document.createElement('noscript');
+    ns.innerHTML = '<div><img src="https://mc.yandex.ru/watch/' + YM_COUNTER_ID + '" style="position:absolute; left:-9999px;" alt="" /></div>';
+    if (document.body) { document.body.appendChild(ns); }
+  }
+
+  function loadAnalytics(){
+    try { loadYandexMetrika(); } catch(e) { /* silent fail */ }
+  }
+
+  // Цели для Метрики — вызываются с кнопок/ссылок через data-goal.
+  function reachGoal(goalId, params){
+    try { if (window.ym && YM_COUNTER_ID) ym(YM_COUNTER_ID, 'reachGoal', goalId, params || {}); } catch(e) {}
+  }
+  document.addEventListener('click', function(e){
+    var el = e.target.closest('[data-goal]');
+    if (el) reachGoal(el.getAttribute('data-goal'));
+  });
+
+  function showCookieBanner(){
+    try{ if(localStorage.getItem('cookieChoice')) return; }catch(e){}
+    setTimeout(function(){
+      var el = document.getElementById('cookieBanner');
+      if(el) el.classList.add('show');
+    }, 900);
+  }
+  function setCookieChoice(choice){
+    try{ localStorage.setItem('cookieChoice', choice); localStorage.setItem('cookieChoiceDate', new Date().toISOString()); }catch(e){}
+    var el = document.getElementById('cookieBanner');
+    if(el){
+      el.classList.remove('show');
+      setTimeout(function(){ el.style.display='none'; }, 700);
+    }
+    if(choice === 'accepted') loadAnalytics();
+  }
+  function acceptCookies(){
+    document.documentElement.setAttribute('data-cookie-consent', 'accepted');
+    setCookieChoice('accepted');
+  }
+  function rejectCookies(){
+    document.documentElement.setAttribute('data-cookie-consent', 'rejected');
+    setCookieChoice('rejected');
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    try{
+      var choice = localStorage.getItem('cookieChoice');
+      if(choice === 'accepted'){
+        document.documentElement.setAttribute('data-cookie-consent', 'accepted');
+        loadAnalytics();
+      } else if(choice === 'rejected'){
+        document.documentElement.setAttribute('data-cookie-consent', 'rejected');
+      } else {
+        showCookieBanner();
+      }
+    }catch(e){ showCookieBanner(); }
+  });
+</script>
+
 </body>
 </html>
