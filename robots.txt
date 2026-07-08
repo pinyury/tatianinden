@@ -1,19 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /deploy-ready/
+Disallow: /invite-jpeg.html
+Disallow: /invite-pdf.html
+Disallow: /invite-print.html
+Disallow: /invite-screen.html
+
+# Главный поисковик для проекта
 User-agent: Yandex
 Allow: /
-Disallow: /admin/
-Disallow: /*?utm_*
-Disallow: /*?yclid=*
-Disallow: /*?_openstat=*
-Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content /
-Clean-param: yclid /
-Clean-param: _openstat /
+Disallow: /deploy-ready/
+Disallow: /invite-jpeg.html
+Disallow: /invite-pdf.html
+Disallow: /invite-print.html
+Disallow: /invite-screen.html
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid
 
 User-agent: Googlebot
 Allow: /
-Disallow: /admin/
-
-User-agent: *
-Allow: /
-Disallow: /admin/
+Disallow: /deploy-ready/
+Disallow: /invite-jpeg.html
+Disallow: /invite-pdf.html
+Disallow: /invite-print.html
+Disallow: /invite-screen.html
 
 Sitemap: https://tatianinden.ru/sitemap.xml
