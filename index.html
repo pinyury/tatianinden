@@ -28,10 +28,14 @@
 -->
 <!-- <link rel="stylesheet" href="/fonts/fonts.css" /> -->
 <link rel="preload" as="image" href="hero-bg.jpg" fetchpriority="high" />
-<title>Танцы для детей 3–14 лет · Суханово · Видное · Татьянин День — Топ-100 в России</title>
-<meta name="description" content="Детский театр танца «Татьянин День» в ЖК «Суханово Парк» (Ленинский округ, Видное). Эстрадные танцы, классика, акробатика, умный фитнес. Дети 3–14 лет. Топ-100 лучших хореографических коллективов России. Первый урок бесплатно — записывайтесь!" />
-<meta property="og:title" content="Танцы для детей 3–14 лет · Татьянин День · Суханово Парк" />
-<meta property="og:description" content="Топ-100 лучших хореографических коллективов России. Эстрадный танец, классика, акробатика для детей. Первый урок — бесплатно." />
+<!-- ЗАМЕЧАНИЕ ПО SEO: title держим эвергрин (гео + услуга + бренд), без дат —
+     иначе после 3 августа заголовок в выдаче будет выглядеть устаревшим.
+     Сезонную срочность («с 3 августа») выносим в description и og/twitter —
+     их безопаснее и проще обновлять по календарю, не трогая основной title. -->
+<title>Танцы для детей 3–14 лет · Видное · Набор в группы · Татьянин День</title>
+<meta name="description" content="Открыт набор в группы «Звёздочки», «Премьера» и «Бенефис» с 3 августа. Детский театр танца «Татьянин День» в ЖК «Суханово Парк» (Видное). Эстрадные танцы, классика, акробатика. Дети 3–14 лет. Топ-100 хореографических коллективов России. Первое занятие — бесплатно!" />
+<meta property="og:title" content="Набор в группы танца с 3 августа · Татьянин День · Видное" />
+<meta property="og:description" content="«Звёздочки» 3–5 лет, «Премьера» 6–9 лет, «Бенефис» 10–14 лет. Топ-100 хореографических коллективов России. Первое занятие — бесплатно." />
 <meta property="og:image" content="https://tatianinden.ru/hero-bg.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -40,8 +44,8 @@
 <meta property="og:locale" content="ru_RU" />
 <meta property="og:site_name" content="Татьянин День" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Танцы для детей 3–14 лет · Татьянин День · Суханово Парк" />
-<meta name="twitter:description" content="Топ-100 лучших хореографических коллективов России. Эстрадный танец, классика, акробатика для детей. Первый урок — бесплатно." />
+<meta name="twitter:title" content="Набор в группы танца с 3 августа · Татьянин День · Видное" />
+<meta name="twitter:description" content="«Звёздочки» 3–5 лет, «Премьера» 6–9 лет, «Бенефис» 10–14 лет. Топ-100 хореографических коллективов России. Первое занятие — бесплатно." />
 <meta name="twitter:image" content="https://tatianinden.ru/hero-bg.jpg" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:alt" content="Воспитанницы детского театра танца «Татьянин День» на сцене" />
@@ -3450,6 +3454,53 @@
   ]
 }
 </script>
+
+<!-- Schema.org: Event — набор в группы с 3 августа.
+     ВАЖНО: после окончания периода набора (или когда группы наберутся)
+     обновите/удалите этот блок, либо смените eventStatus на
+     "https://schema.org/EventCancelled", чтобы не показывать в поиске
+     неактуальное объявление. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Набор в группы танца «Звёздочки», «Премьера» и «Бенефис» — сезон 2026/2027",
+  "description": "Открыт набор детей 3–14 лет в детский театр танца «Татьянин День»: «Звёздочки» (3–5 лет), «Премьера» (6–9 лет), «Бенефис» (10–14 лет). Первое пробное занятие — бесплатно. Занятия проходят в ЖК «Суханово Парк», Видное.",
+  "startDate": "2026-08-03",
+  "endDate": "2026-08-31",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "url": "https://tatianinden.ru/#enroll-deadline",
+  "image": ["https://tatianinden.ru/hero-bg.jpg"],
+  "location": {
+    "@type": "Place",
+    "name": "Детский театр танца «Татьянин День»",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ЖК «Суханово Парк»",
+      "addressLocality": "Видное",
+      "addressRegion": "Московская область",
+      "postalCode": "142702",
+      "addressCountry": "RU"
+    }
+  },
+  "organizer": {
+    "@type": "DanceSchool",
+    "name": "Детский театр танца «Татьянин День»",
+    "url": "https://tatianinden.ru/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://tatianinden.ru/prices.html",
+    "price": "0",
+    "priceCurrency": "RUB",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-07-07",
+    "description": "Первое пробное занятие — бесплатно."
+  },
+  "typicalAgeRange": "3-14"
+}
+</script>
 </head>
 <body>
 
@@ -3598,9 +3649,9 @@
 <section class="enroll-banner reveal" id="enroll-deadline" aria-labelledby="heading-enroll">
   <div class="container enroll-banner__inner">
     <div class="enroll-banner__text">
-      <span class="eyebrow" style="color:var(--white); opacity:.85">Открыт набор на новый сезон</span>
+      <span class="eyebrow" style="color:var(--white); opacity:.85">Открыт набор на танцы в Видном — новый сезон</span>
       <h2 id="heading-enroll">3&nbsp;августа&nbsp; откроется дверь.&nbsp;<em> За ней танец, гармония, вдохновение.</em></h2>
-      <p>Набор в&nbsp;группы «Звёздочки», «Премьера» и&nbsp;«Бенефис» уже открыт, но&nbsp;мест в&nbsp;каждой группе&nbsp;— строго ограниченное количество: занятия идут в&nbsp;небольших составах, чтобы у&nbsp;каждой девочки было время педагога. Студия находится прямо в&nbsp;ЖК&nbsp;Суханово Парк&nbsp;— никуда возить ребёнка не&nbsp;нужно.</p>
+      <p>Набор детей 3–14&nbsp;лет в&nbsp;группы <a href="/zvezdochki.html" style="color:#fff; text-decoration:underline" data-goal="cta_enroll_banner_zvezdochki">«Звёздочки»</a>, <a href="/premiera.html" style="color:#fff; text-decoration:underline" data-goal="cta_enroll_banner_premiera">«Премьера»</a> и&nbsp;<a href="/benefis.html" style="color:#fff; text-decoration:underline" data-goal="cta_enroll_banner_benefis">«Бенефис»</a> уже открыт, но&nbsp;мест в&nbsp;каждой группе&nbsp;— строго ограниченное количество: занятия идут в&nbsp;небольших составах, чтобы у&nbsp;каждой девочки было время педагога. Студия находится прямо в&nbsp;ЖК&nbsp;«Суханово Парк», Видное&nbsp;— никуда возить ребёнка не&nbsp;нужно.</p>
       <div class="enroll-banner__countdown" id="enrollCountdown" aria-live="polite">
         <div class="ec-unit"><span class="ec-num" id="ecDays">00</span><span class="ec-lbl">дней</span></div>
         <div class="ec-sep">:</div>
