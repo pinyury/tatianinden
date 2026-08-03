@@ -352,7 +352,61 @@ nav.menu a.nav-active::after{transform:scaleX(1)}
   .prog-steps,.results-grid{grid-template-columns:1fr}
   section{padding:56px 0}
   .hero-photo{max-height:320px}
-  /* nav handled by header.nav styles above */
+}
+
+/* ================================================================
+   MOBILE NAV ENHANCEMENTS — phones ≤767px (как на других страницах)
+   ================================================================ */
+@media (max-width:767px){
+  /* ── Header: компактнее, кнопка "Записаться" всегда видна ── */
+  header.nav { padding: 6px 0 }
+  .nav-row { min-height: 64px; gap: 12px }
+  .logo { gap: 12px }
+  .logo-img { width: 46px; height: 46px }
+  .logo-text strong { font-size: 17px }
+  .logo-text small { font-size: 9.5px; letter-spacing: .12em; margin-top: 4px }
+  .burger {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--tiffany-soft), var(--pink-cloud));
+    border: 1px solid rgba(10,186,181,.2);
+  }
+  .burger span { width: 20px; height: 2px; margin: 4.5px auto }
+  /* Кнопка "Записаться" остаётся видимой, но компактнее */
+  .nav-actions .btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  /* ── Мобильное меню: во весь экран, удобное ── */
+  nav.menu.open {
+    top: 76px;
+    left: 10px; right: 10px;
+    padding: 24px 20px 28px;
+    border-radius: 24px;
+    box-shadow: 0 24px 60px -16px rgba(27,27,46,.3);
+    gap: 4px;
+  }
+  nav.menu.open a {
+    font-size: 18px;
+    padding: 12px 8px;
+    border-bottom: 1px solid rgba(27,27,46,.06);
+    width: 100%;
+  }
+  nav.menu.open a:last-child { border-bottom: none }
+  nav.menu.open a.nav-highlight { color: var(--gold-deep) }
+
+  /* Телефон внизу открытого меню */
+  nav.menu.open::after {
+    content: "+7 (963) 671-99-83";
+    display: block;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--tiffany-deep);
+    padding: 16px 8px 4px;
+    border-top: 1px solid rgba(10,186,181,.15);
+    margin-top: 8px;
+    letter-spacing: .01em;
+  }
 }
 </style>
 <script type="application/ld+json">
