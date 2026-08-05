@@ -4,7 +4,7 @@
   <!-- ГЛАВНЫЕ КОММЕРЧЕСКИЕ СТРАНИЦЫ -->
   <url>
     <loc>https://tatianinden.ru/</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -33,7 +33,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tatianinden.ru/Partners.html</loc>
+    <loc>https://tatianinden.ru/partners.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -170,6 +170,31 @@
     <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tatianinden.ru/zvezdochki.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/premiera.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/benefis.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tatianinden.ru/o-nas.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

@@ -8,7 +8,7 @@
 
 <meta name="theme-color" content="#0ABAB5" />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<title>Танцы для малышей 3–5 лет в Видном · Группа «Звёздочки» · Татьянин День</title>
+<title>Танцы для девочек 3–5 лет в Видном · Группа «Звёздочки» · Татьянин День</title>
 <meta name="description" content="Группа «Звёздочки» для девочек 3–5 лет в ЖК Суханово Парк — танцы, ритмика и игровая хореография. Развиваем координацию, осанку и уверенность. Первый урок бесплатно!" />
 <link rel="canonical" href="https://tatianinden.ru/detskie-tantsy/3-5-let/" />
 <meta property="og:title" content="Танцы для малышей 3–5 лет · «Звёздочки» · Татьянин День" />
@@ -38,7 +38,7 @@
   "@type": "Course",
   "name": "Звёздочки — танцы и ритмика для детей 3–5 лет",
   "description": "Игровая хореография, ритмика, классическая база, развитие координации и осанки для малышей 3–5 лет. Студия «Татьянин День» в ЖК Суханово Парк, Видное.",
-  "provider": {"@type":"DanceSchool","name":"Детский театр танца «Татьянин День»","url":"https://tatianinden.ru/"},
+  "provider": {"@type":["DanceSchool","LocalBusiness"],"name":"Детский театр танца «Татьянин День»","url":"https://tatianinden.ru/"},
   "typicalAgeRange": "3-5",
   "offers": {
     "@type": "Offer",
@@ -493,17 +493,9 @@
   <div class="container enroll-banner__inner">
     <div class="enroll-banner__text">
       <span class="eyebrow" style="color:var(--white); opacity:.85">Открыт набор в «Звёздочки» — новый сезон</span>
-      <h2 id="heading-enroll-zvezdochki">3&nbsp;августа&nbsp; откроется дверь.&nbsp;<em> За ней танец, гармония, вдохновение.</em></h2>
+      <h2 id="heading-enroll-zvezdochki">Открыт набор.&nbsp;<em>За дверью — сцена, друзья и уверенность.</em></h2>
       <p>Набор девочек 3–5&nbsp;лет в&nbsp;группу «Звёздочки» уже открыт, но&nbsp;мест&nbsp;— строго ограниченное количество: занятия идут в&nbsp;небольших составах, чтобы у&nbsp;каждой малышки было время педагога. Также открыт набор в&nbsp;группы <a href="/premiera.html" style="color:#fff; text-decoration:underline" data-goal="cta_enroll_banner_zvezdochki_premiera">«Премьера»</a> (6–9&nbsp;лет) и&nbsp;<a href="/benefis.html" style="color:#fff; text-decoration:underline" data-goal="cta_enroll_banner_zvezdochki_benefis">«Бенефис»</a> (10–14&nbsp;лет).</p>
-      <div class="enroll-banner__countdown" id="enrollCountdown" aria-live="polite">
-        <div class="ec-unit"><span class="ec-num" id="ecDays">00</span><span class="ec-lbl">дней</span></div>
-        <div class="ec-sep">:</div>
-        <div class="ec-unit"><span class="ec-num" id="ecHours">00</span><span class="ec-lbl">часов</span></div>
-        <div class="ec-sep">:</div>
-        <div class="ec-unit"><span class="ec-num" id="ecMinutes">00</span><span class="ec-lbl">минут</span></div>
-        <div class="ec-sep">:</div>
-        <div class="ec-unit"><span class="ec-num" id="ecSeconds">00</span><span class="ec-lbl">секунд</span></div>
-      </div>
+      <p class="enroll-banner__badge" role="status">Места в группе ограничены · Первое занятие бесплатно</p>
       <div class="enroll-banner__cta">
         <a class="btn btn-primary btn-lg" href="#zapis" data-goal="cta_enroll_banner_zvezdochki_signup">Записать дочку сейчас</a>
         <a class="btn btn-ghost-light btn-lg" href="tel:+79636719983" data-goal="cta_enroll_banner_zvezdochki_call">Позвонить: +7&nbsp;(963)&nbsp;671-99-83</a>
@@ -513,36 +505,7 @@
   </div>
 </section>
 
-<script>
-(function(){
-  var target = new Date('2026-08-03T00:00:00+03:00').getTime();
-  var elDays = document.getElementById('ecDays');
-  var elHours = document.getElementById('ecHours');
-  var elMinutes = document.getElementById('ecMinutes');
-  var elSeconds = document.getElementById('ecSeconds');
-  if(!elDays) return;
-  function pad(n){ return n < 10 ? '0' + n : '' + n; }
-  function tick(){
-    var now = new Date().getTime();
-    var diff = target - now;
-    if(diff <= 0){
-      elDays.textContent = '00'; elHours.textContent = '00';
-      elMinutes.textContent = '00'; elSeconds.textContent = '00';
-      return;
-    }
-    var days = Math.floor(diff / (1000*60*60*24));
-    var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
-    var minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
-    var seconds = Math.floor((diff % (1000*60)) / 1000);
-    elDays.textContent = pad(days);
-    elHours.textContent = pad(hours);
-    elMinutes.textContent = pad(minutes);
-    elSeconds.textContent = pad(seconds);
-  }
-  tick();
-  setInterval(tick, 1000);
-})();
-</script>
+
 
 <style>
   .enroll-banner{
@@ -572,32 +535,19 @@
     line-height:1.6;
     max-width:640px;
   }
-  .enroll-banner__countdown{
-    display:flex; align-items:center; gap:10px;
-    margin:28px 0 26px;
-    flex-wrap:wrap;
+  .enroll-banner__badge{display:inline-block;margin:18px 0 22px;padding:10px 18px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff;font-size:14px;font-weight:600}
+  .enroll-banner__badge{
+    display:inline-block;
+    margin:18px 0 22px;
+    padding:10px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,.16);
+    border:1px solid rgba(255,255,255,.35);
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
   }
-  .ec-unit{
-    display:flex; flex-direction:column; align-items:center;
-    background:rgba(255,255,255,.14);
-    border:1px solid rgba(255,255,255,.28);
-    border-radius:14px;
-    padding:10px 16px;
-    min-width:72px;
-  }
-  .ec-num{
-    font-family:var(--display);
-    font-size:30px; font-weight:600;
-    color:var(--white);
-    line-height:1;
-  }
-  .ec-lbl{
-    font-size:11px; letter-spacing:.08em; text-transform:uppercase;
-    color:rgba(255,255,255,.75);
-    margin-top:4px;
-  }
-  .ec-sep{ color:rgba(255,255,255,.6); font-size:24px; font-weight:600; }
-  .enroll-banner__cta{ display:flex; gap:14px; flex-wrap:wrap; }
+.enroll-banner__cta{ display:flex; gap:14px; flex-wrap:wrap; }
   .btn-ghost-light{
     display:inline-flex; align-items:center; justify-content:center;
     border:1.5px solid rgba(255,255,255,.6);
